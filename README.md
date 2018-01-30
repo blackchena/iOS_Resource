@@ -179,6 +179,8 @@
 * [rxswift 中文文档](https://beeth0ven.github.io/RxSwift-Chinese-Documentation/content/rxswift_core/observable/driver.html)
 * [靛青K](https://blog.dianqk.org/)
 * [配合CocoaPods Playgrounds 插件 的rxswift 详解](https://academy.realm.io/cn/posts/altconf-scott-gardner-reactive-programming-with-rxswift/)
+* [rxMarvel](https://github.com/sergdort/RxMarvel)
+* [auto-check](本地 rxswift)
 
 
 #### CodeSnippets@ 代码片段
