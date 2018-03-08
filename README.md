@@ -365,6 +365,7 @@
 *[深入浅出 JavaScriptCore](http://www.jianshu.com/p/ac534f508fb0)
 *[iOS JavaScriptCore使用](http://liuyanwei.jumppo.com/2016/04/03/iOS-JavaScriptCore.html)
 *[UIWebView和WKWebView的使用及js交互](http://liuyanwei.jumppo.com/2015/10/17/ios-webView.html)
+*[wkwebview load local img](https://github.com/soxjke/WKWebViewTest/blob/master/WKWebViewTest/ViewController.swift)(https://github.com/ShingoFukuyama/WKWebViewTips)
 
 #### html@
 *[topfunky / hpple](https://github.com/topfunky/hpple)An XML/HTML parser for Objective-C, inspired by Hpricot.
