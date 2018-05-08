@@ -129,6 +129,7 @@
 #### runtime@
 * [Method Swizzling](http://blog.leichunfeng.com/blog/2015/06/14/objective-c-method-swizzling-best-practice/)方法交换雷纯锋
 * [Objective-C Runtime 1小时入门教程](http://ios.jobbole.com/84028/)
+* [Runtime Method Swizzling](https://www.jianshu.com/p/f6dad8e1b848)
 
 
 #### Animation@动画@
@@ -386,7 +387,6 @@
 * [iOS超全开源框架、项目和学习资料汇总（2）动画篇](http://www.jianshu.com/p/8ba2751e925b)
 
 #### webview/wkwebview@
-<<<<<<< HEAD
 * [JSCore的基本使用](http://www.cocoachina.com/ios/20161117/18117.html)
 * [devedbox / AXWebViewController](https://github.com/devedbox/AXWebViewController)
 * [让 WKWebView 支持 NSURLProtocol](https://blog.yeatse.com/2016/10/26/support-nsurlprotocol-in-wkwebview/)
@@ -404,20 +404,6 @@
 * [wkwebview scheme open file](https://github.com/ShingoFukuyama/WKWebViewTips)
 * [WKWebView 那些坑 腾讯bugly](https://zhuanlan.zhihu.com/p/24990222)
 * [webview tableview 嵌套](https://www.jianshu.com/p/42858f95ab43)
-=======
-*[JSCore的基本使用](http://www.cocoachina.com/ios/20161117/18117.html)
-*[devedbox / AXWebViewController](https://github.com/devedbox/AXWebViewController)
-*[让 WKWebView 支持 NSURLProtocol](https://blog.yeatse.com/2016/10/26/support-nsurlprotocol-in-wkwebview/)
-*[WebViewProxy](https://github.com/marcuswestin/WebViewProxy)A standalone iOS & OSX class for intercepting and proxying HTTP requests (e.g. from a Web View)
-*[WebView与JS的几种交互](http://www.jianshu.com/p/0042d8eb67c0)
-*[WKWebView与Js实战(OC版)](http://www.jianshu.com/p/687536a160a7)
-*[iOS 与 JS 交互开发知识总结](https://mp.weixin.qq.com/s/qA6Oouk7y4nlKrE6QRasCQ)
-*[深入浅出 JavaScriptCore](http://www.jianshu.com/p/ac534f508fb0)
-*[iOS JavaScriptCore使用](http://liuyanwei.jumppo.com/2016/04/03/iOS-JavaScriptCore.html)
-*[UIWebView和WKWebView的使用及js交互](http://liuyanwei.jumppo.com/2015/10/17/ios-webView.html)
-*[wkwebview load local img](https://github.com/soxjke/WKWebViewTest/blob/master/WKWebViewTest/ViewController.swift)(https://github.com/ShingoFukuyama/WKWebViewTips)
-* [漏洞预警 |iOS WebView跨域访问漏洞](https://open.appscan.io/article-535.html)
->>>>>>> ab16fa0e20b2e6eaa635798800041db0a514ac68
 
 #### html@
 * [topfunky / hpple](https://github.com/topfunky/hpple)An XML/HTML parser for Objective-C, inspired by Hpricot.
