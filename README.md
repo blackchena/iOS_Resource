@@ -226,6 +226,7 @@
 * [Symbolicating an iOS Crash Report](https://www.apteligent.com/technical-resource/symbolicating-an-ios-crash-report/)
 * [手动解析CrashLog之----方法篇](http://foggry.com/blog/2015/07/27/ru-he-shou-dong-jie-xi-crashlog/)
 * [符号化系统库](http://www.jianshu.com/p/77660e626874)
+* [iOS App 连续闪退时如何上报 crash 日志](https://www.jianshu.com/p/dd28c17e044c)
 
 #### warning xcode
 * [warning 忽略和意义](https://www.bbsmax.com/A/VGzlA87Jbq/)
@@ -280,6 +281,7 @@
 * [UIScrollView 内嵌多个scrollview 或者 view](https://oleb.net/blog/2014/05/scrollviews-inside-scrollviews/)
 * [UIScrollView 实践经验 包括分页宽度](http://tech.glowing.com/cn/practice-in-uiscrollview/)
 * [[iOS]UIScrollview自定义分页的实现方法](http://longtimenoc.com/archives/iosuiscrollview%E8%87%AA%E5%AE%9A%E4%B9%89%E5%88%86%E9%A1%B5%E7%9A%84%E5%AE%9E%E7%8E%B0%E6%96%B9%E6%B3%95)
+* [iOS UIScrollView 你可能不知道的奇技淫巧  解决uitableviewcell点击和上层scrollview滑动冲突](https://www.jianshu.com/p/5804fa72aaed)
 
 #### 图片
 * [未使用图片](http://www.jianshu.com/p/dca77c25bf5d)
@@ -418,7 +420,7 @@
 * [解耦神器 —— 统跳协议和Rewrite引擎](http://pingguohe.net/2015/11/24/Navigator-and-Rewrite.html)Gaosboy
 * [iOS 组件化 —— 路由设计思路分析](http://www.jianshu.com/p/76da56b3bd55)
 * [京东iOS客户端组件管理实践](https://mp.weixin.qq.com/s/AzbK8oynTVnsawlg5iT0bg)
-* [URLNavigator swift router](https://github.com/devxoul/URLNavigator)
+* [URLNavigator swift router](https://github.com/devxoul/URLNavigatorT)
 
 #### 开源应用@
 * [ChateSecure-iOS](https://github.com/ChatSecure/ChatSecure-iOS)ChatSecure is a free and open source encrypted chat client for iPhone and Android that supports OTR encryption over XMPP
@@ -613,6 +615,9 @@
 * [5.2 代码回滚：Reset、Checkout、Revert 的选择](https://github.com/geeeeeeeeek/git-recipes/wiki/5.2-%E4%BB%A3%E7%A0%81%E5%9B%9E%E6%BB%9A%EF%BC%9AReset%E3%80%81Checkout%E3%80%81Revert-%E7%9A%84%E9%80%89%E6%8B%A9)
 * [查看某个文件在历史版本中的修改](https://www.cnblogs.com/flyme/archive/2011/11/28/2265899.html)
 * [查看remote tags](https://stackoverflow.com/questions/25984310/how-to-see-remote-tags?utm_medium=organic&utm_source=google_rich_qa&utm_campaign=google_rich_qa)
+
+#### 面试
+* [50 iOS Interview Questions And Answers Part 5](https://medium.com/@duruldalkanat/50-ios-interview-questions-and-answers-part-5-de6241374a8f)
 
 #### gif loading 
 * [gif loading refreshing](https://loading.io/#)
