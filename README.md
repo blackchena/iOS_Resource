@@ -227,6 +227,7 @@
 * [手动解析CrashLog之----方法篇](http://foggry.com/blog/2015/07/27/ru-he-shou-dong-jie-xi-crashlog/)
 * [符号化系统库](http://www.jianshu.com/p/77660e626874)
 * [iOS App 连续闪退时如何上报 crash 日志](https://www.jianshu.com/p/dd28c17e044c)
+* [苹果api error code 查询](https://www.osstatus.com/)
 
 #### warning xcode
 * [warning 忽略和意义](https://www.bbsmax.com/A/VGzlA87Jbq/)
