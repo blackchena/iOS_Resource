@@ -616,7 +616,7 @@
 * [5.2 代码回滚：Reset、Checkout、Revert 的选择](https://github.com/geeeeeeeeek/git-recipes/wiki/5.2-%E4%BB%A3%E7%A0%81%E5%9B%9E%E6%BB%9A%EF%BC%9AReset%E3%80%81Checkout%E3%80%81Revert-%E7%9A%84%E9%80%89%E6%8B%A9)
 * [查看某个文件在历史版本中的修改](https://www.cnblogs.com/flyme/archive/2011/11/28/2265899.html)
 * [查看remote tags](https://stackoverflow.com/questions/25984310/how-to-see-remote-tags?utm_medium=organic&utm_source=google_rich_qa&utm_campaign=google_rich_qa)
-* [git 常用命令](https://gist.github.com/guweigang/9848271)
+* [git 常用命令](https://gist.github.com/guweigang/9848271)(https://www.yiibai.com/v3.php?app=all)
 
 #### 面试
 * [50 iOS Interview Questions And Answers Part 5](https://medium.com/@duruldalkanat/50-ios-interview-questions-and-answers-part-5-de6241374a8f)
