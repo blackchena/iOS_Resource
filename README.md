@@ -636,6 +636,7 @@
 
 #### shell@ shelltips
 * [Shell中$()、$(())和${}的用法](http://www.techug.com/post/shell-tips.html)
+* [Shell 中括号的特殊用法](https://cnbin.github.io/blog/2015/06/23/shell-zhong-gua-hao-de-te-shu-yong-fa/)
 
 # Swift 语法
 
