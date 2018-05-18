@@ -634,6 +634,9 @@
 #### 国际化
 * [iOS项目快速实现国际化](https://www.jianshu.com/p/6ad4f8bc198b)
 
+#### shell@ shelltips
+* [Shell中$()、$(())和${}的用法](http://www.techug.com/post/shell-tips.html)
+
 # Swift 语法
 
 ##
