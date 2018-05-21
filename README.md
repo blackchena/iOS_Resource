@@ -644,3 +644,4 @@
 * [模式匹配第一弹: switch, enums & where 子句](http://swift.gg/2016/04/26/pattern-matching-1/)
 * [swfit lazy or closure init](https://medium.com/the-traveled-ios-developers-guide/swift-initialization-with-closures-5ea177f65a5)
 * [LAZY 修饰符和 LAZY 方法](http://swifter.tips/lazy/)
+* [模式匹配Pattern Matching, Part 3: Custom pattern matching & syntactic sugar](http://alisoftware.github.io/swift/pattern-matching/2016/04/24/pattern-matching-3/#syntactic-sugar-on-optionals)
