@@ -125,6 +125,7 @@
 #### 推送APNS
 * [iOS远程推送处理](http://www.jianshu.com/p/0c68e2202ccc)
 * [iOS推送与角标总结]https://blog.csdn.net/duziteng124/article/details/50538838
+* [badge number 处理](https://blog.csdn.net/hherima/article/details/54601418)
 
 #### runtime@
 * [Method Swizzling](http://blog.leichunfeng.com/blog/2015/06/14/objective-c-method-swizzling-best-practice/)方法交换雷纯锋
