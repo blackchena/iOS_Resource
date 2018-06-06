@@ -646,3 +646,8 @@
 * [swfit lazy or closure init](https://medium.com/the-traveled-ios-developers-guide/swift-initialization-with-closures-5ea177f65a5)
 * [LAZY 修饰符和 LAZY 方法](http://swifter.tips/lazy/)
 * [模式匹配Pattern Matching, Part 3: Custom pattern matching & syntactic sugar](http://alisoftware.github.io/swift/pattern-matching/2016/04/24/pattern-matching-3/#syntactic-sugar-on-optionals)
+
+# 工具
+## sublime@
+* [快捷打开文件或文件夹 finder/terminal](http://jimxu.me/2017/06/22/use-sublime-open-project/)
+
