@@ -423,6 +423,7 @@
 * [iOS 组件化 —— 路由设计思路分析](http://www.jianshu.com/p/76da56b3bd55)
 * [京东iOS客户端组件管理实践](https://mp.weixin.qq.com/s/AzbK8oynTVnsawlg5iT0bg)
 * [URLNavigator swift router](https://github.com/devxoul/URLNavigatorT)
+* [组件化工具BeeHive（一）：事件分发](Provisioning profile does not match bundle identifier)
 
 #### 开源应用@
 * [ChateSecure-iOS](https://github.com/ChatSecure/ChatSecure-iOS)ChatSecure is a free and open source encrypted chat client for iPhone and Android that supports OTR encryption over XMPP
@@ -638,6 +639,9 @@
 #### shell@ shelltips
 * [Shell中$()、$(())和${}的用法](http://www.techug.com/post/shell-tips.html)
 * [Shell 中括号的特殊用法](https://cnbin.github.io/blog/2015/06/23/shell-zhong-gua-hao-de-te-shu-yong-fa/)
+
+#### 动态库@
+* [动态库加载](https://github.com/patriknyblad/ios-runtime-loading-dynamic-framework)(https://nixwang.com/2015/11/09/ios-dynamic-update/)(http://foggry.com/blog/2014/06/12/wwdc2014zhi-iosshi-yong-dong-tai-ku/)
 
 # Swift 语法
 
