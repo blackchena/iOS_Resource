@@ -106,3 +106,8 @@ git show commitid 显示某个 commitid 改变的具体内容
 git show --name-only 只看某次提交修改的文件
 
 ```
+
+
+## 查看gem安装的包
+
+gem list --local
