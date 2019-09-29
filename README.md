@@ -120,12 +120,9 @@
 * [iOS App 的逆向工程: Hacking on Lyft](https://academy.realm.io/cn/posts/conrad-kramer-reverse-engineering-ios-apps-lyft/)
 * [利用Xcode在非越狱机器上动态调试第三方APP](http://www.jianshu.com/p/562387a85eeb)
 
-#### 签名 证书 HTTPS
-* [iOS App 签名的原理](http://blog.cnbang.net/tech/3386/)
+#### 证书 HTTPS
 * [证书链-Digital Certificates](http://www.jianshu.com/p/46e48bc517d0)
 * [AFNetworking之于https认证](http://www.jianshu.com/p/a84237b07611)
-* [security cms -D -i embedded.mobileprovision] 打印provision profile 里面的信息
-* [深度长文：细说iOS代码签名](http://xelz.info/blog/2019/01/11/ios-code-signature/)
 * [iOS 判断当前网络状态的三种方法](http://www.cocoachina.com/ios/20171103/21039.html)
 
 #### ViewController Transition@转场
@@ -1035,11 +1032,22 @@
 * [深入浅出iOS编译](https://juejin.im/post/5c22eaf1f265da611b5863b2)-黄文臣
 * [1](https://www.jianshu.com/p/544464a5e630)-iOS汇编教程：理解ARM[2](https://blog.csdn.net/hello_hwc/article/details/80028030)-iOS汇编精讲（上篇）黄文臣
 
-#### leader
+#### leader@
 
 * [如何做一个合格的 iOS Team Leader](http://www.52im.net/thread-135-1-1.html)
 * [技术Leader的职责](https://github.com/clarkehe/Android/wiki/%E6%8A%80%E6%9C%AFLeader%E7%9A%84%E8%81%8C%E8%B4%A3)
 
+#### 重签名@sign@resign@
+* [ipa重签名最直接的教程](https://www.jianshu.com/p/52deb349d5d1) --如果工程使用了iCloud，遇到了CloudKit相关Crash，如果通过provisionprofile文件导出的entitlements.plist进行重签，应用使用CloudKit SDK相关方法时候会crash 所以建议从Xcode->View->Navigators->Show report Navigators控制面板中找到Xcode在build过程中为我们生成的临时entitlements文件(搜索sign，如果没找到建议clean后重新build再在对应build日志中搜索sign找到--entitlements之后的参数即临时entitlements路径)
+* [Enabling CloudKit in Your App](https://developer.apple.com/library/archive/documentation/DataManagement/Conceptual/CloudKitQuickStart/EnablingiCloudandConfiguringCloudKit/EnablingiCloudandConfiguringCloudKit.html)
+* [iOSApp签名原理](https://wereadteam.github.io/2017/03/13/Signature/)
+* [iOS证书及ipa包重签名探究](http://www.olinone.com/?p=198)
+* [Entitlements Troubleshooting](https://developer.apple.com/library/archive/technotes/tn2415/_index.html#//apple_ref/doc/uid/DTS40016427) -[entitlements.plist文件对应字段](https://developer.apple.com/documentation/bundleresources/entitlements)
+* [理论篇：iOS 应用重签名](http://www.iosugar.com/2017/04/09/iOS-application-re-signature-theory-articles/)-这篇文章提到了xcode为我们生成的临时Entitlements文件
+* [细说iOS代码签名3](http://xelz.info/blog/2019/01/11/ios-code-signature-3/)
+* [iOS App 签名的原理](http://blog.cnbang.net/tech/3386/)
+* [security cms -D -i embedded.mobileprovision] 打印provision profile 里面的信息
+* [深度长文：细说iOS代码签名](http://xelz.info/blog/2019/01/11/ios-code-signature/)
 
 # Swift 语法
 
