@@ -12,6 +12,7 @@
 #### alfred@
 * [Text Transform](https://www.alfredforum.com/topic/1513-change-case-workflow/)
 * [常用workflows](https://github.com/zenorocha/alfred-workflows)
+* [获得当前sublime编辑文件路径](https://github.com/pjdietz/sublime-path-tools)
 
 #### 科学上网 ss@
 
@@ -110,7 +111,7 @@
 * [Introduction to Coding Guidelines for Cocoa](https://developer.apple.com/library/content/documentation/Cocoa/Conceptual/CodingGuidelines/CodingGuidelines.html)
 * [raywenderlich.com Objective-C编码规范](https://www.jianshu.com/p/8b76814b3663)
 
-#### 逆向
+#### 逆向@
 * [iOS Security 让iOS应用更加安全](http://security.ios-wiki.com/)
 * [写给 iOS 开发者的 Hopper + lldb 简介](http://blog.oneapm.com/apm-tech/577.html)
 * [专注于非越狱环境下iOS应用逆向研究，从dylib注入，应用重签名到App Hook](https://github.com/Urinx/iOSAppHook)
@@ -119,6 +120,8 @@
 * [Hopper: Mac上的另一款反汇编工具](http://security.ios-wiki.com/issue-3-8/)
 * [iOS App 的逆向工程: Hacking on Lyft](https://academy.realm.io/cn/posts/conrad-kramer-reverse-engineering-ios-apps-lyft/)
 * [利用Xcode在非越狱机器上动态调试第三方APP](http://www.jianshu.com/p/562387a85eeb)
+* [logos.pl 将logos语法翻译成c++](https://www.jianshu.com/p/569f86f6c41e)
+* [logify自动动帮你生成对应类的所有hook方法](https://juejin.im/post/5c00d61b6fb9a049c042c083)
 
 #### 证书 HTTPS
 * [证书链-Digital Certificates](http://www.jianshu.com/p/46e48bc517d0)
@@ -227,11 +230,11 @@
 * [openatx/facebook-wda](https://github.com/openatx/facebook-wda)
 * [ATX 使用 Python 库 facebook-wda 完成网易云音乐 iOS 客户端的自动化测试 (示例)](https://testerhome.com/topics/9854)
 
-#### 推送APNS
+#### 推送APNS@
 * [iOS远程推送处理](http://www.jianshu.com/p/0c68e2202ccc)
 * [iOS推送与角标总结](https://blog.csdn.net/duziteng124/article/details/50538838)
 * [badge number 处理](https://blog.csdn.net/hherima/article/details/54601418)
-* [极光推送常见问题合集](https://community.jiguang.cn/t/topic/5145/23)
+* [极光推送常见问题合集](https://community.jiguang.cn/t/topic/5145/23)[1](https://community.jiguang.cn/t/topic/5145/30)
 
 #### runtime@
 * [Method Swizzling](http://blog.leichunfeng.com/blog/2015/06/14/objective-c-method-swizzling-best-practice/)方法交换雷纯锋
@@ -874,6 +877,9 @@
 * [NSTimer 防止内存泄漏几种方法](https://juejin.im/post/5b641fc46fb9a04fd16033e7)
 * [YYWeakProxy 作用](https://juejin.im/post/5a30f86ef265da4325294b3b)
 
+#### UML@流程图@
+* [PlantUML是一个开源项目，支持快速绘制：时序图，用例图，类图，活动图 (旧版语法在此处)，组件图，状态图，对象图，部署图， 定时图， ](http://plantuml.com/zh/)
+
 #### github/organization
 * [Pinterest](https://github.com/pinterest)
 * [FaceBook](https://github.com/facebook)
@@ -950,7 +956,7 @@
 * [](https://www.ibm.com/developerworks/cn/linux/game/sdl/pirates-4/index.html)
 * [](http://dinosaur.compilertools.net/)
 
-#### linux/shell/vim/bash
+#### linux@/shell@/vim@/bash@
 
 * [xargs](https://www.ibm.com/support/knowledgecenter/zh/ssw_aix_71/com.ibm.aix.cmds6/xargs.htm)
 * [Shell中$()、$(())和${}的用法](http://www.techug.com/post/shell-tips.html)
@@ -959,6 +965,7 @@
 * [source命令自动运行terminal的指令](https://blog.csdn.net/daxiyou/article/details/79365939)
 * [man 手册用法](https://www.linuxidc.com/Linux/2017-10/148088.htm)
 * [terminal 快捷键](http://notes.11ten.net/mac-command-line-editing-commonly-used-shortcut-keys.html)
+* [bash 快捷键](https://linuxtoy.org/archives/bash-shortcuts.html)
 
 #### ios11/xcode9/llvm
 * [What's New in LLVM](http://yulingtianxia.com/blog/2017/07/17/What-s-New-in-LLVM-2017/)
@@ -1043,11 +1050,27 @@
 * [iOSApp签名原理](https://wereadteam.github.io/2017/03/13/Signature/)
 * [iOS证书及ipa包重签名探究](http://www.olinone.com/?p=198)
 * [Entitlements Troubleshooting](https://developer.apple.com/library/archive/technotes/tn2415/_index.html#//apple_ref/doc/uid/DTS40016427) -[entitlements.plist文件对应字段](https://developer.apple.com/documentation/bundleresources/entitlements)
-* [理论篇：iOS 应用重签名](http://www.iosugar.com/2017/04/09/iOS-application-re-signature-theory-articles/)-这篇文章提到了xcode为我们生成的临时Entitlements文件
-* [细说iOS代码签名3](http://xelz.info/blog/2019/01/11/ios-code-signature-3/)
+* [理论篇：iOS 应用重签名](http://www.iosugar.com/2017/04/09/iOS-application-re-signature-theory-articles/)-这篇文章提到了xcode为我们生成的临时Entitlements文件,
+* [细说iOS代码签名3](http://xelz.info/blog/2019/01/11/ios-code-signature-3/)- provisionprofile中保存的证书信息是base64格式保存的如何获得der格式的数据和证书的sha1可以看[这篇文章](http://xelz.info/blog/2019/01/11/ios-code-signature-2/)
 * [iOS App 签名的原理](http://blog.cnbang.net/tech/3386/)
 * [security cms -D -i embedded.mobileprovision] 打印provision profile 里面的信息
 * [深度长文：细说iOS代码签名](http://xelz.info/blog/2019/01/11/ios-code-signature/)
+* [查看开发证书的Sha1值，命令行查看所有能签名证书]- security find-identity -v -p codesigning
+* [[iOS Tips]证书签名相关命令行](https://www.jianshu.com/p/f140f4a08c4f)
+* [Mac Security工具使用总结find-identity](https://blog.csdn.net/elesos/article/details/73882942)
+* 从App中导出entitlements非provisionprofile文件中的entitlements key对应内容 codesign -d --entitlements - Example.app [来源objccn 墙裂推荐](https://objccn.io/issue-17-2/) [linux - 号用途](https://www.cnblogs.com/Spiro-K/p/6361909.html)
+* 导出provisionprofile中的entitlements key - /usr/libexec/PlistBuddy -x -c "print :Entitlements " /dev/stdin <<< $(security cms -D -i XXXX.app/embedded.mobileprovision) > Entitlements.plist
+* codesign -d --entitlements :file demo.app  - ./fastlane-2.131.0/sigh/lib/assets/resign.sh
+> When displaying a signature, extract any entitlement data from
+             the signature and write it to the path given. Use "-" to write to
+             standard output.  By default, the binary "blob" header is
+             returned intact; prefix the path with a colon ":" to automati-
+             cally strip it off.  If the signature has no entitlement data,
+             nothing is written (this is not an error).
+
+
+#### github@
+* [github 下载指定文件夹下面的内容](https://blog.csdn.net/qq_35860352/article/details/80313078)[downgit 需要科学上网](https://minhaskamal.github.io/DownGit/#/home)- ”/branches/branchname/”替换成”/trunk/”。例如：”/tree/master/” to “/trunk/” 
 
 # Swift 语法
 
