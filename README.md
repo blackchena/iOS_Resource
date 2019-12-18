@@ -22,6 +22,13 @@
 * [NSData to Hex String or reverse](https://github.com/jmah/NSData-FastHex)
 * [Converting NSData to HEX string](https://riptutorial.com/ios/example/18979/converting-nsdata-to-hex-string)-分类讲解咯其它iOS相关的文章
 
+#### NSDate@
+
+* [NSTimeInterval to HH: mm: ss](http://qaru.site/questions/83695/nstimeinterval-to-hhmmss)
+
+#### NSNumber@
+* [##,##.00这种语法介绍](http://unicode.org/reports/tr35/tr35-6.html#Number_Format_Patterns)
+
 #### Blogger@
 
 * [sunnyxx](http://blog.sunnyxx.com/) 孙源
@@ -97,6 +104,7 @@
 * [仿微信小视屏 iOS 技术路线实践笔记[录制篇]](https://github.com/Damonvvong/DevNotes/blob/master/Notes/videorecoder.md)
 * [AVEditDemo](https://github.com/master-nevi/WWDC-2010/tree/e2b5e586bfea16e247a59cdc6b1d00e8db40ee22/AVEditDemo)
 * [视频过渡效果 从中可以了解AVMutableVideoCompositionInstruction，AVMutableVideoCompositionLayerInstruction](https://www.jianshu.com/p/fc363b73c668)
+* [iOS短视频SDK是适用于iOS平台的短视频SDK。使用此SDK可以实现短视频相关功能](https://github.com/CCVideo/VOD_iOS_ShortVideo_SDK/wiki)-wiki里面介绍咯一些遇到的问题但是没仔细看
 
 #### 编译
 * [编译时间](http://irace.me/swift-profiling)
@@ -147,6 +155,9 @@
 
 * [uiwindow top most viewcontroller](https://gist.github.com/snikch/3661188)
 
+#### uiview@ margins@
+
+* [Margins](http://www.cocoachina.com/articles/21176)
 
 
 #### collectionView
@@ -306,6 +317,10 @@
 * [组件化-动态库实战](https://www.jianshu.com/p/7f6a7e1b3235)
 * [使用cocoapods打包静态库(依赖私有库，开源库，私有库又包含静态库)](https://www.jianshu.com/p/9096a2eb2804)
 * [CocoaPods私有库常见问题拾遗](http://www.mengyueping.com/2018/08/16/iOS_CocoaPods_03/)
+* [CocoaPods使用总结](https://www.jianshu.com/p/7d0ad4cde012)
+* [Swift Static Libraries迁移实践](https://juejin.im/post/5be41956e51d4507e97302d2)
+* [cocoapods的静态库和动态库 ](https://www.jianshu.com/p/3d0ae289dee0) - 'DEFINES_MODULE' => 'YES'、:modular_headers => true、use_modular_headers!
+* [CocoaPods 1.5.0 — Swift Static Libraries](http://blog.cocoapods.org/CocoaPods-1.5.0/)
 
 #### umbrella Framework / Module 
 * [Modular framework, creating and using them](http://nsomar.com/modular-framework-creating-and-using-them/)
@@ -342,7 +357,26 @@
 * [戴明学习记录 iOS函数响应式编程以及ReactiveCocoa的使用](https://github.com/ming1016/study)
 * [RAC中用RACChannel实现双向绑定 讲了kvochannel避免循环调用的方式](http://blog.harrisonxi.com/2017/07/RAC%E4%B8%AD%E7%94%A8RACChannel%E5%AE%9E%E7%8E%B0%E5%8F%8C%E5%90%91%E7%BB%91%E5%AE%9A.html)
 * [RAC 中的双向数据绑定 RACChannel - dreaveness 比较好理解](https://draveness.me/racchannel) [Dreaveness 其它rac文章](https://github.com/draveness/analyze/tree/master/contents/ReactiveObjC)
+* [kickstarter](https://github.com/kickstarter/ios-oss)mvvm ReactiveSwift
+* [uitextView 双向绑定](https://github.com/ReactiveCocoa/ReactiveCocoa/issues/939)
+* [正确使用 popViewController](https://blog.dianqk.org/2017/06/30/use-poptoviewcontroller/) - rootvc 处理跳转逻辑。。。
 
+#### ReactiveCocoa@
+
+* [MVVM With ReactiveCocoa](http://blog.leichunfeng.com/blog/2016/02/27/mvvm-with-reactivecocoa/)
+* [ReactiveCocoa v2.5 源码解析之架构总览](http://blog.leichunfeng.com/blog/2015/12/25/reactivecocoa-v2-dot-5-yuan-ma-jie-xi-zhi-jia-gou-zong-lan/)
+* [ReactiveCocoa中潜在的内存泄漏及解决方案](https://tech.meituan.com/potential-memory-leak-in-reactivecocoa.html)
+* [美团技术团队细说冷热信号](http://tech.meituan.com/talk-about-reactivecocoas-cold-signal-and-hot-signal-part-3.html)
+* [mailworks](https://github.com/mailworks/LearnReactivecocoaSource)整理了许多RAC学习资料通过h2ero朋友star获取
+* [MVVM Tutorial 和 ReactiveCocoa Tutorial 翻译 南峰子](http://southpeak.github.io/2014/08/02/reactivecocoa-tutorial-the-definitive-introduction-1/)
+* [GitBucket iOS App](https://github.com/leichunfeng/MVVMReactiveCocoa)看名字就知道用的什么框架
+* [别人学习reactivecocoa整理的资料](https://github.com/etet2007/MarkDownNote/blob/369d7973a3db6438698de2294a823e9fc17a77ef/iOS%26Mac/ReactiveCocoa.md)
+* [FunctionalReactivePixels](https://github.com/ashfurrow/FunctionalReactivePixels)-A demonstration of how to use FRP with ReactiveCocoa in an iOS context using the 500px API
+* [halfrost rac相关文章](https://halfrost.com/reactivecocoa_racsignal_operations3)
+* [ReactiveCocoa RAC 中文资源列表](https://www.xingcheng.me/2015/11/30/reactivecocoa-tutorial-the-definitive-introduction-part-12/)
+* [美团 rac相关文章](https://tech.meituan.com/tags/reactivecocoa.html)
+* [ReactiveCocoa 学习之路(史上最全攻略)](https://runningyoung.github.io/2015/06/30/2015-07-20-ReactiveCocoa)
+* [RAC 双向绑定实现案例](https://www.jianshu.com/p/9c8a151c1286)uiswitch双向绑定用法
 
 #### 内存管理
 
@@ -387,6 +421,8 @@
 * [XCode启动参数和环境变量](https://blog.csdn.net/hello_hwc/article/details/80865787) - 对象分配时调用堆栈查询MallocStackLogging(show the debug navigator->view memory graph hierarchy)
 * [Xcode 多行编辑](https://medium.com/better-programming/how-to-edit-multiple-lines-of-a-file-in-xcode-5d7c43f01405)
 * [Xcode Hacks to Make Your Life Easier](https://medium.com/better-programming/xcode-hacks-cf32434cbc2) - 包括多行编辑来通过json来编辑model
+* [xcode source control两个不同项目仓库问题](https://ubunifu.co/development/xcode-9-source-control-navigator-issue)
+* [An app that lets you open .car files and browse/extract their images.](https://github.com/insidegui/AssetCatalogTinkerer)
 
 
 #### Crash@
@@ -492,7 +528,7 @@
 * [完美解决UIScrollView嵌套滑动手势冲突](http://www.cocoachina.com/ios/20180508/23314.html)
 * [Advanced Scrollviews and Touch Handling Techniques](https://developer.apple.com/videos/play/wwdc2014/235/)
 
-#### UITableView 
+#### UITableView@ 
 
 * [always change dataSource in main thread](https://stackoverflow.com/questions/46742039/uitableview-reloaddata-crashes-on-reappearance-in-ios-11?rq=1) tableview刷新crash
 * [UITableViewCell拖拽移动两种实现方法](https://www.jianshu.com/p/cef0f9de0c2e)
@@ -504,6 +540,7 @@
 * [UICollectionView inside a UITableViewCell — dynamic height?](https://stackoverflow.com/questions/24126708/uicollectionview-inside-a-uitableviewcell-dynamic-height)
 * [Manage Collection View height inside the Table View Cell using swift 4](https://mobikul.com/manage-collection-view-height-inside-the-table-view-cell-using-swift-4/)(https://mobikul.com/manage-custom-uicollection-view-uitableview-cell-swift-3/)
 * [intrinsicContentSize dynamic collectionview height](https://www.freecodecamp.org/news/how-to-make-height-collection-views-dynamic-in-your-ios-apps-7d6ca94d2212/)(https://github.com/pgpt10/DynamicHeightCollectionView)
+* [让 UITableView / UICollectionView 更加简单优雅，轻易实现列表动态化、模块化、MVVM 架构。](https://github.com/indulgeIn/YBHandyList)
 
 
 #### 图片
@@ -581,6 +618,11 @@
 * [WRNavigationBar](https://github.com/wangrui460/WRNavigationBar)一行代码设置状态栏、导航栏按钮、标题、颜色、透明度，移动等
 * [UINavigationController custom left baritem swip gesture conflict](https://github.com/fastred/AHKNavigationController/blob/master/Classes/AHKNavigationController.m)
 
+#### NavigationBar@
+
+* [iOS 对UINavigationBar的一次研究](https://juejin.im/post/5a7c1b06f265da4e732ebaa4) backitem 和 leftitem边距问题分析
+* [Creating Custom Navigation Bar & Tab Bar For iPhone X](https://medium.com/@kahseng.lee123/creating-custom-navigation-bar-tab-bar-for-iphone-x-f03b1e1827d3)
+
 #### Date@
 * [SwiftDate](https://github.com/malcommac/SwiftDate)The best way to manage Dates and Timezones in Swift 
 
@@ -599,6 +641,10 @@
 * [PagingKit](https://github.com/kazuhiro4949/PagingKit)
 * [YTPageController](https://github.com/Yeatse/YTPageController/issues)
 * [腾讯高性能pagecontroller demo](https://github.com/xichen744/SPPage/tree/master/Object-C/SPPage/Controller) (http://www.codeblogbt.com/archives/85763)
+
+#### TabBar@
+* [CYLTabBarController](https://github.com/ChenYilong/CYLTabBarController)
+* [FoldingTabBar](https://github.com/Yalantis/FoldingTabBar.iOS)
 
 #### banner@
 * [WenchaoD/FSPagerView](https://github.com/WenchaoD/FSPagerView)FSPagerView is an elegant Screen Slide Library. It is extremely helpful for making Banner、Product Show、Welcome/Guide Pages、Screen/ViewController Sliders.
@@ -662,6 +708,11 @@
 * [wkwebview scheme open file](https://github.com/ShingoFukuyama/WKWebViewTips)
 * [WKWebView 那些坑 腾讯bugly](https://zhuanlan.zhihu.com/p/24990222)
 * [webview tableview 嵌套](https://www.jianshu.com/p/42858f95ab43)
+* [iOS 10 webview doesn't open the app scheme](https://stackoverflow.com/questions/39323450/ios-10-webview-doesnt-open-the-app-scheme)
+* [iOS下JS与OC互相调用（三）--MessageHandler](https://juejin.im/post/5a952cd85188257a6e405b9d)-js调用原生如果要实现返回值,需要在原生方法调用结束时再调用js方法实现返回值功能很麻烦所以最终没有采用这种方案而用三方bridge
+* [WKWebView详解&WKWebVieW和JS交互](https://juejin.im/post/5a3388775188257dcc2fadb9)-除了js native交互还介绍了delegate相关的方法作用
+* [iOS应用安全 —— WebView安全](https://mabin004.github.io/2018/06/25/iOS%E5%BA%94%E7%94%A8%E6%B2%99%E7%AE%B1/)-wkwebview messageHandler可以把callback作为参数传到native来实现回调
+* [如何使UIWebview/WKWebView支持WebP格式图片](https://liuwentao1314.github.io/2017/04/13/webp-image-format-ios/)
 
 #### xcasset@
 
@@ -688,6 +739,10 @@
 * [组件化工具BeeHive（一）：事件分发](Provisioning profile does not match bundle identifier)
 * [对比咯runtime解耦 Block解耦 和 Protocol 解耦 文章不错](https://mp.weixin.qq.com/s/i1e6slYejKk-Djx0wopuUg)
 
+#### uuid@
+* [开发中常用工具 - 获取设备的唯一标识、UDID、UUID、keychain保存UUID、判断网络类型等](https://juejin.im/post/5aa51e35518825556a7209cc)
+* [keychain uuid](https://medium.com/@miguelcma/persistent-cross-install-device-identifier-on-ios-using-keychain-ac9e4f84870f)
+
 
 
 #### 开源应用@
@@ -696,7 +751,7 @@
 * [城觅WNXHuntForCity](https://github.com/ZhongTaoTian/WNXHuntForCity)
 * [爱鲜蜂By Swift2.0](https://github.com/ZhongTaoTian/LoveFreshBeen)
 * [CatchChat/Yep](https://github.com/CatchChat/Yep/blob/master/Yep_Guide_Chinese.md)
-* [kickstarter](https://github.com/kickstarter/ios-oss)mvvm
+* [kickstarter](https://github.com/kickstarter/ios-oss)mvvm ReactiveSwift
 * [GitBucket iOS App](https://github.com/leichunfeng/MVVMReactiveCocoa)看名字就知道用的什么框架
 * [YouXianMing/YoCelsius](https://github.com/YouXianMing/YoCelsius)A weather app that uses animation to give you an at-a-glance look at the weather
 * [21个高质量的Swift开源iOS App](http://www.cocoachina.com/swift/20161014/17758.html)
@@ -763,6 +818,7 @@
 
 #### UINavigation
 * [iOS - 实现UINavigation全屏滑动返回(一)](https://cloud.tencent.com/developer/article/1153950)
+* [一个丝滑的全屏滑动返回手势](https://blog.sunnyxx.com/2015/06/07/fullscreen-pop-gesture/) - FDFullscreenPopGesture
 
 #### Login@
 * [LoginKit](https://github.com/IcaliaLabs/LoginKit)
@@ -877,6 +933,9 @@
 * [NSTimer 防止内存泄漏几种方法](https://juejin.im/post/5b641fc46fb9a04fd16033e7)
 * [YYWeakProxy 作用](https://juejin.im/post/5a30f86ef265da4325294b3b)
 
+#### timer@
+* [gcdtimer](https://github.com/hemantasapkota/GCDTimer/blob/master/GCDTimer/GCDTimer.swift)
+
 #### github/organization
 * [Pinterest](https://github.com/pinterest)
 * [FaceBook](https://github.com/facebook)
@@ -921,6 +980,7 @@
 
 #### 埋点
 * [iOS无埋点数据SDK实践之路](https://www.jianshu.com/p/69ce01e15042)
+* [轻量级非侵入式埋点方案](https://mp.weixin.qq.com/s/ANvDaWuLmGJOQVNkzcwq3A)
 
 #### Debug
 * [GodEye](https://github.com/zixun/GodEye)
@@ -985,6 +1045,7 @@
 * [查看remote tags](https://stackoverflow.com/questions/25984310/how-to-see-remote-tags?utm_medium=organic&utm_source=google_rich_qa&utm_campaign=google_rich_qa)
 * [git 常用命令](https://gist.github.com/guweigang/9848271)(https://www.yiibai.com/v3.php?app=all)
 * git下载单个文件夹 [1](https://www.zhihu.com/question/25369412),[2](https://blog.csdn.net/u012104219/article/details/79057489)
+* [git教程](http://www.findme.wang/share/detail/id/331.html)
 
 #### 面试
 * [50 iOS Interview Questions And Answers Part 5](https://medium.com/@duruldalkanat/50-ios-interview-questions-and-answers-part-5-de6241374a8f)
