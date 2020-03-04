@@ -27,8 +27,13 @@
 
 * [NSTimeInterval to HH: mm: ss](http://qaru.site/questions/83695/nstimeinterval-to-hhmmss)
 
-#### NSNumber@
+#### NSNumber@NSNumberFormatter@
 * [##,##.00这种语法介绍](http://unicode.org/reports/tr35/tr35-6.html#Number_Format_Patterns)
+
+#### sqlite@
+* [iOS sqlite3数据库解析](https://www.cnblogs.com/wfwenchao/p/3964213.html)
+* [iOS端数据库解决方案分析](http://mrpeak.cn/blog/ios-database/)
+* [FMDB源码阅读（一）](https://www.cnblogs.com/polobymulberry/p/5178770.html)
 
 #### Blogger@
 
@@ -46,6 +51,8 @@
 * [TanHao](http://www.tanhao.me/)(NSProxy)
 * [饿了么](http://mobilists.eleme.io/)
 * [苹果核加入 天猫无线 ，快速成长！](http://pingguohe.net/)
+* [Archive of stories published by Flawless iOS](https://medium.com/flawless-app-stories/archive)
+* [知识小集官网](https://awesome-tips.github.io/iostip/)
 
 #### 状态机
 * [深入浅出理解有限状态机](http://www.jianshu.com/p/5eb45c64f3e3)
@@ -90,6 +97,7 @@
 * [m3u8 HLS解释](http://zhuanlan.51cto.com/art/201711/558658.htm)
 * [iOS VideoToolbox硬编H.265（HEVC）H.264（AVC）：1 概述](https://www.jianshu.com/p/9febe519732a)
 * [图片压缩](http://al1020119.github.io/blog/2016/10/16/ioskai-fa-chang-yong-gong-neng-dai-ma-ji-jin-(you-xiu-pian-)/)
+* [iOS 图片压缩限制大小最优解](https://www.jianshu.com/p/99c3e6a6c033)
 * [AVAudioFoundation(5)：音视频导出](https://www.jianshu.com/p/35dc67db2bd7)
 * [AVAssetExportSession Error Cannot Open](http://ztpala.com/2019/03/02/avassetexportsession-error-cannot-open/)
 * [iOS 录制视频时，添加水印 output 无声音问题](https://juejin.im/post/5b9b12b1e51d450e4369290f)
@@ -130,6 +138,8 @@
 * [利用Xcode在非越狱机器上动态调试第三方APP](http://www.jianshu.com/p/562387a85eeb)
 * [logos.pl 将logos语法翻译成c++](https://www.jianshu.com/p/569f86f6c41e)
 * [logify自动动帮你生成对应类的所有hook方法](https://juejin.im/post/5c00d61b6fb9a049c042c083)
+* [app store ipa包导出](https://www.jianshu.com/p/fdb50d303ad6)
+* [越狱设备导出脱壳包](https://github.com/AloneMonkey/frida-ios-dump)[一条命令完成砸壳](http://www.alonemonkey.com/2018/01/30/frida-ios-dump/)
 
 #### 证书 HTTPS
 * [证书链-Digital Certificates](http://www.jianshu.com/p/46e48bc517d0)
@@ -423,6 +433,8 @@
 * [Xcode Hacks to Make Your Life Easier](https://medium.com/better-programming/xcode-hacks-cf32434cbc2) - 包括多行编辑来通过json来编辑model
 * [xcode source control两个不同项目仓库问题](https://ubunifu.co/development/xcode-9-source-control-navigator-issue)
 * [An app that lets you open .car files and browse/extract their images.](https://github.com/insidegui/AssetCatalogTinkerer)
+* [打印xcode运行时环境变量](https://stackoverflow.com/questions/6910901/how-do-i-print-a-list-of-build-settings-in-xcode-project)xcodebuild -workspace xxx.xcworkspace -scheme "xxx" -showBuildSettings
+* 命令行上传ipa：xcrun altool --upload-app --type ios --file "path/to/application.ipa" --username "YOUR_ITMC_USER" --password "YOUR_ITMC_PASSWORD"
 
 
 #### Crash@
@@ -445,7 +457,12 @@
 > 系统库符号化 找到对应的系统库符号化文件 SymbolPath = /Users/blackchena/Library/Developer/Xcode/iOS DeviceSupport/<iOS version(buildnumber)>/Symbols/System/Library/Frameworks/<系统库名称>
 > atos -o SymbolPath -l <系统库load path> <需要符号化的address>
 * [Crash 符号化](http://www.saitjr.com/ios/symbolicatecrash-1.html)
+* [58crash日志解析方案介绍](https://www.jianshu.com/p/70985e61f9c5) [你的 App 在 iOS 13 上被卡死了吗？](https://mp.weixin.qq.com/s/W_AqP8cQy3d5QCMJ8Nzftw)
+* [Mach-O file LC_FUNCTION_STARTS load command](https://stackoverflow.com/questions/9602438/mach-o-file-lc-function-starts-load-command) [分析 dyld 的启动过程](https://zhangbuhuai.com/post/dyld-bootstrap.html) xcrun dyldinfo -function_starts可以打印函数其实地址
+* [iOS符号表恢复&逆向支付宝](http://blog.imjun.net/posts/restore-symbol-of-iOS-app/)
 
+#### 后台@
+* [iOS原生级别后台下载详解](https://juejin.im/post/5c4ed0b0e51d4511dc730799)
 
 
 #### warning xcode
@@ -479,6 +496,9 @@
 * [坐标轴Axis Fraction/Step算法](http://stackoverflow.com/questions/8506881/nice-label-algorithm-for-charts-with-minimum-ticks)
 * [Choosing an attractive linear scale for a graph's Y Axis](http://stackoverflow.com/questions/326679/choosing-an-attractive-linear-scale-for-a-graphs-y-axis)
 * [bar chart gradient](https://github.com/danielgindi/Charts/issues/1065)(https://github.com/danielgindi/Charts/pull/3533)
+
+#### 算法@
+* [小码哥算法](https://space.bilibili.com/410164881/channel/detail?cid=94002)
 
 #### pullup 类似滴滴打车 选择打车出发地
 
@@ -556,6 +576,8 @@
 * [tomknig/TOMSMorphingLabel](https://github.com/tomknig/TOMSMorphingLabel)
 * [LTMorphingLabel](https://github.com/lexrus/LTMorphingLabel)swift
 * [iOS 行距全攻略 与设计图上的区别](https://www.jianshu.com/p/50b3d434cbc0)
+* [UIScrollView 放大，导致UILabel字体模糊](https://www.jianshu.com/p/c8c3adc4b6b6)
+* [跑马灯UIlabel](https://github.com/cbpowell/MarqueeLabel)
 
 #### Button@
 * [DGDownloaderButton](https://github.com/Desgard/DGDownloaderButton)下载进度button,慢慢粒子填充满圆
@@ -741,8 +763,11 @@
 
 #### uuid@
 * [开发中常用工具 - 获取设备的唯一标识、UDID、UUID、keychain保存UUID、判断网络类型等](https://juejin.im/post/5aa51e35518825556a7209cc)
+* [获取iOS设备唯一标识的演进UDID, MAC Address,UUID,IDFA,IDFV,OpenUDID](https://www.jianshu.com/p/4d7d971f0d23)
 * [keychain uuid](https://medium.com/@miguelcma/persistent-cross-install-device-identifier-on-ios-using-keychain-ac9e4f84870f)
 
+#### 设备@
+* [iOS获取设备型号和App版本号等信息](https://www.jianshu.com/p/0d84e6852c5a)UTS stands for UNIX Timesharing System.
 
 
 #### 开源应用@
@@ -833,12 +858,20 @@
 #### Image handle@
 * [BeauNouvelle / FaceAware](https://github.com/BeauNouvelle/FaceAware)An extension that gives UIImageView the ability to focus on faces within an image.
 
+#### UIImageView@
+
+* [UIImageViewAligned](https://github.com/reydanro/UIImageViewAligned)-图片对齐aspectfit and left or right,[swift version](https://github.com/sochalewski/UIImageViewAlignedSwift) - google search keywords (UIimageview left aspectfit)
+* [UIImageView aspect fit and center](https://stackoverflow.com/a/36740865/9053835)
+
 * [一次立竿见影的首页渲染时间优化](http://www.cocoachina.com/ios/20180815/24576.html) loading gif 首次加载过慢
 
 #### 电商导购分佣@
 * [淘宝天猫阿里百川电商交易功能详解－iOS](http://baichuan.taobao.com/doc2/detail.htm?spm=a3c0d.7629140.0.0.xjwGiS&treeId=129&articleId=104307&docType=1)
 * [淘宝天猫阿里百川电商能力使用指南](http://baichuan.taobao.com/docs/doc.htm?spm=a3c0d.7629140.0.0.cPyeur&treeId=129&articleId=104528&docType=1)
 * [html调用三方APP](http://js8.in/2013/12/16/ios%E4%BD%BF%E7%94%A8schema%E5%8D%8F%E8%AE%AE%E8%B0%83%E8%B5%B7app/)
+
+#### TCP/IP@
+* [通俗大白话来理解TCP协议的三次握手和四次分手](https://github.com/jawil/blog/issues/14)
 
 #### Url Scheme
 * [](https://drafts4-actions.agiletortoise.com/apps/400)
@@ -951,6 +984,8 @@
 * [Regular Expressions](http://userguide.icu-project.org/strings/regexp)
 * [介绍正则里面元字符、重复限定符、分组、转义、条件或、区间、零宽断言、捕获和非捕获、反向引用、贪婪和非贪婪、反义](https://mp.weixin.qq.com/s/CBexZfG1DHYji_Pk6Zo38w)
 * [rename 批量修改文件名](http://einverne.github.io/post/2018/01/rename-files-batch.html)
+* [零宽断言](https://www.kancloud.cn/thinkphp/regex-guide/43532)
+* [在一段文本中用正则匹配是否有手机号码](http://laosiji.tech/Regex-matcher-phone-by-text/)
 
 #### 引用计数
 * [引用计数带来的一次讨论](https://www.jianshu.com/p/e3690f3e4675) 访问weak变量和autorelease的关系
@@ -986,6 +1021,8 @@
 #### 埋点
 * [iOS无埋点数据SDK实践之路](https://www.jianshu.com/p/69ce01e15042)
 * [轻量级非侵入式埋点方案](https://mp.weixin.qq.com/s/ANvDaWuLmGJOQVNkzcwq3A)
+* [iOS进阶补完计划--打点上报、无痕埋点](https://www.jianshu.com/p/ddbfa8037e64)
+* [Xlog：通用日志模块](https://github.com/Tencent/mars/wiki)
 
 #### Debug
 * [GodEye](https://github.com/zixun/GodEye)
@@ -1083,6 +1120,7 @@
 * [你真的了解 load 方法么？ - draveness](https://www.jianshu.com/p/6d9a99ba3f06)
 * [dyld中mach-o文件加载的简单分析](http://turingh.github.io/2016/03/01/dyld%E4%B8%ADmacho%E5%8A%A0%E8%BD%BD%E7%9A%84%E7%AE%80%E5%8D%95%E5%88%86%E6%9E%90/)(http://turingh.github.io/archives/) 作者对一些dyld fishhook的源码进行分析
 * [如何精确度量 iOS App 的启动时间](https://www.jianshu.com/p/c14987eee107)
+* [msgSend hook](https://github.com/czqasngit/objc_msgSend_hook)
 
 * [GCC在C语言中内嵌汇编 asm __volatile__](https://blog.csdn.net/pbymw8iwm/article/details/8227839)
 * [iOS监控-启动crash](http://www.cocoachina.com/cms/wap.php?action=article&id=23365)
@@ -1124,7 +1162,7 @@
 * [Mac Security工具使用总结find-identity](https://blog.csdn.net/elesos/article/details/73882942)
 * 从App中导出entitlements非provisionprofile文件中的entitlements key对应内容 codesign -d --entitlements - Example.app [来源objccn 墙裂推荐](https://objccn.io/issue-17-2/) [linux - 号用途](https://www.cnblogs.com/Spiro-K/p/6361909.html)
 * 导出provisionprofile中的entitlements key - /usr/libexec/PlistBuddy -x -c "print :Entitlements " /dev/stdin <<< $(security cms -D -i XXXX.app/embedded.mobileprovision) > Entitlements.plist
-* codesign -d --entitlements :file demo.app  - ./fastlane-2.131.0/sigh/lib/assets/resign.sh
+* [codesign -d --entitlements :file demo.app]  - ./fastlane-2.131.0/sigh/lib/assets/resign.sh
 > When displaying a signature, extract any entitlement data from
              the signature and write it to the path given. Use "-" to write to
              standard output.  By default, the binary "blob" header is
