@@ -60,6 +60,10 @@
 #### 地图@ 绘制@
 
 * [平面向量的旋转](https://wenku.baidu.com/view/1545006da45177232f60a277.html)
+* [地图找房](https://www.jianshu.com/p/451c93324f23)
+
+#### Apple商务管理
+* [Apple商务管理企业分发指南](https://www.jianshu.com/p/01a579170208)
 
 
 #### nsoperation@
@@ -122,6 +126,7 @@
 * [结构化编译器前端 Clang 介绍](https://www.ibm.com/developerworks/cn/opensource/os-cn-clang/)AST 抽象语法树
 * [clang编译参数](https://clang.llvm.org/docs/ClangCommandLineReference.html)
 * [clang 源码](https://clang.llvm.org/doxygen/RewriteObjC_8cpp_source.html)
+* [has_include](http://clang.llvm.org/docs/LanguageExtensions.html#include-file-checking-macros)
 
 #### 代码规范Coding Guidelines
 * [Introduction to Coding Guidelines for Cocoa](https://developer.apple.com/library/content/documentation/Cocoa/Conceptual/CodingGuidelines/CodingGuidelines.html)
@@ -140,11 +145,16 @@
 * [logify自动动帮你生成对应类的所有hook方法](https://juejin.im/post/5c00d61b6fb9a049c042c083)
 * [app store ipa包导出](https://www.jianshu.com/p/fdb50d303ad6)
 * [越狱设备导出脱壳包](https://github.com/AloneMonkey/frida-ios-dump)[一条命令完成砸壳](http://www.alonemonkey.com/2018/01/30/frida-ios-dump/)
+* [Cydia的基石：MobileSubstrate](https://www.jianshu.com/p/598227aecfba)
+* [进入dfu模式](https://www.i4.cn/news_detail_30618.html)(https://jingyan.baidu.com/article/948f592413bb60d80ef5f974.html) - 都待验证
+* `scp -P 2222 root@localhost:/var/containers/Bundle/Application/C934D7C5-8FFA-4757-8812-200746601674/ ~/Desktop/` 从越狱机拷贝app到电脑
+* [基于monkeyDev对wechat进行扩展](https://github.com/Desgard/WeCheat)
 
 #### 证书 HTTPS
 * [证书链-Digital Certificates](http://www.jianshu.com/p/46e48bc517d0)
 * [AFNetworking之于https认证](http://www.jianshu.com/p/a84237b07611)
 * [iOS 判断当前网络状态的三种方法](http://www.cocoachina.com/ios/20171103/21039.html)
+* [ecdh ecdhe 秘钥交换前向安全](https://blog.csdn.net/mrpre/article/details/78025940) - (https://imququ.com/post/ecc-certificate.html) - [三种解密 HTTPS 流量的方法介绍包含SSLKEYLOGFILE](https://imququ.com/post/how-to-decrypt-https.html)
 
 #### ViewController Transition@转场
 * [ZoomTransitioning](https://github.com/WorldDownTown/ZoomTransitioning)colletion cell To VC
@@ -160,10 +170,10 @@
 * [presentation转场 同时说了not full 情况下的status bar 控制](https://medium.com/lifesum-healthy-living-simplified/presenting-a-uiviewcontroller-modally-with-a-transparent-background-the-cool-way-b79eb0abd423)
 * [A Beginner’s Guide to Presentation Controllers in iOS 8](https://www.appcoda.com/presentation-controllers-tutorial/)
 * [Custom View Controller presentations, the right way.](https://medium.com/@raulriera/custom-view-controller-presentations-the-right-way-53e8e8e8118b)
-* [uiwindow rootvc转场取巧](https://github.com/SwifterSwift/SwifterSwift/issues/477)
+* [uiwindow rootvc转场取巧](https://github.com/SwifterSwift/SwifterSwift/issues/477)(https://stackoverflow.com/questions/7703806/rootviewcontroller-switch-transition-animation)
 * [Animated transitions for UIWindow's rootViewController property](https://github.com/malcommac/UIWindowTransitions)(https://medium.com/@danielemargutti/animate-uiwindows-rootviewcontroller-transitions-2887ccf3fecc)
-
 * [uiwindow top most viewcontroller](https://gist.github.com/snikch/3661188)
+* [iOS13横屏状态栏不显示](https://juejin.im/post/5d89dc766fb9a06b0e54d251)
 
 #### uiview@ margins@
 
@@ -433,8 +443,9 @@
 * [Xcode Hacks to Make Your Life Easier](https://medium.com/better-programming/xcode-hacks-cf32434cbc2) - 包括多行编辑来通过json来编辑model
 * [xcode source control两个不同项目仓库问题](https://ubunifu.co/development/xcode-9-source-control-navigator-issue)
 * [An app that lets you open .car files and browse/extract their images.](https://github.com/insidegui/AssetCatalogTinkerer)
+* [Xcode8.3 修改默认开发语言(Development Language)](https://www.jianshu.com/p/0bce386943bc)
 * [打印xcode运行时环境变量](https://stackoverflow.com/questions/6910901/how-do-i-print-a-list-of-build-settings-in-xcode-project)xcodebuild -workspace xxx.xcworkspace -scheme "xxx" -showBuildSettings
-* 命令行上传ipa：xcrun altool --upload-app --type ios --file "path/to/application.ipa" --username "YOUR_ITMC_USER" --password "YOUR_ITMC_PASSWORD"
+* 命令行上传ipa：sudo xcrun altool --upload-app --type ios --file "path/to/application.ipa" --username "YOUR_ITMC_USER" --password "https://appleid.apple.com/ appkey" --verbose
 
 
 #### Crash@
@@ -453,13 +464,14 @@
 * [Reliable Crash Reporting 可靠的crash report](http://landonf.bikemonkey.org/code/crashreporting/Reliable_Crash_Reporting_1.1.20130119.html) - bugly中对应crash signal 会有描述信息
 * [bugly 符号表查找](https://bugly.qq.com/docs/user-guide/symbol-configuration-ios/?v=1560742878621#mdfind)
 * [iOS崩溃堆栈信息的符号化解析](https://www.jianshu.com/p/953f0961157a) - 网易加固 系统库符号化
-* [Joyxx](https://zhuanlan.zhihu.com/p/28737079)[黑超熊猫zuik's blog](https://zuikyo.github.io/2016/12/18/iOS%20Crash%E6%97%A5%E5%BF%97%E5%88%86%E6%9E%90%E5%BF%85%E5%A4%87%EF%BC%9A%E7%AC%A6%E5%8F%B7%E5%8C%96%E7%B3%BB%E7%BB%9F%E5%BA%93%E6%96%B9%E6%B3%95/)[系统库符号化文件](https://drive.google.com/drive/folders/1beYMn69Y36zAlB2E1htmejYYYwpZclJ6) - 系统库符号化
+* [Joyxx](https://zhuanlan.zhihu.com/p/28737079)-[黑超熊猫zuik's blog](https://zuikyo.github.io/2016/12/18/iOS%20Crash%E6%97%A5%E5%BF%97%E5%88%86%E6%9E%90%E5%BF%85%E5%A4%87%EF%BC%9A%E7%AC%A6%E5%8F%B7%E5%8C%96%E7%B3%BB%E7%BB%9F%E5%BA%93%E6%96%B9%E6%B3%95/)[系统库符号化文件](https://drive.google.com/drive/folders/1beYMn69Y36zAlB2E1htmejYYYwpZclJ6) - 系统库符号化
 > 系统库符号化 找到对应的系统库符号化文件 SymbolPath = /Users/blackchena/Library/Developer/Xcode/iOS DeviceSupport/<iOS version(buildnumber)>/Symbols/System/Library/Frameworks/<系统库名称>
 > atos -o SymbolPath -l <系统库load path> <需要符号化的address>
 * [Crash 符号化](http://www.saitjr.com/ios/symbolicatecrash-1.html)
 * [58crash日志解析方案介绍](https://www.jianshu.com/p/70985e61f9c5) [你的 App 在 iOS 13 上被卡死了吗？](https://mp.weixin.qq.com/s/W_AqP8cQy3d5QCMJ8Nzftw)
 * [Mach-O file LC_FUNCTION_STARTS load command](https://stackoverflow.com/questions/9602438/mach-o-file-lc-function-starts-load-command) [分析 dyld 的启动过程](https://zhangbuhuai.com/post/dyld-bootstrap.html) xcrun dyldinfo -function_starts可以打印函数其实地址
 * [iOS符号表恢复&逆向支付宝](http://blog.imjun.net/posts/restore-symbol-of-iOS-app/)
+
 
 #### 后台@
 * [iOS原生级别后台下载详解](https://juejin.im/post/5c4ed0b0e51d4511dc730799)
@@ -535,6 +547,8 @@
 * [卡片layout 叠加](https://github.com/filletofish/CardsLayout)
 * [横向选择器](https://github.com/blueapron/Mandoline)
 * [Custom layout for a collection view using horizontal and vertical scrolling with sticky rows and columns,币世界那种滑动方式](https://github.com/brightec/CustomCollectionViewLayout)
+* [UICollectionViewCell Auto Sizing(自适应高度)]https://www.jianshu.com/p/4186ed80cbac
+* [UICollectionViewCell 高度自适应](https://zhuangyz.github.io/2018/01/23/uicollectionviewcell_auto_resize_height/)
 
 #### UIScrollView
 * [使用UIScrollView 细讲delegate方法](http://zhangbuhuai.com/practice-in-uiscrollview/)
@@ -578,6 +592,7 @@
 * [iOS 行距全攻略 与设计图上的区别](https://www.jianshu.com/p/50b3d434cbc0)
 * [UIScrollView 放大，导致UILabel字体模糊](https://www.jianshu.com/p/c8c3adc4b6b6)
 * [跑马灯UIlabel](https://github.com/cbpowell/MarqueeLabel)
+* [圆形区域显示文本](https://www.jianshu.com/p/61fe369ebd07)NSTextContainer(https://www.jianshu.com/p/1963b219bf59)
 
 #### Button@
 * [DGDownloaderButton](https://github.com/Desgard/DGDownloaderButton)下载进度button,慢慢粒子填充满圆
@@ -704,6 +719,7 @@
 #### 多线程安全@
 
 * [iOS多线程到底不安全在哪里？](http://mrpeak.cn/blog/ios-thread-safety/)
+* [基于时间轮片方式处理超时任务](https://juejin.im/post/5e733e4f51882549417fe9aa)
 
 #### 锁@ lock@
 * [深入理解 iOS 开发中的锁](https://bestswifter.com/ios-lock)为什么要用NSCondition，NSConditionLock包装了NSCondition。
@@ -760,6 +776,7 @@
 * [URLNavigator swift router](https://github.com/devxoul/URLNavigatorT)
 * [组件化工具BeeHive（一）：事件分发](Provisioning profile does not match bundle identifier)
 * [对比咯runtime解耦 Block解耦 和 Protocol 解耦 文章不错](https://mp.weixin.qq.com/s/i1e6slYejKk-Djx0wopuUg)
+* [弱符号组件化]https://www.jianshu.com/p/8e9304504e28
 
 #### uuid@
 * [开发中常用工具 - 获取设备的唯一标识、UDID、UUID、keychain保存UUID、判断网络类型等](https://juejin.im/post/5aa51e35518825556a7209cc)
@@ -1034,6 +1051,7 @@
 * [lldb 打印寄存器信息](https://stackoverflow.com/questions/7812281/how-to-print-disassembly-registers-in-the-xcode-console/27926596)
 * [[2018-08-10更新]LLDB常用命令--飘云整理](https://www.dllhook.com/post/51.html#toc_2)
 * [lldb 官方教程](https://developer.apple.com/library/archive/documentation/IDEs/Conceptual/gdb_to_lldb_transition_guide/document/lldb-basics.html)
+* [lldb llvm helper](https://lldb.llvm.org/use/tutorial.html)
 
 #### 分享/三方登录
 * [获取微信好友列表](https://wohugb.gitbooks.io/wechat/content/qrconnent/user_info.html)
@@ -1121,6 +1139,10 @@
 * [dyld中mach-o文件加载的简单分析](http://turingh.github.io/2016/03/01/dyld%E4%B8%ADmacho%E5%8A%A0%E8%BD%BD%E7%9A%84%E7%AE%80%E5%8D%95%E5%88%86%E6%9E%90/)(http://turingh.github.io/archives/) 作者对一些dyld fishhook的源码进行分析
 * [如何精确度量 iOS App 的启动时间](https://www.jianshu.com/p/c14987eee107)
 * [msgSend hook](https://github.com/czqasngit/objc_msgSend_hook)
+* [Procedure Call Standard for the Arm® 64-bit Architecture](https://developer.arm.com/docs/ihi0055/d/procedure-call-standard-for-the-arm-64-bit-architecture)
+* [ARM64 Function Calling Conventions iOS](https://developer.apple.com/library/archive/documentation/Xcode/Conceptual/iPhoneOSABIReference/Articles/ARM64FunctionCallingConventions.html)-通过xcode断点函数调用查看对应的汇编代码了解传参
+* [为什么使用汇编可以 Hook objc_msgSend（上）- 汇编基础](https://zhuanlan.zhihu.com/p/130680057)
+* iOS应用逆向工程 一书中对函数调用寄存器和栈的处理有详细讲解- objc_msgSend 汇编调用
 
 * [GCC在C语言中内嵌汇编 asm __volatile__](https://blog.csdn.net/pbymw8iwm/article/details/8227839)
 * [iOS监控-启动crash](http://www.cocoachina.com/cms/wap.php?action=article&id=23365)
@@ -1140,6 +1162,9 @@
 * [深入浅出iOS编译](https://juejin.im/post/5c22eaf1f265da611b5863b2)-黄文臣
 * [1](https://www.jianshu.com/p/544464a5e630)-iOS汇编教程：理解ARM[2](https://blog.csdn.net/hello_hwc/article/details/80028030)-iOS汇编精讲（上篇）黄文臣
 * [运行时获取函数调用栈](http://djs66256.github.io/2018/01/21/2018-01-21-%E8%BF%90%E8%A1%8C%E6%97%B6%E8%8E%B7%E5%8F%96%E5%87%BD%E6%95%B0%E8%B0%83%E7%94%A8%E6%A0%88/)
+
+#### MACHO@
+* `objdump -x  machofile` 打印的i信息较多但是文档里面没有体现 `objdump -d machofile` 反汇编
 
 #### leader@
 
@@ -1174,7 +1199,7 @@
 #### github@
 * [github 下载指定文件夹下面的内容](https://blog.csdn.net/qq_35860352/article/details/80313078)[downgit 需要科学上网](https://minhaskamal.github.io/DownGit/#/home)- ”/branches/branchname/”替换成”/trunk/”。例如：”/tree/master/” to “/trunk/” 
 
-# Swift 语法
+# Swift@
 
 ##
 * [模式匹配第一弹: switch, enums & where 子句](http://swift.gg/2016/04/26/pattern-matching-1/)
