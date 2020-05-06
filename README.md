@@ -29,6 +29,7 @@
 
 #### NSNumber@NSNumberFormatter@
 * [##,##.00这种语法介绍](http://unicode.org/reports/tr35/tr35-6.html#Number_Format_Patterns)
+* [iOS之阿拉伯数字转中文数字](https://www.jianshu.com/p/e910cf9d5a62)
 
 #### sqlite@
 * [iOS sqlite3数据库解析](https://www.cnblogs.com/wfwenchao/p/3964213.html)
@@ -118,6 +119,7 @@
 * [AVEditDemo](https://github.com/master-nevi/WWDC-2010/tree/e2b5e586bfea16e247a59cdc6b1d00e8db40ee22/AVEditDemo)
 * [视频过渡效果 从中可以了解AVMutableVideoCompositionInstruction，AVMutableVideoCompositionLayerInstruction](https://www.jianshu.com/p/fc363b73c668)
 * [iOS短视频SDK是适用于iOS平台的短视频SDK。使用此SDK可以实现短视频相关功能](https://github.com/CCVideo/VOD_iOS_ShortVideo_SDK/wiki)-wiki里面介绍咯一些遇到的问题但是没仔细看
+* [视频横屏全屏播放适配方案](https://cloud.tencent.com/developer/article/1106957)
 
 #### 编译
 * [编译时间](http://irace.me/swift-profiling)
@@ -622,6 +624,10 @@
 
 * [Quartz 2D编程指南之十一：位图与图像遮罩](http://southpeak.github.io/2015/01/05/quartz2d-11/)
 
+#### Http@
+
+* [http status code](https://developer.mozilla.org/zh-CN/docs/Web/HTTP/Status)
+
 
 #### 富文本
 * [制作一个微博文本编辑器](http://www.jianshu.com/p/13bcedb370ac)
@@ -1083,6 +1089,7 @@
 * [man 手册用法](https://www.linuxidc.com/Linux/2017-10/148088.htm)
 * [terminal 快捷键](http://notes.11ten.net/mac-command-line-editing-commonly-used-shortcut-keys.html)
 * [bash 快捷键](https://linuxtoy.org/archives/bash-shortcuts.html)
+* [shell 当前工作目录的绝对路径](https://blog.csdn.net/qq_18150497/article/details/76600828)
 
 #### ios11/xcode9/llvm
 * [What's New in LLVM](http://yulingtianxia.com/blog/2017/07/17/What-s-New-in-LLVM-2017/)
@@ -1143,6 +1150,7 @@
 * [ARM64 Function Calling Conventions iOS](https://developer.apple.com/library/archive/documentation/Xcode/Conceptual/iPhoneOSABIReference/Articles/ARM64FunctionCallingConventions.html)-通过xcode断点函数调用查看对应的汇编代码了解传参
 * [为什么使用汇编可以 Hook objc_msgSend（上）- 汇编基础](https://zhuanlan.zhihu.com/p/130680057)
 * iOS应用逆向工程 一书中对函数调用寄存器和栈的处理有详细讲解- objc_msgSend 汇编调用
+* [静态插桩的方式来实现Hook Method](https://mp.weixin.qq.com/s/wS_ex3P2m_Zeqb2ceAz6ZQ)
 
 * [GCC在C语言中内嵌汇编 asm __volatile__](https://blog.csdn.net/pbymw8iwm/article/details/8227839)
 * [iOS监控-启动crash](http://www.cocoachina.com/cms/wap.php?action=article&id=23365)
