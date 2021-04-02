@@ -19,6 +19,14 @@
 * [lazy 属性 sequence](https://swift.gg/2016/03/25/being-lazy/)
 * [compactMap,flatmap,map](https://www.jianshu.com/p/d8c873e4aee8)
 
+## Swift 必备 tips
+
+* [局部 SCOPE 代码块](https://swifter.tips/local-scope/)
+* [Swift 单例的实现与解析](https://juejin.im/post/6844903503689678856) -证明全局变量和静态变量访问时的[懒加载](https://docs.swift.org/swift-book/LanguageGuide/Properties.html#ID263)和[原子性](https://developer.apple.com/swift/blog/?id=7)
+* [Enums in swift. An enumeration is a data type… | by Abhimuralidharan | Medium](https://medium.com/@abhimuralidharan/enums-in-swift-9d792b728835)-里面说到了
+
+	> Enum case cannot have a raw value if the enum does not have a raw type
+
 ## 缓存/memory disk cache
 * [Cache](https://github.com/hyperoslo/Cache)
 * [HanekeSwift](https://github.com/Haneke/HanekeSwift)
@@ -59,4 +67,33 @@
 ## MarkDown语法
 
 * [Coding官方markdown语法](https://coding.net/help/doc/project/markdown.html)
+
+## SIL@
+
+* [Swift 底层是怎么调度方法的](https://gpake.github.io/2019/02/11/swiftMethodDispatchBrief/)
+
+* 生成sil `swiftc -emit-silgen -Onone test.swift > test.swift.sil` [来源](https://gpake.github.io/2019/03/06/tryToReadSIL/)
+* [Method Dispatch in Swift – RPLabs – Rightpoint Labs](https://www.rightpoint.com/rplabs/switch-method-dispatch-table)
+* [Static vs Dynamic Dispatch in Swift: A decisive choice](https://medium.com/flawless-app-stories/static-vs-dynamic-dispatch-in-swift-a-decisive-choice-cece1e872d)
+* [Swift 底层是怎么调度方法的 | Gpake's](https://gpake.github.io/2019/02/11/swiftMethodDispatchBrief/)
+* [深入理解 Swift 派发机制 | kemchenj](https://kemchenj.github.io/2016-12-25-1/)
+* [Swift中的dynamic关键字？ - 简书](https://www.jianshu.com/p/8e1087c79b22)
+* [Swift的函数派发 - 简书](https://www.jianshu.com/p/95d8f1cf05bf)
+* [Swift的高级中间语言：SIL - 简书](https://www.jianshu.com/p/c2880460c6cd)
+* [方法调用的编译和运行:static dispatch和dynamic dispatch - 简书](https://www.jianshu.com/p/e0659093eaac)
+* [Swift的函数派发 - 简书](https://www.jianshu.com/p/95d8f1cf05bf)
+* [swift的witness table - 简书](https://www.jianshu.com/p/c93d7a7d6771)
+* [【基本功】深入剖析Swift性能优化](https://juejin.im/post/5bdbdc876fb9a049f36186c3) nice
+* [从一道 iOS 面试题到 Swift 对象模型和运行时细节——「iOS 面试之道」勘误 - 掘金](https://juejin.im/post/5c92b650f265da612f1b973a)
+```
+
+* swiftc -emit-silgen -Onone -sdk /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk -target arm64-apple-ios13.2 /Users/xxx/Desktop/MthodCallTest/MthodCallTest/AppDelegate.swift > test.swift.sil
+* swiftc -emit-silgen -Onone  /Users/xxx/Desktop/SwiftCommandLineTest/SwiftCommandLineTest/main.swift > ~/test.swift.sil
+* swiftc -o main.out main.swift
+* swiftc main.swift -dump-ast
+* swiftc main.swift -emit-sil
+* swiftc main.swift -emit-ir
+* swiftc main.swift -emit-assembly
+
+```
 
