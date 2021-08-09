@@ -85,6 +85,11 @@
 * [swift的witness table - 简书](https://www.jianshu.com/p/c93d7a7d6771)
 * [【基本功】深入剖析Swift性能优化](https://juejin.im/post/5bdbdc876fb9a049f36186c3) nice
 * [从一道 iOS 面试题到 Swift 对象模型和运行时细节——「iOS 面试之道」勘误 - 掘金](https://juejin.im/post/5c92b650f265da612f1b973a)
+
+## F**k swift@
+* [swift - Calling protocol default implementation from regular method - Stack Overflow](https://stackoverflow.com/questions/32602712/calling-protocol-default-implementation-from-regular-method)
+* [swift - Implementing a function with a default parameter defined in a protocol - Stack Overflow](https://stackoverflow.com/questions/42634816/implementing-a-function-with-a-default-parameter-defined-in-a-protocol)
+
 ```
 
 * swiftc -emit-silgen -Onone -sdk /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk -target arm64-apple-ios13.2 /Users/xxx/Desktop/MthodCallTest/MthodCallTest/AppDelegate.swift > test.swift.sil

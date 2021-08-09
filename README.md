@@ -2,7 +2,7 @@
 学习资料
 
 * [Mac Hexo](http://blog.csdn.net/qq_30379689/article/details/52854003)
-* [Mac 破解软件下载](https://www.macdu.org) (https://xclient.info) (https://www.waitsun.com/)
+* [Mac 破解软件下载](https://www.macdu.org) (https://xclient.info) (https://www.waitsun.com/)(https://www.digit77.com/)
 * [android studio tips](https://medium.com/@mmbialas/50-android-studio-tips-tricks-resources-you-should-be-familiar-with-as-an-android-developer-af86e7cf56d2)
 
 
@@ -30,6 +30,9 @@
 * [##,##.00这种语法介绍](http://unicode.org/reports/tr35/tr35-6.html#Number_Format_Patterns)
 * [iOS之阿拉伯数字转中文数字](https://www.jianshu.com/p/e910cf9d5a62)
 
+#### 精度@
+* [iOS json解析过程中float转字符串精度丢失的问题 修正NSJSONSerialization_学习笔记-CSDN博客](https://blog.csdn.net/gwh111/article/details/83860641)
+
 #### sqlite@
 * [iOS sqlite3数据库解析](https://www.cnblogs.com/wfwenchao/p/3964213.html)
 * [iOS端数据库解决方案分析](http://mrpeak.cn/blog/ios-database/)
@@ -54,6 +57,10 @@
 * [Archive of stories published by Flawless iOS](https://medium.com/flawless-app-stories/archive)
 * [知识小集官网](https://awesome-tips.github.io/iostip/)
 * [LeoMobileDeveloper/Blogs: 一点心得 - iOS,Swift,React Native,Python...](https://github.com/LeoMobileDeveloper/Blogs)-深入理解Toll-Free Bridging,Swift进阶之内存模型和方法调度,Moya的设计之道
+
+#### 小程序@
+* [支付宝小程序框架浅析及如何在 mPaaS 内深度集成-阿里云开发者社区](https://developer.aliyun.com/article/680529)
+
 
 #### 状态机
 * [深入浅出理解有限状态机](http://www.jianshu.com/p/5eb45c64f3e3)
@@ -144,6 +151,8 @@
 #### 代码规范Coding Guidelines
 * [Introduction to Coding Guidelines for Cocoa](https://developer.apple.com/library/content/documentation/Cocoa/Conceptual/CodingGuidelines/CodingGuidelines.html)
 * [raywenderlich.com Objective-C编码规范](https://www.jianshu.com/p/8b76814b3663)
+* [Google Objective-C Style Guide | styleguide](https://google.github.io/styleguide/objcguide.html)
+* [GitHub - raywenderlich/objective-c-style-guide: A style guide that outlines the coding conventions for raywenderlich.com](https://github.com/raywenderlich/objective-c-style-guide)
 
 #### 逆向@
 * [iOS Security 让iOS应用更加安全](http://security.ios-wiki.com/)
@@ -273,6 +282,7 @@
 * [深入理解Auto Layout 第一弹 intrinsicContentSize 张不坏](http://zhangbuhuai.com/auto-layout-part-1/)
 * [Visual Format Language vfl 手册](https://developer.apple.com/library/archive/documentation/UserExperience/Conceptual/AutolayoutPG/VisualFormatLanguage.html)
 * [wtfautolayout](http://www.wtfautolayout.com/)
+* [Working With Auto Layout and Layout Anchors](https://cocoacasts.com/working-with-auto-layout-and-layout-anchors)
 
 #### KVC@
 * [KVC进阶](http://www.jianshu.com/users/02a488e1e71e/latest_articles)  01_Jack的简书
@@ -300,8 +310,25 @@
 * [EMClassIntrospection —— 一款基于Runtime的Class调试工具](http://posts.enumsblog.com/posts/16005)-打印所有子类的方法
 * [Using objc_setAssociatedObject with weak references](https://stackoverflow.com/questions/16569840/using-objc-setassociatedobject-with-weak-references)
 
+#### Property@Method@
+* [Objective-C中Property和Method的可见性 - Reading Space](http://hongchaozhang.github.io/blog/2016/06/16/property-and-method-visuability-of-category-and-inheritence-in-objective-c/)通过->ivarname的访问是通过
+
+```
+extern "C" unsigned long OBJC_IVAR_$_BLAView$_pModel;
+
+(*(id *)((char *)view + OBJC_IVAR_$_BLAView$_pModel))
+```
+上述这种形式来访问的，因此我们可以通过extension声明私有ivar的形式来访问私有ivar(成员变量)
+
 #### ARC@
 * [technical specification of ARC](http://clang.llvm.org/docs/AutomaticReferenceCounting.html#property-declarations)
+
+#### mPaaS@
+
+* [iOS 冲突处理 - 移动开发平台 mPaaS - 阿里云](https://help.aliyun.com/document_detail/109989.html?spm=a2c4g.11186623.6.697.3ed42580546GPA#%E7%A7%BB%E9%99%A4%E5%86%B2%E7%AA%81%E7%9A%84%E4%B8%89%E6%96%B9%E5%BA%93)
+* [H5 容器简介 - 移动开发平台 mPaaS - 阿里云](https://help.aliyun.com/document_detail/59192.html?spm=a2c4g.11186623.6.1325.5dc66d7fyPNjWR)nebula
+* [iOS 小程序自定义双向通道 - 蚂蚁集团金融科技](https://tech.antfin.com/docs/2/173343)
+* [支付宝小程序快速开始](https://opendocs.alipay.com/mini/developer/getting-started)
 
 
 #### Animation@动画@
@@ -380,7 +407,8 @@
 
 
 
-#### SIP@地图绘制@arcMap@
+
+#### GIS@地图绘制@arcMap@
 
 [(6条消息) OpenLayers使用_David_jiang-CSDN博客](https://blog.csdn.net/lijie45655/article/details/93314512)
 [ArcGIS for Desktop入门教程_第六章_用ArcMap制作地图 - ArcGIS知乎-新一代ArcGIS问答社区](http://zhihu.geoscene.cn/article/529)
@@ -502,8 +530,15 @@
 * 命令行上传ipa：sudo xcrun altool --upload-app --type ios --file "path/to/application.ipa" --username "YOUR_ITMC_USER" --password "https://appleid.apple.com/ appkey" --verbose
 * [Xcode11 或 Transporter 上传app store 一直卡在Authenticating with the App Store 的解决方案 适用于Xcode11.3.1 和Tra... - 简书](https://www.jianshu.com/p/29b44e3b62ed)
 * [controlling which project header file Xcode will include - Stack Overflow](https://stackoverflow.com/questions/2596695/controlling-which-project-header-file-xcode-will-include) USE_HEADERMAP 环境变量使用示例
-* [Xcode Build Settings](https://xcodebuildsettings.com/)
+
 * [Speeding Up Custom Script Phases | Indie Stack](https://indiestack.com/2014/12/speeding-up-custom-script-phases/)explanation of Input & Output Files
+
+#### Xcode BuildSetting@
+* [cocoapods - Associate POD Spec attributes to different Build Settings from their Xcode Configuration (e.g. Release, Debug) - Stack Overflow](https://stackoverflow.com/questions/22114234/associate-pod-spec-attributes-to-different-build-settings-from-their-xcode-confi)
+* [The Unofficial Guide to xcconfig files](https://pewpewthespells.com/blog/xcconfig_guide.html#ConditionalVariableAssignment)
+* [Xcode Build Configuration Files - NSHipster](https://nshipster.com/xcconfig/) 介绍了[Config=DEBUG]
+* [Build configuration file (xcconfig) format reference - Xcode Help](https://help.apple.com/xcode/mac/8.3/#/dev745c5c974)
+* [Xcode Build Settings](https://xcodebuildsettings.com/)
 
 #### Telegram-iOS
 
@@ -533,6 +568,8 @@
 * [Mach-O file LC_FUNCTION_STARTS load command](https://stackoverflow.com/questions/9602438/mach-o-file-lc-function-starts-load-command) [分析 dyld 的启动过程](https://zhangbuhuai.com/post/dyld-bootstrap.html) xcrun dyldinfo -function_starts可以打印函数其实地址
 * [iOS符号表恢复&逆向支付宝](http://blog.imjun.net/posts/restore-symbol-of-iOS-app/)
 * [iOS Crash 分析攻略-阿里云开发者社区](https://developer.aliyun.com/article/766088) - 系统库符号化失败问题，找到对应版本的系统库，汇编分析
+* [SIG_IGN (Program support) - C 中文开发手册 ](https://cloud.tencent.com/developer/section/1009558)[SIG_DFL, SIG_IGN - cppreference.com](https://en.cppreference.com/w/c/program/SIG_strategies)
+* [忽略SIGPIPE异常防止崩溃](http://www.veryitman.com/2018/04/15/%E4%B8%8D%E8%AE%A9-SIGPIPE-signal-%E5%A4%AA%E5%9A%A3%E5%BC%A0/)
 
 #### 适配@
 
@@ -652,11 +689,20 @@
 * [ios - How to override intrinsictContentSize for a view with flexible height and fixed width? - Stack Overflow](https://stackoverflow.com/questions/41089638/how-to-override-intrinsictcontentsize-for-a-view-with-flexible-height-and-fixed/41863605)
 
 
-#### 图片
+#### 图片@
 * [未使用图片](http://www.jianshu.com/p/dca77c25bf5d)
 * [我只是想截个屏 截图](http://blog.startry.com/2016/02/24/Screenshots-With-SwViewCapture/)
 * [图片浏览](https://github.com/ko1o/PYPhotoBrowser) (https://github.com/skx926/KSPhotoBrowser) (https://github.com/QuintGao/GKPhotoBrowser)
-* [iOS图像最佳实践总结](https://juejin.im/post/5c84bd676fb9a049e702ecd8) - 图片解码加载缓存渲染
+* [iOS图像最佳实践总结 - 简书](https://www.jianshu.com/p/128e59cb0893) - 图片解码加载缓存渲染
+
+#### 渲染原理@
+
+* [iOS 图像渲染原理 | 楚权的世界](http://chuquan.me/2018/09/25/ios-graphics-render-principle/)
+* [图形图像渲染原理 | 楚权的世界](http://chuquan.me/2018/08/26/graphics-rending-principle-gpu/)
+* [一文读懂iOS图像显示原理与优化](https://juejin.cn/post/6850418111976964109)
+* [顶点着色器&片元着色器 - 简书](https://www.jianshu.com/p/1122b46a1ea3)
+* [OpenGL ES 案例04：GLSL加载图片 - 简书](https://www.jianshu.com/p/496fb0aa6089)
+* [iOS 图像渲染原理 - 简书](https://www.jianshu.com/p/a81d48e0e44a)
 
 #### Label@
 * [RQShineLabel](https://github.com/zipme/RQShineLabel)闪烁的label
@@ -668,6 +714,18 @@
 * [UIScrollView 放大，导致UILabel字体模糊](https://www.jianshu.com/p/c8c3adc4b6b6)
 * [跑马灯UIlabel](https://github.com/cbpowell/MarqueeLabel)
 * [圆形区域显示文本](https://www.jianshu.com/p/61fe369ebd07)NSTextContainer(https://www.jianshu.com/p/1963b219bf59)
+* [ios - NSAttributedString click event in UILabel using Swift - Stack Overflow](https://stackoverflow.com/questions/38565603/nsattributedstring-click-event-in-uilabel-using-swift)用UITextView来实现文字中部分可点击
+* [Detect Touches on Attributed Text in UILabel ](https://horseshoe7.wordpress.com/2020/10/07/swift-detect-touches-on-attributed-text-in-uilabel/)获取点击位置对应的文字index
+* [可响应部分文字点击的Label](https://yunissong.github.io/2019/04/03/%E5%8F%AF%E5%93%8D%E5%BA%94%E9%83%A8%E5%88%86%E6%96%87%E5%AD%97%E7%82%B9%E5%87%BB%E7%9A%84Label/)
+* [iOS 可点击文本实现方案 - 简书](https://www.jianshu.com/p/043688f9a016)
+* [使用 TextKit 製作橫向滾動 Reader | Arco’s Blog](https://arcovv.github.io/ios/2019/09/20/textkit-tutorial.html)//利用NSTextContainer实现横向滚动分页
+* [TextKit Best Practices - WWDC18 - Videos - Apple Developer](https://developer.apple.com/videos/play/wwdc2018/221/)
+* [Getting to Know TextKit · objc.io](https://www.objc.io/issues/5-ios7/getting-to-know-textkit/)
+
+#### UITextView@
+* [Auto Resizing a Dynamic UITextView](https://medium.com/macoclock/auto-resizing-dynamic-uitextview-97d151e59ca0)
+* [iOS开发－UITextView高度自适应 - 简书](https://www.jianshu.com/p/32a4747a19fb)UItextView padding问题
+* [关于ios：如何根据内容调整UITextView的大小？ | 码农家园](https://www.codenong.com/50467/)
 
 #### Button@
 * [DGDownloaderButton](https://github.com/Desgard/DGDownloaderButton)下载进度button,慢慢粒子填充满圆
@@ -701,6 +759,7 @@
 #### Http@
 
 * [http status code](https://developer.mozilla.org/zh-CN/docs/Web/HTTP/Status)
+* [为什么使用 ping 到的 IP 不能访问知乎的网站，而百度就可以？ - 知乎](https://www.zhihu.com/question/48724764)
 
 
 #### 富文本
@@ -857,6 +916,8 @@
 * [WKWebView详解&WKWebVieW和JS交互](https://juejin.im/post/5a3388775188257dcc2fadb9)-除了js native交互还介绍了delegate相关的方法作用
 * [iOS应用安全 —— WebView安全](https://mabin004.github.io/2018/06/25/iOS%E5%BA%94%E7%94%A8%E6%B2%99%E7%AE%B1/)-wkwebview messageHandler可以把callback作为参数传到native来实现回调
 * [如何使UIWebview/WKWebView支持WebP格式图片](https://liuwentao1314.github.io/2017/04/13/webp-image-format-ios/)
+* [wendux/DSBridge-IOS: A modern cross-platform JavaScript bridge, through which you can invoke each other's functions synchronously or asynchronously between JavaScript and native.](https://github.com/wendux/DSBridge-IOS)
+* [深入理解 WKWebView（基础篇）—— WKWebView 加载生命周期与代理方法剖析](https://mp.weixin.qq.com/s/ZFui9IiMTWyLXGKZlbnzwQ)
 
 #### xcasset@
 
@@ -924,6 +985,7 @@
 * [torrentMac](https://www.torrentmac.net/)
 * [xclient](https://xclient.info/)
 * [macdu](https://www.macdu.org/)
+* [苹果软件下载_mac软件_mac游戏下载_免费苹果电脑软件下载网站](http://www.pc6.com/mac/)
 
 #### 加密编码
 * [CryptoSwift](https://github.com/krzyzanowskim/CryptoSwift)
@@ -1050,6 +1112,7 @@
 * [YouXianMing/iOS-Design-Patterns](https://github.com/YouXianMing/iOS-Design-Patterns)
 * [iOS 开发中的 Self-Manager 模式](https://blog.sunnyxx.com/2015/12/19/self-manager-pattern-in-ios/)
 * [设计模式6大原则](https://blog.csdn.net/zhengzhb/article/details/7296944)
+* [易混淆的设计模式 - Yorek's](https://blog.yorek.xyz/design-pattern/confusing-design-pattern/)
 
 #### 联系人
 * [LJContactManager](https://www.jianshu.com/p/55d1c90f62c8)(https://github.com/leejayID/LJContactManager)
@@ -1115,13 +1178,19 @@
 * [FaceBook](https://github.com/facebook)
 * [阿里](https://github.com/alibaba?utf8=%E2%9C%93&q=&type=&language=objective-c)
 
-#### 正则
+#### 正则@正则表达式@
 * [菜鸟教程](http://www.runoob.com/regexp/regexp-syntax.html)
 * [Regular Expressions](http://userguide.icu-project.org/strings/regexp)
 * [介绍正则里面元字符、重复限定符、分组、转义、条件或、区间、零宽断言、捕获和非捕获、反向引用、贪婪和非贪婪、反义](https://mp.weixin.qq.com/s/CBexZfG1DHYji_Pk6Zo38w)
 * [rename 批量修改文件名](http://einverne.github.io/post/2018/01/rename-files-batch.html)
 * [零宽断言](https://www.kancloud.cn/thinkphp/regex-guide/43532)
 * [在一段文本中用正则匹配是否有手机号码](http://laosiji.tech/Regex-matcher-phone-by-text/)
+* [【正则表达式系列】贪婪与非贪婪模式 | Dailc的个人主页](https://dailc.github.io/2017/07/06/regularExpressionGreedyAndLazy.html)
+
+`find . -name "GIO*" | sed -e "p;s/GIO/ZYHM/" | xargs -n2 mv`批量修改文件名
+
+```egrep -i '([^_: <k`\)\^\"\&\/\+\(\[])af' ./AFNetworking/ -r```//查找不能替换的af
+
 
 #### 引用计数
 * [引用计数带来的一次讨论](https://www.jianshu.com/p/e3690f3e4675) 访问weak变量和autorelease的关系
@@ -1142,6 +1211,16 @@
 * [iOS应用UI线程卡顿监控](http://mrpeak.cn/blog/ui-detect/)
 * [iOS 实时卡顿监控](https://github.com/suifengqjn/PerformanceMonitor)
 * [OCLint在Xcode中的使用](https://www.jianshu.com/p/87b48da8ab32) tee xcodebuild.log
+
+#### 内存@
+* [iOS Memory 内存详解](https://mp.weixin.qq.com/s/YpJa3LeTFz9UFOUcs5Bitg)
+* [iOS 底层探索篇 —— 内存字节对齐分析](https://juejin.cn/post/6844904037649743880)
+* [ios 关于面试题中结构体内存对齐、类内存对齐计算总结_海的天空1661的博客-CSDN博客_ios 结构体内存对齐](https://blog.csdn.net/qq_27909209/article/details/80814324)
+* [iOS 内存字节对齐 - 简书](https://www.jianshu.com/p/3294668e2d8c)
+
+```
+#pragma pack(2) //2为对齐系数 结构体的整体对齐规则是按照内存占用最大的struct数据成员和对齐系数相比取最小值去对齐，数据成员对齐：第一个数据成员A放在偏移为 0 的地方，以后每个数据成员B的偏移为对齐系数与该数据成员（也就是 B）的自身长度中较小那个数的整数倍，不够整数倍的补齐
+```
 
 #### 图片编码解码
 
@@ -1218,6 +1297,12 @@
 * [terminal 快捷键](http://notes.11ten.net/mac-command-line-editing-commonly-used-shortcut-keys.html)
 * [bash 快捷键](https://linuxtoy.org/archives/bash-shortcuts.html)
 * [shell 当前工作目录的绝对路径](https://blog.csdn.net/qq_18150497/article/details/76600828)
+* [sh命令_Linux sh 命令用法详解：shell命令解释器](https://man.linuxde.net/sh)linux官网
+* [Linux / Unix: Bash Find Matching All Dot Files - nixCraft](https://www.cyberciti.biz/faq/linux-unix-bsd-appleosx-ksh-csh-bash-find-hidden-dotfiles/)隐藏文件
+* [使用'find'命令获取文件的绝对路径](https://qastack.cn/ubuntu/444551/get-absolute-path-of-files-using-find-command) `find ~+ -type f -name '.*'`
+* [~+的作用](https://www.gnu.org/software/bash/manual/html_node/Tilde-Expansion.html)官方文档
+* [linux find -regex 使用正则表达式 - 江召伟 - 博客园](https://www.cnblogs.com/jiangzhaowei/p/5451173.html)
+* [bash keyboard shortcuts - Linux - SS64.com](https://ss64.com/bash/syntax-keyboard.html)bash快捷键
 
 #### 并查集@
 * [(7条消息) 并查集(Union-Find)算法介绍_不忘初心，好好沉淀-CSDN博客](https://blog.csdn.net/dm_vincent/article/details/7655764)
@@ -1255,6 +1340,25 @@
 * [git分支规范 | JDC 前端代码规范](https://jdf2e.github.io/jdc_fe_guide/docs/git/branch/)
 * [my-git/git-workflow-tutorial.md at master · xirong/my-git · GitHub](https://github.com/xirong/my-git/blob/master/git-workflow-tutorial.md#23-gitflow%E5%B7%A5%E4%BD%9C%E6%B5%81)-gitflow
 * [A successful Git branching model » nvie.com](https://nvie.com/posts/a-successful-git-branching-model/)-讲了hotfix时有release分支存在的情况
+* [Git-优雅地解决冲突：使用ours和theirs](https://blog.csdn.net/qq_41603165/article/details/104922336)
+
+#### 加密@解密@
+
+* [解密不成功，用的我自己生成公钥私钥，demo中的可以 · ideawu/Objective-C-RSA](https://github.com/ideawu/Objective-C-RSA/issues/15)应该是来源于这篇文章[Using an RSA public key generated by OpenSSL in iOS - Chris Luke](https://blog.flirble.org/2011/01/05/rsa-public-key-openssl-ios/#its-all-in-the-format)
+* [cryptography - PKCS#1 and PKCS#8 format for RSA private key - Stack Overflow](https://stackoverflow.com/questions/48958304/pkcs1-and-pkcs8-format-for-rsa-private-key)
+* [RSA加密解密中pkcs1与pkcs8格式私钥互相转换 - hongdada - 博客园](https://www.cnblogs.com/hongdada/p/8295526.html)
+* [Public Key OID](https://docs.microsoft.com/en-us/openspecs/windows_protocols/ms-gpnap/ff1a8675-0008-408c-ba5f-686a10389adc)
+* [iOS 生成 SecKeyRef 的正规方式 - 我的学习历程](https://danleechina.github.io/iOS-create-SecKeyRef-official-way/)这篇文章确实有点sb
+* [iphone - How can I get SecKeyRef from DER/PEM file - Stack Overflow](https://stackoverflow.com/questions/10579985/how-can-i-get-seckeyref-from-der-pem-file)
+* [Signing and Verifying on iOS using RSA - Stack Overflow](https://stackoverflow.com/questions/21724337/signing-and-verifying-on-ios-using-rsa)
+* [iOS安全相关 - iOS中使用RSA加密与解密 - 简书](https://www.jianshu.com/p/ee248bd3ee65)只有公钥的模n和公开幂e
+* [为什么RSA公钥每次加密得到的结果都不一样？](https://blog.csdn.net/guyongqiangx/article/details/74930951)
+* [mac 下系统检查无法通过 · Issue #811 · guanzhi/GmSSL](https://github.com/guanzhi/GmSSL/issues/811)GMSSL编译报错解决
+* [GMSSL 国密iPhone端编译 - 代码先锋网](https://www.codeleading.com/article/2278758774/)模拟器编译参数见备忘录
+* [编译与安装](http://gmssl.org/docs/install.html)
+* [openssl官方文档](https://www.openssl.org/docs)
+* [openssl三方中文文档](https://openssl-programing.readthedocs.io/en/latest/11.html)
+
 
 #### 面试
 * [50 iOS Interview Questions And Answers Part 5](https://medium.com/@duruldalkanat/50-ios-interview-questions-and-answers-part-5-de6241374a8f)
@@ -1276,6 +1380,15 @@
 * [动态库加载](https://github.com/patriknyblad/ios-runtime-loading-dynamic-framework)(https://nixwang.com/2015/11/09/ios-dynamic-update/)(http://foggry.com/blog/2014/06/12/wwdc2014zhi-iosshi-yong-dong-tai-ku/)
 * [Dynamic Library Programming Topics 苹果官网](https://developer.apple.com/library/archive/documentation/DeveloperTools/Conceptual/DynamicLibraries/100-Articles/OverviewOfDynamicLibraries.html#//apple_ref/doc/uid/TP40001873-SW1)
 * [Frameworks and Weak Linking](https://developer.apple.com/library/archive/documentation/MacOSX/Conceptual/BPFrameworks/Concepts/WeakLinking.html)
+* [使用 Xcode 制作 Framework 与 XCFramework - 简书](https://www.jianshu.com/p/14f2e2236d34)
+* [XCFramework 是用来干什么的](https://cocoafei.top/2021/01/XCFramework-%E6%98%AF%E7%94%A8%E6%9D%A5%E5%B9%B2%E4%BB%80%E4%B9%88%E7%9A%84/)
+
+#### 静态库@
+* [如何将多个.o合并为一个.o文件 - 胡桃夹子](http://hutaow.com/blog/2015/02/14/ld-o/)
+* [C++库符号冲突杂谈 - 简书](https://www.jianshu.com/p/fb5a5550f858)讲述了Xcode符号冲突为什么不报错
+* [llvm-ld](https://releases.llvm.org/2.9/docs/CommandGuide/html/llvm-ld.html)
+* [ld(1): GNU linker - Linux man page](https://linux.die.net/man/1/ld)
+* [Linker Script初探 - GNU Linker Ld手冊略讀 - My code works, I don’t know why.](http://wen00072.github.io/blog/2014/03/14/study-on-the-linker-script/)
 
 #### +load +initialize dyld 启动优化
 
@@ -1363,6 +1476,10 @@
 #### github@
 * [github 下载指定文件夹下面的内容](https://blog.csdn.net/qq_35860352/article/details/80313078)[downgit 需要科学上网](https://minhaskamal.github.io/DownGit/#/home)- ”/branches/branchname/”替换成”/trunk/”。例如：”/tree/master/” to “/trunk/” 
 
+#### shell@bash@
+
+* [bash keyboard shortcuts - Linux - SS64.com](https://ss64.com/bash/syntax-keyboard.html)//bash 快捷键
+
 # Swift@
 
 ##
@@ -1381,6 +1498,8 @@
 * [在finder中打开terminal go2shell](https://www.jianshu.com/p/eb48b4b10f04)
 * [sketch to psd](https://www.photopea.com/)
 * [UI素材](https://oursketch.com/) (http://www.51yuansu.com) (https://www.iconfont.cn)
+
+
 
 * 字体
 * [系统默认字体](http://varyu.com/code/215.html)
@@ -1425,5 +1544,7 @@ clang -rewrite-objc -fobjc-arc -stdlib=libc++ -mmacosx-version-min=10.7 -fobjc-r
 * [\_got \__nl_symbol_ptr](https://www.google.com/search?q=__got+__nl_symbol_ptr&oq=__got+__nl_symbol_ptr&aqs=chrome..69i57.5157j0j4&sourceid=chrome&ie=UTF-8)
 * [图解 Mach-O 中的 got](https://mp.weixin.qq.com/s/vt2LjEbgYsnU1ZI5P9atRw)
 * [一个iOS程序员的自我修养（一）编译和链接](https://juejin.cn/post/6885288560603103240)
-
+* [利用强弱符号制作插件库 | 守望的个人博客](https://www.yanbinghu.com/2021/02/17/26277.html)
+* [iOS静态库开发中引入的第三方库可能与宿主APP中冲突的解决方案](https://my.oschina.net/u/4312161/blog/3449819)
+* [论项目中静态库符号冲突的几种解决方式_yohunl的专栏-CSDN博客_静态库符号冲突](https://blog.csdn.net/yohunl/article/details/109338223)
 
