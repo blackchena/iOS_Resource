@@ -14,6 +14,9 @@
 
 * 在View - Tool windows - Git栏目里选择可以打开Git工具窗口，Git里面的Console栏会在有Git操作时自己打开
 * [最强 Android Studio 使用小技巧和快捷键-华为云](https://www.huaweicloud.com/zhishi/arc-13246988.html)
+* 查看已经更改过的快捷键  
+	- mdfind -name keymap  
+	- ls /Users/xxx/Library/Application Support/Google/AndroidStudio4.1/keymap
 
 ## EPoxy@
 
@@ -71,6 +74,16 @@
 * [SIP和WebRTC有什么不同？](http://www.ctiforum.com/news/guandian/401597.html)
 * [STUN和TURN技术浅析 - 华为云](https://www.huaweicloud.com/articles/ffdd2fa56a6b0aa00b5a1ada2e24c4bf.html)
 * [linphonerc Configuring / LINPHONE](http://write.flossmanuals.net/linphone/configuring/)
+
+## 时间@
+
+* [linux系统时间和硬件时钟问题(date和hwclock)](https://blog.csdn.net/wangshuminjava/article/details/79308130)
+* [Linux系统时间重启后变化原因，及解决办法，安卓/Android、Tizen_黑客技术](http://www.hackdig.com/03/hack-20259.htm)-说明设置系统时间后为什么要马上同步到硬件时间，因为系统时间到硬件时间有周期性
+
+## 视频@
+
+* [Jzvd/JZVideo: 高度自定义的安卓视频框架 MediaPlayer exoplayer ijkplayer ffmpeg](https://github.com/Jzvd/JZVideo)
+* [textureView的两种使用场景 - 简书](https://www.jianshu.com/p/4e2916889f27)
 
 ## OpenSourceProject@开源项目@
 

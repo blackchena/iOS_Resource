@@ -100,6 +100,7 @@
 * [App本地置入HTTPS证书防止中间人攻击](https://www.zybuluo.com/Sweetfish/note/706401)-服务器更换证书时有缺陷
 * [IOS应用安全-HTTP/HTTPS网络安全(二)](https://dishibolei.github.io/2017/05/15/https-safe-2/)
 * [Android APP Https双向认证抓包](https://cloud.tencent.com/developer/article/1505455)
+* [rvictl not working on big sur and … | Apple Developer Forums](https://developer.apple.com/forums/thread/655329?login=true)
 
 
 #### 分辨率
@@ -1213,10 +1214,12 @@ extern "C" unsigned long OBJC_IVAR_$_BLAView$_pModel;
 * [OCLint在Xcode中的使用](https://www.jianshu.com/p/87b48da8ab32) tee xcodebuild.log
 
 #### 内存@
-* [iOS Memory 内存详解](https://mp.weixin.qq.com/s/YpJa3LeTFz9UFOUcs5Bitg)
 * [iOS 底层探索篇 —— 内存字节对齐分析](https://juejin.cn/post/6844904037649743880)
 * [ios 关于面试题中结构体内存对齐、类内存对齐计算总结_海的天空1661的博客-CSDN博客_ios 结构体内存对齐](https://blog.csdn.net/qq_27909209/article/details/80814324)
 * [iOS 内存字节对齐 - 简书](https://www.jianshu.com/p/3294668e2d8c)
+* [iOS Memory 内存详解_冬瓜](https://blog.csdn.net/Desgard_Duan/article/details/107031840)[微信链接](https://mp.weixin.qq.com/s/YpJa3LeTFz9UFOUcs5Bitg)
+
+* [多线程的指令重排问题：as-if-serial语义，happens-before语义；volatile关键字，volatile和synchronized的区别 - Life_Goes_On - 博客园](https://www.cnblogs.com/lifegoeson/p/13533873.html)
 
 ```
 #pragma pack(2) //2为对齐系数 结构体的整体对齐规则是按照内存占用最大的struct数据成员和对齐系数相比取最小值去对齐，数据成员对齐：第一个数据成员A放在偏移为 0 的地方，以后每个数据成员B的偏移为对齐系数与该数据成员（也就是 B）的自身长度中较小那个数的整数倍，不够整数倍的补齐
@@ -1341,6 +1344,7 @@ extern "C" unsigned long OBJC_IVAR_$_BLAView$_pModel;
 * [my-git/git-workflow-tutorial.md at master · xirong/my-git · GitHub](https://github.com/xirong/my-git/blob/master/git-workflow-tutorial.md#23-gitflow%E5%B7%A5%E4%BD%9C%E6%B5%81)-gitflow
 * [A successful Git branching model » nvie.com](https://nvie.com/posts/a-successful-git-branching-model/)-讲了hotfix时有release分支存在的情况
 * [Git-优雅地解决冲突：使用ours和theirs](https://blog.csdn.net/qq_41603165/article/details/104922336)
+* [Git：如何在项目提交历史中找到已删除的文件？](https://www.codenong.com/7203515/)git log --all --full-history \*filename\* 这里是正则 或则 git log --diff-filter=AD --summary | grep filename
 
 #### 加密@解密@
 
@@ -1354,10 +1358,31 @@ extern "C" unsigned long OBJC_IVAR_$_BLAView$_pModel;
 * [iOS安全相关 - iOS中使用RSA加密与解密 - 简书](https://www.jianshu.com/p/ee248bd3ee65)只有公钥的模n和公开幂e
 * [为什么RSA公钥每次加密得到的结果都不一样？](https://blog.csdn.net/guyongqiangx/article/details/74930951)
 * [mac 下系统检查无法通过 · Issue #811 · guanzhi/GmSSL](https://github.com/guanzhi/GmSSL/issues/811)GMSSL编译报错解决
-* [GMSSL 国密iPhone端编译 - 代码先锋网](https://www.codeleading.com/article/2278758774/)模拟器编译参数见备忘录
+* [GMSSL 国密iPhone端编译 - 代码先锋网](https://www.codeleading.com/article/2278758774/)模拟器及真机编译参数如下
+```
+make distclean
+export CC=clang
+export CROSS_COMPILE='/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/'
+export CROSS_TOP="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer"
+export CROSS_SDK="iPhoneOS14.3.sdk"
+./Configure ios64-cross no-shared // 如果是9eadfd4cb6eac17bff776b2a8c47de106c70e34a版本需要添加 no-asm 最新版添加-DGMSSL_NO_TURBO
+
+
+otool -lv ./xxxx.a 查看支持的platform为macOS还是IOSSIMULATOR
+
+make distclean
+export CC=clang
+export CROSS_COMPILE='/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/'
+export CROSS_TOP="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer"
+export CROSS_SDK="iPhoneSimulator14.3.sdk"
+./Configure iphoneos-cross no-shared // 如果是9eadfd4cb6eac17bff776b2a8c47de106c70e34a版本需要添加 no-asm 最新版添加-DGMSSL_NO_TURBO
+make
+
+```
 * [编译与安装](http://gmssl.org/docs/install.html)
 * [openssl官方文档](https://www.openssl.org/docs)
 * [openssl三方中文文档](https://openssl-programing.readthedocs.io/en/latest/11.html)
+* [在线RSA签名验签算法验证工具-在线工具](http://www.metools.info/code/c82.html)
 
 
 #### 面试
@@ -1382,6 +1407,7 @@ extern "C" unsigned long OBJC_IVAR_$_BLAView$_pModel;
 * [Frameworks and Weak Linking](https://developer.apple.com/library/archive/documentation/MacOSX/Conceptual/BPFrameworks/Concepts/WeakLinking.html)
 * [使用 Xcode 制作 Framework 与 XCFramework - 简书](https://www.jianshu.com/p/14f2e2236d34)
 * [XCFramework 是用来干什么的](https://cocoafei.top/2021/01/XCFramework-%E6%98%AF%E7%94%A8%E6%9D%A5%E5%B9%B2%E4%BB%80%E4%B9%88%E7%9A%84/)
+* [动态库位置](https://stackoverflow.com/questions/65842584/what-actually-happens-when-i-add-libcurl-4-tbd-as-a-dependency-in-xcode)其实用lldb命令 image list才可以看见库真正的位置/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Library/Developer/CoreSimulator/Profiles/Runtimes/iOS.simruntime/Contents/Resources/RuntimeRoot/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics 
 
 #### 静态库@
 * [如何将多个.o合并为一个.o文件 - 胡桃夹子](http://hutaow.com/blog/2015/02/14/ld-o/)
