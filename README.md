@@ -1365,7 +1365,7 @@ export CC=clang
 export CROSS_COMPILE='/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/'
 export CROSS_TOP="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer"
 export CROSS_SDK="iPhoneOS14.3.sdk"
-./Configure ios64-cross no-shared // 如果是9eadfd4cb6eac17bff776b2a8c47de106c70e34a版本需要添加 no-asm 最新版添加-DGMSSL_NO_TURBO
+./Configure ios64-cross no-shared // 如果是9eadfd4cb6eac17bff776b2a8c47de106c70e34a版本需要添加 no-asm 最新版添加-DGMSSL_NO_TURBO 因为调用私有getcontext方法的问题添加no-threads
 
 
 otool -lv ./xxxx.a 查看支持的platform为macOS还是IOSSIMULATOR
@@ -1375,7 +1375,7 @@ export CC=clang
 export CROSS_COMPILE='/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/'
 export CROSS_TOP="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer"
 export CROSS_SDK="iPhoneSimulator14.3.sdk"
-./Configure iphoneos-cross no-shared // 如果是9eadfd4cb6eac17bff776b2a8c47de106c70e34a版本需要添加 no-asm 最新版添加-DGMSSL_NO_TURBO
+./Configure iphoneos-cross no-shared // 如果是9eadfd4cb6eac17bff776b2a8c47de106c70e34a版本需要添加 no-asm 最新版添加-DGMSSL_NO_TURBO 因为调用私有getcontext方法的问题添加no-threads
 make
 
 ```
@@ -1505,6 +1505,7 @@ make
 #### shell@bash@
 
 * [bash keyboard shortcuts - Linux - SS64.com](https://ss64.com/bash/syntax-keyboard.html)//bash 快捷键
+* [bash(1) - Linux manual page](https://man7.org/linux/man-pages/man1/bash.1.html) ${parameter%word} ${parameter%%word} ${parameter#word} ${parameter##word}
 
 # Swift@
 
