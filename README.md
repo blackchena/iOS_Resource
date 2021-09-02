@@ -178,6 +178,8 @@
 * [DKJone/DKWechatHelper插件。](https://github.com/DKJone/DKWechatHelper)
 * [微信共存防封版伪代码分析 - 简书](https://www.jianshu.com/p/e797ba55e336)
 * [苹果IPA获取与安装 - 简书](https://www.jianshu.com/p/73e65b0a9b86) [安装xml](https://gitee.com/heiwukong/shortcuts/raw/master/config/shu)
+* [5.3 Keychain数据导出 | iOS 安全 Wiki](https://wizardforcel.gitbooks.io/ios-sec-wiki/content/chapter5/issue5-3.html)
+* [Keychain以及NSUserdefault清空方法 - 简书](https://www.jianshu.com/p/d50dc989e9a3)
 
 #### 机器学习@
 
@@ -978,7 +980,7 @@ extern "C" unsigned long OBJC_IVAR_$_BLAView$_pModel;
 #### 数据储存@
 * [kishikawakatsumi / KeychainAccess](https://github.com/kishikawakatsumi/KeychainAccess)swift
 
-#### 翻墙
+#### 翻墙@
 * [免费账号](https://github.com/Alvin9999/new-pac/wiki/ss%E5%85%8D%E8%B4%B9%E8%B4%A6%E5%8F%B7)
 * [hosts](https://github.com/googlehosts/hosts/issues/371)
 
@@ -1383,7 +1385,8 @@ make
 * [openssl官方文档](https://www.openssl.org/docs)
 * [openssl三方中文文档](https://openssl-programing.readthedocs.io/en/latest/11.html)
 * [在线RSA签名验签算法验证工具-在线工具](http://www.metools.info/code/c82.html)
-
+* [RSA密钥格式解析](https://www.jianshu.com/p/c93a993f8997)
+* [解读RSA公钥私钥储存格式](http://github.tiankonguse.com/blog/2017/07/01/ASN1-SRA.html)
 
 #### 面试
 * [50 iOS Interview Questions And Answers Part 5](https://medium.com/@duruldalkanat/50-ios-interview-questions-and-answers-part-5-de6241374a8f)

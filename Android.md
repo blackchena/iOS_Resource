@@ -10,6 +10,10 @@
 * [Android7.0以上无法抓包问题解决。 - 简书](https://www.jianshu.com/p/392362115090)
 * [Charles安卓7.0及以上系统抓包方式 - 有root权限抓包](https://www.jianshu.com/p/1338ceb69b28)
 
+## Debug@
+
+* [Android 调试桥 (adb)  |  Android 开发者  |  Android Developers](https://developer.android.com/studio/command-line/adb?hl=zh-cn)
+
 ## Android Studio@
 
 * 在View - Tool windows - Git栏目里选择可以打开Git工具窗口，Git里面的Console栏会在有Git操作时自己打开
