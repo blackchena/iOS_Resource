@@ -140,6 +140,17 @@
 * [iOS用ijkplayer播RTSP流 - 简书](https://www.jianshu.com/p/69b26da21fa5)
 * [iOS IJKPlayer 支持播放 RTSP - 简书](https://www.jianshu.com/p/d7913f9a7d26)
 
+#### 音频@
+
+* [Aufree/ESTMusicPlayer: An elegant and simple iOS music player.](https://github.com/Aufree/ESTMusicPlayer)
+* [matchbox/SOVoiceRecorder.m](https://github.com/hfink/matchbox/blob/af7fe21d818e12a73d8730e07f782dfc94ad3f11/Xcode/SimodOne/SOVoiceRecorder.m)audiounit处理后音频存入文件
+* [Audio Unit 实现音频录制功能 - 知乎](https://zhuanlan.zhihu.com/p/267920470?ivk_sa=1024320u)优秀[zhonglaoban/AudioUnitRecorder](https://github.com/zhonglaoban/AudioUnitRecorder)禁用Output到speaker
+* [AudioUnit 基础知识](https://zoyi14.smartapps.cn/pages/note/index?_swebFromHost=baiduboxapp&origin=share&slug=929e8f42e384&_swebfr=1)可以
+* [audio语音相关的基础知识-VAD,ASR,AEC,AGC,BF等](https://blog.csdn.net/tingle1314/article/details/107989487)
+* [AudioUnit非AudioGraph创建](https://github.com/XiaoDongXie1024/XDXAudioUnitCapture/blob/master/OC/XDXAudioUnitCapture/XDXAudioUnitCapture/Audio/XDXAudioCaptureManager.m)
+* [lixing123/iOSEchoCancellation: An example of Realtime record and playback with echo cancellation](https://github.com/lixing123/iOSEchoCancellation)修改采样率可以运行
+
+
 #### 编译
 * [编译时间](http://irace.me/swift-profiling)
 
@@ -329,6 +340,7 @@ extern "C" unsigned long OBJC_IVAR_$_BLAView$_pModel;
 #### mPaaS@
 
 * [iOS 冲突处理 - 移动开发平台 mPaaS - 阿里云](https://help.aliyun.com/document_detail/109989.html?spm=a2c4g.11186623.6.697.3ed42580546GPA#%E7%A7%BB%E9%99%A4%E5%86%B2%E7%AA%81%E7%9A%84%E4%B8%89%E6%96%B9%E5%BA%93)
+* [mPaaS 10.1.60 升级指南](https://help.aliyun.com/document_detail/129788.html)
 * [H5 容器简介 - 移动开发平台 mPaaS - 阿里云](https://help.aliyun.com/document_detail/59192.html?spm=a2c4g.11186623.6.1325.5dc66d7fyPNjWR)nebula
 * [iOS 小程序自定义双向通道 - 蚂蚁集团金融科技](https://tech.antfin.com/docs/2/173343)
 * [支付宝小程序快速开始](https://opendocs.alipay.com/mini/developer/getting-started)
@@ -406,7 +418,14 @@ extern "C" unsigned long OBJC_IVAR_$_BLAView$_pModel;
 * [CocoaPods 动/静态库混用封装组件化 - 简书](https://www.jianshu.com/p/544df88b6a1e)
 * [Could not build module 问题] 多半因为头文件引用问题，比如自己的私有库定义了pch文件，虽然在私有库自己编译时能找到头文件的定义，但是集成到主工程中有各种问题，建议私有库不要用prefix_header_file
 * [版本管理工具及 Ruby 工具链环境](https://juejin.im/post/6844904186048430087)
+* [基于 CocoaPods 的组件二进制化实践 | 二维火掌柜技术博客](https://dmanager.github.io/ios/2019/01/21/%E5%9F%BA%E4%BA%8ECocoaPods%E7%9A%84%E7%BB%84%E4%BB%B6%E4%BA%8C%E8%BF%9B%E5%88%B6%E5%8C%96%E5%AE%9E%E8%B7%B5/)
 
+#### 头文件依赖@类关联@
+
+* [nst/objc_dep: Graph the import dependancies in an Objective-C project](https://github.com/nst/objc_dep)
+* [Documentation | Graphviz](http://www.graphviz.org/documentation/)//绘图
+* [kimsungwhee/KSHObjcUML: KSHObjcUML can show oriented graph of dependencies between Objective-C and Swift classes in your project](https://github.com/kimsungwhee/KSHObjcUML)
+* [vampirewalk/ObjectGraph-Xcode: ObjectGraph can show oriented graph of dependencies between classes in your project.](https://github.com/vampirewalk/ObjectGraph-Xcode)
 
 
 
@@ -573,6 +592,7 @@ extern "C" unsigned long OBJC_IVAR_$_BLAView$_pModel;
 * [iOS Crash 分析攻略-阿里云开发者社区](https://developer.aliyun.com/article/766088) - 系统库符号化失败问题，找到对应版本的系统库，汇编分析
 * [SIG_IGN (Program support) - C 中文开发手册 ](https://cloud.tencent.com/developer/section/1009558)[SIG_DFL, SIG_IGN - cppreference.com](https://en.cppreference.com/w/c/program/SIG_strategies)
 * [忽略SIGPIPE异常防止崩溃](http://www.veryitman.com/2018/04/15/%E4%B8%8D%E8%AE%A9-SIGPIPE-signal-%E5%A4%AA%E5%9A%A3%E5%BC%A0/)
+* [iOS 符号解析重构之路](https://mp.weixin.qq.com/s/TVRYXhiOXIsMmXZo9GmEVA)dwarf和Symbol table符号解析
 
 #### 适配@
 
@@ -654,6 +674,7 @@ extern "C" unsigned long OBJC_IVAR_$_BLAView$_pModel;
 * [Custom layout for a collection view using horizontal and vertical scrolling with sticky rows and columns,币世界那种滑动方式](https://github.com/brightec/CustomCollectionViewLayout)
 * [UICollectionViewCell Auto Sizing(自适应高度)]https://www.jianshu.com/p/4186ed80cbac
 * [UICollectionViewCell 高度自适应](https://zhuangyz.github.io/2018/01/23/uicollectionviewcell_auto_resize_height/)
+* [ios - Subview frame is incorrect when creating UICollectionViewCell - Stack Overflow](https://stackoverflow.com/questions/28269452/subview-frame-is-incorrect-when-creating-uicollectionviewcell)在layoutsubviews中不能获取到控件的有效值，颠覆我三观 [ios - Bug with rounded UIImageViews in a UICollectionViewCell - Stack Overflow](https://stackoverflow.com/questions/32809018/bug-with-rounded-uiimageviews-in-a-uicollectionviewcell)[demo地址](https://github.com/blackchena/FuckLayoutSubviews)
 
 #### UIScrollView@
 * [使用UIScrollView 细讲delegate方法](http://zhangbuhuai.com/practice-in-uiscrollview/)
@@ -878,6 +899,9 @@ extern "C" unsigned long OBJC_IVAR_$_BLAView$_pModel;
 * [JTessBoxEditorFX 运行指南](https://blog.csdn.net/vola9527/article/details/81157215)
 * [使用Tesseract训练lang文件并OCR识别集装箱号 - 简书](https://www.jianshu.com/p/5f847d8089ce) - [JTessBoxEditorFX训练字库](https://www.cnblogs.com/cnlian/p/5765871.html)
 * [C++ opencv-3.4.1 复杂的图像矫正方法 - 简书](https://www.jianshu.com/p/58f76c33a37c)
+* [iOS 工程示例 — Paddle-Lite 文档](https://paddle-lite.readthedocs.io/zh/latest/demo_guides/ios_app_demo.html)
+* [预测部署 - 端侧部署 - 《PaddleOCR 使用教程》 - 书栈网 · BookStack](https://www.bookstack.cn/read/PaddleOCR/f352b4892d8e97db.md)
+* [PaddleOCR 0.2.4 on CocoaPods - Libraries.io](https://libraries.io/cocoapods/PaddleOCR)
 
 
 #### GCD
@@ -1151,9 +1175,14 @@ extern "C" unsigned long OBJC_IVAR_$_BLAView$_pModel;
 * [别人学习reactivecocoa整理的资料](https://github.com/etet2007/MarkDownNote/blob/369d7973a3db6438698de2294a823e9fc17a77ef/iOS%26Mac/ReactiveCocoa.md)
 * [MVVM Tutorial 和 ReactiveCocoa Tutorial 翻译 南峰子](http://southpeak.github.io/2014/08/02/reactivecocoa-tutorial-the-definitive-introduction-1/)
 * [clean swift](https://clean-swift.com/)
-* [项目 目录结构 project/folder structure](https://medium.com/ios-os-x-development/7-things-you-must-absolutely-do-before-writing-an-ios-app-a8bacf710c57)(https://github.com/futurice/ios-good-practices)(https://www.jianshu.com/p/2fb4dd080aef)(https://limboy.me/tech/2013/09/23/build-ios-application.html)
 * [iOS组件化方案 -mrPeak 说了市面上一些组件化方案弊端](https://mp.weixin.qq.com/s/zvT7YbP-ex8TeeCYuEis5Q)
 * [译RxSwift + MVVM: 怎样搞定 ViewModels](https://www.jianshu.com/p/9ccc10195f89) [附属demo](https://gist.github.com/MartinMoizard/449be0d30920010210988f1773a2ca90)
+
+#### 目录结构@
+* [ios - Best practice for an Xcode project groups structure? - Stack Overflow](https://stackoverflow.com/questions/39945727/best-practice-for-an-xcode-project-groups-structure)
+* [项目 目录结构 project/folder structure](https://medium.com/ios-os-x-development/7-things-you-must-absolutely-do-before-writing-an-ios-app-a8bacf710c57)(https://github.com/futurice/ios-good-practices)(https://www.jianshu.com/p/2fb4dd080aef)(https://limboy.me/tech/2013/09/23/build-ios-application.html)
+* [Project Structure for iOS App Development | by Vladyslav Semenchenko | Medium](https://medium.com/@vsemenchenko/project-structure-for-ios-app-development-8c78994af69e)//目录结构
+* [Organizing an iOS Project | Credera](https://www.credera.com/insights/organizing-an-ios-project)//目录结构
 
 #### __attribute__
 * [iOS中常用的Attribute](http://www.jianshu.com/p/0237c34158f0)
@@ -1347,6 +1376,8 @@ extern "C" unsigned long OBJC_IVAR_$_BLAView$_pModel;
 * [A successful Git branching model » nvie.com](https://nvie.com/posts/a-successful-git-branching-model/)-讲了hotfix时有release分支存在的情况
 * [Git-优雅地解决冲突：使用ours和theirs](https://blog.csdn.net/qq_41603165/article/details/104922336)
 * [Git：如何在项目提交历史中找到已删除的文件？](https://www.codenong.com/7203515/)git log --all --full-history \*filename\* 这里是正则 或则 git log --diff-filter=AD --summary | grep filename
+* 查看函数的修改历史git log -L:viewDidLoad:filePath
+* [使用git操作svn仓库 | Tony Bai](https://tonybai.com/2019/06/25/using-git-with-svn-repo/)
 
 #### 加密@解密@
 
@@ -1422,6 +1453,7 @@ make
 #### +load +initialize dyld 启动优化
 
 * [+load vs +initialize](http://blog.leichunfeng.com/blog/2015/05/02/objective-c-plus-load-vs-plus-initialize/)
+* [Objective-C 中的+initialize 和+load | 张不坏的博客](https://zhangbuhuai.com/post/initialize-and-load-in-objective-c.html)//+initialize可能多次调用所以在+load中进行方法交换
 * [你真的了解 load 方法么？ - draveness](https://www.jianshu.com/p/6d9a99ba3f06)
 * [dyld中mach-o文件加载的简单分析](http://turingh.github.io/2016/03/01/dyld%E4%B8%ADmacho%E5%8A%A0%E8%BD%BD%E7%9A%84%E7%AE%80%E5%8D%95%E5%88%86%E6%9E%90/)(http://turingh.github.io/archives/) 作者对一些dyld fishhook的源码进行分析
 * [如何精确度量 iOS App 的启动时间](https://www.jianshu.com/p/c14987eee107)
@@ -1456,6 +1488,9 @@ make
 * [arm64程序调用规则 - 掘金](https://juejin.im/post/5d14623ef265da1bb47d7635)
 * [运行时获取函数调用栈](http://djs66256.github.io/2018/01/21/2018-01-21-%E8%BF%90%E8%A1%8C%E6%97%B6%E8%8E%B7%E5%8F%96%E5%87%BD%E6%95%B0%E8%B0%83%E7%94%A8%E6%A0%88/)
 * [LLVM-插桩 - Helloted Blog](http://www.helloted.com/ios/2020/06/28/clang/)
+
+#### 编译@
+* [记一次 mangle & demangle 之旅 - 简书](https://www.jianshu.com/p/2e598dfd84bf)符号修饰
 
 #### llvm@
 * [Clang插件统计方法耗时 - Helloted Blog](http://www.helloted.com/ios/2020/09/22/clang-time/)
@@ -1522,6 +1557,7 @@ make
 * [Swift Objective C interoperability, Static Libraries, Modulemap etc… | by Ashis Laha | Medium](https://medium.com/@mail2ashislaha/swift-objective-c-interoperability-static-libraries-modulemap-etc-39caa77ce1fc) 这篇文章英文比上一篇更好的各种混编场景
 * [[Swift]遍历字符串 - 山青咏芝 - 博客园](https://www.cnblogs.com/strengthen/p/9798159.html)
 * [使用 Swift 实现基于堆的优先级队列 | 使用 Swift 实现基于堆的优先级队列 ](https://swift.gg/2019/05/06/implementing-a-heap-based-priority-queue-using-swift/)
+* [@dynamic/dynamic/@NSManaged — CoreAnimation Properties in Swift | by Jonathan Cardasis | Medium](https://medium.com/@joncardasis/dynamic-dynamic-nsmanaged-coreanimation-properties-in-swift-b7355c9be7e4)
 
 
 # 工具
