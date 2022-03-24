@@ -17,6 +17,9 @@
 
 * [greenss](http://greenss.vip/)
 
+#### NSString@NSAttributeString@
+* [Rightpoint/BonMot: Beautiful, easy attributed strings in Swift](https://github.com/Rightpoint/BonMot)
+
 #### NSData to Hex String
 
 * [NSData to Hex String or reverse](https://github.com/jmah/NSData-FastHex)
@@ -75,6 +78,7 @@
 * [CGContextDrawImage使用和分析_Jymn_Chen-CSDN博客](https://blog.csdn.net/u010962810/article/details/18645203)
 * [JackZhouCn/JZLocationConverter: GCJ-02(火星坐标)、WGS-84、BD-09坐标系转换](https://github.com/JackZhouCn/JZLocationConverter)
 * [经纬度/GPS坐标查询地图地址-toolzl在线工具](http://www.toolzl.com/tools/getGpsArea.html)
+* [Quartz 2D Programming Guide](https://developer.apple.com/library/archive/documentation/GraphicsImaging/Conceptual/drawingwithquartz2d/Introduction/Introduction.html#//apple_ref/doc/uid/TP40007533-SW1)
 
 #### Apple商务管理
 * [Apple商务管理企业分发指南](https://www.jianshu.com/p/01a579170208)
@@ -85,7 +89,7 @@
 
 * [iOS 并发编程之 Operation Queues 雷纯锋](http://blog.leichunfeng.com/blog/2015/07/29/ios-concurrency-programming-operation-queues/)-说明为什么需要手动触发kvo
 * [串行执行异步操作](https://stackoverflow.com/questions/26889861/nsoperation-wait-until-asynchronous-block-executes)-有代码示例
-* ([AFNetworking 3 批量上传图片的 3 种方法 - 简书](https://www.jianshu.com/p/2cb9136c837a)) gcd nsoperation promise
+* ([AFNetworking 3 批量上传图片的 3 种方法 - 简书](https://www.jianshu.com/p/2cb9136c837a)) gcd nsoperation promise也可以参考SDAsyncBlockOperation
 
 #### NetworkExtension VPN
 * [手把手NetworkExtension: 1. 创建L2TP/IPSec VPN连接](http://www.jianshu.com/p/2001b603cee4)
@@ -119,7 +123,7 @@
 * [m3u8 HLS解释](http://zhuanlan.51cto.com/art/201711/558658.htm)
 * [iOS VideoToolbox硬编H.265（HEVC）H.264（AVC）：1 概述](https://www.jianshu.com/p/9febe519732a)
 * [图片压缩](http://al1020119.github.io/blog/2016/10/16/ioskai-fa-chang-yong-gong-neng-dai-ma-ji-jin-(you-xiu-pian-)/)
-* [iOS 图片压缩限制大小最优解](https://www.jianshu.com/p/99c3e6a6c033)
+* [iOS 图片压缩限制大小最优解](https://www.jianshu.com/p/99c3e6a6c033)-[github](https://github.com/niwanglong/EshineCode)
 * [AVAudioFoundation(5)：音视频导出](https://www.jianshu.com/p/35dc67db2bd7)
 * [AVAssetExportSession Error Cannot Open](http://ztpala.com/2019/03/02/avassetexportsession-error-cannot-open/)
 * [iOS 录制视频时，添加水印 output 无声音问题](https://juejin.im/post/5b9b12b1e51d450e4369290f)
@@ -140,6 +144,7 @@
 * [iOS用ijkplayer播RTSP流 - 简书](https://www.jianshu.com/p/69b26da21fa5)
 * [iOS IJKPlayer 支持播放 RTSP - 简书](https://www.jianshu.com/p/d7913f9a7d26)
 
+
 #### 音频@
 
 * [Aufree/ESTMusicPlayer: An elegant and simple iOS music player.](https://github.com/Aufree/ESTMusicPlayer)
@@ -149,16 +154,31 @@
 * [audio语音相关的基础知识-VAD,ASR,AEC,AGC,BF等](https://blog.csdn.net/tingle1314/article/details/107989487)
 * [AudioUnit非AudioGraph创建](https://github.com/XiaoDongXie1024/XDXAudioUnitCapture/blob/master/OC/XDXAudioUnitCapture/XDXAudioUnitCapture/Audio/XDXAudioCaptureManager.m)
 * [lixing123/iOSEchoCancellation: An example of Realtime record and playback with echo cancellation](https://github.com/lixing123/iOSEchoCancellation)修改采样率可以运行
-
+* [iOS 使用AUGraph录音同时播放（并转码成Mp3） - 简书](https://www.jianshu.com/p/bcc2fb23c941)
+* [iOS-使用Lame转码:PCM->MP3 - 简书](https://www.jianshu.com/p/06eaefee3314)
+* [IOS录音caf文件格式转mp3格式 - 简书](https://www.jianshu.com/p/f8a2c9682b7c)
+* [在线分析文件格式](https://www.aconvert.com/cn/analyze.html)[文件格式分析](https://filext.com/)
+* [iOS音频格式之间的相互转化 - 简书](https://www.jianshu.com/p/e7514e7c99cf)含有demo，已编译好静态库
+* [5.2 本地回环 · Play and Record with CoreAudio on iOS](https://cz-it.gitbooks.io/play-and-record-with-coreaudio/content/audiounit/play_and_record.html)
+* [AVAudioSession音频会话(类别选择音频输出切换)](https://blog.csdn.net/wangyanchang21/article/details/52925031)两种设置扬声器播放的参数
+* [常见音频编码格式解析 - 掘金](https://juejin.cn/post/6948651938229518366)介绍比较全
+* [iOS AVDemo（1）：音频采集，免费获取全部源码丨音视频工程示例](https://mp.weixin.qq.com/s?__biz=MjM5MTkxOTQyMQ==&mid=2257484867&idx=1&sn=d857104930a86de8ab0bdf2358ca6283&chksm=a5d4e01192a36907ac113fcac5807807cc10d587713e0ff3f3bff116b7e3d15fadee92c51fe4&scene=178&cur_album_id=2273301900659851268#rd)
 
 #### 编译
 * [编译时间](http://irace.me/swift-profiling)
 
-#### clang@
+#### clang@ld@strip@
 * [结构化编译器前端 Clang 介绍](https://www.ibm.com/developerworks/cn/opensource/os-cn-clang/)AST 抽象语法树
 * [clang编译参数](https://clang.llvm.org/docs/ClangCommandLineReference.html)
 * [clang 源码](https://clang.llvm.org/doxygen/RewriteObjC_8cpp_source.html)
 * [has_include](http://clang.llvm.org/docs/LanguageExtensions.html#include-file-checking-macros)
+* [iOS 符号二三事 - 掘金](https://juejin.cn/post/6844904133321818126)符号裁剪
+* [Clang Migration Notes](https://android.googlesource.com/platform/ndk/+/master/docs/ClangMigration.md)BSymbolic
+* [Exported Symbols of Shared Libraries (GNU Gnulib)](https://www.gnu.org/software/gnulib/manual/html_node/Exported-Symbols-of-Shared-Libraries.html)
+* [解析GNU风味的linker options - 知乎](https://zhuanlan.zhihu.com/p/296191493)
+* [抖音品质建设 - iOS 安装包大小优化实践篇 - iOS发呆君 - 博客园](https://www.cnblogs.com/fadaijun/p/14285852.html)EXPORTED_SYMBOLS_FILE设置为空文件裁剪符号
+* [从 Exported Symbols 应用于包大小优化说到符号绑定 - 简书](https://www.jianshu.com/p/675756173a6a)需要找到 helloFramework() 真正在内存中的地址lazy_bind
+* [编译链接时如何解决符号冲突问题 - 知乎](https://zhuanlan.zhihu.com/p/353576520)通过该__attribute__ ((visibility ("default")))解决符号冲突
 
 #### 代码规范Coding Guidelines
 * [Introduction to Coding Guidelines for Cocoa](https://developer.apple.com/library/content/documentation/Cocoa/Conceptual/CodingGuidelines/CodingGuidelines.html)
@@ -222,6 +242,15 @@
 * [Animated transitions for UIWindow's rootViewController property](https://github.com/malcommac/UIWindowTransitions)(https://medium.com/@danielemargutti/animate-uiwindows-rootviewcontroller-transitions-2887ccf3fecc)
 * [uiwindow top most viewcontroller](https://gist.github.com/snikch/3661188)
 * [iOS13横屏状态栏不显示](https://juejin.im/post/5d89dc766fb9a06b0e54d251)
+* [UINavigationController that implements swipe to push/pop in an interactive animation. Just implement the InteractiveNavigation protocol on your ViewControllers you add to the nav stack to get custom transitions. Or implement a single animation and return it instead of the nil's in the UIViewControllerTransitioningDelegate and all transitions will start using it.](https://gist.github.com/eoghain/7e9afdd43d1357fb8824126e0cbd491d)
+* [rihardsba/NavigationTransitions](https://github.com/rihardsba/NavigationTransitions)
+[iOS 8视图控制器中的showViewController和showDetailViewController - 鸟的博客](https://muzico.gitee.io/niao/15511503008281.html)
+
+##### 实现默认动画全局返回
+* [CustomTransition/TransitionAnimator.swift at master · artrmz/CustomTransition](https://github.com/artrmz/CustomTransition/blob/master/CustomTransitionDemo/CustomTransitionDemo/TransitionAnimator.swift)
+* [Create Simple, Custom UINavigationController Transitions | by Artur Rymarz | Medium](https://medium.com/@artrmz/simple-custom-uinavigationcontroller-transitions-fdb56a217dd8)
+* [hell03W/SwitchControllerAnimation: 自定义push, pop 动画切换效果, 手势pop动画效果 demo.](https://github.com/hell03W/SwitchControllerAnimation)
+* [Custom Navigation Transitions. So, it's a pretty cool thing to do a… | by Rihards Baumanis | Chili Labs | Medium](https://medium.com/chili-labs/custom-navigation-transitions-f791ff0a46aa)
 
 #### uiview@ margins@
 
@@ -346,6 +375,11 @@ extern "C" unsigned long OBJC_IVAR_$_BLAView$_pModel;
 * [支付宝小程序快速开始](https://opendocs.alipay.com/mini/developer/getting-started)
 
 
+#### CALayer@
+
+* [Key-Value Coding Extensions](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/CoreAnimation_guide/Key-ValueCodingExtensions/Key-ValueCodingExtensions.html)可以为CALayer及CAAnimation setValue:forKey:一个任意的key
+* [jharwig/PPSSignatureView: iOS Signature Capture Demo](https://github.com/jharwig/PPSSignatureView)手写签名
+
 #### Animation@动画@
 * [storehouse/Advance](https://github.com/storehouse/Advance)
 * [gitHud_Yalantis](https://github.com/Yalantis)github 动画效果开源比较多的Organization
@@ -375,6 +409,7 @@ extern "C" unsigned long OBJC_IVAR_$_BLAView$_pModel;
 * [layer 绘制的方法调用顺序生命周期](http://kyfxbl.iteye.com/blog/2276033)
 * [KittenYang/SpringPageView: 使用POP](https://github.com/KittenYang/SpringPageView) -3d折叠效果 [相关文章](http://kittenyang.com/pop01springpageview/)
 * [GitHub - Tencent/vap: VAP是企鹅电竞开发，用于播放特效动画的实现方案。具有高压缩率、硬件解码等优点。同时支持 iOS,Android,Web 平台。](http://phoenix.yizimg.com/Tencent/vap)
+* [Animating the Drawing of a CGPath With CAShapeLayer – Ole Begemann](https://oleb.net/blog/2010/12/animating-drawing-of-cgpath-with-cashapelayer/)动画绘制路径或文本
 
 #### empty data 
 * [Designing For The Empty States](https://tympanus.net/codrops/2013/01/09/designing-for-the-empty-states/)
@@ -420,6 +455,11 @@ extern "C" unsigned long OBJC_IVAR_$_BLAView$_pModel;
 * [版本管理工具及 Ruby 工具链环境](https://juejin.im/post/6844904186048430087)
 * [基于 CocoaPods 的组件二进制化实践 | 二维火掌柜技术博客](https://dmanager.github.io/ios/2019/01/21/%E5%9F%BA%E4%BA%8ECocoaPods%E7%9A%84%E7%BB%84%E4%BB%B6%E4%BA%8C%E8%BF%9B%E5%88%B6%E5%8C%96%E5%AE%9E%E8%B7%B5/)
 
+#### MonoRepo
+* [Monorepo 是什么，为什么大家都在用？ - 知乎](https://zhuanlan.zhihu.com/p/77577415)
+* [2019年，抛弃 CMake，用 Bazel / Buck 来构建大型项目吧 - 知乎](https://zhuanlan.zhihu.com/p/53287816)
+
+
 #### 头文件依赖@类关联@
 
 * [nst/objc_dep: Graph the import dependancies in an Objective-C project](https://github.com/nst/objc_dep)
@@ -427,8 +467,10 @@ extern "C" unsigned long OBJC_IVAR_$_BLAView$_pModel;
 * [kimsungwhee/KSHObjcUML: KSHObjcUML can show oriented graph of dependencies between Objective-C and Swift classes in your project](https://github.com/kimsungwhee/KSHObjcUML)
 * [vampirewalk/ObjectGraph-Xcode: ObjectGraph can show oriented graph of dependencies between classes in your project.](https://github.com/vampirewalk/ObjectGraph-Xcode)
 
+#### 词典
 
-
+* [CODELF](https://unbug.github.io/codelf/)
+* [GitHub Copilot · Your AI pair programmer](https://copilot.github.com/)
 
 #### GIS@地图绘制@arcMap@
 
@@ -484,6 +526,7 @@ extern "C" unsigned long OBJC_IVAR_$_BLAView$_pModel;
 * [uitextView 双向绑定](https://github.com/ReactiveCocoa/ReactiveCocoa/issues/939)
 * [正确使用 popViewController](https://blog.dianqk.org/2017/06/30/use-poptoviewcontroller/) - rootvc 处理跳转逻辑。。。
 * [RACSignal 的简单使用与基本操作 | 张不坏的博客](https://zhangbuhuai.com/post/rac-part-1.html)
+* [Delay between -repeat and -retry attempts · Issue #882 · ReactiveCocoa/ReactiveCocoa](https://github.com/ReactiveCocoa/ReactiveCocoa/issues/882) - 失败重试加时间间隔
 
 #### ReactiveCocoa@
 
@@ -502,9 +545,11 @@ extern "C" unsigned long OBJC_IVAR_$_BLAView$_pModel;
 * [ReactiveCocoa 学习之路(史上最全攻略)](https://runningyoung.github.io/2015/06/30/2015-07-20-ReactiveCocoa)
 * [RAC 双向绑定实现案例](https://www.jianshu.com/p/9c8a151c1286)uiswitch双向绑定用法
 
-#### 内存管理
+#### 内存管理@
 
 * [再谈__bridge__bridge_transfer__bridge_retained](https://mp.weixin.qq.com/s/N0NogCoNEr5exZVN8wf09w)
+* [iOS摸鱼周报 第三十八期 - zhangferry](https://zhangferry.com/2021/12/16/iOSWeeklyLearning_38/)
+* [Objective-C对象的TaggedPointer特性 - 张远文的博客 | Anyeler Blog](https://anyeler.top/2018/08/11/Objective-C%E5%AF%B9%E8%B1%A1%E7%9A%84TaggedPointer%E7%89%B9%E6%80%A7/)
 
 
 #### CodeSnippets@ 代码片段
@@ -552,15 +597,23 @@ extern "C" unsigned long OBJC_IVAR_$_BLAView$_pModel;
 * 命令行上传ipa：sudo xcrun altool --upload-app --type ios --file "path/to/application.ipa" --username "YOUR_ITMC_USER" --password "https://appleid.apple.com/ appkey" --verbose
 * [Xcode11 或 Transporter 上传app store 一直卡在Authenticating with the App Store 的解决方案 适用于Xcode11.3.1 和Tra... - 简书](https://www.jianshu.com/p/29b44e3b62ed)
 * [controlling which project header file Xcode will include - Stack Overflow](https://stackoverflow.com/questions/2596695/controlling-which-project-header-file-xcode-will-include) USE_HEADERMAP 环境变量使用示例
-
 * [Speeding Up Custom Script Phases | Indie Stack](https://indiestack.com/2014/12/speeding-up-custom-script-phases/)explanation of Input & Output Files
+* [通过断点技巧让调试更高效](https://mp.weixin.qq.com/s/kv2dfh6L06RQghwkQupi1w)列断点，参数打印arg1
 
 #### Xcode BuildSetting@
 * [cocoapods - Associate POD Spec attributes to different Build Settings from their Xcode Configuration (e.g. Release, Debug) - Stack Overflow](https://stackoverflow.com/questions/22114234/associate-pod-spec-attributes-to-different-build-settings-from-their-xcode-confi)
 * [The Unofficial Guide to xcconfig files](https://pewpewthespells.com/blog/xcconfig_guide.html#ConditionalVariableAssignment)
 * [Xcode Build Configuration Files - NSHipster](https://nshipster.com/xcconfig/) 介绍了[Config=DEBUG]
 * [Build configuration file (xcconfig) format reference - Xcode Help](https://help.apple.com/xcode/mac/8.3/#/dev745c5c974)
-* [Xcode Build Settings](https://xcodebuildsettings.com/)
+* [Xcode Build Settings](https://xcodebuildsettings.com/)nice 资料
+
+#### Xcode快捷键@
+* 选择一整行：光标移动到末尾ctrl+shift+a 或 shift+alt+⬆
+
+#### AssociatedDomain@
+
+* 手机连接电脑打开电脑控制台选择手机查看日志，输入swcd查看相关日志[Introducing Password AutoFill for Apps - WWDC17 - Videos - Apple Developer](https://developer.apple.com/videos/play/wwdc2017/206/)
+
 
 #### Telegram-iOS
 
@@ -625,6 +678,7 @@ extern "C" unsigned long OBJC_IVAR_$_BLAView$_pModel;
 * [assistive button ](https://github.com/liuzhiyi1992/SpreadButton)
 * [三方控件库](https://ioscookies.com/image-viewer)
 * [自定义一个带nib的view 支持frame 和 coder的初始化](https://theswiftdev.com/2018/10/16/custom-uiview-subclass-from-a-xib-file/)
+* [ivanvorobei/SPStorkController: Now playing controller from Apple Music, Mail & Podcasts Apple's apps.](https://github.com/IvanVorobei/SPStorkController)
     
 ##### switch
 * [TKSwitcherCollection](https://github.com/TBXark/TKSwitcherCollection)
@@ -636,6 +690,9 @@ extern "C" unsigned long OBJC_IVAR_$_BLAView$_pModel;
 
 #### 算法@
 * [小码哥算法](https://space.bilibili.com/410164881/channel/detail?cid=94002)
+
+#### socket@
+* [OmniGroup/ONInternetSocket.m at main · omnigroup/OmniGroup](https://github.com/omnigroup/OmniGroup/blob/main/Frameworks/OmniNetworking/ONInternetSocket.m)
 
 #### pullup 类似滴滴打车 选择打车出发地
 
@@ -711,6 +768,22 @@ extern "C" unsigned long OBJC_IVAR_$_BLAView$_pModel;
 * [iOS TableView多级列表 - 简书](https://www.jianshu.com/p/075d6a0c72fa) [wsl2ls/MultilevelList: TableView多级列表：分级展开或合并，逐级获取并展示其子级数据，可以设置最大的层级数，支持多选、单选、取消选择。](https://github.com/wsl2ls/MultilevelList)
 * [UITableView只更新高度不更新内容以及只更新内容不更新高度_NunchakusHuang的专栏-CSDN博客](https://blog.csdn.net/huangyong1314/article/details/50619997)
 * [ios - How to override intrinsictContentSize for a view with flexible height and fixed width? - Stack Overflow](https://stackoverflow.com/questions/41089638/how-to-override-intrinsictcontentsize-for-a-view-with-flexible-height-and-fixed/41863605)
+* [alflix/EasyWebView: use WKWebView easily!](https://github.com/alflix/EasyWebView)//cell自适应webview
+* [Self-Sizing Hell — UITableView and UICollectionView Cells | by Daniel Munoz | Better Programming](https://betterprogramming.pub/self-sizing-hell-uitableview-and-uicollectionview-cells-509f0fdc7ff1)
+* [0代码隐藏GroupedTableView上边多余的间隔 · sunnyxx的技术博客](https://blog.sunnyxx.com/2015/04/15/ios-hide-grouped-tableview-header/)我通过下面这种方式隐藏多余间隔
+```
+tableView.estimatedSectionHeaderHeight = CGFLOAT_MIN;//动态tableview高度可能会造成影响mark一下
+tableView.estimatedSectionFooterHeight = CGFLOAT_MIN;
+
+- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
+    return CGFLOAT_MIN;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section {
+    return CGFLOAT_MIN;
+} 
+
+```
 
 
 #### 图片@
@@ -727,6 +800,13 @@ extern "C" unsigned long OBJC_IVAR_$_BLAView$_pModel;
 * [顶点着色器&片元着色器 - 简书](https://www.jianshu.com/p/1122b46a1ea3)
 * [OpenGL ES 案例04：GLSL加载图片 - 简书](https://www.jianshu.com/p/496fb0aa6089)
 * [iOS 图像渲染原理 - 简书](https://www.jianshu.com/p/a81d48e0e44a)
+
+#### 滤镜@
+* [iOS Secrets: Blending Images without CoreImage | by Riccardo Cipolleschi | Medium](https://riccardocipolleschi.medium.com/ios-secrets-blending-images-without-coreimage-efbd796d46f4)layer 滤镜
+* [ios - How to get multiply blend mode on a plain UIView (not UIImage) - Stack Overflow](https://stackoverflow.com/questions/16407396/how-to-get-multiply-blend-mode-on-a-plain-uiview-not-uiimage/61529116#61529116)
+* [CICategoryCompositeOperation - Core Image Filter Reference](https://developer.apple.com/library/archive/documentation/GraphicsImaging/Reference/CoreImageFilterReference/index.html#//apple_ref/doc/filter/ci/CISubtractBlendMode)自带滤镜效果合集
+* [CIFilter 所有滤镜名字&属性 - 代码天地](https://www.codetd.com/article/4121275#1_CICircularScreen_2521)
+* [About Core Image](https://developer.apple.com/library/archive/documentation/GraphicsImaging/Conceptual/CoreImaging/ci_intro/ci_intro.html#//apple_ref/doc/uid/TP30001185-CH1-TPXREF101)
 
 #### Label@
 * [RQShineLabel](https://github.com/zipme/RQShineLabel)闪烁的label
@@ -829,6 +909,7 @@ extern "C" unsigned long OBJC_IVAR_$_BLAView$_pModel;
 #### segment@
 * [HeshamMegid/HMSegmentedControl](https://github.com/HeshamMegid/HMSegmentedControl)
 * [Yalantis/Segmentio](https://github.com/Yalantis/Segmentio)
+* [dzenbot/DZNSegmentedControl: A drop-in replacement for UISegmentedControl for showing counts, to be used typically on a user profile](https://github.com/dzenbot/DZNSegmentedControl)
 
 #### PageVC@
 * [VTMagic](https://github.com/tianzhuo112/VTMagic)
@@ -875,6 +956,9 @@ extern "C" unsigned long OBJC_IVAR_$_BLAView$_pModel;
 #### NSDictionary
 * [Set value为空解决方案](http://tech.glowing.com/cn/how-we-made-nsdictionary-nil-safe/)
 
+#### 人脸识别@
+* [seetafaceengine/SeetaFace2: SeetaFace 2: open source, full stack face recognization toolkit.](https://github.com/seetafaceengine/SeetaFace2)中科院
+
 #### OCR@身份证识别@
 * [ObjC 中国 - iOS 上的相机捕捉](https://objccn.io/issue-21-3/)
 * [iOS开发中截取相机部分画面，切割sampleBuffer（Crop sample buffer） - 简书](https://www.jianshu.com/p/ac79a80f1af2)-我采用方案
@@ -885,7 +969,7 @@ extern "C" unsigned long OBJC_IVAR_$_BLAView$_pModel;
 * [iOS图片裁剪、旋转、格式转换 - Luyuan's Blog](http://blog.wangluyuan.cc/2018/07/20/iOS%E5%9B%BE%E7%89%87%E8%A3%81%E5%89%AA%E6%97%8B%E8%BD%AC%E6%A0%BC%E5%BC%8F%E8%BD%AC%E6%8D%A2/)
 * [iOS中使用Tesseract提取身份证号码](https://blog.devzeng.com/blog/ios-ocr-with-tesseract.html)
 * [iOS之身份证号码识别 | FengDeng的博客](http://fengdeng.github.io/2016/08/18/iOS%E5%AE%9E%E7%8E%B0%E8%BA%AB%E4%BB%BD%E8%AF%81%E5%8F%B7%E7%A0%81%E8%AF%86%E5%88%AB/)介绍比较详细
-* [iOS OCR(身份证号码识别) - 简书](https://www.jianshu.com/p/cc2efe73de10)
+* [iOS OCR(身份证号码识别) - 简书](https://www.jianshu.com/p/cc2efe73de10) tesseract OCr
 * [Tesseract OCR Tutorial for iOS | raywenderlich.com](https://www.raywenderlich.com/2010498-tesseract-ocr-tutorial-for-ios)
 * [iOS身份证号码识别 - 简书](https://www.jianshu.com/p/ac4c4536ca3e)Tesseract 很详细有源码ocr
 * [Tesseract-builds-for-iOS/lib at tesseract-4.1.1 · kang298/Tesseract-builds-for-iOS](https://github.com/kang298/Tesseract-builds-for-iOS/tree/tesseract-4.1.1/lib)
@@ -902,7 +986,17 @@ extern "C" unsigned long OBJC_IVAR_$_BLAView$_pModel;
 * [iOS 工程示例 — Paddle-Lite 文档](https://paddle-lite.readthedocs.io/zh/latest/demo_guides/ios_app_demo.html)
 * [预测部署 - 端侧部署 - 《PaddleOCR 使用教程》 - 书栈网 · BookStack](https://www.bookstack.cn/read/PaddleOCR/f352b4892d8e97db.md)
 * [PaddleOCR 0.2.4 on CocoaPods - Libraries.io](https://libraries.io/cocoapods/PaddleOCR)
-
+* [JaidedAI/EasyOCR: Ready-to-use OCR with 80+ supported languages and all popular writing scripts including Latin, Chinese, Arabic, Devanagari, Cyrillic and etc.](https://github.com/JaidedAI/EasyOCR)
+* [C++ API Examples | tessdoc](https://tesseract-ocr.github.io/tessdoc/Examples_C++.html)
+* [scott0123/Tesseract-macOS: Objective C wrapper for the open source OCR Engine Tesseract (macOS)](https://github.com/scott0123/Tesseract-macOS)4.1.1版本
+* [paddle中的LoDTensor_mob604756f2dcb4的技术博客_51CTO博客](https://blog.51cto.com/u_15127580/4365448)paddle中tensor lod理解
+* [交叉编译tesseract-ocr到iOS平台 | 果博](http://blog.aiguor.com/notes/177.html)
+* [Develop your own OCR on iOS 13 with VisionKit - Mobile Thinking](https://www.raulferrergarcia.com/en/develop-your-own-ocr-on-ios-13-with-visionkit/) 
+* [ISO language codes | Andiamo! The Language Professionals](https://www.andiamo.co.uk/resources/iso-language-codes/)
+* [MLkit-CN/Recognize Text in Images with ML Kit on iOS.md at master · Quorafind/MLkit-CN](https://github.com/Quorafind/MLkit-CN/blob/master/Recognize%20text/Recognize%20Text%20in%20Images%20with%20ML%20Kit%20on%20iOS.md#%E5%9C%A8%E8%AE%BE%E5%A4%87%E4%B8%8A%E8%AF%86%E5%88%AB%E6%96%87%E6%9C%AC)
+* [card-io/card.io-iOS-source: The open-source code for the card.io-iOS-SDK: provides fast, easy credit card scanning in mobile apps](https://github.com/card-io/card.io-iOS-source)
+* [对比了最常见的几家开源OCR框架，我发现了最好的开源模型 - 知乎](https://zhuanlan.zhihu.com/p/265359676)
+* [文本识别-文本类服务开发-应用开发-Android-机器学习服务](https://developer.huawei.com/consumer/cn/doc/development/hiai-Guides/text-recognition-0000001050040053)//没有发现iOS的文本识别
 
 #### GCD
 * [iOS系统GCD学习(8):Dispatch Queue挂起恢复和目标指定](http://blog.csdn.net/q19594556/article/details/21739295)
@@ -949,6 +1043,7 @@ extern "C" unsigned long OBJC_IVAR_$_BLAView$_pModel;
 #### xcasset@
 
 * [xcasset ipa 内容导出](https://github.com/alexzielenski/ThemeEngine)(https://www.jianshu.com/p/c6b96ef815d9)
+* [pcjbird/AssetsExtractor: 『Assets提取工具』是一款OSX平台上用于将Assets.car或xxx.app中打包的png图片、pdf等资源重新提取出来的开发者工具。Assets.car常见于iOS/Mac/Unity等开发中的资源打包。](https://github.com/pcjbird/AssetsExtractor)
 
 #### html@
 * [topfunky / hpple](https://github.com/topfunky/hpple)An XML/HTML parser for Objective-C, inspired by Hpricot.
@@ -993,6 +1088,7 @@ extern "C" unsigned long OBJC_IVAR_$_BLAView$_pModel;
 * [YouXianMing/YoCelsius](https://github.com/YouXianMing/YoCelsius)A weather app that uses animation to give you an at-a-glance look at the weather
 * [21个高质量的Swift开源iOS App](http://www.cocoachina.com/swift/20161014/17758.html)
 * [GitHub 上有哪些完整的 iOS-App 源码值得参考？](https://www.zhihu.com/question/28518265)
+* [wireapp/wire-ios: 📱 Wire for iOS (iPhone and iPad)](https://github.com/wireapp/wire-ios)
 
 #### 抢购脚本@
 * [Aice.Fu抢购工具使用](https://mp.weixin.qq.com/s/FsYKRNdCYPAAMbraQqEoSw)
@@ -1031,6 +1127,7 @@ extern "C" unsigned long OBJC_IVAR_$_BLAView$_pModel;
 * [RunLoop 总结：RunLoop的应用场景（二）让Timer正常运转](https://www.jianshu.com/p/b2d431d6fa09)
 * [RunLoop总结：RunLoop的应用场景（三）滚动视图流畅性优化](https://www.jianshu.com/p/aa499d790c50)
 * [RunLoop总结：RunLoop的应用场景（四）App卡顿监测](https://www.jianshu.com/p/9e2529fbe963)
+* [戴铭（iOS开发课）读书笔记：13章节-卡顿监控 - 简书](https://www.jianshu.com/p/bf15d6ddd4f8)kCFRunLoopBeforeSources和kCFRunLoopAfterWaiting状态的持续时间
 
 #### Progress@
 * [Marxon13/M13ProgressSuite](https://github.com/Marxon13/M13ProgressSuite)
@@ -1060,6 +1157,8 @@ extern "C" unsigned long OBJC_IVAR_$_BLAView$_pModel;
 #### UINavigation
 * [iOS - 实现UINavigation全屏滑动返回(一)](https://cloud.tencent.com/developer/article/1153950)
 * [一个丝滑的全屏滑动返回手势](https://blog.sunnyxx.com/2015/06/07/fullscreen-pop-gesture/) - FDFullscreenPopGesture
+* [l1Dan/NXNavigationExtension: 🔥 NXNavigationExtension 是为 iOS 应用设计的一个轻量级的导航栏处理框架，同时支持 SwiftUI 和 UIKit。](https://github.com/l1Dan/NXNavigationExtension)
+* [liwenDeng/BDNavigationBarTransition: Config NavigationBar Style when transition](https://github.com/liwenDeng/BDNavigationBarTransition)导航栏自定义样式，且滑动返回有动画
 
 #### Login@
 * [LoginKit](https://github.com/IcaliaLabs/LoginKit)
@@ -1067,6 +1166,9 @@ extern "C" unsigned long OBJC_IVAR_$_BLAView$_pModel;
 #### Color@
 * [ViccAlexander/Chameleon](https://github.com/ViccAlexander/Chameleon)Theme主题 dark/light
 * [XCode Tip: Color Palette xib 模板](https://www.natashatherobot.com/xcode-color-palette/)
+* [objective c - NSColorList for iOS, or some way to share colors between IB and code - Stack Overflow](https://stackoverflow.com/questions/24613042/nscolorlist-for-ios-or-some-way-to-share-colors-between-ib-and-code)
+* [Parse color palette files by tomlokhorst · Pull Request #174 · mac-cain13/R.swift](https://github.com/mac-cain13/R.swift/pull/174/commits/56c6c6bf91c707db30eacc3d78108dded2913b8f)
+* [R.Swift - iOS高效资源引用框架探究 - 简书](https://www.jianshu.com/p/10461449bb77)里面提到了clr
 
 #### Theme主题
 * [SwiftTheme](https://github.com/jiecao-fm/SwiftTheme)
@@ -1087,6 +1189,7 @@ extern "C" unsigned long OBJC_IVAR_$_BLAView$_pModel;
 * [UIImageView aspect fit and center](https://stackoverflow.com/a/36740865/9053835)
 * [读 SDWebImage 一 使用分析 | 似梦言生](http://guohuaden.com/2018/09/29/Read-SDWebImage-note1/) -图片下载成功后处理剪切，添加蒙层
 * [一次立竿见影的首页渲染时间优化](http://www.cocoachina.com/ios/20180815/24576.html) loading gif 首次加载过慢
+* [iOS端矢量图解决方案汇总（SVG篇） | 小猪的博客](https://dreampiggy.com/2020/03/30/iOS%E7%AB%AF%E7%9F%A2%E9%87%8F%E5%9B%BE%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88%E6%B1%87%E6%80%BB%EF%BC%88SVG%E7%AF%87%EF%BC%89/)
 
 #### 电商导购分佣@
 * [淘宝天猫阿里百川电商交易功能详解－iOS](http://baichuan.taobao.com/doc2/detail.htm?spm=a3c0d.7629140.0.0.xjwGiS&treeId=129&articleId=104307&docType=1)
@@ -1102,6 +1205,7 @@ extern "C" unsigned long OBJC_IVAR_$_BLAView$_pModel;
 
 #### 相机相册
 * [相机和相册自定义ALCameraViewController](https://github.com/AlexLittlejohn/ALCameraViewController)
+* [gekitz/GKImagePicker: Enables a custom crop rect for UIImagePickerController](https://github.com/gekitz/GKImagePicker)编辑器自定义
 
 #### 技术文档@
 * [UIAppearance](https://hyancat.com/posts/2016/04/13/UIAppearance/)
@@ -1134,8 +1238,12 @@ extern "C" unsigned long OBJC_IVAR_$_BLAView$_pModel;
 * [有哪些优秀的 icon 的免费下载网站](https://www.zhihu.com/question/19857245)
 * [豪杰给的综合型网站](http://hao.uisdc.com/)
 
+#### NSBundle@
+* [Accessing a Bundle’s Contents](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFBundles/AccessingaBundlesContents/AccessingaBundlesContents.html)bundleWithIdentifierd的作用
+
 #### 设计模式@
 * [建造者模式](http://www.cnblogs.com/wengzilin/p/4365855.html)
+* [代码集中初始化设置](https://gcc.gnu.org/onlinedocs/gcc/Statement-Exprs.html)[1](https://blog.sunnyxx.com/2014/08/02/objc-weird-code/)[swift版本](https://stackoverflow.com/questions/30580161/swift-equivalent-of-objective-c-expression?noredirect=1&lq=1)
 * [YouXianMing/iOS-Design-Patterns](https://github.com/YouXianMing/iOS-Design-Patterns)
 * [iOS 开发中的 Self-Manager 模式](https://blog.sunnyxx.com/2015/12/19/self-manager-pattern-in-ios/)
 * [设计模式6大原则](https://blog.csdn.net/zhengzhb/article/details/7296944)
@@ -1183,6 +1291,11 @@ extern "C" unsigned long OBJC_IVAR_$_BLAView$_pModel;
 * [项目 目录结构 project/folder structure](https://medium.com/ios-os-x-development/7-things-you-must-absolutely-do-before-writing-an-ios-app-a8bacf710c57)(https://github.com/futurice/ios-good-practices)(https://www.jianshu.com/p/2fb4dd080aef)(https://limboy.me/tech/2013/09/23/build-ios-application.html)
 * [Project Structure for iOS App Development | by Vladyslav Semenchenko | Medium](https://medium.com/@vsemenchenko/project-structure-for-ios-app-development-8c78994af69e)//目录结构
 * [Organizing an iOS Project | Credera](https://www.credera.com/insights/organizing-an-ios-project)//目录结构
+* [7 Things you must absolutely do before writing an iOS app | by Nikant Vohra | iOS App Development | Medium](https://medium.com/ios-os-x-development/7-things-you-must-absolutely-do-before-writing-an-ios-app-a8bacf710c57)
+
+#### Markdown@
+* [Export your Medium posts to Markdown | by 🅼🅰🅲🆁🅾🅿🆄🆂 | Medium](https://macropus.medium.com/export-your-medium-posts-to-markdown-b5ccc8cb0050)
+* [Medium 阅读限制解决](https://github.com/manojVivek/medium-unlimited/issues/167#issuecomment-884688708)检查-application-cookies-clearallcookies
 
 #### __attribute__
 * [iOS中常用的Attribute](http://www.jianshu.com/p/0237c34158f0)
@@ -1220,6 +1333,7 @@ extern "C" unsigned long OBJC_IVAR_$_BLAView$_pModel;
 * [【正则表达式系列】贪婪与非贪婪模式 | Dailc的个人主页](https://dailc.github.io/2017/07/06/regularExpressionGreedyAndLazy.html)
 
 `find . -name "GIO*" | sed -e "p;s/GIO/ZYHM/" | xargs -n2 mv`批量修改文件名
+`find ./ -type d -maxdepth 1 -name 'Cocoa*' -exec ls -l {} \;`批量删除Cocoa开始当前目录的文件夹
 
 ```egrep -i '([^_: <k`\)\^\"\&\/\+\(\[])af' ./AFNetworking/ -r```//查找不能替换的af
 
@@ -1228,6 +1342,9 @@ extern "C" unsigned long OBJC_IVAR_$_BLAView$_pModel;
 * [引用计数带来的一次讨论](https://www.jianshu.com/p/e3690f3e4675) 访问weak变量和autorelease的关系
 * [自动释放池的前世今生 ---- 深入解析 autoreleasepool](https://draveness.me/autoreleasepool)(https://blog.sunnyxx.com/2014/10/15/behind-autorelease/)
 
+#### c++@
+* [C++11移动构造函数详解](http://c.biancheng.net/view/7847.html)
+* [C++11 shared_ptr智能指针（超级详细）](http://c.biancheng.net/view/7898.html)
 
 #### xcode不支持当前iOS版本解决方案
 * [xcode不支持当前iOS版本解决方案](https://gist.github.com/steipete/d9b44d8e9f341e81414e86d7ff8fb62d)ln -s /Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneOS.platform/DeviceSupport/10.2\ \(14C5069c\)/ /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/DeviceSupport
@@ -1235,6 +1352,7 @@ extern "C" unsigned long OBJC_IVAR_$_BLAView$_pModel;
 #### xcode 设置
 * [The Unofficial Guide to xcconfig files](https://pewpewthespells.com/blog/xcconfig_guide.html)
 * [Some Practical Uses for Xcode Build Schemes and Build Configurations ](https://medium.com/practical-ios-development/some-practical-uses-for-xcode-build-schemes-and-build-configurations-swift-e50d15a1304f)
+* [Managing different Environments using XCode Build Schemes and Configurations | by Ali Akhtar | Medium](https://ali-akhtar.medium.com/managing-different-environments-using-xcode-build-schemes-and-configurations-af7c43f5be19) xcconfig and info.plist
 
 #### 性能优化@
 * [iOS-Performance-Optimization](https://github.com/skyming/iOS-Performance-Optimization)关于iOS 性能优化梳理： 基本工具、业务优化、内存优化、卡顿优化、布局优化、电量优化、 安装包瘦身、启动优化、网络优化等 
@@ -1286,7 +1404,7 @@ extern "C" unsigned long OBJC_IVAR_$_BLAView$_pModel;
 * [lldb llvm helper](https://lldb.llvm.org/use/tutorial.html)
 * [C - Data Types - Tutorialspoint](https://www.tutorialspoint.com/cprogramming/c_data_types.htm) c语言基础数据类型内存占用
 * [Memory (Debugging with GDB)](https://sourceware.org/gdb/download/onlinedocs/gdb/Memory.html#Memory)lldb打印内存中的值、如何打印
-* [Output Formats (Debugging with GDB)](https://sourceware.org/gdb/download/onlinedocs/gdb/Output-Formats.html#Output-Formats)lldb打印内存中的值、什么样的格式打印
+* [Output Formats (Debugging with GDB)](https://sourceware.org/gdb/download/onlinedocs/gdb/Output-Formats.html#Output-Formats)lldb打印内存中的值、什么样的格式打印 p/x 打印变量指向的地址,x/1tb 以一个字节(b)为一组，用二进制的方式(t)，打印一组(1)
 
 #### 分享/三方登录
 * [获取微信好友列表](https://wohugb.gitbooks.io/wechat/content/qrconnent/user_info.html)
@@ -1337,6 +1455,19 @@ extern "C" unsigned long OBJC_IVAR_$_BLAView$_pModel;
 * [~+的作用](https://www.gnu.org/software/bash/manual/html_node/Tilde-Expansion.html)官方文档
 * [linux find -regex 使用正则表达式 - 江召伟 - 博客园](https://www.cnblogs.com/jiangzhaowei/p/5451173.html)
 * [bash keyboard shortcuts - Linux - SS64.com](https://ss64.com/bash/syntax-keyboard.html)bash快捷键
+* [bash - Output from ls has newlines but displays on a single line. Why? - Unix & Linux Stack Exchange](https://unix.stackexchange.com/questions/10421/output-from-ls-has-newlines-but-displays-on-a-single-line-why)
+* [xargs 命令教程 - 阮一峰的网络日志](https://www.ruanyifeng.com/blog/2019/08/xargs-tutorial.html)
+* echo输出变量带有换行
+```
+text="111
+222\n333"
+
+echo $text   # 111 222\n333
+echo "$text" # 111[换行]222\n333
+echo -e $text # 111 222[换行]333
+echo -e "$text" # 111[换行]222[换行]333
+```
+* [Running Multi-Line Shell Code at Once From Single Prompt | Baeldung on Linux](https://www.baeldung.com/linux/run-multi-line-shell-code)//terminal 多行输入
 
 #### 并查集@
 * [(7条消息) 并查集(Union-Find)算法介绍_不忘初心，好好沉淀-CSDN博客](https://blog.csdn.net/dm_vincent/article/details/7655764)
@@ -1378,6 +1509,7 @@ extern "C" unsigned long OBJC_IVAR_$_BLAView$_pModel;
 * [Git：如何在项目提交历史中找到已删除的文件？](https://www.codenong.com/7203515/)git log --all --full-history \*filename\* 这里是正则 或则 git log --diff-filter=AD --summary | grep filename
 * 查看函数的修改历史git log -L:viewDidLoad:filePath
 * [使用git操作svn仓库 | Tony Bai](https://tonybai.com/2019/06/25/using-git-with-svn-repo/)
+* [xcode - Can't ignore UserInterfaceState.xcuserstate - Stack Overflow](https://stackoverflow.com/questions/6564257/cant-ignore-userinterfacestate-xcuserstate)删除已跟踪的文件，这样添加该文件到gitignore就再也不会被跟踪了
 
 #### 加密@解密@
 
@@ -1407,7 +1539,7 @@ make distclean
 export CC=clang
 export CROSS_COMPILE='/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/'
 export CROSS_TOP="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer"
-export CROSS_SDK="iPhoneSimulator14.3.sdk"
+export CROSS_SDK="iPhoneSimulator.sdk"
 ./Configure iphoneos-cross no-shared // 如果是9eadfd4cb6eac17bff776b2a8c47de106c70e34a版本需要添加 no-asm 最新版添加-DGMSSL_NO_TURBO 因为调用私有getcontext方法的问题添加no-threads
 make
 
@@ -1422,6 +1554,7 @@ make
 #### 面试
 * [50 iOS Interview Questions And Answers Part 5](https://medium.com/@duruldalkanat/50-ios-interview-questions-and-answers-part-5-de6241374a8f)
 * [hit-alibaba.github.io](https://hit-alibaba.github.io/interview/iOS/Cocoa-Touch/Performance.html)
+* [书栈网 · BookStack_程序员IT互联网开源编程书籍免费阅读，助您【码】力十足！](https://www.bookstack.cn/)
 
 #### gif loading 
 * [gif loading refreshing](https://loading.io/#)
@@ -1435,11 +1568,15 @@ make
 * [使用App Store 推广数据来源统计方法]https://www.jianshu.com/p/66dd1e20df74
 
 
+#### brew@
+* `brew list node`查看node安装地址
+
 #### 动态库@framework@
 * [动态库加载](https://github.com/patriknyblad/ios-runtime-loading-dynamic-framework)(https://nixwang.com/2015/11/09/ios-dynamic-update/)(http://foggry.com/blog/2014/06/12/wwdc2014zhi-iosshi-yong-dong-tai-ku/)
 * [Dynamic Library Programming Topics 苹果官网](https://developer.apple.com/library/archive/documentation/DeveloperTools/Conceptual/DynamicLibraries/100-Articles/OverviewOfDynamicLibraries.html#//apple_ref/doc/uid/TP40001873-SW1)
 * [Frameworks and Weak Linking](https://developer.apple.com/library/archive/documentation/MacOSX/Conceptual/BPFrameworks/Concepts/WeakLinking.html)
 * [使用 Xcode 制作 Framework 与 XCFramework - 简书](https://www.jianshu.com/p/14f2e2236d34)
+* [xcode12 - Xcode 12.3: Building for iOS Simulator, but the linked and embedded framework was built for iOS + iOS Simulator - Stack Overflow](https://stackoverflow.com/questions/65303304/xcode-12-3-building-for-ios-simulator-but-the-linked-and-embedded-framework-wa)设置VALIDATE_WORKSPACE为YES
 * [XCFramework 是用来干什么的](https://cocoafei.top/2021/01/XCFramework-%E6%98%AF%E7%94%A8%E6%9D%A5%E5%B9%B2%E4%BB%80%E4%B9%88%E7%9A%84/)
 * [动态库位置](https://stackoverflow.com/questions/65842584/what-actually-happens-when-i-add-libcurl-4-tbd-as-a-dependency-in-xcode)其实用lldb命令 image list才可以看见库真正的位置/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Library/Developer/CoreSimulator/Profiles/Runtimes/iOS.simruntime/Contents/Resources/RuntimeRoot/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics 
 
@@ -1505,6 +1642,7 @@ make
 * 从App中导出entitlements非provisionprofile文件中的entitlements key对应内容 codesign -d --entitlements - Example.app [来源objccn 墙裂推荐](https://objccn.io/issue-17-2/) [linux - 号用途](https://www.cnblogs.com/Spiro-K/p/6361909.html)
 * 导出provisionprofile中的entitlements key - /usr/libexec/PlistBuddy -x -c "print :Entitlements " /dev/stdin <<< $(security cms -D -i XXXX.app/embedded.mobileprovision) > Entitlements.plist
 * [codesign -d --entitlements :file demo.app]  来源- ./fastlane-2.131.0/sigh/lib/assets/resign.sh
+* [How do I resign app with entitlements?](https://alltodev.com/how-do-i-resign-app-with-entitlements) 导出entitlements及用该entitlements重签名
 
 > When displaying a signature, extract any entitlement data from
              the signature and write it to the path given. Use "-" to write to
@@ -1558,14 +1696,18 @@ make
 * [[Swift]遍历字符串 - 山青咏芝 - 博客园](https://www.cnblogs.com/strengthen/p/9798159.html)
 * [使用 Swift 实现基于堆的优先级队列 | 使用 Swift 实现基于堆的优先级队列 ](https://swift.gg/2019/05/06/implementing-a-heap-based-priority-queue-using-swift/)
 * [@dynamic/dynamic/@NSManaged — CoreAnimation Properties in Swift | by Jonathan Cardasis | Medium](https://medium.com/@joncardasis/dynamic-dynamic-nsmanaged-coreanimation-properties-in-swift-b7355c9be7e4)
-
+* [解决swift package manager fetch慢的问题 - 简书](https://www.jianshu.com/p/953220424556)xcodebuild -resolvePackageDependencies -scmProvider system 再DriverData SourcePackages 拷贝
+* [如何让swift package manager走代理 - 掘金](https://juejin.cn/post/6946451335948697636)--Software configuration management
+* [swift - Use `self` as a default parameter - Stack Overflow](https://stackoverflow.com/questions/30798773/use-self-as-a-default-parameter)
+* [在extension中声明自己的构造函数不会覆盖struct默认构造函数](https://docs.swift.org/swift-book/LanguageGuide/Initialization.html)
 
 # 工具
 * [在finder中打开terminal go2shell](https://www.jianshu.com/p/eb48b4b10f04)
 * [sketch to psd](https://www.photopea.com/)
 * [UI素材](https://oursketch.com/) (http://www.51yuansu.com) (https://www.iconfont.cn)
 
-
+#### 图片处理
+* [Luminar AI - AI photo editing for Mac & PC | Skylum](https://skylum.com/luminar-ai-b)天空替换
 
 * 字体
 * [系统默认字体](http://varyu.com/code/215.html)
@@ -1602,7 +1744,7 @@ clang -rewrite-objc -fobjc-arc -stdlib=libc++ -mmacosx-version-min=10.7 -fobjc-r
 * [探秘 Mach-O 文件 - Hawk 's blog](http://hawk0620.github.io/blog/2018/03/22/study-mach-o-file/)
 * [Mach-O 学习小结（三） - 简书](https://www.jianshu.com/p/9e4ccd3cb765)
 * [深入了解GOT,PLT和动态链接 - 有价值炮灰 - 博客园](https://www.cnblogs.com/pannengzhi/p/2018-04-09-about-got-plt.html)
-* [iOS程序员的自我修养-MachO文件动态链接（四） - 掘金](https://juejin.im/post/5d5bbc426fb9a06ad3472cee)
+* [iOS程序员的自我修养-MachO文件动态链接（四） - 掘金](https://juejin.cn/post/6844903922654511112)
 * `objdump -x  machofile` 打印的i信息较多但是文档里面没有体现 `objdump -d machofile` 反汇编
 * [iOS程序员的自我修养-MachO文件静态链接（三） - 掘金](https://juejin.im/post/5d527867f265da03ed1946d2)
 * [Mach-O 与动态链接 | 张不坏的博客](https://zhangbuhuai.com/post/macho-dynamic-link.html)

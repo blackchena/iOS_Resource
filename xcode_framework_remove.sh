@@ -4,7 +4,7 @@
 # found in the LICENSE file.
 # 基于flutter xcode_backend.sh 裁剪
 
-# Exit on error
+# Exit on error 参考：http://www.ruanyifeng.com/blog/2017/11/bash-set.html
 set -e
 
 RunCommand() {
