@@ -44,7 +44,7 @@ run "cp -rf ${APP} ${DIR}/Payload"
 run_at ${DIR} "zip -qr Target.ipa Payload"
 run "rm -rf ${DIR}/Payload"
 
-read -p '请输入更新日志：' updateLog
+read -ep '请输入更新日志：' updateLog
 
 if [[ -z "$updateLog" ]]; then
 	updateLog="更新"

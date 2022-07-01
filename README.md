@@ -1,58 +1,91 @@
 # iOS_Resource
-学习资料
-
-* [Mac Hexo](http://blog.csdn.net/qq_30379689/article/details/52854003)
-* [Mac 破解软件下载](https://www.macdu.org) (https://xclient.info) (https://www.waitsun.com/) (https://www.digit77.com/) (https://www.macw.com/mac/231.html)
-* [android studio tips](https://medium.com/@mmbialas/50-android-studio-tips-tricks-resources-you-should-be-familiar-with-as-an-android-developer-af86e7cf56d2)
 
 
-#### alfred@
-* [alfred 破解版](https://github.com/lhajh/Alfred-Powerpack)
-* [alfred workflow 下载](http://www.packal.org)
-* [Text Transform](https://www.alfredforum.com/topic/1513-change-case-workflow/)
-* [常用workflows](https://github.com/zenorocha/alfred-workflows)
-* [获得当前sublime编辑文件路径](https://github.com/pjdietz/sublime-path-tools)
+## 买不起软件系列@
+* [Mac毒](https://www.macdo.cn/) 
+* [精品MAC应用分享](https://xclient.info/)
+* [麦氪派](https://www.waitsun.com/)
+* [Digit77.com | 海量精品Mac应用免费分享](https://www.digit77.com/)
+* [macw下载站](https://www.macw.com/mac/231.html)
 
-#### 科学上网 ss@
+## IDE及效率软件的使用技巧@
 
+### AndroidStudio@
+* [50 Android Studio Tips, Tricks & Resources you should be familiar with, as an Android Developer | by Michal Bialas | Medium](https://medium.com/@mmbialas/50-android-studio-tips-tricks-resources-you-should-be-familiar-with-as-an-android-developer-af86e7cf56d2)
+
+
+### Alfred@
+* [Workflow Search | Packal](http://www.packal.org/workflow-search)
+* [zenorocha/alfred-workflows: A collection of Alfred 3 and 4 workflows that will rock your world](https://github.com/zenorocha/alfred-workflows)
+* [Forums - Alfred App Community Forum](https://www.alfredforum.com/)
+
+
+## 科学的查资料@
+
+### 科学上网@
 * [greenss](http://greenss.vip/)
-* [逻辑教育：iOS 核心动画班价值688元-百度云下载-柯基资源网](https://www.fjha.net/10287.html)网课资源
-* [注册须知 - 天下无鱼](https://shikey.com/userule)网课资源
-* [独角兽资源站-优质it分享平台-资源每日更新](https://www.itdjs.com/)网课资源
+* [Shadowfly](https://shadowflys.us/#/login)
 
-#### NSString@NSAttributeString@
+### 学习资料@
+* [柯基资源网](https://www.fjha.net/10287.html)
+* [天下无鱼](https://shikey.com/userule)
+* [独角兽资源站](https://www.itdjs.com/)
+
+
+## UIKit@Foundation
+
+### NSString@
 * [Rightpoint/BonMot: Beautiful, easy attributed strings in Swift](https://github.com/Rightpoint/BonMot)
 * [Swift How to get integer from string and convert it into integer - Stack Overflow](https://stackoverflow.com/questions/30342744/swift-how-to-get-integer-from-string-and-convert-it-into-integer)获取字符串中的所有数字
 
-#### NSData to Hex String
-
+### NSData@
 * [NSData to Hex String or reverse](https://github.com/jmah/NSData-FastHex)
 * [Converting NSData to HEX string](https://riptutorial.com/ios/example/18979/converting-nsdata-to-hex-string)-分类讲解咯其它iOS相关的文章16进制
 
-#### NSDate@
-
+### NSDate@
 * [NSDateFormatter.com - Live Date Formatting Playground for Swift](https://nsdateformatter.com/#reference)
 
-#### NSNumber@NSNumberFormatter@
+### NSNumber@NSNumberFormatter@
 * [##,##.00这种语法介绍](http://unicode.org/reports/tr35/tr35-6.html#Number_Format_Patterns)
 * [iOS之阿拉伯数字转中文数字](https://www.jianshu.com/p/e910cf9d5a62)
-
-#### 精度@
 * [iOS json解析过程中float转字符串精度丢失的问题 修正NSJSONSerialization_学习笔记-CSDN博客](https://blog.csdn.net/gwh111/article/details/83860641)
 
-#### sqlite@
-* [iOS sqlite3数据库解析](https://www.cnblogs.com/wfwenchao/p/3964213.html)
-* [iOS端数据库解决方案分析](http://mrpeak.cn/blog/ios-database/)
-* [FMDB源码阅读（一）](https://www.cnblogs.com/polobymulberry/p/5178770.html)
+### NSOperation@
 
-#### objc源码@
+* [iOS 并发编程之 Operation Queues 雷纯锋](http://blog.leichunfeng.com/blog/2015/07/29/ios-concurrency-programming-operation-queues/)-说明为什么需要手动触发kvo
+* [串行执行异步操作](https://stackoverflow.com/questions/26889861/nsoperation-wait-until-asynchronous-block-executes)-有代码示例
+* ([AFNetworking 3 批量上传图片的 3 种方法 - 简书](https://www.jianshu.com/p/2cb9136c837a)) gcd nsoperation promise也可以参考SDAsyncBlockOperation
+* [HighwayLaw/HWThrottle: A lite Objective-C library for throttle and debounce, supporting leading and trailing. 节流/限流/防反跳/防重复点击/防重复调用](https://github.com/HighwayLaw/HWThrottle)
 
+### UIViewController Transition@转场
+* [ZoomTransitioning](https://github.com/WorldDownTown/ZoomTransitioning)colletion cell To VC
+* [expanding-collection](https://github.com/Ramotion/expanding-collection)
+* [DisplaySwitcher](https://github.com/Yalantis/DisplaySwitcher)Custom transition between two collection view layouts
+* [RZTransitions](https://github.com/Raizlabs/RZTransitions)
+* [NewAmsterdamLabs/ZOZolaZoomTransition](https://github.com/NewAmsterdamLabs/ZOZolaZoomTransition)
+* [View2ViewTransition](https://github.com/naru-jpn/View2ViewTransition)
+* [HAPaperViewController](https://github.com/hebertialmeida/HAPaperViewController)
+* [TransitionTreasury](https://github.com/DianQK/TransitionTreasury)
+* [custom container interactive transition](http://www.iosnomad.com/blog/2014/5/12/interactive-custom-container-view-controller-transitions)
+* [转场时候view appear or disappear 调用顺序](http://wangling.me/2014/02/the-inconsistent-order-of-view-transition-events.html)
+* [presentation转场 同时说了not full 情况下的status bar 控制](https://medium.com/lifesum-healthy-living-simplified/presenting-a-uiviewcontroller-modally-with-a-transparent-background-the-cool-way-b79eb0abd423)
+* [A Beginner’s Guide to Presentation Controllers in iOS 8](https://www.appcoda.com/presentation-controllers-tutorial/)
+* [Custom View Controller presentations, the right way.](https://medium.com/@raulriera/custom-view-controller-presentations-the-right-way-53e8e8e8118b)
+* [uiwindow rootvc转场取巧](https://github.com/SwifterSwift/SwifterSwift/issues/477)(https://stackoverflow.com/questions/7703806/rootviewcontroller-switch-transition-animation)
+* [Animated transitions for UIWindow's rootViewController property](https://github.com/malcommac/UIWindowTransitions)(https://medium.com/@danielemargutti/animate-uiwindows-rootviewcontroller-transitions-2887ccf3fecc)
+* [uiwindow top most viewcontroller](https://gist.github.com/snikch/3661188)
+* [iOS13横屏状态栏不显示](https://juejin.im/post/5d89dc766fb9a06b0e54d251)
+* [UINavigationController that implements swipe to push/pop in an interactive animation. Just implement the InteractiveNavigation protocol on your ViewControllers you add to the nav stack to get custom transitions. Or implement a single animation and return it instead of the nil's in the UIViewControllerTransitioningDelegate and all transitions will start using it.](https://gist.github.com/eoghain/7e9afdd43d1357fb8824126e0cbd491d)
+* [rihardsba/NavigationTransitions](https://github.com/rihardsba/NavigationTransitions)
+* [iOS 8视图控制器中的showViewController和showDetailViewController - 鸟的博客](https://muzico.gitee.io/niao/15511503008281.html)
+
+## Objc@
 * [iOS objc4-838编译流程，可在macOS Monterey运行 - 掘金](https://juejin.cn/post/7068539803318353928)
 * [LGCooci/KCCbjc4_debug: 🌈可编译苹果官方源码objc！现在有objc4底层源码,以及libmalloc等可编译版本，大家可以自由LLDB调试！](https://github.com/LGCooci/KCCbjc4_debug)
-* [OC底层文章汇总_正在注销账号的博客-CSDN博客](https://blog.csdn.net/weixin_40918107/article/details/109067645)结合源码调试
+* [OC底层文章汇总-CSDN博客](https://blog.csdn.net/weixin_40918107/article/details/109067645)面试
 
-#### Blogger@Blog@
 
+## 那些年我们追过的技术博客@
 * [sunnyxx](http://blog.sunnyxx.com/) 孙源
 * [喵神](https://onevcat.com/#blog) 王巍
 * [唐巧总结的开发博客列表](https://github.com/tangqiaoboy/iOSBlogCN) 
@@ -71,11 +104,18 @@
 * [知识小集官网](https://awesome-tips.github.io/iostip/)
 * [LeoMobileDeveloper/Blogs: 一点心得 - iOS,Swift,React Native,Python...](https://github.com/LeoMobileDeveloper/Blogs)-深入理解Toll-Free Bridging,Swift进阶之内存模型和方法调度,Moya的设计之道
 
-#### 小程序@
+## sqlite@
+* [iOS sqlite3数据库解析](https://www.cnblogs.com/wfwenchao/p/3964213.html)
+* [iOS端数据库解决方案分析](http://mrpeak.cn/blog/ios-database/)
+* [FMDB源码阅读（一）](https://www.cnblogs.com/polobymulberry/p/5178770.html)
+
+
+
+## 小程序@
 * [支付宝小程序框架浅析及如何在 mPaaS 内深度集成-阿里云开发者社区](https://developer.aliyun.com/article/680529)
 
 
-#### 状态机
+## 不得不了解的算法
 * [深入浅出理解有限状态机](http://www.jianshu.com/p/5eb45c64f3e3)
 
 #### 地图@ 绘制@
@@ -90,17 +130,9 @@
 * [经纬度/GPS坐标查询地图地址-toolzl在线工具](http://www.toolzl.com/tools/getGpsArea.html)
 * [Quartz 2D Programming Guide](https://developer.apple.com/library/archive/documentation/GraphicsImaging/Conceptual/drawingwithquartz2d/Introduction/Introduction.html#//apple_ref/doc/uid/TP40007533-SW1)
 
-#### Apple商务管理
+#### Apple分发渠道
 * [Apple商务管理企业分发指南](https://www.jianshu.com/p/01a579170208)
 * [iOS应用发布方式盘点+苹果商务详解 - 简书](https://www.jianshu.com/p/c8361a83a338)-比较详细
-
-
-#### nsoperation@
-
-* [iOS 并发编程之 Operation Queues 雷纯锋](http://blog.leichunfeng.com/blog/2015/07/29/ios-concurrency-programming-operation-queues/)-说明为什么需要手动触发kvo
-* [串行执行异步操作](https://stackoverflow.com/questions/26889861/nsoperation-wait-until-asynchronous-block-executes)-有代码示例
-* ([AFNetworking 3 批量上传图片的 3 种方法 - 简书](https://www.jianshu.com/p/2cb9136c837a)) gcd nsoperation promise也可以参考SDAsyncBlockOperation
-* [HighwayLaw/HWThrottle: A lite Objective-C library for throttle and debounce, supporting leading and trailing. 节流/限流/防反跳/防重复点击/防重复调用](https://github.com/HighwayLaw/HWThrottle)
 
 #### NetworkExtension@VPN@代理@
 * [手把手NetworkExtension: 1. 创建L2TP/IPSec VPN连接](http://www.jianshu.com/p/2001b603cee4)
@@ -266,27 +298,7 @@
 * [iOS 判断当前网络状态的三种方法](http://www.cocoachina.com/ios/20171103/21039.html)
 * [ecdh ecdhe 秘钥交换前向安全](https://blog.csdn.net/mrpre/article/details/78025940) - (https://imququ.com/post/ecc-certificate.html) - [三种解密 HTTPS 流量的方法介绍包含SSLKEYLOGFILE](https://imququ.com/post/how-to-decrypt-https.html)
 
-#### ViewController Transition@转场
-* [ZoomTransitioning](https://github.com/WorldDownTown/ZoomTransitioning)colletion cell To VC
-* [expanding-collection](https://github.com/Ramotion/expanding-collection)
-* [DisplaySwitcher](https://github.com/Yalantis/DisplaySwitcher)Custom transition between two collection view layouts
-* [RZTransitions](https://github.com/Raizlabs/RZTransitions)
-* [NewAmsterdamLabs/ZOZolaZoomTransition](https://github.com/NewAmsterdamLabs/ZOZolaZoomTransition)
-* [View2ViewTransition](https://github.com/naru-jpn/View2ViewTransition)
-* [HAPaperViewController](https://github.com/hebertialmeida/HAPaperViewController)
-* [TransitionTreasury](https://github.com/DianQK/TransitionTreasury)
-* [custom container interactive transition](http://www.iosnomad.com/blog/2014/5/12/interactive-custom-container-view-controller-transitions)
-* [转场时候view appear or disappear 调用顺序](http://wangling.me/2014/02/the-inconsistent-order-of-view-transition-events.html)
-* [presentation转场 同时说了not full 情况下的status bar 控制](https://medium.com/lifesum-healthy-living-simplified/presenting-a-uiviewcontroller-modally-with-a-transparent-background-the-cool-way-b79eb0abd423)
-* [A Beginner’s Guide to Presentation Controllers in iOS 8](https://www.appcoda.com/presentation-controllers-tutorial/)
-* [Custom View Controller presentations, the right way.](https://medium.com/@raulriera/custom-view-controller-presentations-the-right-way-53e8e8e8118b)
-* [uiwindow rootvc转场取巧](https://github.com/SwifterSwift/SwifterSwift/issues/477)(https://stackoverflow.com/questions/7703806/rootviewcontroller-switch-transition-animation)
-* [Animated transitions for UIWindow's rootViewController property](https://github.com/malcommac/UIWindowTransitions)(https://medium.com/@danielemargutti/animate-uiwindows-rootviewcontroller-transitions-2887ccf3fecc)
-* [uiwindow top most viewcontroller](https://gist.github.com/snikch/3661188)
-* [iOS13横屏状态栏不显示](https://juejin.im/post/5d89dc766fb9a06b0e54d251)
-* [UINavigationController that implements swipe to push/pop in an interactive animation. Just implement the InteractiveNavigation protocol on your ViewControllers you add to the nav stack to get custom transitions. Or implement a single animation and return it instead of the nil's in the UIViewControllerTransitioningDelegate and all transitions will start using it.](https://gist.github.com/eoghain/7e9afdd43d1357fb8824126e0cbd491d)
-* [rihardsba/NavigationTransitions](https://github.com/rihardsba/NavigationTransitions)
-[iOS 8视图控制器中的showViewController和showDetailViewController - 鸟的博客](https://muzico.gitee.io/niao/15511503008281.html)
+
 
 ##### 实现默认动画全局返回
 * [CustomTransition/TransitionAnimator.swift at master · artrmz/CustomTransition](https://github.com/artrmz/CustomTransition/blob/master/CustomTransitionDemo/CustomTransitionDemo/TransitionAnimator.swift)
@@ -915,6 +927,8 @@ tableView.estimatedSectionFooterHeight = CGFLOAT_MIN;
 * [TextKit Best Practices - WWDC18 - Videos - Apple Developer](https://developer.apple.com/videos/play/wwdc2018/221/)
 * [Getting to Know TextKit · objc.io](https://www.objc.io/issues/5-ios7/getting-to-know-textkit/)
 * [ios - Center NSTextAttachment image next to single line UILabel - Stack Overflow](https://stackoverflow.com/questions/26105803/center-nstextattachment-image-next-to-single-line-uilabel)//bounds
+* [ios - Drop cap with NSAttributedString - Stack Overflow](https://stackoverflow.com/questions/14214900/drop-cap-with-nsattributedstring/14639864#14639864)//首字下沉
+* [CoreText实现图文混排之尺寸估算及文本选择 - 简书](https://www.jianshu.com/p/602682b683d6)//CTFramesetterSuggestFrameSizeWithConstraints介绍
 
 #### UITextView@
 * [Auto Resizing a Dynamic UITextView](https://medium.com/macoclock/auto-resizing-dynamic-uitextview-97d151e59ca0)
@@ -1685,6 +1699,8 @@ make
 * [sm2签名结果长度不一致 · Issue #491 · guanzhi/GmSSL](https://github.com/guanzhi/GmSSL/issues/491)在大数INTEGER做der编码时，如果首字节的第一个二进制位为1时，前面需要补00字节，所以导致der编码长度为多一个字节，这种情况下SM2签名值得编码长度最大会有两个字节的差距
 * [algorithmNation/SM2Factory.java at 84ea5bad61c956ec851884225d4e7c9532ae66c3 · xiaoshuaishuai319/algorithmNation](https://github.com/xiaoshuaishuai319/algorithmNation/blob/84ea5bad61c956ec851884225d4e7c9532ae66c3/src/main/java/cn/xsshome/algorithmNation/util/SM2Factory.java)android所用的库
 * [JSON Web Tokens - jwt.io](https://jwt.io/)JWT官网
+* [iFindTA/PBGMService: 国密算法 sm2/sm3/sm4 Objc封装！作者观点：重点不是算法而是密钥安全性！](https://github.com/iFindTA/PBGMService)
+* [加密算法之PKCS填充](http://dljz.nicethemes.cn/news/show-324434.html)pkcs1_oaep
 
 #### WebRTC@
 * [v4_CN_WebRTC · ossrs/srs Wiki](https://github.com/ossrs/srs/wiki/v4_CN_WebRTC#config-candidate)
