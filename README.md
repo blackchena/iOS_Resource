@@ -30,6 +30,14 @@
 * [柯基资源网](https://www.fjha.net/10287.html)
 * [天下无鱼](https://shikey.com/userule)
 * [独角兽资源站](https://www.itdjs.com/)
+* [Open Radar](http://openradar.appspot.com/page/1)//apple bug search
+
+### Awesome@
+* [awesome-macOS](https://github.com/iCHAIT/awesome-macOS)
+* [Awesome macOS Command Line](https://github.com/herrbischoff/awesome-osx-command-line)
+* [awesome-ios](https://github.com/vsouza/awesome-ios)
+* [awesome-swift](https://github.com/matteocrippa/awesome-swift)
+* [open-source-ios-apps](https://github.com/dkhamsing/open-source-ios-apps#sample)
 
 
 ## UIKit@Foundation
@@ -79,10 +87,26 @@
 * [rihardsba/NavigationTransitions](https://github.com/rihardsba/NavigationTransitions)
 * [iOS 8视图控制器中的showViewController和showDetailViewController - 鸟的博客](https://muzico.gitee.io/niao/15511503008281.html)
 
+### UITableView@ UICollectionView@
+* [ra1028/Carbon: 🚴 A declarative library for building component-based user interfaces in UITableView and UICollectionView.](https://github.com/ra1028/Carbon)
+* [Instagram/IGListKit](https://github.com/Instagram/IGListKit)A data-driven UICollectionView framework for building fast and flexible lists.
+
+* [njdehoog/NHBalancedFlowLayout](https://github.com/njdehoog/NHBalancedFlowLayout)
+* [详细介绍了Decoration的运用](https://markpospesel.wordpress.com/2012/12/11/decorationviews/)
+* [卡片layout 叠加](https://github.com/filletofish/CardsLayout)
+* [横向选择器](https://github.com/blueapron/Mandoline)
+* [Custom layout for a collection view using horizontal and vertical scrolling with sticky rows and columns,币世界那种滑动方式](https://github.com/brightec/CustomCollectionViewLayout)
+* [UICollectionViewCell Auto Sizing(自适应高度)]https://www.jianshu.com/p/4186ed80cbac
+* [UICollectionViewCell 高度自适应](https://zhuangyz.github.io/2018/01/23/uicollectionviewcell_auto_resize_height/)
+* [ios - Subview frame is incorrect when creating UICollectionViewCell - Stack Overflow](https://stackoverflow.com/questions/28269452/subview-frame-is-incorrect-when-creating-uicollectionviewcell)在layoutsubviews中不能获取到控件的有效值，颠覆我三观 [ios - Bug with rounded UIImageViews in a UICollectionViewCell - Stack Overflow](https://stackoverflow.com/questions/32809018/bug-with-rounded-uiimageviews-in-a-uicollectionviewcell)[demo地址](https://github.com/blackchena/FuckLayoutSubviews)
+* [iOS中UICollectionView布局对齐方式的runtime实现 - 简书](https://www.jianshu.com/p/de08c2679241)居左私有方法实现
+
+
 ## Objc@
 * [iOS objc4-838编译流程，可在macOS Monterey运行 - 掘金](https://juejin.cn/post/7068539803318353928)
 * [LGCooci/KCCbjc4_debug: 🌈可编译苹果官方源码objc！现在有objc4底层源码,以及libmalloc等可编译版本，大家可以自由LLDB调试！](https://github.com/LGCooci/KCCbjc4_debug)
 * [OC底层文章汇总-CSDN博客](https://blog.csdn.net/weixin_40918107/article/details/109067645)面试
+* [gcfrun/Runtime-723: 基于苹果开源代码objc4-723编译](https://github.com/gcfrun/Runtime-723)NSObject源码实现
 
 
 ## 那些年我们追过的技术博客@
@@ -103,6 +127,43 @@
 * [Archive of stories published by Flawless iOS](https://medium.com/flawless-app-stories/archive)
 * [知识小集官网](https://awesome-tips.github.io/iostip/)
 * [LeoMobileDeveloper/Blogs: 一点心得 - iOS,Swift,React Native,Python...](https://github.com/LeoMobileDeveloper/Blogs)-深入理解Toll-Free Bridging,Swift进阶之内存模型和方法调度,Moya的设计之道
+* [Post | 靛青博客](https://blog.indigo.codes/)
+
+## Xcode@调试@
+
+### Xcode奇巧淫技@
+* [Xcode小技巧 - 简书](https://www.jianshu.com/p/6f067e7f6197)
+* [MLeaksFinder：精准 iOS 内存泄露检测工具 | WeRead团队博客](https://wereadteam.github.io/2016/02/22/MLeaksFinder/)
+* [使用LLDB调试Swift](http://www.infoq.com/cn/news/2017/10/LLDB-debug-Swift)
+* [watchpoint 先打印实例变量地址再观察该地址](http://ios.jobbole.com/83393/)
+* [Xcode多种Build Configuration配置使用](https://www.jianshu.com/p/51a2bbe877aa)
+* [Xcode Build System Guide Build Setting Reference
+](https://developer.apple.com/legacy/library/documentation/DeveloperTools/Reference/XcodeBuildSettingRef/1-Build_Setting_Reference/build_setting_ref.html#//apple_ref/doc/uid/TP40003931-CH3-SW48) (https://help.apple.com/xcode/mac/10.2/#/itcaec37c2a6) -新文档
+* [iOS高级调试&逆向技术-汇编寄存器调用](https://blog.csdn.net/chaoyuan899/article/details/75089447)
+* [The Unofficial Guide to xcconfig files](https://pewpewthespells.com/blog/xcconfig_guide.html#BuildSettingInheritance)
+* [Some Practical Uses for Xcode Build Schemes and Build Configurations](https://medium.com/practical-ios-development/some-practical-uses-for-xcode-build-schemes-and-build-configurations-swift-e50d15a1304f)
+* [category 方法被静态库category方法覆盖时候查询静态库](http://ios.jobbole.com/83393/)-还讲述有的时候打印uiview的一些信息出现错误的解决方法e @import UIKit 调试framework add symbol
+* [Xcode中和symbols有关的几个设置](https://www.jianshu.com/p/11710e7ab661)
+* [环境变量设置 打印mian之前dylb时间](https://medium.com/ios-os-x-development/two-useful-environment-vars-6023b275c90c)
+* [XCode启动参数和环境变量](https://blog.csdn.net/hello_hwc/article/details/80865787) - 对象分配时调用堆栈查询MallocStackLogging(show the debug navigator->view memory graph hierarchy)
+* [Xcode 多行编辑](https://medium.com/better-programming/how-to-edit-multiple-lines-of-a-file-in-xcode-5d7c43f01405)
+* [Xcode Hacks to Make Your Life Easier](https://medium.com/better-programming/xcode-hacks-cf32434cbc2) - 包括多行编辑来通过json来编辑model
+* [xcode source control两个不同项目仓库问题](https://ubunifu.co/development/xcode-9-source-control-navigator-issue)
+* [An app that lets you open .car files and browse/extract their images.](https://github.com/insidegui/AssetCatalogTinkerer)
+* [Xcode8.3 修改默认开发语言(Development Language)](https://www.jianshu.com/p/0bce386943bc)
+* [打印xcode运行时环境变量](https://stackoverflow.com/questions/6910901/how-do-i-print-a-list-of-build-settings-in-xcode-project)xcodebuild -workspace xxx.xcworkspace -scheme "xxx" -showBuildSettings
+* 命令行上传ipa：sudo xcrun altool --upload-app --type ios --file "path/to/application.ipa" --username "YOUR_ITMC_USER" --password "https://appleid.apple.com/ appkey" --verbose
+* [Xcode11 或 Transporter 上传app store 一直卡在Authenticating with the App Store 的解决方案 适用于Xcode11.3.1 和Tra... - 简书](https://www.jianshu.com/p/29b44e3b62ed)
+* [controlling which project header file Xcode will include - Stack Overflow](https://stackoverflow.com/questions/2596695/controlling-which-project-header-file-xcode-will-include) USE_HEADERMAP 环境变量使用示例
+* [Speeding Up Custom Script Phases | Indie Stack](https://indiestack.com/2014/12/speeding-up-custom-script-phases/)explanation of Input & Output Files
+* [通过断点技巧让调试更高效](https://mp.weixin.qq.com/s/kv2dfh6L06RQghwkQupi1w)列断点，参数打印arg1
+
+#### Xcode BuildSetting@
+* [cocoapods - Associate POD Spec attributes to different Build Settings from their Xcode Configuration (e.g. Release, Debug) - Stack Overflow](https://stackoverflow.com/questions/22114234/associate-pod-spec-attributes-to-different-build-settings-from-their-xcode-confi)
+* [The Unofficial Guide to xcconfig files](https://pewpewthespells.com/blog/xcconfig_guide.html#ConditionalVariableAssignment)
+* [Xcode Build Configuration Files - NSHipster](https://nshipster.com/xcconfig/) 介绍了[Config=DEBUG]
+* [Build configuration file (xcconfig) format reference - Xcode Help](https://help.apple.com/xcode/mac/8.3/#/dev745c5c974)
+* [Xcode Build Settings](https://xcodebuildsettings.com/)nice 资料
 
 ## sqlite@
 * [iOS sqlite3数据库解析](https://www.cnblogs.com/wfwenchao/p/3964213.html)
@@ -480,6 +541,7 @@ extern "C" unsigned long OBJC_IVAR_$_BLAView$_pModel;
 * [GitHub - Tencent/vap: VAP是企鹅电竞开发，用于播放特效动画的实现方案。具有高压缩率、硬件解码等优点。同时支持 iOS,Android,Web 平台。](http://phoenix.yizimg.com/Tencent/vap)
 * [Animating the Drawing of a CGPath With CAShapeLayer – Ole Begemann](https://oleb.net/blog/2010/12/animating-drawing-of-cgpath-with-cashapelayer/)动画绘制路径或文本
 * [efremidze/Magnetic: SpriteKit Floating Bubble Picker (inspired by Apple Music) 🧲](https://github.com/efremidze/Magnetic)气泡动画 音乐
+* [iOS UIScrollView 动画的力学原理](https://card.weibo.com/article/m/show/id/2309634552654104690768)
 
 #### empty data 
 * [Designing For The Empty States](https://tympanus.net/codrops/2013/01/09/designing-for-the-empty-states/)
@@ -645,40 +707,6 @@ extern "C" unsigned long OBJC_IVAR_$_BLAView$_pModel;
 
 * [Information Property List Key Reference](https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/iPhoneOSKeys.html#//apple_ref/doc/uid/TP40009252-SW1)
 
-#### Xcode@调试@
-* [MLeaksFinder：精准 iOS 内存泄露检测工具 | WeRead团队博客](https://wereadteam.github.io/2016/02/22/MLeaksFinder/)
-* [使用LLDB调试Swift](http://www.infoq.com/cn/news/2017/10/LLDB-debug-Swift)
-* [watchpoint 先打印实例变量地址再观察该地址](http://ios.jobbole.com/83393/)
-* [Xcode多种Build Configuration配置使用](https://www.jianshu.com/p/51a2bbe877aa)
-* [Xcode Build System Guide Build Setting Reference
-](https://developer.apple.com/legacy/library/documentation/DeveloperTools/Reference/XcodeBuildSettingRef/1-Build_Setting_Reference/build_setting_ref.html#//apple_ref/doc/uid/TP40003931-CH3-SW48) (https://help.apple.com/xcode/mac/10.2/#/itcaec37c2a6) -新文档
-* [iOS高级调试&逆向技术-汇编寄存器调用](https://blog.csdn.net/chaoyuan899/article/details/75089447)
-* [The Unofficial Guide to xcconfig files](https://pewpewthespells.com/blog/xcconfig_guide.html#BuildSettingInheritance)
-* [Some Practical Uses for Xcode Build Schemes and Build Configurations](https://medium.com/practical-ios-development/some-practical-uses-for-xcode-build-schemes-and-build-configurations-swift-e50d15a1304f)
-* [category 方法被静态库category方法覆盖时候查询静态库](http://ios.jobbole.com/83393/)-还讲述有的时候打印uiview的一些信息出现错误的解决方法e @import UIKit 调试framework add symbol
-* [Xcode中和symbols有关的几个设置](https://www.jianshu.com/p/11710e7ab661)
-* [环境变量设置 打印mian之前dylb时间](https://medium.com/ios-os-x-development/two-useful-environment-vars-6023b275c90c)
-* [XCode启动参数和环境变量](https://blog.csdn.net/hello_hwc/article/details/80865787) - 对象分配时调用堆栈查询MallocStackLogging(show the debug navigator->view memory graph hierarchy)
-* [Xcode 多行编辑](https://medium.com/better-programming/how-to-edit-multiple-lines-of-a-file-in-xcode-5d7c43f01405)
-* [Xcode Hacks to Make Your Life Easier](https://medium.com/better-programming/xcode-hacks-cf32434cbc2) - 包括多行编辑来通过json来编辑model
-* [xcode source control两个不同项目仓库问题](https://ubunifu.co/development/xcode-9-source-control-navigator-issue)
-* [An app that lets you open .car files and browse/extract their images.](https://github.com/insidegui/AssetCatalogTinkerer)
-* [Xcode8.3 修改默认开发语言(Development Language)](https://www.jianshu.com/p/0bce386943bc)
-* [打印xcode运行时环境变量](https://stackoverflow.com/questions/6910901/how-do-i-print-a-list-of-build-settings-in-xcode-project)xcodebuild -workspace xxx.xcworkspace -scheme "xxx" -showBuildSettings
-* 命令行上传ipa：sudo xcrun altool --upload-app --type ios --file "path/to/application.ipa" --username "YOUR_ITMC_USER" --password "https://appleid.apple.com/ appkey" --verbose
-* [Xcode11 或 Transporter 上传app store 一直卡在Authenticating with the App Store 的解决方案 适用于Xcode11.3.1 和Tra... - 简书](https://www.jianshu.com/p/29b44e3b62ed)
-* [controlling which project header file Xcode will include - Stack Overflow](https://stackoverflow.com/questions/2596695/controlling-which-project-header-file-xcode-will-include) USE_HEADERMAP 环境变量使用示例
-* [Speeding Up Custom Script Phases | Indie Stack](https://indiestack.com/2014/12/speeding-up-custom-script-phases/)explanation of Input & Output Files
-* [通过断点技巧让调试更高效](https://mp.weixin.qq.com/s/kv2dfh6L06RQghwkQupi1w)列断点，参数打印arg1
-
-#### Xcode BuildSetting@
-* [cocoapods - Associate POD Spec attributes to different Build Settings from their Xcode Configuration (e.g. Release, Debug) - Stack Overflow](https://stackoverflow.com/questions/22114234/associate-pod-spec-attributes-to-different-build-settings-from-their-xcode-confi)
-* [The Unofficial Guide to xcconfig files](https://pewpewthespells.com/blog/xcconfig_guide.html#ConditionalVariableAssignment)
-* [Xcode Build Configuration Files - NSHipster](https://nshipster.com/xcconfig/) 介绍了[Config=DEBUG]
-* [Build configuration file (xcconfig) format reference - Xcode Help](https://help.apple.com/xcode/mac/8.3/#/dev745c5c974)
-* [Xcode Build Settings](https://xcodebuildsettings.com/)nice 资料
-
-
 #### AssociatedDomain@
 
 * 手机连接电脑打开电脑控制台选择手机查看日志，输入swcd查看相关日志[Introducing Password AutoFill for Apps - WWDC17 - Videos - Apple Developer](https://developer.apple.com/videos/play/wwdc2017/206/)
@@ -794,19 +822,6 @@ extern "C" unsigned long OBJC_IVAR_$_BLAView$_pModel;
 * [微信iOS收款到账语音提醒开发总结 ](https://mp.weixin.qq.com/s/yYCaPMxHGT9LyRyAPewVWQ)
 
 * [仿微信语音推送-微信收款到账 (没运行, 看了下思路是对的)](https://github.com/bjheweihua/VoicePushDemo)
-
-
-#### CollectionView/layout@
-* [Instagram/IGListKit](https://github.com/Instagram/IGListKit)A data-driven UICollectionView framework for building fast and flexible lists.
-* [njdehoog/NHBalancedFlowLayout](https://github.com/njdehoog/NHBalancedFlowLayout)
-* [详细介绍了Decoration的运用](https://markpospesel.wordpress.com/2012/12/11/decorationviews/)
-* [卡片layout 叠加](https://github.com/filletofish/CardsLayout)
-* [横向选择器](https://github.com/blueapron/Mandoline)
-* [Custom layout for a collection view using horizontal and vertical scrolling with sticky rows and columns,币世界那种滑动方式](https://github.com/brightec/CustomCollectionViewLayout)
-* [UICollectionViewCell Auto Sizing(自适应高度)]https://www.jianshu.com/p/4186ed80cbac
-* [UICollectionViewCell 高度自适应](https://zhuangyz.github.io/2018/01/23/uicollectionviewcell_auto_resize_height/)
-* [ios - Subview frame is incorrect when creating UICollectionViewCell - Stack Overflow](https://stackoverflow.com/questions/28269452/subview-frame-is-incorrect-when-creating-uicollectionviewcell)在layoutsubviews中不能获取到控件的有效值，颠覆我三观 [ios - Bug with rounded UIImageViews in a UICollectionViewCell - Stack Overflow](https://stackoverflow.com/questions/32809018/bug-with-rounded-uiimageviews-in-a-uicollectionviewcell)[demo地址](https://github.com/blackchena/FuckLayoutSubviews)
-* [iOS中UICollectionView布局对齐方式的runtime实现 - 简书](https://www.jianshu.com/p/de08c2679241)居左私有方法实现
 
 #### UIScrollView@
 * [使用UIScrollView 细讲delegate方法](http://zhangbuhuai.com/practice-in-uiscrollview/)
@@ -1055,13 +1070,6 @@ tableView.estimatedSectionFooterHeight = CGFLOAT_MIN;
 * [LUNTutorialViewController](https://github.com/LunAppsMobile/LUNTutorialViewController)
 * [WhatesNew 文本指南](https://github.com/BalestraPatrick/WhatsNew)
 
-#### Awesome系列
-* [awesome-macOS](https://github.com/iCHAIT/awesome-macOS)
-* [Awesome macOS Command Line](https://github.com/herrbischoff/awesome-osx-command-line)
-* [awesome-ios](https://github.com/vsouza/awesome-ios)
-* [awesome-swift](https://github.com/matteocrippa/awesome-swift)
-* [open-source-ios-apps](https://github.com/dkhamsing/open-source-ios-apps#sample)
-
 #### NSDictionary
 * [Set value为空解决方案](http://tech.glowing.com/cn/how-we-made-nsdictionary-nil-safe/)
 
@@ -1189,7 +1197,13 @@ tableView.estimatedSectionFooterHeight = CGFLOAT_MIN;
 * [iOS获取设备型号和App版本号等信息](https://www.jianshu.com/p/0d84e6852c5a)UTS stands for UNIX Timesharing System.
 
 
-#### 开源应用@
+## 开源应用@开源项目@
+
+### 浏览器
+* [mozilla-mobile/firefox-ios: Firefox for iOS](https://github.com/mozilla-mobile/firefox-ios)
+* [brave/brave-ios: Brave iOS Browser](https://github.com/brave/brave-ios)
+* [PresearchOfficial/presearch-browser-ios](https://github.com/PresearchOfficial/presearch-browser-ios)基于brave-ios
+
 * [ChateSecure-iOS](https://github.com/ChatSecure/ChatSecure-iOS)ChatSecure is a free and open source encrypted chat client for iPhone and Android that supports OTR encryption over XMPP
 * [iOS-Source-Code-Analyze](https://github.com/Draveness/iOS-Source-Code-Analyze)解析一些开源项目
 * [城觅WNXHuntForCity](https://github.com/ZhongTaoTian/WNXHuntForCity)
@@ -1265,6 +1279,8 @@ tableView.estimatedSectionFooterHeight = CGFLOAT_MIN;
 * [FTPopOverMenu](https://github.com/liufengting/FTPopOverMenu) 带箭头的弹出menu 列表式
 * [QBPopupMenu](https://github.com/questbeat/QBPopupMenu) 类似系统横向menu
 * [官方文档告诉你UIPopoverPresentationController怎么用](https://www.jianshu.com/p/43bab8247b69)
+* [mkko/DrawerView: A drop-in view, to be used as a drawer anywhere in your app](https://github.com/mkko/DrawerView)
+* [super-ultra/UltraDrawerView: 🐝 Super ultra drawer view](https://github.com/super-ultra/UltraDrawerView)
 
 #### UINavigation
 * [iOS - 实现UINavigation全屏滑动返回(一)](https://cloud.tencent.com/developer/article/1153950)
@@ -1717,10 +1733,11 @@ make
 * [SRS WebRTC播放器](http://ossrs.net/srs.release/trunk/research/players/rtc_player.html?autostart=true&server=r.ossrs.net&vhost=r.ossrs.net)
 * [SRS iOS android flutter app](http://ossrs.net/srs.release/releases/app.html)
 
-#### 面试
+#### 面试@
 * [50 iOS Interview Questions And Answers Part 5](https://medium.com/@duruldalkanat/50-ios-interview-questions-and-answers-part-5-de6241374a8f)
 * [hit-alibaba.github.io](https://hit-alibaba.github.io/interview/iOS/Cocoa-Touch/Performance.html)
 * [书栈网 · BookStack_程序员IT互联网开源编程书籍免费阅读，助您【码】力十足！](https://www.bookstack.cn/)
+* [awesome-ios-interview/English.md at master · dashvlas/awesome-ios-interview](https://github.com/dashvlas/awesome-ios-interview/blob/master/Resources/English.md)
 
 #### gif loading 
 * [gif loading refreshing](https://loading.io/#)
@@ -1886,7 +1903,18 @@ Each symbol name is preceded by its value (blanks if undefined).  Unless the -m
 #### shell@bash@
 * [bash(1) - Linux manual page](https://man7.org/linux/man-pages/man1/bash.1.html) ${parameter%word} ${parameter%%word} ${parameter#word} ${parameter##word}
 
-# Swift@
+## Swift@
+
+### Swift Package Manager@
+* [Package — Swift Package Manager](https://docs.swift.org/package-manager/PackageDescription/PackageDescription.html#target)package.swift语法介绍
+* [解决swift package manager fetch慢的问题 - 简书](https://www.jianshu.com/p/953220424556)xcodebuild -resolvePackageDependencies -scmProvider system 再DriverData SourcePackages 拷贝,
+* [Building Swift Packages or Apps that Use Them in Continuous Integration Workflows | Apple Developer Documentation](https://developer.apple.com/documentation/xcode/building-swift-packages-or-apps-that-use-them-in-continuous-integration-workflows)scmProvider解释有system和xcode两个选项，system即代表用系统git配置
+* [如何让swift package manager走代理 - 掘金](https://juejin.cn/post/6946451335948697636)--Software configuration management
+
+
+### 语法@
+* [swiftui - What is the "some" keyword in Swift(UI)? - Stack Overflow](https://stackoverflow.com/questions/56433665/what-is-the-some-keyword-in-swiftui)讲了some带来的好处
+* [Opaque Types — The Swift Programming Language (Swift 5.7)](https://docs.swift.org/swift-book/LanguageGuide/OpaqueTypes.html)
 
 ##
 * [模式匹配第一弹: switch, enums & where 子句](http://swift.gg/2016/04/26/pattern-matching-1/)
@@ -1899,8 +1927,6 @@ Each symbol name is preceded by its value (blanks if undefined).  Unless the -m
 * [[Swift]遍历字符串 - 山青咏芝 - 博客园](https://www.cnblogs.com/strengthen/p/9798159.html)
 * [使用 Swift 实现基于堆的优先级队列 | 使用 Swift 实现基于堆的优先级队列 ](https://swift.gg/2019/05/06/implementing-a-heap-based-priority-queue-using-swift/)
 * [@dynamic/dynamic/@NSManaged — CoreAnimation Properties in Swift | by Jonathan Cardasis | Medium](https://medium.com/@joncardasis/dynamic-dynamic-nsmanaged-coreanimation-properties-in-swift-b7355c9be7e4)
-* [解决swift package manager fetch慢的问题 - 简书](https://www.jianshu.com/p/953220424556)xcodebuild -resolvePackageDependencies -scmProvider system 再DriverData SourcePackages 拷贝
-* [如何让swift package manager走代理 - 掘金](https://juejin.cn/post/6946451335948697636)--Software configuration management
 * [swift - Use `self` as a default parameter - Stack Overflow](https://stackoverflow.com/questions/30798773/use-self-as-a-default-parameter)
 * [在extension中声明自己的构造函数不会覆盖struct默认构造函数](https://docs.swift.org/swift-book/LanguageGuide/Initialization.html)
 
