@@ -34,6 +34,7 @@
 
 * [学习笔记: Swift 关于泛型与重载的探索 - 掘金](https://juejin.cn/post/6844903597805666317)优先级
 * [Swift generic method should use overloaded generic function - Stack Overflow](https://stackoverflow.com/questions/29717698/swift-generic-method-should-use-overloaded-generic-function)//编译器觉得调用哪个重载方法
+* [Swift Operator precedence and associativity (With Examples)](https://www.programiz.com/swift-programming/operator-precedence-associativity)运算符优先级及结合性
 
 ## Swift 必备 tips
 
