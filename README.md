@@ -790,6 +790,10 @@ extern "C" unsigned long OBJC_IVAR_$_BLAView$_pModel;
 #### 后台@
 * [iOS原生级别后台下载详解](https://juejin.im/post/5c4ed0b0e51d4511dc730799)
 
+#### 下载@
+* [guowilling/SRDownloadManager: Powerful and easy-to-use file download manager based on NSURLSession. Provide download status, progress and completion callback block.](https://github.com/guowilling/SRDownloadManager)
+* [GitHub - Danie1s/Tiercel: 简单易用、功能丰富的纯 Swift 下载框架](https://github.com/Danie1s/Tiercel)
+
 
 #### warning xcode
 * [warning 忽略和意义](https://www.bbsmax.com/A/VGzlA87Jbq/)
@@ -1201,6 +1205,7 @@ tableView.estimatedSectionFooterHeight = CGFLOAT_MIN;
 * [深入理解 WKWebView（基础篇）—— WKWebView 加载生命周期与代理方法剖析](https://mp.weixin.qq.com/s/ZFui9IiMTWyLXGKZlbnzwQ)
 * [WKWebview使用攻略 - 知乎](https://zhuanlan.zhihu.com/p/164502340)
 * [H5在全屏Webview中双端适配刘海屏 - 简书](https://www.jianshu.com/p/0b639027a92b)获取safeareatop等
+* [iOS之深入解析WKWebView加载的生命周期与代理方法-云社区-华为云](https://bbs.huaweicloud.com/blogs/331397)生命周期中的临时态 提交态
 
 #### xcasset@
 
@@ -1833,6 +1838,7 @@ Each symbol name is preceded by its value (blanks if undefined).  Unless the -m
 * [llvm-ld](https://releases.llvm.org/2.9/docs/CommandGuide/html/llvm-ld.html)
 * [ld(1): GNU linker - Linux man page](https://linux.die.net/man/1/ld)
 * [Linker Script初探 - GNU Linker Ld手冊略讀 - My code works, I don’t know why.](http://wen00072.github.io/blog/2014/03/14/study-on-the-linker-script/)
+* OTHER_LIBTOOLFLAGS 打包静态库时如果要链接其它静态库配置该选项来链接不同版本比如：debug环境："$(SRCROOT)/xxx/Vendor/xxxSDKAF3.1.0/GZQRCodeLib.framework/GZQRCodeLib" release环境："$(SRCROOT)/xxx/Vendor/xxxSDKAF4.1.0/GZQRCodeLib.framework/GZQRCodeLib"
 
 #### +load +initialize dyld 启动优化
 
