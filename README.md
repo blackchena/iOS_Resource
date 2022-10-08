@@ -1704,6 +1704,7 @@ echo -e "$text" # 111[换行]222[换行]333
 * [不允许中国以外IP访问的APP，如何上架App Store？ - 知乎](https://zhuanlan.zhihu.com/p/255195590?ivk_sa=1024320u)
 * [shell技巧5 - 全自动打包ipa xcodebuild -exportArchive](https://ihtcboy.com/2018/09/17/2018-09-17_shell%E6%8A%80%E5%B7%A75_%E5%85%A8%E8%87%AA%E5%8A%A8%E6%89%93%E5%8C%85%E7%94%9F%E6%88%90ipa/#more)
 * [火掌柜 iOS 团队 GitLab CI 集成实践](https://dmanager.github.io/ci/2018/06/23/ji-gitlabcide-ci-shi-jian/)
+* [IPA托管](https://www.jianshu.com/p/08172adacc97)
 
 #### git@ 学习
 
