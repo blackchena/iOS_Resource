@@ -2030,3 +2030,6 @@ clang -rewrite-objc -fobjc-arc -stdlib=libc++ -mmacosx-version-min=10.7 -fobjc-r
 * [写了个简洁的Markdown简历模板 - 知乎](https://zhuanlan.zhihu.com/p/369827427)
 
 
+# vscode@
+
+* [VSCode使用LSP进行Swift开发 - 掘金](https://juejin.cn/post/6844903725534806029)
