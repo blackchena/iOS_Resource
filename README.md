@@ -177,6 +177,7 @@
 * [Build configuration file (xcconfig) format reference - Xcode Help](https://help.apple.com/xcode/mac/8.3/#/dev745c5c974)
 * [Xcode Build Settings](https://xcodebuildsettings.com/)nice 资料
 * [Copy files to bundle depending on active configuration - Result For Dev](https://resultfor.dev/949949-copy-files-to-bundle-depending-on-active-configuration)
+* [在 Xcode 中为 iOS 应用定制多种配置(应用名、图标、接口环境等) - Ficow Shen's Blog](https://blog.ficowshen.com/page/post/51)//多Config配置，讲得很好
 
 ## sqlite@
 * [iOS sqlite3数据库解析](https://www.cnblogs.com/wfwenchao/p/3964213.html)
@@ -841,6 +842,7 @@ extern "C" unsigned long OBJC_IVAR_$_BLAView$_pModel;
 * [ISHPullUp](https://github.com/iosphere/ISHPullUp)//多段上拉弹窗
 * [FullStackNotes/iOS/iOS 开发舆图/02 iOS系统/界面/弹窗/HWPanModal at 9dae9d98ce7fdebd032fb5bd1dcffa9a2c658cef · coderiding/FullStackNotes](https://github.com/coderiding/FullStackNotes/tree/9dae9d98ce7fdebd032fb5bd1dcffa9a2c658cef/iOS/iOS%20%E5%BC%80%E5%8F%91%E8%88%86%E5%9B%BE/02%20iOS%E7%B3%BB%E7%BB%9F/%E7%95%8C%E9%9D%A2/%E5%BC%B9%E7%AA%97/HWPanModal)
 * [PanModal/README.md at master · slackhq/PanModal](https://github.com/slackhq/PanModal/blob/master/README.md)
+* [GitHub - scenee/FloatingPanel: A clean and easy-to-use floating panel UI component for iOS](https://github.com/scenee/FloatingPanel)上拉多级弹窗
 
 #### 地址选择
 
