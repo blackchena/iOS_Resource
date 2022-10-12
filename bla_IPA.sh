@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/bash -x
 DIR="$(cd "$(dirname "$1")" && pwd)"
 
 function run {
@@ -17,6 +17,20 @@ function run_at {
 	popd
 }
 
+function fir_upload {
+	ipaFile=${DIR}/Target.ipa
+	fir publish "${ipaFile}" -c "$1"
+}
+
+function pgyer_upload {
+	ipaFile=${DIR}/Target.ipa
+	curl -F file=@"$ipaFile" \
+	-F uKey=xxxx \
+	-F _api_key=xxxx \
+	-F updateDescription=$1 \
+	https://www.pgyer.com/apiv1/app/upload
+}
+
 echo "==================MonkeyDev(create ipa file...)=================="
 
 
@@ -30,13 +44,17 @@ run "cp -rf ${APP} ${DIR}/Payload"
 run_at ${DIR} "zip -qr Target.ipa Payload"
 run "rm -rf ${DIR}/Payload"
 
-read -p '请输入更新日志：' updateLog
+read -ep '请输入更新日志：' updateLog
 
-if [[ -n "$updateLog" ]]; then
-	fir publish "${DIR}/Target.ipa" -c "$updateLog"
-else
+if [[ -z "$updateLog" ]]; then
+	updateLog="更新"
 	echo "建议输入更新日志"
-	fir publish "${DIR}/Target.ipa"
+fi
+
+if [[ "$2" == "pgyer" ]]; then
+	pgyer_upload $updateLog
+else
+	fir_upload $updateLog
 fi
 
 echo "==================MonkeyDev(done)=================="

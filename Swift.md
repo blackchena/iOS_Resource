@@ -12,12 +12,29 @@
 * [swift 协议中的Self](http://swifter.tips/use-self/)
 * [Sequence vs Collection](https://academy.realm.io/cn/posts/try-swift-soroush-khanlou-sequence-collection/)
 * [Swift UI 学习](https://developer.apple.com/tutorials/swiftui/building-lists-and-navigation)
-* [为什么泛型协议不能用于修饰变量或则常量类型(函数参数类型) 还有一个答案讲述类型擦除](https://stackoverflow.com/questions/27725803/how-to-use-generic-protocol-as-a-variable-type)-一个函数不为泛型函数，不可能返回两种不同的类型
+* [为什么泛型协议不能用于修饰变量或则常量类型(函数参数类型) 还有一个答案讲述类型擦除](https://stackoverflow.com/questions/27725803/how-to-use-generic-protocol-as-a-variable-type)-protocol can only be used as a generic constraint
 * [some 解决Protocol的一些弊端](https://stackoverflow.com/questions/56433665/what-is-the-some-keyword-in-swiftui)
 * [swift advance book](https://www.objc.io/books/advanced-swift/)
 * [Swift中self和Self](https://www.jianshu.com/p/5059d2993509) - 'Self' is only available in a protocol or as the result of a method in a clas
 * [lazy 属性 sequence](https://swift.gg/2016/03/25/being-lazy/)
 * [compactMap,flatmap,map](https://www.jianshu.com/p/d8c873e4aee8)
+
+## 语法@
+* [What’s the difference between any and some in Swift 5.7? – Donny Wals](https://www.donnywals.com/whats-the-difference-between-any-and-some-in-swift-5-7/)
+* [What are primary associated types in Swift 5.7? – Donny Wals](https://www.donnywals.com/what-are-primary-associated-types-in-swift-5-7/)
+* [What is the “any” keyword in Swift? – Donny Wals](https://www.donnywals.com/what-is-the-any-keyword-in-swift/)
+* [What is the “some” keyword in Swift? – Donny Wals](https://www.donnywals.com/what-is-the-some-keyword-in-swift/)
+* [swift - Protocol func returning Self - Stack Overflow](https://stackoverflow.com/questions/25645090/protocol-func-returning-self) 像下面这种方法被声明在父类，如果子类继承了该方法后，通过子类实例调用该方法返回的是一个子类实例
+
+```
+    func createSelf() -> Self {
+        return Self()
+    }
+```
+
+* [学习笔记: Swift 关于泛型与重载的探索 - 掘金](https://juejin.cn/post/6844903597805666317)优先级
+* [Swift generic method should use overloaded generic function - Stack Overflow](https://stackoverflow.com/questions/29717698/swift-generic-method-should-use-overloaded-generic-function)//编译器觉得调用哪个重载方法
+* [Swift Operator precedence and associativity (With Examples)](https://www.programiz.com/swift-programming/operator-precedence-associativity)运算符优先级及结合性
 
 ## Swift 必备 tips
 
@@ -86,9 +103,10 @@
 * [【基本功】深入剖析Swift性能优化](https://juejin.im/post/5bdbdc876fb9a049f36186c3) nice
 * [从一道 iOS 面试题到 Swift 对象模型和运行时细节——「iOS 面试之道」勘误 - 掘金](https://juejin.im/post/5c92b650f265da612f1b973a)
 
-## F**k swift@
+## Fxxk swift@
 * [swift - Calling protocol default implementation from regular method - Stack Overflow](https://stackoverflow.com/questions/32602712/calling-protocol-default-implementation-from-regular-method)
 * [swift - Implementing a function with a default parameter defined in a protocol - Stack Overflow](https://stackoverflow.com/questions/42634816/implementing-a-function-with-a-default-parameter-defined-in-a-protocol)
+* [Protocol Oriented: Swift 协议陷阱之 Associated Type - 知乎](https://zhuanlan.zhihu.com/p/80672557)
 
 ```
 

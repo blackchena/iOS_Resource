@@ -8,3 +8,12 @@
 * [Tabbar color set](https://stackoverflow.com/questions/50566868/how-to-change-background-color-of-tabbar-without-changing-the-appbar-in-flutter)
 * [观察widget hierarchy inspector](https://flutter.dev/docs/development/tools/inspector)
 * [flutterchina](https://www.flutterchina.net.cn/)
+* [Dart Examples](https://sites.google.com/site/dartlangexamples/home)官网 google dart
+
+
+## Variables@
+
+* [What are the differences between the different Map implementations in Dart? - Stack Overflow](https://stackoverflow.com/questions/14930950/what-are-the-differences-between-the-different-map-implementations-in-dart)
+* [Dart - Variables - GeeksforGeeks](https://www.geeksforgeeks.org/variables-and-keywords-in-dart/)dynamic type
+
+
