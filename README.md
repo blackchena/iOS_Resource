@@ -985,6 +985,7 @@ tableView.estimatedSectionFooterHeight = CGFLOAT_MIN;
 * [ios - Center NSTextAttachment image next to single line UILabel - Stack Overflow](https://stackoverflow.com/questions/26105803/center-nstextattachment-image-next-to-single-line-uilabel)//bounds
 * [ios - Drop cap with NSAttributedString - Stack Overflow](https://stackoverflow.com/questions/14214900/drop-cap-with-nsattributedstring/14639864#14639864)//首字下沉
 * [CoreText实现图文混排之尺寸估算及文本选择 - 简书](https://www.jianshu.com/p/602682b683d6)//CTFramesetterSuggestFrameSizeWithConstraints介绍
+* [GitHub - uber/UberSignature: Provides an iOS view controller allowing a user to draw their signature with their finger in a realistic style.](https://github.com/uber/UberSignature)手写签名
 
 #### UITextView@
 * [Auto Resizing a Dynamic UITextView](https://medium.com/macoclock/auto-resizing-dynamic-uitextview-97d151e59ca0)
