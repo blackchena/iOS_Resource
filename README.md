@@ -1411,6 +1411,7 @@ make
 * [使用 Xcode 制作 Framework 与 XCFramework - 简书](https://www.jianshu.com/p/14f2e2236d34)
 * [XCFramework 是用来干什么的](https://cocoafei.top/2021/01/XCFramework-%E6%98%AF%E7%94%A8%E6%9D%A5%E5%B9%B2%E4%BB%80%E4%B9%88%E7%9A%84/)
 * [动态库位置](https://stackoverflow.com/questions/65842584/what-actually-happens-when-i-add-libcurl-4-tbd-as-a-dependency-in-xcode)其实用lldb命令 image list才可以看见库真正的位置/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Library/Developer/CoreSimulator/Profiles/Runtimes/iOS.simruntime/Contents/Resources/RuntimeRoot/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics 
+* [Dynamic Library Design Guidelines](https://developer.apple.com/library/archive/documentation/DeveloperTools/Conceptual/DynamicLibraries/100-Articles/DynamicLibraryDesignGuidelines.html#//apple_ref/doc/uid/TP40002013-SW18)动态库符号导出问题解决GMSSL链接进动态库带有getcontext等私有方法造成上传App Store被拒问题
 
 #### 静态库@
 * [如何将多个.o合并为一个.o文件 - 胡桃夹子](http://hutaow.com/blog/2015/02/14/ld-o/)
