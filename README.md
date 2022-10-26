@@ -216,6 +216,12 @@
 * [KEXT Controls and Notifications](https://developer.apple.com/library/archive/documentation/Darwin/Conceptual/NKEConceptual/control/control.html)
 * 从apple demo映射[robovm/apple-ios-samples](https://github.com/robovm/apple-ios-samples)获取苹果networkextensionDemo[apple-ios-samples/SimpleTunnelCustomizedNetworkingUsingtheNetworkExtensionFramework at master · robovm/apple-ios-samples](https://github.com/robovm/apple-ios-samples/tree/master/SimpleTunnelCustomizedNetworkingUsingtheNetworkExtensionFramework)，这篇文章分析了demo中的类的作用[Joeeyy/iMonitor](https://github.com/Joeeyy/iMonitor)
 * [Apple Demo](https://developer.apple.com/library/archive/navigation/#section=Resource%20Types&topic=Sample%20Code)
+* [iOS中Network Extension安全科学Tunnel应用(Swift5) - 掘金](https://juejin.cn/post/6844903829146697742)
+* [App extension实战 - NetworkExtension 讲解连接并捕获packet_上天眷顾我的博客-CSDN博客_networkextension](https://blog.csdn.net/qq_30513483/article/details/81100414)
+* [mozilla-mobile/guardian-vpn-ios: Mozilla VPN for iOS](https://github.com/mozilla-mobile/guardian-vpn-ios) [iCepa/iCepa: iOS system-wide VPN based Tor client](https://github.com/iCepa/iCepa) //github关键词搜索：startTunnel
+* [mutualmobile/MMWormhole: Message passing between iOS apps and extensions.](https://github.com/mutualmobile/MMWormhole)
+* [yggdrasil-network/yggdrasil-ios: Reference implementation for connecting to the Yggdrasil Network from iPhones and iPads](https://github.com/yggdrasil-network/yggdrasil-ios)
+* [yggdrasil-network/yggdrasil-go: An experiment in scalable routing as an encrypted IPv6 overlay network](https://github.com/yggdrasil-network/yggdrasil-go)
 
 #### wwdc 字幕 视频
 * [wwdc 中文字幕](https://github.com/iOSDevLog/wwdc_chinese)
@@ -376,6 +382,8 @@ ar -rc libgocssl.a gmssl.o //压缩为静态库
 * [iphonexs max 14.4.1越狱](https://pangu8.com/jailbreak/unc0ver/#14.5.1)
 * [iOS逆向 - 运行时分析（三）Frida - 掘金](https://juejin.cn/post/7079726534096846862)
 * [iOS攻防（六）：使用Cycript一窥运行程序的神秘面纱(入门篇) | 曹雪松de博客|CoderBoy's Blog](https://sevencho.github.io/archives/c12f47b1.html)
+* [majd/ipatool: Command-line tool that allows searching and downloading app packages (known as ipa files) from the iOS App Store](https://github.com/majd/ipatool) ipa包下载
+
 
 #### 机器学习@
 
@@ -1865,6 +1873,7 @@ Each symbol name is preceded by its value (blanks if undefined).  Unless the -m
 * [Thunk程序的实现原理以及在iOS中的应用](https://juejin.im/post/5c5281e0e51d45517334dd34)
 * [一个基于汇编的中心重定向框架](https://blog.dianqk.org/2020/05/11/trampolinehook-study-notes/)
 * [Hook 原理之 CydiaSubstrate（一）：MSHookMessageEx](https://amywushu.github.io/2017/03/07/%E9%80%86%E5%90%91%E7%9F%A5%E8%AF%86-Hook-%E5%8E%9F%E7%90%86%E4%B9%8B-CydiaSubstrate%EF%BC%88%E4%B8%80%EF%BC%89%EF%BC%9AMSHookMessageEx.html) [二](https://amywushu.github.io/2017/03/23/%E9%80%86%E5%90%91%E7%9F%A5%E8%AF%86-Hook-%E5%8E%9F%E7%90%86%E4%B9%8B-CydiaSubstrate%EF%BC%88%E4%BA%8C%EF%BC%89%EF%BC%9AMSHookMessageEx.html)
+* [基于汇编实现objc_msgSend hook方法耗时的方案 - 掘金](https://juejin.cn/post/7134877291716280328/)
 
 #### 汇编@
 * [iOS开发同学的arm64汇编入门](https://blog.cnbluebox.com/blog/2017/07/24/arm64-start/) 看完超级爽系列
@@ -1886,6 +1895,7 @@ Each symbol name is preceded by its value (blanks if undefined).  Unless the -m
 * [汇编 eax寄存器和AX,AH,AL之间的关系_新一下的兰天的博客-CSDN博客_al寄存器](https://blog.csdn.net/maoliran/article/details/88814537)
 * [Assembly Language教程_w3cschool](https://www.w3cschool.cn/assembly/)w3cschool汇编教程 英特尔32处理器
 * [A-Profile Architectures | Exploration tools – Arm Developer](https://developer.arm.com/architectures/cpu-architecture/a-profile/exploration-tools)arm汇编官网
+* [Learn the architecture - AArch64 Instruction Set Architecture](https://developer.arm.com/documentation/102374/0100/Loads-and-stores---addressing?lang=en)arm手册官方 搜索关键词ldr等出现手册
 
 #### 编译@
 * [记一次 mangle & demangle 之旅 - 简书](https://www.jianshu.com/p/2e598dfd84bf)符号修饰
