@@ -226,6 +226,9 @@
 * [jquepi/ShadowSocks-libev-iOS](https://github.com/jquepi/ShadowSocks-libev-iOS)
 * [ShadowsocksR-Live/iShadowsocksR: ShadowsocksR (SSRoT) client for iOS](https://github.com/ShadowsocksR-Live/iShadowsocksR)//用它
 * [vpn - iOS, NEVPNManager, NEProxySettings does not work - Stack Overflow](https://stackoverflow.com/questions/74123619/ios-nevpnmanager-neproxysettings-does-not-work)苹果支持ikev2
+* [confirmedcode/Confirmed-iOS: Confirmed VPN client for iOS](https://github.com/confirmedcode/Confirmed-iOS)
+* [VPN - Cocoa开发者](https://iliunian.cn/VPN.html)介绍PPTP IPSpec等协议
+* [App extension实战 - Personal VPN 连接并捕获packet - 掘金](https://juejin.cn/post/6844903624200421390)
 
 #### wwdc 字幕 视频
 * [wwdc 中文字幕](https://github.com/iOSDevLog/wwdc_chinese)
