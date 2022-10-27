@@ -18,6 +18,7 @@
 * [Workflow Search | Packal](http://www.packal.org/workflow-search)
 * [zenorocha/alfred-workflows: A collection of Alfred 3 and 4 workflows that will rock your world](https://github.com/zenorocha/alfred-workflows)
 * [Forums - Alfred App Community Forum](https://www.alfredforum.com/)
+* [Home · wensonsmith/YoudaoTranslator Wiki](https://github.com/wensonsmith/YoudaoTranslator/wiki) 有道翻译
 
 
 ## 科学的查资料@
@@ -216,6 +217,15 @@
 * [KEXT Controls and Notifications](https://developer.apple.com/library/archive/documentation/Darwin/Conceptual/NKEConceptual/control/control.html)
 * 从apple demo映射[robovm/apple-ios-samples](https://github.com/robovm/apple-ios-samples)获取苹果networkextensionDemo[apple-ios-samples/SimpleTunnelCustomizedNetworkingUsingtheNetworkExtensionFramework at master · robovm/apple-ios-samples](https://github.com/robovm/apple-ios-samples/tree/master/SimpleTunnelCustomizedNetworkingUsingtheNetworkExtensionFramework)，这篇文章分析了demo中的类的作用[Joeeyy/iMonitor](https://github.com/Joeeyy/iMonitor)
 * [Apple Demo](https://developer.apple.com/library/archive/navigation/#section=Resource%20Types&topic=Sample%20Code)
+* [yaooort/OpenVPN-IOS: Objective-C OpenVpnAdapter IOS OpenVpn](https://github.com/yaooort/OpenVPN-IOS)
+* [ss-abramchuk/OpenVPNAdapter: Objective-C wrapper for OpenVPN library. Compatible with iOS and macOS.](https://github.com/ss-abramchuk/OpenVPNAdapter)
+* [WuChuming/shadowsocks-iOS: fork by shadowsocks/shadowsocks-iOS](https://github.com/WuChuming/shadowsocks-iOS) 三方fork star数较多 没有做过多修改
+* [Charles破解工具](https://www.zzzmode.com/mytools/charles/)
+* [charles破解安装激活(包含windows和mac)最新简单教程【亲测有效】 - 哔哩哔哩](https://www.bilibili.com/read/cv18697749)
+* [tladesignz/ShadowSocks-libev-iOS](https://github.com/tladesignz/ShadowSocks-libev-iOS)
+* [jquepi/ShadowSocks-libev-iOS](https://github.com/jquepi/ShadowSocks-libev-iOS)
+* [ShadowsocksR-Live/iShadowsocksR: ShadowsocksR (SSRoT) client for iOS](https://github.com/ShadowsocksR-Live/iShadowsocksR)//用它
+* [vpn - iOS, NEVPNManager, NEProxySettings does not work - Stack Overflow](https://stackoverflow.com/questions/74123619/ios-nevpnmanager-neproxysettings-does-not-work)苹果支持ikev2
 
 #### wwdc 字幕 视频
 * [wwdc 中文字幕](https://github.com/iOSDevLog/wwdc_chinese)
@@ -1961,6 +1971,7 @@ Each symbol name is preceded by its value (blanks if undefined).  Unless the -m
 
 #### github@
 * [github 下载指定文件夹下面的内容](https://blog.csdn.net/qq_35860352/article/details/80313078)[downgit 需要科学上网](https://minhaskamal.github.io/DownGit/#/home)- ”/branches/branchname/”替换成”/trunk/”。例如：”/tree/master/” to “/trunk/” 
+* [作为开发人员，你不得不懂的Github搜索技巧！ - 掘金](https://juejin.cn/post/6844904058755481607)
 
 #### shell@bash@
 * [bash(1) - Linux manual page](https://man7.org/linux/man-pages/man1/bash.1.html) ${parameter%word} ${parameter%%word} ${parameter#word} ${parameter##word}
