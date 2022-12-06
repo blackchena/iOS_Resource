@@ -580,6 +580,9 @@ extern "C" unsigned long OBJC_IVAR_$_BLAView$_pModel;
 * [Animating the Drawing of a CGPath With CAShapeLayer – Ole Begemann](https://oleb.net/blog/2010/12/animating-drawing-of-cgpath-with-cashapelayer/)动画绘制路径或文本
 * [efremidze/Magnetic: SpriteKit Floating Bubble Picker (inspired by Apple Music) 🧲](https://github.com/efremidze/Magnetic)气泡动画 音乐
 * [iOS UIScrollView 动画的力学原理](https://card.weibo.com/article/m/show/id/2309634552654104690768)
+* [GitHub - lf19940514/LFFoldNumberDemo: 翻页数字显示](https://github.com/lf19940514/LFFoldNumberDemo)
+* [CUIDemoFavorites/CUIFoldLabel.m at 6b385244b2847644832de10ed8a965bede14dbf8 · Leon0206/CUIDemoFavorites](https://github.com/Leon0206/CUIDemoFavorites/blob/6b385244b2/LocalPods/CUIDemoElements/Classes/Views/ViewAnimation/FoldNumberView/CUIFoldLabel.m)
+* [Dillion/iOS-Flip-Transform: Core Animation framework for navigating data by flipping](https://github.com/Dillion/iOS-Flip-Transform)时钟翻页
 
 #### empty data 
 * [Designing For The Empty States](https://tympanus.net/codrops/2013/01/09/designing-for-the-empty-states/)
