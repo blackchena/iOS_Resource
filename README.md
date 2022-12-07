@@ -623,7 +623,9 @@ extern "C" unsigned long OBJC_IVAR_$_BLAView$_pModel;
 * [GetStream/purposeful-ios-animations: Meaningful iOS animations built to inspire you in creating useful animations for your apps. Each of the animations here was cloned with SwiftUI. Have you seen an app animation you love to rebuild and add to this repo?, contact [@amos_gyamfi](https://twitter.com/amos_gyamfi) and [@stefanjblos](https://twitter.com/stefanjblos) on Twitter.](https://github.com/GetStream/purposeful-ios-animations)
 * [OneClock的翻页时钟效果是如何实现的 | OneSwift](https://bjdehang.github.io/OneSwift/articles/01.OneClock%E7%9A%84%E7%BF%BB%E9%A1%B5%E6%97%B6%E9%92%9F%E6%95%88%E6%9E%9C%E6%98%AF%E5%A6%82%E4%BD%95%E5%AE%9E%E7%8E%B0%E7%9A%84.html)
 * [ios - Apply gradient color to arc created with UIBezierPath - Stack Overflow](https://stackoverflow.com/questions/20630653/apply-gradient-color-to-arc-created-with-uibezierpath)
-
+* [GitHub - lf19940514/LFFoldNumberDemo: 翻页数字显示](https://github.com/lf19940514/LFFoldNumberDemo)
+* [CUIDemoFavorites/CUIFoldLabel.m at 6b385244b2847644832de10ed8a965bede14dbf8 · Leon0206/CUIDemoFavorites](https://github.com/Leon0206/CUIDemoFavorites/blob/6b385244b2/LocalPods/CUIDemoElements/Classes/Views/ViewAnimation/FoldNumberView/CUIFoldLabel.m)
+* [Dillion/iOS-Flip-Transform: Core Animation framework for navigating data by flipping](https://github.com/Dillion/iOS-Flip-Transform)时钟翻页
 
 #### empty data 
 * [Designing For The Empty States](https://tympanus.net/codrops/2013/01/09/designing-for-the-empty-states/)
