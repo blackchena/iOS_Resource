@@ -1,4 +1,4 @@
-#!/bin/bash -x
+#!/bin/bash
 DIR="$(cd "$(dirname "$1")" && pwd)"
 
 function run {
@@ -33,30 +33,37 @@ function pgyer_upload {
 
 echo "==================MonkeyDev(create ipa file...)=================="
 
+APP="$1"
+DisplayName="$(/usr/libexec/PlistBuddy -c "Print CFBundleDisplayName" "${APP}/Info.plist")"
+Version="$(/usr/libexec/PlistBuddy -c "Print CFBundleShortVersionString" "${APP}/Info.plist")"
+BuildCode="$(/usr/libexec/PlistBuddy -c "Print CFBundleVersion" "${APP}/Info.plist")"
+IPAName="${DisplayName}_v${Version}_${BuildCode}.ipa"
 
-run "rm -rf ${DIR}/Target.ipa ${DIR}/Payload"
+run "rm -rf ${DIR}/${IPAName} ${DIR}/Payload"
 run "mkdir ${DIR}/Payload"
 
-APP="$1"
+
 
 run "cp -rf ${APP} ${DIR}/Payload"
 # zip 用绝对路径压缩，会包含路径目录结构
-run_at ${DIR} "zip -qr Target.ipa Payload"
+run_at ${DIR} "zip -qr ${IPAName} Payload"
 run "rm -rf ${DIR}/Payload"
+echo "==================生成IPA成功: ${DIR}=================="
+open ${DIR}
 
-read -ep '请输入更新日志：' updateLog
+# read -ep '请输入更新日志：' updateLog
 
-if [[ -z "$updateLog" ]]; then
-	updateLog="更新"
-	echo "建议输入更新日志"
-fi
+# if [[ -z "$updateLog" ]]; then
+# 	updateLog="更新"
+# 	echo "建议输入更新日志"
+# fi
 
-if [[ "$2" == "pgyer" ]]; then
-	pgyer_upload $updateLog
-else
-	fir_upload $updateLog
-fi
+# if [[ "$2" == "pgyer" ]]; then
+# 	pgyer_upload $updateLog
+# else
+# 	fir_upload $updateLog
+# fi
 
-echo "==================MonkeyDev(done)=================="
+# echo "==================MonkeyDev(done)=================="
 
 exit;
