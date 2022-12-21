@@ -94,6 +94,8 @@
 * [iOS 8视图控制器中的showViewController和showDetailViewController - 鸟的博客](https://muzico.gitee.io/niao/15511503008281.html)
 * [How To Present a Bottom Sheet View Controller in iOS | by Mohd Hafiz | Better Programming](https://betterprogramming.pub/how-to-present-a-bottom-sheet-view-controller-in-ios-a5a3e2047af9)//非转场实现
 * [malcommac/UIWindowTransitions: 🏃‍♂️ Animated transitions for UIWindow's rootViewController property](https://github.com/malcommac/UIWindowTransitions)
+* [nodes-ios/transitions-animations-part1: Animated Transitions in ViewController, part 1](https://github.com/nodes-ios/transitions-animations-part1)[Animated Transitions in ViewController - Part 1 | Welcome to Monstarlab’s Engineering Blog](https://engineering.monstar-lab.com/en/post/2020/02/27/View-Controller-Transitions/) //pizza 转场动画 
+
 
 ### UITableView@ UICollectionView@
 * [ra1028/Carbon: 🚴 A declarative library for building component-based user interfaces in UITableView and UICollectionView.](https://github.com/ra1028/Carbon)
@@ -554,6 +556,15 @@ ar -rc libgocssl.a gmssl.o //压缩为静态库
 * [Objective-C Runtime 分析 | 张不坏的博客](https://zhangbuhuai.com/post/runtime.html)
 * [应用启动-Main函数之前的那些事儿 | LeeWong](https://www.leewong.cn/2020/09/13/applaunchbeforemain/)
 * [attribute__详解及应用 | roy's blog](https://woshiccm.github.io/posts/__attribute__%E8%AF%A6%E8%A7%A3%E5%8F%8A%E5%BA%94%E7%94%A8/)
+
+#### time@
+
+* [[iOS] 如何获取一个更为靠谱的当前时间 - 简书](https://www.jianshu.com/p/82475b5a7e19)
+
+#### tiktok@
+
+* [Semporia/TikTok-Unlock: TikTok免拔卡解锁最新支持 iPhone （iOS 16.2） 、TikTok（V27.3.0）、TikTok TestFlight 27.4.0，支持更换地区 、发布视频 、 直播 、点赞评论、私聊等！](https://github.com/Semporia/TikTok-Unlock)
+* [kjfx/tiktok-ios-ipa: TikTok iOS 免拔卡教程，tiktok ios ipa 旧版历史版本下载](https://github.com/kjfx/tiktok-ios-ipa)
 
 #### Property@Method@
 * [Objective-C中Property和Method的可见性 - Reading Space](http://hongchaozhang.github.io/blog/2016/06/16/property-and-method-visuability-of-category-and-inheritence-in-objective-c/)通过->ivarname的访问是通过
@@ -1174,6 +1185,12 @@ tableView.estimatedSectionFooterHeight = CGFLOAT_MIN;
 * [腾讯高性能pagecontroller demo](https://github.com/xichen744/SPPage/tree/master/Object-C/SPPage/Controller) (http://www.codeblogbt.com/archives/85763)
 * [PageMenu/PageMenu: A paging menu controller built from other view controllers placed inside a scroll view (like Spotify, Windows Phone, Instagram)](https://github.com/PageMenu/PageMenu)
 
+#### PageControl@
+* [awesome-ios-animation/page-control.md at master · onmyway133/awesome-ios-animation](https://github.com/onmyway133/awesome-ios-animation/blob/master/Animation/page-control.md)
+* [ChiliLabs/CHIPageControl: A set of cool animated page controls written in Swift to replace boring UIPageControl. Mady by @ChiliLabs - https://chililabs.io](https://github.com/ChiliLabs/CHIPageControl)
+* [Coder-TanJX/JXPageControl: 🚀🚀🚀 自定义pageControl指示器, 支持多种动画, 自定义布局.](https://github.com/Coder-TanJX/JXPageControl)
+* [pagecontrol · GitHub Topics](https://github.com/topics/pagecontrol)
+
 #### C@
 [结构体、结构体体指针作为函数返回值_huizhang0110的博客-CSDN博客_结构体作为函数返回值](https://blog.csdn.net/dfq12345/article/details/73924580)
 
@@ -1462,6 +1479,7 @@ tableView.estimatedSectionFooterHeight = CGFLOAT_MIN;
 * [MQCCoder/XYIAPKit: 苹果内购组件，提供产品列表查询、添加购买、恢复购买、票据校验、自动续费订阅过期检测以及提供用户交易持久化等功能。](https://github.com/MQCCoder/XYIAPKit?from_wecom=1)
 * [saturngod/IAPHelper: No more maintenance for this repo. Please use the https://github.com/bizz84/SwiftyStoreKit](https://github.com/saturngod/IAPHelper)
 * [根治顽疾：Keep客户端 In-App Purchase 掉单踩坑指南](https://tech.gotokeep.com/post/2018/12/in-app-purchase/)
+* [iOS内购-防越狱刷单 - 简书](https://www.jianshu.com/p/5cf686e92924)
 
 #### 国际化
 * [iOS项目快速实现国际化](https://www.jianshu.com/p/6ad4f8bc198b)
@@ -1482,6 +1500,10 @@ tableView.estimatedSectionFooterHeight = CGFLOAT_MIN;
 * [读 SDWebImage 一 使用分析 | 似梦言生](http://guohuaden.com/2018/09/29/Read-SDWebImage-note1/) -图片下载成功后处理剪切，添加蒙层
 * [一次立竿见影的首页渲染时间优化](http://www.cocoachina.com/ios/20180815/24576.html) loading gif 首次加载过慢
 * [iOS端矢量图解决方案汇总（SVG篇） | 小猪的博客](https://dreampiggy.com/2020/03/30/iOS%E7%AB%AF%E7%9F%A2%E9%87%8F%E5%9B%BE%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88%E6%B1%87%E6%80%BB%EF%BC%88SVG%E7%AF%87%EF%BC%89/)
+* [利用 UIImageView 實現多張圖片連續播放的動畫. iOS App 無法直接播放… | by 彼得潘的 iOS App Neverland | 彼得潘的 Swift iOS App 開發問題解答集 | Medium](https://medium.com/%E5%BD%BC%E5%BE%97%E6%BD%98%E7%9A%84-swift-ios-app-%E9%96%8B%E7%99%BC%E5%95%8F%E9%A1%8C%E8%A7%A3%E7%AD%94%E9%9B%86/%E5%88%A9%E7%94%A8-uiimageview-%E6%92%AD%E6%94%BE%E5%8B%95%E7%95%AB-f48959b6882a)//gif转png 
+* [图片动画(animationImage) - 简书](https://www.jianshu.com/p/92fcf735b9f8)//UIImage.images获取图片数组
+* [UIImageView 序列帧动画的实现以及内存的优化 - 掘金](https://juejin.cn/post/6844903662205026311)//key frame 图片动画，可以准确获取动画结束时间
+* [ios - How to animate the change of image in an UIImageView? - Stack Overflow](https://stackoverflow.com/questions/2834573/how-to-animate-the-change-of-image-in-an-uiimageview) uiimageview image 动画
 
 #### 电商导购分佣@
 * [淘宝天猫阿里百川电商交易功能详解－iOS](http://baichuan.taobao.com/doc2/detail.htm?spm=a3c0d.7629140.0.0.xjwGiS&treeId=129&articleId=104307&docType=1)
@@ -1665,6 +1687,8 @@ tableView.estimatedSectionFooterHeight = CGFLOAT_MIN;
 * [ios 关于面试题中结构体内存对齐、类内存对齐计算总结_海的天空1661的博客-CSDN博客_ios 结构体内存对齐](https://blog.csdn.net/qq_27909209/article/details/80814324)
 * [iOS 内存字节对齐 - 简书](https://www.jianshu.com/p/3294668e2d8c)
 * [iOS Memory 内存详解_冬瓜](https://blog.csdn.net/Desgard_Duan/article/details/107031840)[微信链接](https://mp.weixin.qq.com/s/YpJa3LeTFz9UFOUcs5Bitg)
+* [iOS内存分析之Memory Graph - 掘金](https://juejin.cn/post/7107507601545363493)查看内存分配 call stack
+* [Xcode Memory Debugger · YUI 的严肃文](https://linkexin.github.io/notes/Xcode-Memory-Debugger) 命令行分析.MEMGRAPH文件
 
 * [多线程的指令重排问题：as-if-serial语义，happens-before语义；volatile关键字，volatile和synchronized的区别 - Life_Goes_On - 博客园](https://www.cnblogs.com/lifegoeson/p/13533873.html)
 
@@ -2076,6 +2100,12 @@ Each symbol name is preceded by its value (blanks if undefined).  Unless the -m
 #### github@
 * [github 下载指定文件夹下面的内容](https://blog.csdn.net/qq_35860352/article/details/80313078)[downgit 需要科学上网](https://minhaskamal.github.io/DownGit/#/home)- ”/branches/branchname/”替换成”/trunk/”。例如：”/tree/master/” to “/trunk/” 
 * [作为开发人员，你不得不懂的Github搜索技巧！ - 掘金](https://juejin.cn/post/6844904058755481607)
+* [GitHub Search Tips – How to Search Issues, Repos, and More Effectively on GitHub](https://www.freecodecamp.org/news/github-search-tips/)
+* [GitHub · Where software is built](https://github.com/search/advanced)//github 高级搜索页
+* 项目快速查看技巧
+	1. 在项目中按下 't' 键 ,就可以在项目文件中快速跳转
+	2. 按下 'l'键, 快速定位到该文件下的某一行
+	3. 按下 'b' 键 就可以快速查看该文件的修改记录
 
 #### shell@bash@
 * [bash(1) - Linux manual page](https://man7.org/linux/man-pages/man1/bash.1.html) ${parameter%word} ${parameter%%word} ${parameter#word} ${parameter##word}
