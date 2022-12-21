@@ -2095,7 +2095,9 @@ Each symbol name is preceded by its value (blanks if undefined).  Unless the -m
 * [[iOS Tips]证书签名相关命令行](https://www.jianshu.com/p/f140f4a08c4f)
 * [Mac Security工具使用总结find-identity](https://blog.csdn.net/elesos/article/details/73882942)
 
+#### appStore@rate@
 
+* [takecian/SwiftRater: A utility that reminds your iPhone app's users to review the app written in pure Swift.](https://github.com/takecian/SwiftRater)
 
 #### github@
 * [github 下载指定文件夹下面的内容](https://blog.csdn.net/qq_35860352/article/details/80313078)[downgit 需要科学上网](https://minhaskamal.github.io/DownGit/#/home)- ”/branches/branchname/”替换成”/trunk/”。例如：”/tree/master/” to “/trunk/” 
