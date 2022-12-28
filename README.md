@@ -8,6 +8,7 @@
 * [Digit77.com | 海量精品Mac应用免费分享](https://www.digit77.com/)
 * [macw下载站](https://www.macw.com/mac/231.html)
 * [Mac软件 下的所有内容 - MacApp分享频道](https://macapp.org.cn/app/)
+* [马可菠萝 - 分享你喜欢的MAC应用](https://www.macbl.com/)
 
 ## IDE及效率软件的使用技巧@
 
@@ -250,6 +251,7 @@
 * [yggdrasil-network/yggdrasil-ios: Reference implementation for connecting to the Yggdrasil Network from iPhones and iPads](https://github.com/yggdrasil-network/yggdrasil-ios)
 * [yggdrasil-network/yggdrasil-go: An experiment in scalable routing as an encrypted IPv6 overlay network](https://github.com/yggdrasil-network/yggdrasil-go)
 * [有赞移动助手App本地抓包方案_移动_杨彬_InfoQ精选文章](https://www.infoq.cn/article/biqsr47*zetzoctj4mvc)//tun2socks原理
+* [Linux虚拟网络基础---tap/tun（虚拟以太设备）海渊_haiyuan的博客-CSDN博客](https://blog.csdn.net/LL845876425/article/details/82215265)
 
 #### wwdc 字幕 视频
 * [wwdc 中文字幕](https://github.com/iOSDevLog/wwdc_chinese)
@@ -2098,9 +2100,16 @@ Each symbol name is preceded by its value (blanks if undefined).  Unless the -m
 #### appStore@rate@
 
 * [takecian/SwiftRater: A utility that reminds your iPhone app's users to review the app written in pure Swift.](https://github.com/takecian/SwiftRater)
+* [nicklockwood/iRate: [DEPRECATED]](https://github.com/nicklockwood/iRate)
+* [iOS应用内集成AppStore评分功能 - 简书](https://www.jianshu.com/p/e3f6d584d679)
+* [iOS App “去评分” 功能的几种实现总结 | ZUBIN BLOG](https://kangzubin.com/ios-app-write-review/)
+
+#### 广告@
+* [海外SDK集成文档（IOS版本）.md—D:\Work\yunbu\yunbu_resources\sdk\oversea_sdk\SDK接入文档](http://www.yunbu.me/sdk/overseas/doc/iOS_SDK.html#wow25)
 
 #### github@
 * [github 下载指定文件夹下面的内容](https://blog.csdn.net/qq_35860352/article/details/80313078)[downgit 需要科学上网](https://minhaskamal.github.io/DownGit/#/home)- ”/branches/branchname/”替换成”/trunk/”。例如：”/tree/master/” to “/trunk/” 
+* [GitHub directory downloader](http://blog.luckly-mjw.cn/tool-show/github-directory-downloader/index.html)
 * [作为开发人员，你不得不懂的Github搜索技巧！ - 掘金](https://juejin.cn/post/6844904058755481607)
 * [GitHub Search Tips – How to Search Issues, Repos, and More Effectively on GitHub](https://www.freecodecamp.org/news/github-search-tips/)
 * [GitHub · Where software is built](https://github.com/search/advanced)//github 高级搜索页
@@ -2121,6 +2130,11 @@ Each symbol name is preceded by its value (blanks if undefined).  Unless the -m
 * [Building Swift Packages or Apps that Use Them in Continuous Integration Workflows | Apple Developer Documentation](https://developer.apple.com/documentation/xcode/building-swift-packages-or-apps-that-use-them-in-continuous-integration-workflows)scmProvider解释有system和xcode两个选项，system即代表用系统git配置
 * [如何让swift package manager走代理 - 掘金](https://juejin.cn/post/6946451335948697636)--Software configuration management
 
+
+### Codable@
+
+* [winddpan/CodableWrapper: @Codec("encoder", "decoder") var cool: Bool = true](https://github.com/winddpan/CodableWrapper)
+* [marksands/BetterCodable: Better Codable through Property Wrappers](https://github.com/marksands/BetterCodable)
 
 ### 语法@
 * [swiftui - What is the "some" keyword in Swift(UI)? - Stack Overflow](https://stackoverflow.com/questions/56433665/what-is-the-some-keyword-in-swiftui)讲了some带来的好处
