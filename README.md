@@ -43,7 +43,9 @@
 * [Awesome macOS Command Line](https://github.com/herrbischoff/awesome-osx-command-line)
 * [awesome-ios](https://github.com/vsouza/awesome-ios)
 * [awesome-swift](https://github.com/matteocrippa/awesome-swift)
-* [open-source-ios-apps](https://github.com/dkhamsing/open-source-ios-apps#sample)
+* [open-source-ios-apps](https://github.com/dkhamsing/open-source-ios-apps#sample)opensource
+* [jaywcjlove/reference: 为开发人员分享快速参考备忘清单(速查表)](https://github.com/jaywcjlove/reference)
+* [hua1995116/awesome-ai-painting: AI绘画资料合集（包含国内外可使用平台、使用教程、参数教程、部署教程、业界新闻等等） stable diffusion tutorial、disco diffusion tutorial、 AI Platform](https://github.com/hua1995116/awesome-ai-painting)
 
 
 ## UIKit@Foundation
@@ -96,11 +98,22 @@
 * [How To Present a Bottom Sheet View Controller in iOS | by Mohd Hafiz | Better Programming](https://betterprogramming.pub/how-to-present-a-bottom-sheet-view-controller-in-ios-a5a3e2047af9)//非转场实现
 * [malcommac/UIWindowTransitions: 🏃‍♂️ Animated transitions for UIWindow's rootViewController property](https://github.com/malcommac/UIWindowTransitions)
 * [nodes-ios/transitions-animations-part1: Animated Transitions in ViewController, part 1](https://github.com/nodes-ios/transitions-animations-part1)[Animated Transitions in ViewController - Part 1 | Welcome to Monstarlab’s Engineering Blog](https://engineering.monstar-lab.com/en/post/2020/02/27/View-Controller-Transitions/) //pizza 转场动画 
+* [awesome-ios-animation/transition.md at master · onmyway133/awesome-ios-animation · GitHub](https://github.com/onmyway133/awesome-ios-animation/blob/master/Animation/transition.md)
+* [iOS Animation Tutorial: Custom View Controller Presentation Transitions | Kodeco](https://www.kodeco.com/2925473-ios-animation-tutorial-custom-view-controller-presentation-transitions)
+* [Transitions - iOS Example](https://iosexample.com/tag/transitions/)
 
+
+### diff@diff算法
+* [IGListKit 学习(1) 一种高效的 diff 算法 | Sunshine](https://sunshineyg888.github.io/2019/12/15/IGListKit%E5%AD%A6%E4%B9%A0(1)--%E9%AB%98%E6%95%88%E7%9A%84diff%E7%AE%97%E6%B3%95/#more)//diff算法
+* [IGListKit/Source/IGListDiffKit at main · Instagram/IGListKit](https://github.com/Instagram/IGListKit/tree/main/Source/IGListDiffKit)
+* [ra1028/DifferenceKit: 💻 A fast and flexible O(n) difference algorithm framework for Swift collection.](https://github.com/ra1028/DifferenceKit)
+* [azamlerc/nsarray-functional: An Objective-C category that adds functional programming methods to NSArray.](https://github.com/azamlerc/nsarray-functional)搜集了一些nsarray操作的库
+* [nickynick/ArrayDiff: Yet another diff calculation utility, efficient & tested.](https://github.com/nickynick/ArrayDiff)
 
 ### UITableView@ UICollectionView@
 * [ra1028/Carbon: 🚴 A declarative library for building component-based user interfaces in UITableView and UICollectionView.](https://github.com/ra1028/Carbon)
 * [Instagram/IGListKit](https://github.com/Instagram/IGListKit)A data-driven UICollectionView framework for building fast and flexible lists.
+
 
 * [njdehoog/NHBalancedFlowLayout](https://github.com/njdehoog/NHBalancedFlowLayout)
 * [详细介绍了Decoration的运用](https://markpospesel.wordpress.com/2012/12/11/decorationviews/)
@@ -112,6 +125,8 @@
 * [ios - Subview frame is incorrect when creating UICollectionViewCell - Stack Overflow](https://stackoverflow.com/questions/28269452/subview-frame-is-incorrect-when-creating-uicollectionviewcell)在layoutsubviews中不能获取到控件的有效值，颠覆我三观 [ios - Bug with rounded UIImageViews in a UICollectionViewCell - Stack Overflow](https://stackoverflow.com/questions/32809018/bug-with-rounded-uiimageviews-in-a-uicollectionviewcell)[demo地址](https://github.com/blackchena/FuckLayoutSubviews)
 * [iOS中UICollectionView布局对齐方式的runtime实现 - 简书](https://www.jianshu.com/p/de08c2679241)居左私有方法实现
 * 调用UICollectionView reloadData 页面闪烁因为连续两次调用了该方法
+* [Implementing a Dynamic Height UICollectionViewCell in Swift 5 | by Mohannad Bakbouk | Swift2Go | Medium](https://medium.com/swift2go/implementing-a-dynamic-height-uicollectionviewcell-in-swift-5-bdd912acd5c8)
+* [ios - UICollectionView Self Sizing Cells with Auto Layout - Stack Overflow](https://stackoverflow.com/questions/25895311/uicollectionview-self-sizing-cells-with-auto-layout)
 
 
 ### Loading@Load@placeholder@
@@ -192,12 +207,12 @@
 * [Copy files to bundle depending on active configuration - Result For Dev](https://resultfor.dev/949949-copy-files-to-bundle-depending-on-active-configuration)
 * [在 Xcode 中为 iOS 应用定制多种配置(应用名、图标、接口环境等) - Ficow Shen's Blog](https://blog.ficowshen.com/page/post/51)//多Config配置，讲得很好
 
-## sqlite@
+## 数据库@
 * [iOS sqlite3数据库解析](https://www.cnblogs.com/wfwenchao/p/3964213.html)
 * [iOS端数据库解决方案分析](http://mrpeak.cn/blog/ios-database/)
 * [FMDB源码阅读（一）](https://www.cnblogs.com/polobymulberry/p/5178770.html)
 * [pozi119/VVSequelize: 数据库模型映射,自动建表, 自动更新表,数据增删改查, FTS全文搜索, 支持自定义fts3,4,5分词器,可拼音分词. sql,fmdb,wcdb,sqlite3,orm,fts,fts3,fts4,fts5](https://github.com/pozi119/VVSequelize)
-
+* [Install Realm for iOS, macOS, tvOS, and watchOS — Realm](https://www.mongodb.com/docs/realm/sdk/swift/install/#std-label-ios-install)
 
 
 ## 小程序@
@@ -252,10 +267,15 @@
 * [yggdrasil-network/yggdrasil-go: An experiment in scalable routing as an encrypted IPv6 overlay network](https://github.com/yggdrasil-network/yggdrasil-go)
 * [有赞移动助手App本地抓包方案_移动_杨彬_InfoQ精选文章](https://www.infoq.cn/article/biqsr47*zetzoctj4mvc)//tun2socks原理
 * [Linux虚拟网络基础---tap/tun（虚拟以太设备）海渊_haiyuan的博客-CSDN博客](https://blog.csdn.net/LL845876425/article/details/82215265)
+* [网络虚拟化技术（二）: TUN/TAP MACVLAN MACVTAP](https://blog.kghost.info/2013/03/27/linux-network-tun/)
+* [NetworkExtension3-Tunnel开发 - 掘金](https://juejin.cn/post/6867030091748196366)
+* [awesome-vpn/en-us.md at master · awesome-vpn/awesome-vpn · GitHub](https://github.com/awesome-vpn/awesome-vpn/blob/master/one-click-apps/en-us.md)
 
-#### wwdc 字幕 视频
+
+#### wwdc@
 * [wwdc 中文字幕](https://github.com/iOSDevLog/wwdc_chinese)
 * [wwdc 字幕](http://asciiwwdc.com)
+* [WWDC NOTES](https://www.wwdcnotes.com/) 文档有代码示例
 
 #### HTTPS@HTTP@中间人攻击
 
@@ -316,6 +336,9 @@
 * [视频横屏全屏播放适配方案](https://cloud.tencent.com/developer/article/1106957)
 * [iOS用ijkplayer播RTSP流 - 简书](https://www.jianshu.com/p/69b26da21fa5)
 * [iOS IJKPlayer 支持播放 RTSP - 简书](https://www.jianshu.com/p/d7913f9a7d26)
+
+#### 加签@验签@
+* [Moya + Alamofire + HandyJson + RxSwift 搭建一个新项目的网络请求 - 掘金](https://juejin.cn/post/6946955938104344606)
 
 
 #### 音频@
@@ -411,7 +434,26 @@ ar -rc libgocssl.a gmssl.o //压缩为静态库
 * [iOS 越狱的Tweak开发](https://yohunl.com/ios-yue-yu-de-tweakkai-fa/)
 * [手把手教你制作一款iOS越狱App](https://github.com/jackrex/FakeWeChatLoc)
 * [dumpdecrypted ipa](http://www.jianshu.com/p/a4373b5feca0)
-* [paradiseduo/appdecrypt: appdecrypt is a tool to make decrypt application encrypted binaries on macOS when SIP-enabled](https://github.com/paradiseduo/appdecrypt)dump ipa ，/var/containers/Bundle/Application应用bundle路径
+* [paradiseduo/appdecrypt: appdecrypt is a tool to make decrypt application encrypted binaries on macOS when SIP-enabled](https://github.com/paradiseduo/appdecrypt)dump ipa ，/var/containers/Bundle/Application应用bundle路径 ,砸壳
+```
+//appdecrypt 使用
+//macos
+iproxy 2222 22
+scp -P 2222 ~/Documents/appdecrypt/appdecrypt root@127.0.0.1:/tmp
+
+ssh -p 2222 root@127.0.0.1
+//iphone
+ps aux | grep -i appname
+cd /tmp
+./appdecrypt /var/containers/Bundle/Application/xxxx /tmp
+cd Payload/
+tar -cvf /tmp/dump.tar ./
+
+//macos
+scp -P 2222 root@127.0.0.1:/tmp/dump.tar ~/Desktop/xxxDump
+
+```
+* Debug network extension 时可以打符号断点NSExtensionMain 用image list读出ASLR地址空间随机化(Address Space Layout Randomization)，再根据砸壳后的appex hopper地址(我观察需要减去高位1) + ASLR打断点
 * [Download "iFile.deb" | Cydia Crawler | download free](http://www.cydiacrawler.com/index.php?cat=package&id=10709#.YlaCeG5Bxs8)deb下载
 * [Useful Ways to Restore Unsigned IPSW without iTunes](https://www.imobie.com/ios-system-recovery/downgrade-to-unsigned-ios.htm)
 * [如何使用 TSS Saver 在线保存您的 .shsh2 blob - 苹果派](https://ujjainyoga.com/post/26897.html)预先保存blob方便以后系统降级
@@ -420,6 +462,11 @@ ar -rc libgocssl.a gmssl.o //压缩为静态库
 * [iOS逆向 - 运行时分析（三）Frida - 掘金](https://juejin.cn/post/7079726534096846862)
 * [iOS攻防（六）：使用Cycript一窥运行程序的神秘面纱(入门篇) | 曹雪松de博客|CoderBoy's Blog](https://sevencho.github.io/archives/c12f47b1.html)
 * [majd/ipatool: Command-line tool that allows searching and downloading app packages (known as ipa files) from the iOS App Store](https://github.com/majd/ipatool) ipa包下载
+* [KJCracks/Clutch: Fast iOS executable dumper](https://github.com/KJCracks/Clutch)
+* [Debugging iOS Applications: A Guide to Debug Other Developers’ Apps | by Drew Branch | Independent Security Evaluators](https://blog.securityevaluators.com/debugging-ios-applications-a-guide-to-debug-other-developers-apps-c041311498eb)待考证
+* [LLDB Configuration on IOS 12.4 (Unc0ver Jailbreak) | by M Dzikri Ramdhani | MII Cyber Security Consulting Services | Medium](https://medium.com/mii-cybersec/lldb-configuration-on-ios-12-4-unc0ver-jailbreak-940b88db8666)待考证
+* [iPhoneX Jailbreak Knowledge](https://www.todayios.com/ios-jailbreak-palera1n/)
+* [使用Reveal 逆向App UI分析 - 简书](https://www.jianshu.com/p/7cb8023761ac)
 
 
 #### 机器学习@
@@ -427,6 +474,9 @@ ar -rc libgocssl.a gmssl.o //压缩为静态库
 * [Core ML框架详细解析（二） —— 获取模型并集成到APP中 - 简书](https://www.jianshu.com/p/828705ecdb42)
 * [iOS-调戏CoreML-这是花瓶？ - ios开发 - Geek Peer](https://www.geekpeer.com/Development/ios/3752.html)
 * [Core ML框架详细解析（二） —— 获取模型并集成到APP中 - 简书](https://www.jianshu.com/p/828705ecdb42)
+
+#### ChatGPT@
+* [kingcos/ChatGKD: A new app for ChatGPT in SwiftUI & Vue 3](https://github.com/kingcos/ChatGKD)
 
 #### 证书 HTTPS
 * [证书链-Digital Certificates](http://www.jianshu.com/p/46e48bc517d0)
@@ -451,8 +501,10 @@ ar -rc libgocssl.a gmssl.o //压缩为静态库
 * [swift2 - See characters in an NSCharacterSet (Swift) - Stack Overflow](https://stackoverflow.com/questions/34772439/see-characters-in-an-nscharacterset-swift)
 
 
-#### collectionView
+#### collectionView@ uicollectionviewlayout@  flowlayout@
 * [NHBalancedFlowLayout](https://github.com/njdehoog/NHBalancedFlowLayout)
+* [chiahsien/CHTCollectionViewWaterfallLayout: The waterfall (i.e., Pinterest-like) layout for UICollectionView.](https://github.com/chiahsien/CHTCollectionViewWaterfallLayout)
+* [xiaopin/iOS-WaterfallLayout: UICollectionView实现瀑布流布局](https://github.com/xiaopin/iOS-WaterfallLayout)
 
 #### css
 * [CSS粘住固定底部的5种方法](http://caibaojian.com/css-5-ways-sticky-footer.html)
@@ -596,6 +648,7 @@ extern "C" unsigned long OBJC_IVAR_$_BLAView$_pModel;
 * [jharwig/PPSSignatureView: iOS Signature Capture Demo](https://github.com/jharwig/PPSSignatureView)手写签名
 
 #### Animation@动画@
+* [YouXianMing/Animations: The Animation Collection.](https://github.com/YouXianMing/Animations)动画集合
 * [storehouse/Advance](https://github.com/storehouse/Advance)
 * [gitHud_Yalantis](https://github.com/Yalantis)github 动画效果开源比较多的Organization
 * [Core Animation Programming Guide中文](http://www.cocoachina.com/bbs/read.php?tid=84461)
@@ -639,6 +692,13 @@ extern "C" unsigned long OBJC_IVAR_$_BLAView$_pModel;
 * [GitHub - lf19940514/LFFoldNumberDemo: 翻页数字显示](https://github.com/lf19940514/LFFoldNumberDemo)
 * [CUIDemoFavorites/CUIFoldLabel.m at 6b385244b2847644832de10ed8a965bede14dbf8 · Leon0206/CUIDemoFavorites](https://github.com/Leon0206/CUIDemoFavorites/blob/6b385244b2/LocalPods/CUIDemoElements/Classes/Views/ViewAnimation/FoldNumberView/CUIFoldLabel.m)
 * [Dillion/iOS-Flip-Transform: Core Animation framework for navigating data by flipping](https://github.com/Dillion/iOS-Flip-Transform)时钟翻页
+
+##### Appstore@animation
+
+* [appssemble/appstore-card-transition: Appstore card animation transition. UICollectionView and UITableView card expand animated transition for iOS](https://github.com/appssemble/appstore-card-transition)
+* [hahpuc/Appstore-Clone: This is just an iOS AppStore Clone App. With this app, you can search for many Apps and top trending Apps at the moment](https://github.com/hahpuc/Appstore-Clone)
+* [DragonTnT/appstore-clone: a clone of iOS appstore, to be continued](https://github.com/DragonTnT/appstore-clone)
+* [26. Creating an App Store like Animated View Transition · Mastering SwiftUI Book for iOS 16 and Xcode 14 - Sample](https://www.appcoda.com/learnswiftui/swiftui-appstoreanimation.html)
 
 #### empty data 
 * [Designing For The Empty States](https://tympanus.net/codrops/2013/01/09/designing-for-the-empty-states/)
@@ -685,7 +745,7 @@ extern "C" unsigned long OBJC_IVAR_$_BLAView$_pModel;
 * [基于 CocoaPods 的组件二进制化实践 | 二维火掌柜技术博客](https://dmanager.github.io/ios/2019/01/21/%E5%9F%BA%E4%BA%8ECocoaPods%E7%9A%84%E7%BB%84%E4%BB%B6%E4%BA%8C%E8%BF%9B%E5%88%B6%E5%8C%96%E5%AE%9E%E8%B7%B5/)
 * [Podfile 语法 - 掘金](https://juejin.cn/post/7011855230291836959)podfile中用到的ruby语法
 * `Unable to find host target` 错误添加extension target 到主工程build phases dependencies
-* [Mixing static and dynamic linking in CocoaPods | by Tommaso Madonia | Microsoft Mobile Engineering | Medium](https://medium.com/microsoft-mobile-engineering/mixing-static-and-dynamic-linking-in-cocoapods-83b6d4252c59)
+* [Mixing static and dynamic linking in CocoaPods | by Tommaso Madonia | Microsoft Mobile Engineering | Medium](https://medium.com/microsoft-mobile-engineering/mixing-static-and-dynamic-linking-in-cocoapods-83b6d4252c59)指定pod动态库或静态库
 * [microsoft/cocoapods-pod-linkage: CocoaPods plugin for configuring the linkage type of individual pods](https://github.com/microsoft/cocoapods-pod-linkage)
 
 #### MonoRepo
@@ -821,6 +881,45 @@ extern "C" unsigned long OBJC_IVAR_$_BLAView$_pModel;
 #### Telegram-iOS
 
 * [build Telegram Messenger iOS App. 最近 Telegram 愈來愈紅，彼得潘的很多朋友，像是溫蒂跟奇妙仙子都跑到… | by 彼得潘的 iOS App Neverland | 彼得潘的 Swift iOS App 開發問題解答集 | Medium](https://medium.com/%E5%BD%BC%E5%BE%97%E6%BD%98%E7%9A%84-swift-ios-app-%E9%96%8B%E7%99%BC%E5%95%8F%E9%A1%8C%E8%A7%A3%E7%AD%94%E9%9B%86/build-telegram-messenger-ios-app-5a2c45cb6840)
+```
+https://github.com/bazelbuild/tulsi
+
+git clone --recursive -j8 --branch release-8.6 https://github.com/TelegramMessenger/Telegram-iOS.git 
+1.git clone --recursive -j8 https://github.com/TelegramMessenger/Telegram-iOS.git
+git submodule update
+
+2.mkdir -p $HOME/bazel-dist
+
+3.cd $HOME/bazel-dist
+curl -O -L https://github.com/bazelbuild/bazel/releases/download/4.0.0/bazel-4.0.0-darwin-x86_64
+mv bazel-* bazel
+
+4.chmod +x bazel
+./bazel --version
+
+5.mkdir -p $HOME/telegram-configuration
+
+6.cp -R build-system/example-configuration/* $HOME/telegram-configuration/
+
+7.mkdir -p $HOME/telegram-bazel-cache
+
+
+python3 build-system/Make/Make.py \
+    --bazel="$HOME/bazel-dist/bazel" \
+    --cacheDir="$HOME/telegram-bazel-cache" \
+    generateProject \
+    --configurationPath="$HOME/telegram-configuration" \
+    --disableExtensions
+    
+python3 build-system/Make/Make.py \
+    --overrideBazelVersion\
+    --overrideXcodeVersion\
+    --bazel="$HOME/bazel-dist/bazel" \
+    --cacheDir="$HOME/telegram-bazel-cache" \
+    generateProject \
+    --configurationPath="$HOME/telegram-configuration" \
+    --disableExtensions
+```
 
 #### Crash@
 * [连续闪退保护](http://wereadteam.github.io/2016/05/23/GYBootingProtection/)
@@ -861,9 +960,11 @@ extern "C" unsigned long OBJC_IVAR_$_BLAView$_pModel;
 #### 后台@
 * [iOS原生级别后台下载详解](https://juejin.im/post/5c4ed0b0e51d4511dc730799)
 
-#### 下载@
+#### 下载@Download@
 * [guowilling/SRDownloadManager: Powerful and easy-to-use file download manager based on NSURLSession. Provide download status, progress and completion callback block.](https://github.com/guowilling/SRDownloadManager)
 * [GitHub - Danie1s/Tiercel: 简单易用、功能丰富的纯 Swift 下载框架](https://github.com/Danie1s/Tiercel)
+* [ixuea/CocoaDownloader: An powerful download library for iOS, macOS.](https://github.com/ixuea/CocoaDownloader)
+* [mzeeshanid/MZDownloadManager: This download manager uses NSURLSession api to download files. It can download multiple files at a time. It can download large files if app is in background. It can resume downloads if app was quit.](https://github.com/mzeeshanid/MZDownloadManager)
 
 
 #### warning xcode
@@ -890,6 +991,8 @@ extern "C" unsigned long OBJC_IVAR_$_BLAView$_pModel;
 * [三方控件库](https://ioscookies.com/image-viewer)
 * [自定义一个带nib的view 支持frame 和 coder的初始化](https://theswiftdev.com/2018/10/16/custom-uiview-subclass-from-a-xib-file/)
 * [ivanvorobei/SPStorkController: Now playing controller from Apple Music, Mail & Podcasts Apple's apps.](https://github.com/IvanVorobei/SPStorkController)
+* [短信验证码输入框](https://github.com/CRAnimation/CRBoxInputView)
+* [记一次验证码输入框的实现 | kemchenj](https://kemchenj.github.io/2019-04-07/)//通过重写光标位置函数实现
     
 ##### switch
 * [TKSwitcherCollection](https://github.com/TBXark/TKSwitcherCollection)
@@ -920,6 +1023,12 @@ extern "C" unsigned long OBJC_IVAR_$_BLAView$_pModel;
 
 * [ChooseLocation 类似京东地址选择](https://github.com/HelloYeah/ChooseLocation)
 
+#### 包体积优化@包瘦身@
+
+* [Bitcode, Slicing, ODRs, App Thinning | by Vikas Kore | Medium](https://vikaskore.medium.com/bitcode-slicing-odrs-app-thinning-7c4b294ddec3)
+* [App Thinning in Xcode - WWDC15 - Videos - Apple Developer](https://developer.apple.com/videos/play/wwdc2015/404/)
+* [Reducing your app’s size | Apple Developer Documentation](https://developer.apple.com/documentation/xcode/reducing-your-app-s-size)
+
 #### 旋转@
 * [iOS设备旋转](http://www.jianshu.com/p/2bdd7a54ad99)
 * [iOS屏幕旋转各类集锦(一) 设置](http://www.jianshu.com/p/e52518ca70a0)
@@ -941,7 +1050,8 @@ extern "C" unsigned long OBJC_IVAR_$_BLAView$_pModel;
 #### UIScrollView@
 * [使用UIScrollView 细讲delegate方法](http://zhangbuhuai.com/practice-in-uiscrollview/)
 * [UIScrollView 实践经验](http://tech.glowing.com/cn/practice-in-uiscrollview/)包括列表图片加载优化 视差实现 非整屏的page滑动实现
-* [UIScrollView 内嵌多个scrollview 或者 view](https://oleb.net/blog/2014/05/scrollviews-inside-scrollviews/)
+* [ole/OLEContainerScrollView: A UIScrollView subclass that intelligently handles multiple child scroll views and does not interfere with UIKitʼs cell reuse functionality.](https://github.com/ole/OLEContainerScrollView)nest scrollview
+* [Scroll Views Inside Scroll Views – Ole Begemann](https://oleb.net/blog/2014/05/scrollviews-inside-scrollviews/)
 * [UIScrollView 实践经验 包括分页宽度](http://tech.glowing.com/cn/practice-in-uiscrollview/)
 * [[iOS]UIScrollview自定义分页的实现方法](http://longtimenoc.com/archives/iosuiscrollview%E8%87%AA%E5%AE%9A%E4%B9%89%E5%88%86%E9%A1%B5%E7%9A%84%E5%AE%9E%E7%8E%B0%E6%96%B9%E6%B3%95)
 * [iOS UIScrollView 你可能不知道的奇技淫巧  解决uitableviewcell点击和上层scrollview滑动冲突](https://www.jianshu.com/p/5804fa72aaed)
@@ -950,6 +1060,9 @@ extern "C" unsigned long OBJC_IVAR_$_BLAView$_pModel;
 * [完美解决UIScrollView嵌套滑动手势冲突](http://www.cocoachina.com/ios/20180508/23314.html)
 * [Advanced Scrollviews and Touch Handling Techniques](https://developer.apple.com/videos/play/wwdc2014/235/)
 * [iOS UIScrollView 动画的力学原理](https://mp.weixin.qq.com/s/5JSiTywD0r3_O7l2OxWZxw)
+* [iOS开发实战 - 完美解决UIScrollView嵌套滑动手势冲突 - 简书](https://www.jianshu.com/p/b0bf2bb0e129)
+* [嵌套UIScrollview的滑动冲突解决方案 - 简书](https://www.jianshu.com/p/040772693872)//没故事的卓同学
+* [iOS 嵌套UIScrollview的滑动冲突另一种解决方案 - 简书](https://www.jianshu.com/p/df01610b4e73)//UIDynamicAnimator 实现
 
 #### UIPanGestureRecognizer@
 
@@ -979,11 +1092,14 @@ extern "C" unsigned long OBJC_IVAR_$_BLAView$_pModel;
 * [intrinsicContentSize dynamic collectionview height](https://www.freecodecamp.org/news/how-to-make-height-collection-views-dynamic-in-your-ios-apps-7d6ca94d2212/)(https://github.com/pgpt10/DynamicHeightCollectionView)
 * [让 UITableView / UICollectionView 更加简单优雅，轻易实现列表动态化、模块化、MVVM 架构。](https://github.com/indulgeIn/YBHandyList)
 * [iOS TableView多级列表 - 简书](https://www.jianshu.com/p/075d6a0c72fa) [wsl2ls/MultilevelList: TableView多级列表：分级展开或合并，逐级获取并展示其子级数据，可以设置最大的层级数，支持多选、单选、取消选择。](https://github.com/wsl2ls/MultilevelList)
+* [IOS 多级列表的实现 - 简书](https://www.jianshu.com/p/a040ff9e3ae3)
+* [wwmz/WMZTreeView: 类似前端elementUI的树形控件,可自定义节点内容,支持无限极节点,可拖拽增删节点等等,非递归实现](https://github.com/wwmz/WMZTreeView)
 * [UITableView只更新高度不更新内容以及只更新内容不更新高度_NunchakusHuang的专栏-CSDN博客](https://blog.csdn.net/huangyong1314/article/details/50619997)
 * [ios - How to override intrinsictContentSize for a view with flexible height and fixed width? - Stack Overflow](https://stackoverflow.com/questions/41089638/how-to-override-intrinsictcontentsize-for-a-view-with-flexible-height-and-fixed/41863605)
 * [alflix/EasyWebView: use WKWebView easily!](https://github.com/alflix/EasyWebView)//cell自适应webview
 * [Self-Sizing Hell — UITableView and UICollectionView Cells | by Daniel Munoz | Better Programming](https://betterprogramming.pub/self-sizing-hell-uitableview-and-uicollectionview-cells-509f0fdc7ff1)
 * [0代码隐藏GroupedTableView上边多余的间隔 · sunnyxx的技术博客](https://blog.sunnyxx.com/2015/04/15/ios-hide-grouped-tableview-header/)我通过下面这种方式隐藏多余间隔
+* [Augustyniak/RATreeView: Library providing easy-to-use interface for displaying tree structures on iOS and tvOS.](https://github.com/Augustyniak/RATreeView)//多级列表
 ```
 tableView.estimatedSectionHeaderHeight = CGFLOAT_MIN;//动态tableview高度可能会造成影响mark一下
 tableView.estimatedSectionFooterHeight = CGFLOAT_MIN;
@@ -1026,9 +1142,18 @@ tableView.estimatedSectionFooterHeight = CGFLOAT_MIN;
 
 
 #### 图片@
+
+##### 图片浏览@
+* [ko1o/PYPhotoBrowser: An easy way to browse photo(image) for iOS.](https://github.com/ko1o/PYPhotoBrowser)
+* [banchichen/TZImagePickerController: 一个支持多选、选原图和视频的图片选择器，同时有预览、裁剪功能，支持iOS6+。 A clone of UIImagePickerController, support picking multiple photos、original photo、video, also allow preview photo and video, support iOS6+](https://github.com/banchichen/TZImagePickerController)
+* [skx926/KSPhotoBrowser: A beautiful photo browser with interactive dismissal animation.一个小而美的图片浏览器。](https://github.com/skx926/KSPhotoBrowser)
+* [QuintGao/GKPhotoBrowser: iOS仿微信、今日头条等图片浏览器](https://github.com/QuintGao/GKPhotoBrowser)
+* [hyperoslo/Lightbox: A convenient and easy to use image viewer for your iOS app](https://github.com/hyperoslo/Lightbox)
+
+##### 图片其它@
+
 * [未使用图片](http://www.jianshu.com/p/dca77c25bf5d)
 * [我只是想截个屏 截图](http://blog.startry.com/2016/02/24/Screenshots-With-SwViewCapture/)
-* [图片浏览](https://github.com/ko1o/PYPhotoBrowser) (https://github.com/skx926/KSPhotoBrowser) (https://github.com/QuintGao/GKPhotoBrowser)
 * [iOS图像最佳实践总结 - 简书](https://www.jianshu.com/p/128e59cb0893) - 图片解码加载缓存渲染
 * [在 Sketch 和 PS 中导出 Display P3 广色域图片的方法 | by 李瑞东 | Medium](https://pudge1996.medium.com/%E7%94%A8-sketch-%E5%AF%BC%E5%87%BA-display-p3-%E5%B9%BF%E8%89%B2%E5%9F%9F%E5%9B%BE%E7%89%87-1b6d3ee82147)ICC profile International Color Consortium (ICC).
 
@@ -1069,6 +1194,14 @@ tableView.estimatedSectionFooterHeight = CGFLOAT_MIN;
 * [ios - Drop cap with NSAttributedString - Stack Overflow](https://stackoverflow.com/questions/14214900/drop-cap-with-nsattributedstring/14639864#14639864)//首字下沉
 * [CoreText实现图文混排之尺寸估算及文本选择 - 简书](https://www.jianshu.com/p/602682b683d6)//CTFramesetterSuggestFrameSizeWithConstraints介绍
 * [GitHub - uber/UberSignature: Provides an iOS view controller allowing a user to draw their signature with their finger in a realistic style.](https://github.com/uber/UberSignature)手写签名
+* [lexrus/LTMorphingLabel: [EXPERIMENTAL] Graceful morphing effects for UILabel written in Swift.](https://github.com/lexrus/LTMorphingLabel)//动画uilabel
+* [ios - How to animate the textColor property of an UILabel? - Stack Overflow](https://stackoverflow.com/questions/2426614/how-to-animate-the-textcolor-property-of-an-uilabel)
+* [uilabel - drawRect drawing 'transparent' text? - Stack Overflow](https://stackoverflow.com/questions/8721019/drawrect-drawing-transparent-text)镂空效果 uilabel或者图片作为遮罩
+* [ios - Drawing a path with subtracted text using Core Graphics - Stack Overflow](https://stackoverflow.com/questions/18716751/drawing-a-path-with-subtracted-text-using-core-graphics)镂空效果
+* [iOS 特种label：镂空文字、类歌词进度显示文字 - 简书](https://www.jianshu.com/p/93592bdc99c6)镂空效果
+* [用CAShapeLayer动画绘制CGPath | 王若风的技术博客](https://blog.wangruofeng007.com/posts/53147/)获取文本的真正CGPath
+* [ole/Animated-Paths: Demo project: Animating the drawing of a CGPath with CAShapeLayer.strokeEnd](https://github.com/ole/Animated-Paths)获取文本的真正CGPath 并动画stroke这些path
+* [swift - iOS Prevent timer UILabel 'shaking' when numbers change - Stack Overflow](https://stackoverflow.com/questions/33800488/ios-prevent-timer-uilabel-shaking-when-numbers-change)用等宽字体修复UILabel居中对齐左右摇摆问题
 
 #### UITextView@
 * [Auto Resizing a Dynamic UITextView](https://medium.com/macoclock/auto-resizing-dynamic-uitextview-97d151e59ca0)
@@ -1076,6 +1209,7 @@ tableView.estimatedSectionFooterHeight = CGFLOAT_MIN;
 * [关于ios：如何根据内容调整UITextView的大小？ | 码农家园](https://www.codenong.com/50467/)
 * [ios - how to make UITextView height dynamic according to text length? - Stack Overflow](https://stackoverflow.com/questions/38714272/how-to-make-uitextview-height-dynamic-according-to-text-length)设置scrollenable为no，设置约束后就能自适应
 * [ios - How disable Copy, Cut, Select, Select All in UITextView - Stack Overflow](https://stackoverflow.com/questions/1426731/how-disable-copy-cut-select-select-all-in-uitextview)
+* [UITextField docked like iOS Messenger](https://www.derpturkey.com/uitextfield-docked-like-ios-messenger/)保证uiview 固定在底部,注册uiviewcontroller或者uiview为第一响应者，跟随键盘移动
 
 #### Button@
 * [DGDownloaderButton](https://github.com/Desgard/DGDownloaderButton)下载进度button,慢慢粒子填充满圆
@@ -1104,9 +1238,12 @@ tableView.estimatedSectionFooterHeight = CGFLOAT_MIN;
 * [PasswordDemo](https://github.com/FirstDKS521/PasswordDemo)
 * [XLPasswordInputView](https://github.com/CoderXLLau/XLPasswordInputView)
 
-#### mask@
+#### mask@镂空@
 
 * [Quartz 2D编程指南之十一：位图与图像遮罩](http://southpeak.github.io/2015/01/05/quartz2d-11/)
+* [swift - UIView invert mask MaskView - Stack Overflow](https://stackoverflow.com/questions/46862753/uiview-invert-mask-maskview)
+* [iOS Secrets: See Behind Your Views | by Riccardo Cipolleschi | The Startup | Medium](https://medium.com/swlh/ios-secrets-see-behind-your-views-fe8afe9072a5)
+* [ios - Reverse a CALayer mask - Stack Overflow](https://stackoverflow.com/questions/42238603/reverse-a-calayer-mask) maskLayer.compositingFilter = @"xor"; 我用的这种方式比较nice
 
 #### Http@icmp@ping@tcping@
 
@@ -1129,9 +1266,10 @@ tableView.estimatedSectionFooterHeight = CGFLOAT_MIN;
 * [CodeData/SFNetSpeedMeasurerManager.m at 8769dae738119726370c76363d8198045d7b3b9a · lwyhero/CodeData](https://github.com/lwyhero/CodeData/blob/8769dae738119726370c76363d8198045d7b3b9a/NetMonitoring/NetorkSpeedMeasurer/SFNetSpeedMeasurerManager.m)
 
 
-#### 富文本
+#### 富文本@coretext@
 * [制作一个微博文本编辑器](http://www.jianshu.com/p/13bcedb370ac)
 * [iOS富文本组件的实现—DTCoreText源码解析 数据篇](http://blog.cnbang.net/tech/2630/)
+* [iOS-CoreText的那些事【电子书的那些事】 - macro小K - 博客园](https://www.cnblogs.com/wangkejia/p/8321102.html)
 
 #### api 参数构造 params
 * [自动去除字典空值对象,仿系统字典创建方法NSDictionaryOfVariableBindings](https://juejin.im/post/5ad4b3cc5188255c5668eada)
@@ -1156,10 +1294,14 @@ tableView.estimatedSectionFooterHeight = CGFLOAT_MIN;
 * [MXParallaxHeader](https://github.com/maxep/MXParallaxHeader)
 * [MXSegmentedPager](https://github.com/maxep/MXSegmentedPager)结合了pagevc 和 paralaxheader 。。。。。
 * [ARSegmentPager](https://github.com/AugustRush/ARSegmentPager)结合了segment 和 paralaxheader
+* [Jiar/SegementSlide: Multi-tier UIScrollView nested scrolling solution. 😋😋😋](https://github.com/Jiar/SegementSlide)
+* [flipkart-incubator/scroll-coordinator-ios: ScrollCoordinator allows you to attach gestures to scrollviews and perform behaviours like Hiding the navigation bar, hiding the bottom bar and anchoring your scroll on these gestures.](https://github.com/flipkart-incubator/scroll-coordinator-ios)
+* [EmbeddedScrollView/EmbeddedScrollViewExtension.swift at main · 623637646/EmbeddedScrollView · GitHub](https://github.com/623637646/EmbeddedScrollView/blob/main/EmbeddedScrollView/EmbeddedScrollViewExtension.swift)
 * [RKSwipeBetweenViewControllers](https://github.com/cwRichardKim/RKSwipeBetweenViewControllers)
 * [navigationbar 自定义 通过vc nav vc的压栈形式实现](http://www.jianshu.com/p/88bc827f0692)
 * [WRNavigationBar](https://github.com/wangrui460/WRNavigationBar)一行代码设置状态栏、导航栏按钮、标题、颜色、透明度，移动等
 * [UINavigationController custom left baritem swip gesture conflict](https://github.com/fastred/AHKNavigationController/blob/master/Classes/AHKNavigationController.m)
+
 
 #### NavigationBar@
 
@@ -1207,14 +1349,14 @@ tableView.estimatedSectionFooterHeight = CGFLOAT_MIN;
 * [aschuch/StatefulViewController](https://github.com/aschuch/StatefulViewController.git)
 * [Juanpe/SkeletonView](https://github.com/Juanpe/SkeletonView)
 
-#### 引导页 和 操作指南 Guide walkThrough
+#### 引导页@  操作指南@ Guide@ walkThrough@
 * [FTTT/JazzHands](https://github.com/IFTTT/JazzHands)
 * [操作指南比较简单提示框](https://github.com/KitchenStories/Elissa)
 * [EAIntroView](https://github.com/ealeksandrov/EAIntroView)
 * [Interpolate](https://github.com/marmelroy/Interpolate)
 * [Presentation](https://github.com/hyperoslo/Presentation)
 * [AwesomeIntroGuideView](https://github.com/Bupterambition/AwesomeIntroGuideView)
-* [ephread/Instructions](https://github.com/ephread/Instructions)
+* [ephread/Instructions: Create walkthroughs and guided tours (coach marks) in a simple way, with Swift.](https://github.com/ephread/Instructions)
 * [BWWalkthrough](https://github.com/ariok/BWWalkthrough)
 * [LUNTutorialViewController](https://github.com/LunAppsMobile/LUNTutorialViewController)
 * [WhatesNew 文本指南](https://github.com/BalestraPatrick/WhatsNew)
@@ -1317,12 +1459,19 @@ tableView.estimatedSectionFooterHeight = CGFLOAT_MIN;
 * [xcasset ipa 内容导出](https://github.com/alexzielenski/ThemeEngine)(https://www.jianshu.com/p/c6b96ef815d9)
 * [pcjbird/AssetsExtractor: 『Assets提取工具』是一款OSX平台上用于将Assets.car或xxx.app中打包的png图片、pdf等资源重新提取出来的开发者工具。Assets.car常见于iOS/Mac/Unity等开发中的资源打包。](https://github.com/pcjbird/AssetsExtractor)
 * [bartoszj/acextract: A tool to list and extract content from Assets.car file.](https://github.com/bartoszj/acextract)
+* [Release 1.2.0 · chenjie1219/cartool](https://github.com/chenjie1219/cartool/releases/tag/1.2.0)
 
 #### html@
 * [topfunky / hpple](https://github.com/topfunky/hpple)An XML/HTML parser for Objective-C, inspired by Hpricot.
 * [收集几个Objective-C的HTML解析库](http://www.isaced.com/post-236.html)
 * [nolanw/HTMLReader](https://github.com/nolanw/HTMLReader)
 * [GRMustache html 模板解析](https://github.com/groue/GRMustache)
+* [如何优雅简洁地实现时钟翻牌器(支持JS/Vue/React)](https://mp.weixin.qq.com/s/sA9S-mYAqVd527uggGeLfA)
+* [Yuezi32/flipClock: 翻牌效果时钟的演示，包含原生JavaScript、Vue、React三种实现方式。](https://github.com/Yuezi32/flipClock)
+* [html - Image will not fill div - Stack Overflow](https://stackoverflow.com/questions/10266849/image-will-not-fill-div)
+* [Hammer.JS - Hammer.js](https://hammerjs.github.io/) 像iOS的辅助控件
+* [javascript - Vue.js中引入图片路径的几种方式 - 个人文章 - SegmentFault 思否](https://segmentfault.com/a/1190000019495695)
+* [vite启动的服务默认不能通过ip地址访问 - 简书](https://www.jianshu.com/p/ee286a5e7a67)
 
 #### protocol@
 
@@ -1353,11 +1502,9 @@ tableView.estimatedSectionFooterHeight = CGFLOAT_MIN;
 
 ## 开源应用@开源项目@
 
-### 浏览器
 * [mozilla-mobile/firefox-ios: Firefox for iOS](https://github.com/mozilla-mobile/firefox-ios)
 * [brave/brave-ios: Brave iOS Browser](https://github.com/brave/brave-ios)
 * [PresearchOfficial/presearch-browser-ios](https://github.com/PresearchOfficial/presearch-browser-ios)基于brave-ios
-
 * [ChateSecure-iOS](https://github.com/ChatSecure/ChatSecure-iOS)ChatSecure is a free and open source encrypted chat client for iPhone and Android that supports OTR encryption over XMPP
 * [iOS-Source-Code-Analyze](https://github.com/Draveness/iOS-Source-Code-Analyze)解析一些开源项目
 * [城觅WNXHuntForCity](https://github.com/ZhongTaoTian/WNXHuntForCity)
@@ -1369,6 +1516,9 @@ tableView.estimatedSectionFooterHeight = CGFLOAT_MIN;
 * [21个高质量的Swift开源iOS App](http://www.cocoachina.com/swift/20161014/17758.html)
 * [GitHub 上有哪些完整的 iOS-App 源码值得参考？](https://www.zhihu.com/question/28518265)
 * [wireapp/wire-ios: 📱 Wire for iOS (iPhone and iPad)](https://github.com/wireapp/wire-ios)
+* [relatedcode/Messenger: Open source alternative communication platform.](https://github.com/relatedcode/Messenger)
+* [relatedcode (Related Code)](https://github.com/relatedcode)
+* [douyin-ios-objectc/WebPImageView.m at e8a280db094861ea06aef491be078495b8a15fcd · sshiqiao/douyin-ios-objectc](https://github.com/sshiqiao/douyin-ios-objectc)
 
 #### 抢购脚本@
 * [Aice.Fu抢购工具使用](https://mp.weixin.qq.com/s/FsYKRNdCYPAAMbraQqEoSw)
@@ -1416,6 +1566,7 @@ tableView.estimatedSectionFooterHeight = CGFLOAT_MIN;
 #### Toast/Hud@
 * [cruffenach/CRToast](https://github.com/cruffenach/CRToast)CRToast is a library that allows you to easily create notifications that appear on top of or by pushing out the status bar or navigation bar
 * [terryworona/TWMessageBarManager](https://github.com/terryworona/TWMessageBarManager)An iOS manager for presenting system-wide notifications via a dropdown message bar.
+* [relatedcode/ProgressHUD: ProgressHUD is a lightweight and easy-to-use HUD for iOS.](https://github.com/relatedcode/ProgressHUD)
 
 #### stackview
 
@@ -1487,13 +1638,15 @@ tableView.estimatedSectionFooterHeight = CGFLOAT_MIN;
 * [iOS项目快速实现国际化](https://www.jianshu.com/p/6ad4f8bc198b)
 * [苹果官网国际化教程](https://developer.apple.com/library/archive/referencelibrary/GettingStarted/RoadMapiOSCh-Legacy/chapters/InternationalizeYourApp/InternationalizeYourApp/InternationalizeYourApp.html)
 * [iOS国际化方案---看我就够 - 简书](https://www.jianshu.com/p/1550f2835f4f)
+* [IOS应用国际化最全攻略 - 知乎](https://zhuanlan.zhihu.com/p/131591013)用苹果自带的genstrings扫描代码文件，生成Localizable.strings  `find ./ -name "*.m" -print0 | xargs -0 genstrings`
 
 #### UIFont@字体@
 
 * [Swift — 為你的 APP 添加自定義字體. 讓我們一起看看如何在你的 APP 中添加新自定義的字體吧！ | by Jeremy Xue | Jeremy Xue ‘s Blog | Medium](https://medium.com/jeremy-xue-s-blog/swift-%E7%82%BA%E4%BD%A0%E7%9A%84-app-%E6%B7%BB%E5%8A%A0%E8%87%AA%E5%AE%9A%E7%BE%A9%E5%AD%97%E9%AB%94-1063a7fd30a4)
 
-#### Image handle@
+#### Image handle@ image@
 * [BeauNouvelle / FaceAware](https://github.com/BeauNouvelle/FaceAware)An extension that gives UIImageView the ability to focus on faces within an image.
+* [yackle/CLImageEditor](https://github.com/yackle/CLImageEditor)
 
 #### UIImageView@
 
@@ -1658,6 +1811,8 @@ tableView.estimatedSectionFooterHeight = CGFLOAT_MIN;
 
 ```egrep -i '([^_: <k`\)\^\"\&\/\+\(\[])af' ./AFNetworking/ -r```//查找不能替换的af
 
+* 查找文本替换文本`grep com.xxx.xxx -rl ./ | xargs -I{} sed -i '' -e 's/com.xxx.xxx/com.xxx1.xxx1/g' {}` 注意sed -i '' 必须要用 macos 会把-i后面的参数当做修改时备份文件的后缀
+
 
 #### 引用计数
 * [引用计数带来的一次讨论](https://www.jianshu.com/p/e3690f3e4675) 访问weak变量和autorelease的关系
@@ -1731,6 +1886,8 @@ tableView.estimatedSectionFooterHeight = CGFLOAT_MIN;
 * [Memory (Debugging with GDB)](https://sourceware.org/gdb/download/onlinedocs/gdb/Memory.html#Memory)lldb打印内存中的值、如何打印
 * [Output Formats (Debugging with GDB)](https://sourceware.org/gdb/download/onlinedocs/gdb/Output-Formats.html#Output-Formats)lldb打印内存中的值、什么样的格式打印 p/x 打印变量指向的地址,x/1tb 以一个字节(b)为一组，用二进制的方式(t)，打印一组(1)
 * [Linux下查看二进制文件_ghimi的博客-CSDN博客_linux查看二进制文件](https://blog.csdn.net/qq_19922839/article/details/115483499)hexdump
+* [xcode - Watch points on memory address - Stack Overflow](https://stackoverflow.com/questions/21063995/watch-points-on-memory-address)watchpoint
+* [Tutorial — The LLDB Debugger](https://lldb.llvm.org/use/tutorial.html#setting-watchpoints)
 
 #### 分享/三方登录
 * [获取微信好友列表](https://wohugb.gitbooks.io/wechat/content/qrconnent/user_info.html)
@@ -1795,7 +1952,7 @@ tableView.estimatedSectionFooterHeight = CGFLOAT_MIN;
 * [man 手册用法](https://www.linuxidc.com/Linux/2017-10/148088.htm)
 * [shell 当前工作目录的绝对路径](https://blog.csdn.net/qq_18150497/article/details/76600828)
 * [sh命令_Linux sh 命令用法详解：shell命令解释器](https://man.linuxde.net/sh)linux官网
-* [Linux / Unix: Bash Find Matching All Dot Files - nixCraft](https://www.cyberciti.biz/faq/linux-unix-bsd-appleosx-ksh-csh-bash-find-hidden-dotfiles/)隐藏文件
+* [Linux / Unix: Bash Find Matching All Dot Files - nixCraft](https://www.cyberciti.biz/faq/linux-unix-bsd-appleosx-ksh-csh-bash-find-hidden-dotfiles/)隐藏文件 Command + Shift + . 
 * [使用'find'命令获取文件的绝对路径](https://qastack.cn/ubuntu/444551/get-absolute-path-of-files-using-find-command) `find ~+ -type f -name '.*'`
 * [~+的作用](https://www.gnu.org/software/bash/manual/html_node/Tilde-Expansion.html)官方文档
 * [linux find -regex 使用正则表达式 - 江召伟 - 博客园](https://www.cnblogs.com/jiangzhaowei/p/5451173.html)
@@ -1819,6 +1976,7 @@ echo -e "$text" # 111[换行]222[换行]333
 * [bash - How to loop through file names returned by find? - Stack Overflow](https://stackoverflow.com/questions/9612090/how-to-loop-through-file-names-returned-by-find)
 * [Linux shell 中$() ` `，${}，$[] $(())，\[ \] (( )) [[ ]]作用与区别_vaiorreto的博客-CSDN博客_linux的$()](https://blog.csdn.net/x1269778817/article/details/46535729)
 * [How to get iPhone ECID from MacOS terminal - Ask Different](https://apple.stackexchange.com/questions/267927/how-to-get-iphone-ecid-from-macos-terminal)
+* [Linux下的history命令其实很强大 - 知乎](https://zhuanlan.zhihu.com/p/38813482)执行历史命令!num
 
 #### 并查集@
 * [(7条消息) 并查集(Union-Find)算法介绍_不忘初心，好好沉淀-CSDN博客](https://blog.csdn.net/dm_vincent/article/details/7655764)
@@ -2005,6 +2163,35 @@ Each symbol name is preceded by its value (blanks if undefined).  Unless the -m
 * [Hook 原理之 CydiaSubstrate（一）：MSHookMessageEx](https://amywushu.github.io/2017/03/07/%E9%80%86%E5%90%91%E7%9F%A5%E8%AF%86-Hook-%E5%8E%9F%E7%90%86%E4%B9%8B-CydiaSubstrate%EF%BC%88%E4%B8%80%EF%BC%89%EF%BC%9AMSHookMessageEx.html) [二](https://amywushu.github.io/2017/03/23/%E9%80%86%E5%90%91%E7%9F%A5%E8%AF%86-Hook-%E5%8E%9F%E7%90%86%E4%B9%8B-CydiaSubstrate%EF%BC%88%E4%BA%8C%EF%BC%89%EF%BC%9AMSHookMessageEx.html)
 * [基于汇编实现objc_msgSend hook方法耗时的方案 - 掘金](https://juejin.cn/post/7134877291716280328/)
 
+#### C语言@
+
+* [How to generate program dependence graph for C program? - Stack Overflow](https://stackoverflow.com/questions/7904651/how-to-generate-program-dependence-graph-for-c-program)
+* [基于LLVM的源码级依赖分析方案的设计与实现_文化 & 方法_高德技术_InfoQ精选文章](https://www.infoq.cn/article/xevc5xmegjdt2z2632mn)
+* [Doxygen with Graphviz to generate call graph on Mac_smilejiasmile的博客-CSDN博客](https://blog.csdn.net/smilejiasmile/article/details/119041162)用此方法生成函数调用关系图及文档
+```
+brew install doxygen
+brew install graphviz
+cd /Users/xxx/Documents/xxx/project
+doxygen -g
+
+HAVE_DOT               = YES
+EXTRACT_ALL            = YES
+EXTRACT_PRIVATE        = YES
+EXTRACT_STATIC         = YES
+CALL_GRAPH             = YES
+CALLER_GRAPH           = YES
+DISABLE_INDEX          = YES 
+GENERATE_TREEVIEW      = YES
+RECURSIVE              = YES
+
+doxygen Doxyfile
+
+```
+
+#### carthage@
+* [Carthage/StaticFrameworks.md at a91d086ceaffef65c4a4a761108f3f32c519940c · Carthage/Carthage · GitHub](https://github.com/Carthage/Carthage/blob/a91d086ceaffef65c4a4a761108f3f32c519940c/Documentation/StaticFrameworks.md)使用XCODE_XCCONFIG_FILE xcconfig
+* [Carthage builds fail at xcrun lipo on Xcode 12 beta (3,4,5...) · Issue #3019 · Carthage/Carthage](https://github.com/Carthage/Carthage/issues/3019) The armv7s architecture is deprecated问题解决
+
 #### 汇编@
 * [iOS开发同学的arm64汇编入门](https://blog.cnbluebox.com/blog/2017/07/24/arm64-start/) 看完超级爽系列
 * [ARM汇编 ](https://www.jianshu.com/p/bd96a8f58cbd)
@@ -2026,6 +2213,7 @@ Each symbol name is preceded by its value (blanks if undefined).  Unless the -m
 * [Assembly Language教程_w3cschool](https://www.w3cschool.cn/assembly/)w3cschool汇编教程 英特尔32处理器
 * [A-Profile Architectures | Exploration tools – Arm Developer](https://developer.arm.com/architectures/cpu-architecture/a-profile/exploration-tools)arm汇编官网
 * [Learn the architecture - AArch64 Instruction Set Architecture](https://developer.arm.com/documentation/102374/0100/Loads-and-stores---addressing?lang=en)arm手册官方 搜索关键词ldr等出现手册
+* [(33条消息) arm64汇编adrp指令作用和使用举例_小手琴师的博客-CSDN博客_adrp](https://blog.csdn.net/boildoctor/article/details/123417577)
 
 #### 编译@
 * [记一次 mangle & demangle 之旅 - 简书](https://www.jianshu.com/p/2e598dfd84bf)符号修饰
@@ -2097,6 +2285,44 @@ Each symbol name is preceded by its value (blanks if undefined).  Unless the -m
 * [[iOS Tips]证书签名相关命令行](https://www.jianshu.com/p/f140f4a08c4f)
 * [Mac Security工具使用总结find-identity](https://blog.csdn.net/elesos/article/details/73882942)
 
+#### shadowsocks-libev@
+* [Jigsaw-Code/outline-client: Outline clients, developed by Jigsaw. The Outline clients use the popular Shadowsocks protocol, and lean on the Cordova and Electron frameworks to support Windows, Android / ChromeOS, Linux, iOS and macOS.](https://github.com/Jigsaw-Code/outline-client)
+* [SS-FS-58/outline-client: Outline clients, developed by Jigsaw. The Outline clients use the popular Shadowsocks protocol, and lean on the Cordova and Electron frameworks to support Windows, Android / ChromeOS, Linux, iOS and macOS.](https://github.com/SS-FS-58/outline-client)含有start_ss_local_server_with_callback函数
+* [juvham/ShadowSocks-libev-iOS](https://github.com/juvham/ShadowSocks-libev-iOS)
+* [myhighland/ShadowCoel: ShadowCoel is a ss/ssr client based on Potatso](https://github.com/myhighland/ShadowCoel)
+* [amnezia-vpn/desktop-client: Amnezia VPN Client (Desktop+Mobile)](https://github.com/amnezia-vpn/desktop-client) macos
+* [retriable/Shadowsocks-libev-iOS](https://github.com/retriable/Shadowsocks-libev-iOS)
+* [Jigsaw-Code/outline-go-tun2socks](https://github.com/Jigsaw-Code/outline-go-tun2socks)
+* [Tutorial: Open Source on iOS (Part 2): Compiling libogg on iOS | iOS Developer Zone](http://iosdeveloperzone.com/2012/09/29/tutorial-open-source-on-ios-part-2-compiling-libogg-on-ios/)autoconf automake 编译ios平台
+* [Porting Mbed TLS to a new environment or OS — Mbed TLS documentation](https://mbed-tls.readthedocs.io/en/latest/kb/how-to/how-do-i-port-mbed-tls-to-a-new-environment-OS/)
+
+* [CMakeLists.txt 语法介绍与实例演练_阿飞__的博客-CSDN博客_cmakelist](https://blog.csdn.net/afei__/article/details/81201039)
+* [关于Makefile,Makefile.in,Makefile.am,Configure功能及相互关系的问题 - lsgxeva - 博客园](https://www.cnblogs.com/lsgxeva/p/7592485.html)
+* [书写命令 — 跟我一起写Makefile 1.0 文档](https://seisman.github.io/how-to-write-makefile/recipes.html)makefile@符号说明
+* [Linux操作系统中使用“autogen.sh+configure+make”编译代码的方法_liitdar的博客-CSDN博客_autogen configure](https://blog.csdn.net/liitdar/article/details/86093120)
+* [homebrew-core/mbedtls.rb at a02abf8819cbb0fbdf50701e17cfb7d56730dbac · Homebrew/homebrew-core · GitHub](https://github.com/Homebrew/homebrew-core/blob/HEAD/Formula/mbedtls.rb)brew info mbedtls
+* [概述 — 跟我一起写Makefile 1.0 文档](https://seisman.github.io/how-to-write-makefile/overview.html)
+* [shell中:= ?= += =的区别_潘多拉的面的博客-CSDN博客_shell :=](https://blog.csdn.net/lixiaofeng0/article/details/114631352)
+* [ranlib的作用 -----更新静态库的符号索引表 - LiuYanYGZ - 博客园](https://www.cnblogs.com/LiuYanYGZ/p/5529317.html)
+* [m4宏语言概览 | 陈颂光](https://www.chungkwong.cc/m4.html)
+* [【libuv高效编程】libuv学习超详细教程4——libuv idle空闲句柄解读__杰杰_的博客-CSDN博客_uv_idle](https://jiejie.blog.csdn.net/article/details/105670311)
+* [chrisballinger/ProxyKit: SOCKS proxy server and socket client built upon GCDAsyncSocket.](https://github.com/chrisballinger/ProxyKit) [xrooters/xTorChat: https://itunes.apple.com/us/app/xtorchat/id1403177943?mt=8](https://github.com/xrooters/xTorChat)
+* 编译libsodium
+```
+git clone git@github.com:jedisct1/libsodium.git
+cd ~/Documents/libsodium
+修改autogen.sh中的dev_setup=true 或 autogen.sh -s
+./autogen.sh
+./configure
+./dist-build/apple-xcframework.sh
+cd libsodium-apple
+```
+
+* [hello-david/SwiftV2Ray: V2Ray-Core的iOS工具](https://github.com/hello-david/SwiftV2Ray)
+* [gitsrc/vmess-client: client for vmess protocol.【Low memory size, can be used in embedded devices (eg : IOS) 】](https://github.com/gitsrc/vmess-client)
+* [Tai7sy/v2ray_mobile_lib: v2ray mobile library for Android/iOS](https://github.com/Tai7sy/v2ray_mobile_lib)
+* [WireGuard/wireguard-apple: Mirror only. Official repository is at https://git.zx2c4.com/wireguard-apple](https://github.com/WireGuard/wireguard-apple)
+
 #### appStore@rate@
 
 * [takecian/SwiftRater: A utility that reminds your iPhone app's users to review the app written in pure Swift.](https://github.com/takecian/SwiftRater)
@@ -2121,6 +2347,7 @@ Each symbol name is preceded by its value (blanks if undefined).  Unless the -m
 #### shell@bash@
 * [bash(1) - Linux manual page](https://man7.org/linux/man-pages/man1/bash.1.html) ${parameter%word} ${parameter%%word} ${parameter#word} ${parameter##word}
 * jobs 查看挂起进程 -l option可以看见pid  kill -9 pid 杀死进程
+* [linux - Bash 脚本中的 set -euxo pipefail - Python测试开发 - SegmentFault 思否](https://segmentfault.com/a/1190000021756627)
 
 ## Swift@
 
@@ -2131,6 +2358,10 @@ Each symbol name is preceded by its value (blanks if undefined).  Unless the -m
 * [如何让swift package manager走代理 - 掘金](https://juejin.cn/post/6946451335948697636)--Software configuration management
 
 
+### UI@
+* [lkzhao/UIComponent: Write UI in crazy speed, with great perf & no limitations.](https://github.com/lkzhao/UIComponent)//use like use swiftUI for collection stack 
+* [SoySauceLab/CollectionKit: Reimagining UICollectionView](https://github.com/SoySauceLab/CollectionKit) 
+
 ### Codable@
 
 * [winddpan/CodableWrapper: @Codec("encoder", "decoder") var cool: Bool = true](https://github.com/winddpan/CodableWrapper)
@@ -2139,6 +2370,9 @@ Each symbol name is preceded by its value (blanks if undefined).  Unless the -m
 ### 语法@
 * [swiftui - What is the "some" keyword in Swift(UI)? - Stack Overflow](https://stackoverflow.com/questions/56433665/what-is-the-some-keyword-in-swiftui)讲了some带来的好处
 * [Opaque Types — The Swift Programming Language (Swift 5.7)](https://docs.swift.org/swift-book/LanguageGuide/OpaqueTypes.html)
+
+### Swift开源库@
+* [devxoul/Then: ✨ Super sweet syntactic sugar for Swift initializers](https://github.com/devxoul/Then)
 
 ##
 * [模式匹配第一弹: switch, enums & where 子句](http://swift.gg/2016/04/26/pattern-matching-1/)
@@ -2163,11 +2397,12 @@ Each symbol name is preceded by its value (blanks if undefined).  Unless the -m
 ## 图片处理
 * [Luminar AI - AI photo editing for Mac & PC | Skylum](https://skylum.com/luminar-ai-b)天空替换
 
-* 字体
+* 字体@UIFont@
 * [系统默认字体](http://varyu.com/code/215.html)
 * [ios9 后苹果所用的字体](https://www.uisdc.com/ios-9-font-transition)(http://www.sheui.com/Spec/) - 字体册查看字体 
 * [为什么不把Sanfransico直接定义为“苹方”的英文字体呢？](https://www.zhihu.com/question/41522427)
 * [如何优雅的选择字体(font-family) 配置多种字体](https://www.cnblogs.com/shenzikun1314/p/8496967.html)
+* [System Fonts - Fonts - Apple Developer](https://developer.apple.com/fonts/system-fonts/)
 
 ## sublime@
 * [快捷打开文件或文件夹 finder/terminal]
@@ -2187,6 +2422,11 @@ clang -rewrite-objc -fobjc-arc -stdlib=libc++ -mmacosx-version-min=10.7 -fobjc-r
 * sublime ConvertChineseCharacters package提供 Unicode: Chinese Characters To Unicode 
 * [Sublime Text - Command Palette](https://www.tutorialspoint.com/sublime_text/sublime_text_command_palette.htm)sublime 文档
 
+
+# go@
+
+* [Go代码断行规则 -Go语言101](https://gfw.go101.org/article/line-break-rules.html)
+* [golang 中的四种类型转换总结 | Go 技术论坛](https://learnku.com/articles/42797)
 
 # 软著@软件著作权
 
