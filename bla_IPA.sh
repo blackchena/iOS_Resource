@@ -18,12 +18,13 @@ function run_at {
 }
 
 function fir_upload {
-	ipaFile=${DIR}/Target.ipa
+	echo "fir upload log $1"
+	ipaFile=${DIR}/${IPAName}
 	fir publish "${ipaFile}" -c "$1"
 }
 
 function pgyer_upload {
-	ipaFile=${DIR}/Target.ipa
+	ipaFile=${DIR}/${IPAName}
 	curl -F file=@"$ipaFile" \
 	-F uKey=xxxx \
 	-F _api_key=xxxx \
@@ -31,10 +32,20 @@ function pgyer_upload {
 	https://www.pgyer.com/apiv1/app/upload
 }
 
+function read_updatelog {
+	read -ep '请输入更新日志：' updateLog
+
+	if [[ -z "$updateLog" ]]; then
+		updateLog="更新"
+		echo "建议输入更新日志"
+	fi
+	echo "updateLog $updateLog"
+}
+
 echo "==================MonkeyDev(create ipa file...)=================="
 
 APP="$1"
-DisplayName="$(/usr/libexec/PlistBuddy -c "Print CFBundleDisplayName" "${APP}/Info.plist")"
+DisplayName="$(/usr/libexec/PlistBuddy -c "Print CFBundleName" "${APP}/Info.plist")"
 Version="$(/usr/libexec/PlistBuddy -c "Print CFBundleShortVersionString" "${APP}/Info.plist")"
 BuildCode="$(/usr/libexec/PlistBuddy -c "Print CFBundleVersion" "${APP}/Info.plist")"
 IPAName="${DisplayName}_v${Version}_${BuildCode}.ipa"
@@ -49,21 +60,19 @@ run "cp -rf ${APP} ${DIR}/Payload"
 run_at ${DIR} "zip -qr ${IPAName} Payload"
 run "rm -rf ${DIR}/Payload"
 echo "==================生成IPA成功: ${DIR}=================="
-open ${DIR}
 
-# read -ep '请输入更新日志：' updateLog
 
-# if [[ -z "$updateLog" ]]; then
-# 	updateLog="更新"
-# 	echo "建议输入更新日志"
-# fi
+if [[ "$2" == "pgyer" ]]; then
+	read_updatelog
+	pgyer_upload "$updateLog"
+elif [[ "$2" == "fir" ]]; then
+	read_updatelog
+	fir_upload "$updateLog"
+else
+	open ${DIR}
+fi
 
-# if [[ "$2" == "pgyer" ]]; then
-# 	pgyer_upload $updateLog
-# else
-# 	fir_upload $updateLog
-# fi
 
-# echo "==================MonkeyDev(done)=================="
+# echo "==================BLA_IAP(done)=================="
 
 exit;
