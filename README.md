@@ -28,6 +28,10 @@
 
 ## 科学的查资料@
 
+### Medium@
+
+* [Unlimited Access to Medium Articles A Simple Method for Seamless Reading |](https://canererden.com/blog/2023/unlock-medium/)
+
 ### 科学上网@
 * [greenss](http://greenss.vip/)
 * [Shadowfly](https://shadowflys.us/#/login)
@@ -50,8 +54,11 @@
 
 ## 算法@
 
-* [深入浅出理解有限状态机](http://www.jianshu.com/p/5eb45c64f3e3)
 * [小码哥算法](https://space.bilibili.com/410164881/channel/detail?cid=94002)
+
+### 状态机@
+* [blakewatters/TransitionKit: An Objective-C library for elegantly implementing state machines.](https://github.com/blakewatters/TransitionKit)
+* [深入浅出理解有限状态机](http://www.jianshu.com/p/5eb45c64f3e3)
 
 ### diff@diff算法@
 * [IGListKit 学习(1) 一种高效的 diff 算法 | Sunshine](https://sunshineyg888.github.io/2019/12/15/IGListKit%E5%AD%A6%E4%B9%A0(1)--%E9%AB%98%E6%95%88%E7%9A%84diff%E7%AE%97%E6%B3%95/#more)//diff算法
@@ -69,6 +76,7 @@
 ### NSString@
 * [Rightpoint/BonMot: Beautiful, easy attributed strings in Swift](https://github.com/Rightpoint/BonMot)
 * [Swift How to get integer from string and convert it into integer - Stack Overflow](https://stackoverflow.com/questions/30342744/swift-how-to-get-integer-from-string-and-convert-it-into-integer)获取字符串中的所有数字
+* [Swift turn a country code into a emoji flag via unicode - Stack Overflow](https://stackoverflow.com/questions/30402435/swift-turn-a-country-code-into-a-emoji-flag-via-unicode/34995291#34995291)
 
 ### NSData@
 * [NSData to Hex String or reverse](https://github.com/jmah/NSData-FastHex)
@@ -92,7 +100,6 @@
 * [iOS中的Throttle(函数节流)与Debounce(函数防抖) - sundayswift - 博客园](https://www.cnblogs.com/sundaysme/p/14535255.html)
 
 ### UIViewController Transition@转场@
-* [ZoomTransitioning](https://github.com/WorldDownTown/ZoomTransitioning)colletion cell To VC
 * [expanding-collection](https://github.com/Ramotion/expanding-collection)
 * [DisplaySwitcher](https://github.com/Yalantis/DisplaySwitcher)Custom transition between two collection view layouts
 * [RZTransitions](https://github.com/Raizlabs/RZTransitions)
@@ -120,6 +127,8 @@
 * [Transitions - iOS Example](https://iosexample.com/tag/transitions/)
 * [Custom UIViewController Transitions: Getting Started | Kodeco](https://www.kodeco.com/322-custom-uiviewcontroller-transitions-getting-started)
 * [Animate UIViewController Transitions with UIViewControllerAnimatedTransitioning | by Steven Curtis | Medium](https://stevenpcurtis.medium.com/animate-uiviewcontroller-transitions-with-uiviewcontrolleranimatedtransitioning-859e4544ceef)
+* [wcgray/RetroTransition: Fun implementations of UIViewControllerAnimatedTransitioning for 90s inspired transitions between view controllers.](https://github.com/wcgray/RetroTransition)
+* [WorldDownTown/ZoomTransitioning: ZoomTransitioning provides a custom transition with image zooming animation and swiping the screen edge.](https://github.com/WorldDownTown/ZoomTransitioning)
 
 ### UITableView@ UICollectionView@
 * [ra1028/Carbon: 🚴 A declarative library for building component-based user interfaces in UITableView and UICollectionView.](https://github.com/ra1028/Carbon)
@@ -139,14 +148,23 @@
 * [chiahsien/CHTCollectionViewWaterfallLayout: The waterfall (i.e., Pinterest-like) layout for UICollectionView.](https://github.com/chiahsien/CHTCollectionViewWaterfallLayout)
 * [xiaopin/iOS-WaterfallLayout: UICollectionView实现瀑布流布局](https://github.com/xiaopin/iOS-WaterfallLayout)
 * [exyte/Grid: The most powerful Grid container missed in SwiftUI](https://github.com/exyte/Grid)//swiftui 动画grid布局
+* [ios - How to populate UITableView from the bottom upwards? - Stack Overflow](https://stackoverflow.com/questions/28105905/how-to-populate-uitableview-from-the-bottom-upwards)底向上布局，翻转视图
+* [An interesting solution to UITableView Layout from Bottom | by Phan Viết Trung | Dwarves Foundation | Medium](https://medium.com/dwarves-foundation/uitableview-layout-from-bottom-cd7520294a3b)设置UITableView自适应和我使用的方法一致
+* [marty-suzuki/ReverseExtension: A UITableView extension that enables cell insertion from the bottom of a table view.](https://github.com/marty-suzuki/ReverseExtension)
+* [DenTelezhkin/DTCollectionViewManager: Protocol-oriented UICollectionView management, powered by generics and associated types.](https://github.com/DenTelezhkin/DTCollectionViewManager)
+* [DenTelezhkin/DTTableViewManager: Protocol-oriented UITableView management, powered by generics and associated types.](https://github.com/DenTelezhkin/DTTableViewManager)
+* [youngsoft/MyLinearLayout: MyLayout is a powerful iOS UI framework implemented by Objective-C. It integrates the functions with Android Layout,iOS AutoLayout,SizeClass, HTML CSS float and flexbox and bootstrap. So you can use LinearLayout,RelativeLayout,FrameLayout,TableLayout,FlowLayout,FloatLayout,PathLayout,GridLayout,LayoutSizeClass to build your App 自动布局 UIView UITableView UICollectionView RTL](https://github.com/youngsoft/MyLinearLayout)
+
+### UICollectionViewLayout@
+* [Coder-TanJX/JXBanner: 🚀🚀🚀 A super - custom multifunctional framework for banner unlimited rollover diagrams [一个超自定义多功能无限轮播图框架]](https://github.com/Coder-TanJX/JXBanner)
+* [uicollectionviewlayout · GitHub Topics](https://github.com/topics/uicollectionviewlayout?l=swift)
+* [uicollectionviewflowlayout · GitHub Topics](https://github.com/topics/uicollectionviewflowlayout)
 * [Yalantis/Koloda: KolodaView is a class designed to simplify the implementation of Tinder like cards on iOS.](https://github.com/Yalantis/Koloda)类似探探卡片效果
 * [cwRichardKim/RKSwipeCards: The basics of a swipeable card interface inspired by Tinder](https://github.com/cwRichardKim/RKSwipeCards)类似探探卡片效果
 * [How to Create a Revolut-Esque Cards Collection View on iOS | by Burhan Shakir | Better Programming](https://betterprogramming.pub/how-to-create-a-revolut-esque-cards-collection-view-on-ios-c42e649f17a9)左右卡片缩小，中间卡片放大旋转木马效果
 * [panghaijiao/HJCarouselDemo](https://github.com/panghaijiao/HJCarouselDemo)carousel旋转木马
 * [nicklockwood/iCarousel: A simple, highly customisable, data-driven 3D carousel for iOS and Mac OS](https://github.com/nicklockwood/iCarousel)
 * [zepojo/UPCarouselFlowLayout: A fancy carousel flow layout for UICollectionView on iOS.](https://github.com/zepojo/UPCarouselFlowLayout)
-* [uicollectionviewlayout · GitHub Topics](https://github.com/topics/uicollectionviewlayout?l=swift)
-* [uicollectionviewflowlayout · GitHub Topics](https://github.com/topics/uicollectionviewflowlayout)
 * [Custom Collection View Layouts Part 8 Ultravisual – Featured Cell_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV1Hx411a7Cc?p=9)//RAYWENDERLICH上layout视频
 * [Carousel collection view layout](https://bulldogjob.com/readme/carousel-collection-view-layout)//每次调用prepare有缓存
 * [david6p2/Ultravisual: UICollectionView with expanding Cells, paralax effects and beatiful fading animations](https://github.com/david6p2/Ultravisual)//看源码每次调用prepare且没有缓存
@@ -154,15 +172,16 @@
 * [Spice Up Your App’s Collection Views With These 7 Libraries | by Anupam Chugh | Better Programming](https://betterprogramming.pub/spice-up-your-apps-collection-views-with-these-7-libraries-cda2379ce4d7)//列举部分layout
 * [KelvinJin/AnimatedCollectionViewLayout: A UICollectionViewLayout subclass that adds custom transitions/animations to the UICollectionView without effecting your existing code.](https://github.com/KelvinJin/AnimatedCollectionViewLayout)多种layout，包括了Carousel效果，very nice
 * [Repository search results · GitHub](https://github.com/search?q=uicollectionviewlayout&type=repositories)上面库通过查询得来
-* [ios - How to populate UITableView from the bottom upwards? - Stack Overflow](https://stackoverflow.com/questions/28105905/how-to-populate-uitableview-from-the-bottom-upwards)底向上布局，翻转视图
-* [An interesting solution to UITableView Layout from Bottom | by Phan Viết Trung | Dwarves Foundation | Medium](https://medium.com/dwarves-foundation/uitableview-layout-from-bottom-cd7520294a3b)设置UITableView自适应和我使用的方法一致
-* [marty-suzuki/ReverseExtension: A UITableView extension that enables cell insertion from the bottom of a table view.](https://github.com/marty-suzuki/ReverseExtension)
+* [ChenYilong/CollectionViewClassifyMenu: CollectionView做的两级菜单，可以折叠第二级菜单](https://github.com/ChenYilong/CollectionViewClassifyMenu)
+* [amirdew/CollectionViewPagingLayout: A simple but highly customizable UICollectionViewLayout for UICollectionView -- Simple SwiftUI views that let you make page-view effects.](https://github.com/amirdew/CollectionViewPagingLayout)//卡片动画
 
 ### UICollectionViewCompositionalLayout@
 * [swift - UICollectionViewCompositionalLayout waterfall - Stack Overflow](https://stackoverflow.com/questions/66244562/uicollectionviewcompositionallayout-waterfall)[vebbis321/WaterfallCompostionalLayout](https://github.com/vebbis321/WaterfallCompostionalLayout)
-* [The Power of UICollectionView Compositional Layout | Swift | UIKit | by Omar Radwan | Medium](https://medium.com/@oradwan037/the-power-of-uicollectionview-compositional-layout-swift-uikit-ec2d817eb15c)
+* [The Power of UICollectionView Compositional Layout | Swift | UIKit | by Omar Radwan | Medium](https://medium.com/@oradwan037/the-power-of-uicollectionview-compositional-layout-swift-uikit-ec2d817eb15c)//餐厅点餐demo
 * [kishikawakatsumi/IBPCollectionViewCompositionalLayout: Backport of UICollectionViewCompositionalLayout to earlier iOS 12](https://github.com/kishikawakatsumi/IBPCollectionViewCompositionalLayout)
 * [Implementing Modern Collection Views | Apple Developer Documentation](https://developer.apple.com/documentation/uikit/views_and_controls/collection_views/implementing_modern_collection_views?language=objc)官方demo，含有很多场景
+* [iOS开发之UICollectionViewCompositionalLayout - 简书](https://www.jianshu.com/p/7d7e56bd58ce)
+* [vebbis321/WaterfallCompostionalLayout](https://github.com/vebbis321/WaterfallCompostionalLayout)通过UICollectionViewCompositionalLayout实现瀑布流布局，NSCollectionLayoutGroupCustomItem
 
 
 ### Loading@Load@placeholder@
@@ -178,14 +197,19 @@
 * [Juanpe/SkeletonView: ☠️ An elegant way to show users that something is happening and also prepare them to which contents they are awaiting](https://github.com/Juanpe/SkeletonView)//shimmer
 * [mercari/ShimmerView: ShimmerView is a collection of APIs to construct Skelton View + Shimmering Effect type loading indicator on UIKit and SwiftUI.](https://github.com/mercari/ShimmerView)
 * [shimmer · GitHub Topics](https://github.com/topics/shimmer?l=swift)
+* [roytornado/RSLoadingView: Awesome loading animations using 3D engine written with Swift](https://github.com/roytornado/RSLoadingView)//粒子效果loading
+* [tigerAndBull/TABAnimated: A skeleton screen loading framework based on native for iOS. (一个由iOS原生组件映射出骨架屏的框架，包含快速植入，低耦合，兼容复杂视图等特点，提供国内主流骨架屏动画的加载方案，同时支持上拉加载更多、自定制动画。)](https://github.com/tigerAndBull/TABAnimated)
 
-### Progress@ProgressBar@ProgressView@
+### Progress@ProgressBar@ProgressView@Slider@
 * [Marxon13/M13ProgressSuite](https://github.com/Marxon13/M13ProgressSuite)
 * [YLProgressBar](https://github.com/yannickl/YLProgressBar)
 * [progressbar · GitHub Topics](https://github.com/topics/progressbar?l=swift)
 * [fxm90/GradientProgressBar: 📊 A customizable gradient progress bar (UIProgressView).](https://github.com/fxm90/GradientProgressBar)
 * [DholStudio/DSGradientProgressView: A simple animated progress bar in Swift](https://github.com/DholStudio/DSGradientProgressView)带右移动画
 * [Ramotion/fluid-slider: :octocat:💧 A slider widget with a popup bubble displaying the precise value selected. Swift UI library made by @Ramotion](https://github.com/Ramotion/fluid-slider)
+* [WorldDownTown/RangeSeekSlider: RangeSeedSlider provides a customizable range slider like a UISlider.](https://github.com/WorldDownTown/RangeSeekSlider)
+* [spromicky/StepSlider: StepSlider its custom implementation of slider such as UISlider for preset integer values.](https://github.com/spromicky/StepSlider)
+* [yonat/MultiSlider: UISlider clone with multiple thumbs and values, range highlight, optional snap intervals, optional value labels, either vertical or horizontal.](https://github.com/yonat/MultiSlider)
 
 ## Objc源码@
 * [iOS objc4-838编译流程，可在macOS Monterey运行 - 掘金](https://juejin.cn/post/7068539803318353928)
@@ -251,8 +275,10 @@
 * [How to easily change your file header text in Xcode | by Silmy | Medium](https://medium.com/@silmy/how-to-easily-change-your-file-header-text-in-xcode-347fa77d76f4)Xcode头部模板
 * [Customizing the file header comment and other text macros in Xcode 9 – Ole Begemann](https://oleb.net/blog/2017/07/xcode-9-text-macros/#text-macros-reference) Xcode头部模板
 * [xcode-settings-backup/IDETemplateMacros.plist at main · jessesquires/xcode-settings-backup](https://github.com/jessesquires/xcode-settings-backup/blob/main/IDETemplateMacros.plist) Xcode默认模板
+* [devMEremenko/XcodeBenchmark: XcodeBenchmark measures the compilation time of a large codebase on iMac, MacBook, and Mac Pro](https://github.com/devMEremenko/XcodeBenchmark)xcode各版本编译时间对比
+* [Notes for working with Xcode VIM mode](https://gist.github.com/gdavis/218a37c623f650127a2ea1bc2f610151)// xcode vim mode shortcut
 
-### Xcode BuildSetting@
+### Xcode BuildSetting@Xcode@
 * [cocoapods - Associate POD Spec attributes to different Build Settings from their Xcode Configuration (e.g. Release, Debug) - Stack Overflow](https://stackoverflow.com/questions/22114234/associate-pod-spec-attributes-to-different-build-settings-from-their-xcode-confi)
 * [The Unofficial Guide to xcconfig files](https://pewpewthespells.com/blog/xcconfig_guide.html#ConditionalVariableAssignment)
 * [Xcode Build Configuration Files - NSHipster](https://nshipster.com/xcconfig/) 介绍了[Config=DEBUG]
@@ -260,6 +286,7 @@
 * [Xcode Build Settings](https://xcodebuildsettings.com/)nice 资料
 * [Copy files to bundle depending on active configuration - Result For Dev](https://resultfor.dev/949949-copy-files-to-bundle-depending-on-active-configuration)
 * [在 Xcode 中为 iOS 应用定制多种配置(应用名、图标、接口环境等) - Ficow Shen's Blog](https://blog.ficowshen.com/page/post/51)//多Config配置，讲得很好
+* [M1设备的Xcode编译问题深究 - 掘金](https://juejin.cn/post/7037037120158269448)//building for 'iOS-simulator', but linking in dylib NIMNOS built for 'iOS'
 
 ## 数据库@
 * [iOS sqlite3数据库解析](https://www.cnblogs.com/wfwenchao/p/3964213.html)
@@ -267,6 +294,8 @@
 * [FMDB源码阅读（一）](https://www.cnblogs.com/polobymulberry/p/5178770.html)
 * [pozi119/VVSequelize: 数据库模型映射,自动建表, 自动更新表,数据增删改查, FTS全文搜索, 支持自定义fts3,4,5分词器,可拼音分词. sql,fmdb,wcdb,sqlite3,orm,fts,fts3,fts4,fts5](https://github.com/pozi119/VVSequelize)
 * [Install Realm for iOS, macOS, tvOS, and watchOS — Realm](https://www.mongodb.com/docs/realm/sdk/swift/install/#std-label-ios-install)
+* [caiyue1993/IceCream: Sync Realm Database with CloudKit](https://github.com/caiyue1993/IceCream)
+* [Core Data with CloudKit（三）——CloudKit仪表台 - 掘金](https://juejin.cn/post/6994368372431388709?searchId=202309071108144D72225A999CD702C4B3)
 
 
 ## 小程序@
@@ -290,43 +319,11 @@
 * [Apple商务管理企业分发指南](https://www.jianshu.com/p/01a579170208)
 * [iOS应用发布方式盘点+苹果商务详解 - 简书](https://www.jianshu.com/p/c8361a83a338)-比较详细
 
-## NetworkExtension@VPN@代理@
-* [手把手NetworkExtension: 1. 创建L2TP/IPSec VPN连接](http://www.jianshu.com/p/2001b603cee4)
-* [WWDC2014之App Extensions学习笔记](http://foggry.com/blog/2014/06/23/wwdc2014zhi-app-extensionsxue-xi-bi-ji/)
-* [haxpor/Potatso: Potatso is an iOS client that implements Shadowsocks proxy with the leverage of NetworkExtension framework](https://github.com/haxpor/Potatso)This project is unmaintained, try taking a look at this fork https://github.com/myhighland/ShadowCoel instead.
-* [KEXT Controls and Notifications](https://developer.apple.com/library/archive/documentation/Darwin/Conceptual/NKEConceptual/control/control.html)
-* 从apple demo映射[robovm/apple-ios-samples](https://github.com/robovm/apple-ios-samples)获取苹果networkextensionDemo[apple-ios-samples/SimpleTunnelCustomizedNetworkingUsingtheNetworkExtensionFramework at master · robovm/apple-ios-samples](https://github.com/robovm/apple-ios-samples/tree/master/SimpleTunnelCustomizedNetworkingUsingtheNetworkExtensionFramework)，这篇文章分析了demo中的类的作用[Joeeyy/iMonitor](https://github.com/Joeeyy/iMonitor)
-* [Apple Demo](https://developer.apple.com/library/archive/navigation/#section=Resource%20Types&topic=Sample%20Code)
-* [yaooort/OpenVPN-IOS: Objective-C OpenVpnAdapter IOS OpenVpn](https://github.com/yaooort/OpenVPN-IOS)
-* [AnhTVc/OpenVPN-IOS: Build OpenVPN source for IOS](https://github.com/AnhTVc/OpenVPN-IOS)
-* [ss-abramchuk/OpenVPNAdapter: Objective-C wrapper for OpenVPN library. Compatible with iOS and macOS.](https://github.com/ss-abramchuk/OpenVPNAdapter)
-* [WuChuming/shadowsocks-iOS: fork by shadowsocks/shadowsocks-iOS](https://github.com/WuChuming/shadowsocks-iOS) 三方fork star数较多 没有做过多修改
-* [Charles破解工具](https://www.zzzmode.com/mytools/charles/)
-* [charles破解安装激活(包含windows和mac)最新简单教程【亲测有效】 - 哔哩哔哩](https://www.bilibili.com/read/cv18697749)
-* [tladesignz/ShadowSocks-libev-iOS](https://github.com/tladesignz/ShadowSocks-libev-iOS)
-* [jquepi/ShadowSocks-libev-iOS](https://github.com/jquepi/ShadowSocks-libev-iOS)
-* [ShadowsocksR-Live/iShadowsocksR: ShadowsocksR (SSRoT) client for iOS](https://github.com/ShadowsocksR-Live/iShadowsocksR)//用它
-* [vpn - iOS, NEVPNManager, NEProxySettings does not work - Stack Overflow](https://stackoverflow.com/questions/74123619/ios-nevpnmanager-neproxysettings-does-not-work)苹果支持ikev2
-* [confirmedcode/Confirmed-iOS: Confirmed VPN client for iOS](https://github.com/confirmedcode/Confirmed-iOS)
-* [VPN - Cocoa开发者](https://iliunian.cn/VPN.html)介绍PPTP IPSpec等协议
-* [App extension实战 - Personal VPN 连接并捕获packet - 掘金](https://juejin.cn/post/6844903624200421390)
-* [iOS中Network Extension安全科学Tunnel应用(Swift5) - 掘金](https://juejin.cn/post/6844903829146697742)
-* [App extension实战 - NetworkExtension 讲解连接并捕获packet_上天眷顾我的博客-CSDN博客_networkextension](https://blog.csdn.net/qq_30513483/article/details/81100414)
-* [mozilla-mobile/guardian-vpn-ios: Mozilla VPN for iOS](https://github.com/mozilla-mobile/guardian-vpn-ios) [iCepa/iCepa: iOS system-wide VPN based Tor client](https://github.com/iCepa/iCepa) //github关键词搜索：startTunnel
-* [mutualmobile/MMWormhole: Message passing between iOS apps and extensions.](https://github.com/mutualmobile/MMWormhole)
-* [yggdrasil-network/yggdrasil-ios: Reference implementation for connecting to the Yggdrasil Network from iPhones and iPads](https://github.com/yggdrasil-network/yggdrasil-ios)
-* [yggdrasil-network/yggdrasil-go: An experiment in scalable routing as an encrypted IPv6 overlay network](https://github.com/yggdrasil-network/yggdrasil-go)
-* [有赞移动助手App本地抓包方案_移动_杨彬_InfoQ精选文章](https://www.infoq.cn/article/biqsr47*zetzoctj4mvc)//tun2socks原理
-* [Linux虚拟网络基础---tap/tun（虚拟以太设备）海渊_haiyuan的博客-CSDN博客](https://blog.csdn.net/LL845876425/article/details/82215265)
-* [网络虚拟化技术（二）: TUN/TAP MACVLAN MACVTAP](https://blog.kghost.info/2013/03/27/linux-network-tun/)
-* [NetworkExtension3-Tunnel开发 - 掘金](https://juejin.cn/post/6867030091748196366)
-* [awesome-vpn/en-us.md at master · awesome-vpn/awesome-vpn · GitHub](https://github.com/awesome-vpn/awesome-vpn/blob/master/one-click-apps/en-us.md)
-
-
 ## wwdc@
 * [wwdc 中文字幕](https://github.com/iOSDevLog/wwdc_chinese)
 * [wwdc 字幕](http://asciiwwdc.com)
 * [WWDC NOTES](https://www.wwdcnotes.com/) 文档有代码示例
+* [WWDC 2023](https://wwdctogether.com/)//视频集合
 
 ## HTTPS@HTTP@中间人攻击
 
@@ -366,6 +363,7 @@
 * [keshiim/ZMJImageEditor: ZMJImageEditor is a picture editing component like WeChat. It is powerful and easy to integrate, supporting rendering, text, rotation, tailoring, mapping and other functions. (ZMJImageEditor 是一个和微信一样图片编辑的组件，功能强大，极易集成，支持绘制、文字、旋转、剪裁、贴图等功能)](https://github.com/keshiim/ZMJImageEditor)
 * [yackle/CLImageEditor](https://github.com/yackle/CLImageEditor)
 * [iTofu/LCPaintView: 🖌 Paint view for iOS.](https://github.com/iTofu/LCPaintView)
+* [TheLittleBoy/inkpad-fork: iOS高级画板：inkpad修复bug的版本](https://github.com/TheLittleBoy/inkpad-fork)
 
 ## UndoManager@
 * [UndoManager Tutorial: How to Implement With Swift Value Types | Kodeco](https://www.kodeco.com/5229-undomanager-tutorial-how-to-implement-with-swift-value-types)
@@ -377,6 +375,7 @@
 * [iPhone屏幕尺寸、分辨率及适配](http://blog.csdn.net/phunxm/article/details/42174937/)
 * [iPhonex iphone x适配](http://www.glimsoft.com/09/14/5-tips-tricks-for-updating-your-app-for-iphone-x/)
 * [Display Zoom Reveals New iPhone Resolution — Benjamin Mayo](https://bzamayo.com/display-zoom-small-iphone)放大显示
+* [iOS Resolution // Display properties of every iPhone, iPad, iPod touch and Apple Watch Apple ever made](https://www.ios-resolution.com/)
 
 ## iPhone型号@UIDevice@
 * [获取 iOS 设备的具体型号 - 长跑茗](https://www.cpming.top/p/get-device-model-on-ios)
@@ -429,6 +428,12 @@
 * [AVFoundation Tutorial: Adding Overlays and Animations to Videos | Kodeco](https://www.kodeco.com/6236502-avfoundation-tutorial-adding-overlays-and-animations-to-videos)
 * [iOS端保存带Alpha通道视频的实践 - 简书](https://www.jianshu.com/p/d8d07e9b9c50)
 * [ios - Looping a video with AVFoundation AVPlayer? - Stack Overflow](https://stackoverflow.com/questions/5361145/looping-a-video-with-avfoundation-avplayer)视频循环播放
+* [DamonHu/VideoEditDemo: Ios视频使用gpuimage加水印、使用avfoundation加水印、裁剪、拼接、加背景音乐等视频编辑的一个demo](https://github.com/DamonHu/VideoEditDemo)
+
+### 播放器@
+* [videolan/vlckit: libvlc bindings for OS X, iOS and tvOS in Objective-C, official mirror](https://github.com/videolan/vlckit)
+* [VideoLAN / VLCKit · GitLab](https://code.videolan.org/videolan/VLCKit)
+* [cxfksword/MPVKit: mpv library for iOS, macOS, tvOS applications](https://github.com/cxfksword/MPVKit)
 
 ## 音频@
 
@@ -458,9 +463,10 @@
 * [使用Assets | 做点有意思的事情](http://www.devzhang.cn/2016/08/31/%E4%BD%BF%E7%94%A8Assets/)mp3无法获取时机问题
 * [关于ios：ios-合并/连接多个音频文件 | 码农家园](https://www.codenong.com/10628924/)
 
-## 加签@验签@
+## 网络请求@加签@验签@
 * [Moya + Alamofire + HandyJson + RxSwift 搭建一个新项目的网络请求 - 掘金](https://juejin.cn/post/6946955938104344606)
-
+* [zys-developer/MoyaHandyJSON: 允许使用HandyJSON将Response解码为对象的Moya扩展。Moya extensions that allow the response to be decoded into objects using the HandyJSON.](https://github.com/zys-developer/MoyaHandyJSON)
+* [RxSwift and Handling Invalid Tokens | by Daniel Tartaglia | Medium](https://danielt1263.medium.com/retrying-a-network-request-despite-having-an-invalid-token-b8b89340d29)
 
 ## 编译
 * [编译时间](http://irace.me/swift-profiling)
@@ -570,6 +576,7 @@ scp -P 2222 ./dumpdecrypted.dylib root@127.0.0.1:/tmp
 进入手机终端cd到tmp
 执行DYLD_INSERT_LIBRARIES=dumpdecrypted.dylib /var/containers/Bundle/Application/C1FD6921-E279-472A-8D60-22B555CEA148/xxx.app/PlugIns/WidgetExtension.appex/WidgetExtension
 将目录下生成可执行文件.decrypted 拷贝到电脑，在电脑终端执行：scp -P 2222 root@127.0.0.1:/tmp/WidgetExtension.decrypted ~/Desktop/xxxDump
+上面方式直接dump的macho文件 不是payload
 
 ```
 * [VMPStudio: An arm/arm64/x86/x64 IDA for UraniumVM/PhoneVMP/Decompiler.](https://gitee.com/geekneo/VMPStudio)
@@ -581,9 +588,13 @@ scp -P 2222 ./dumpdecrypted.dylib root@127.0.0.1:/tmp
 * [iOS-调戏CoreML-这是花瓶？ - ios开发 - Geek Peer](https://www.geekpeer.com/Development/ios/3752.html)
 * [Core ML框架详细解析（二） —— 获取模型并集成到APP中 - 简书](https://www.jianshu.com/p/828705ecdb42)
 
-## AIGC@AI@
+## AIGC@AI@ChatGPT@
 * [kingcos/ChatGKD: A new app for ChatGPT in SwiftUI & Vue 3](https://github.com/kingcos/ChatGKD)//SwiftUI coding
 * [CODELF](https://unbug.github.io/codelf/) 取名
+* [Objective-C 对接 chatGPT 接口，怎么做到逐字输出 - V2EX](http://webcache.googleusercontent.com/search?q=cache:SMdcYkUho9gJ:https://s.v2ex.com/t/931610&hl=zh-CN&gl=us&strip=1&vwsrc=0)
+* [MacPaw/OpenAI: Swift community driven package for OpenAI public API](https://github.com/MacPaw/OpenAI)
+* [Licoy/ChatGPT-Midjourney: 🍭 一键拥有你自己的 ChatGPT+Midjourney 网页服务 | Own your own ChatGPT+Midjourney web service with one click](https://github.com/Licoy/ChatGPT-Midjourney/tree/master)
+* [f/awesome-chatgpt-prompts: This repo includes ChatGPT prompt curation to use ChatGPT better.](https://github.com/f/awesome-chatgpt-prompts)
 
 ## 证书 HTTPS
 * [证书链-Digital Certificates](http://www.jianshu.com/p/46e48bc517d0)
@@ -635,6 +646,7 @@ scp -P 2222 ./dumpdecrypted.dylib root@127.0.0.1:/tmp
 ## excel@
 
 * [SpreadsheetView 2000+star](https://github.com/kishikawakatsumi/SpreadsheetView)
+* [jezzmemo/JJStockView: iOS股票,课程表,表格控件](https://github.com/jezzmemo/JJStockView)
 
 ## 版本升级/迁移
 * [MTMigration](https://github.com/mysterioustrousers/MTMigration)
@@ -681,8 +693,9 @@ mitmproxy --mode transparent --showhost
 
 * [关于 @synchronized，这儿比你想知道的还要多](http://yulingtianxia.com/blog/2015/11/01/More-than-you-want-to-know-about-synchronized/)-讲述lock和传入对象的关系
 
-## form 表单
+## form@表单@
 * [XLPagerTabStrip](https://github.com/xmartlabs/XLPagerTabStrip)
+* [neoneye/SwiftyFORM: iOS framework for creating forms](https://github.com/neoneye/SwiftyFORM)
 
 
 ## 设备方向
@@ -710,6 +723,22 @@ mitmproxy --mode transparent --showhost
 * [openatx/facebook-wda](https://github.com/openatx/facebook-wda)
 * [ATX 使用 Python 库 facebook-wda 完成网易云音乐 iOS 客户端的自动化测试 (示例)](https://testerhome.com/topics/9854)
 
+## 音乐@music@
+* [swisspol/GCDWebServer: The #1 HTTP server for iOS, macOS & tvOS (also includes web based uploader & WebDAV server)](https://github.com/swisspol/GCDWebServer)
+* [analogcode/Swift-Radio-Pro: Professional Radio Station App for iOS!](https://github.com/analogcode/Swift-Radio-Pro)
+* [kingslay/KSPlayer: A video player for iOS、macOS、tvOS、visionOS , based on AVPlayer and FFmpeg, support the horizontal, vertical screen. support adjust volume, brightness and seek by slide, support subtitles.](https://github.com/kingslay/KSPlayer)
+* [AudioKit/AudioKit: Audio synthesis, processing, & analysis platform for iOS, macOS and tvOS](https://github.com/AudioKit/AudioKit)
+* [tanhakabir/SwiftAudioPlayer: Streaming and realtime audio manipulation with AVAudioEngine](https://github.com/tanhakabir/SwiftAudioPlayer)
+* [Aufree/ESTMusicPlayer: An elegant and simple iOS music player.](https://github.com/Aufree/ESTMusicPlayer)//界面清晰
+* [ihoudf/DFPlayer: 简单灵活的iOS音频播放组件。基于AVPlayer，支持本地和远程音频播放，具有缓存、耳机线控、锁屏和控制中心信息展示、单曲顺序随机播放、倍速播放、歌词同步等音频播放器功能，DFPlayer封装了缓冲条、进度条、播放暂停按钮、下一首按钮、上一首按钮、播放模式按钮、歌词同步的tableview等UI控件，一行代码布局即可实现相应功能。](https://github.com/ihoudf/DFPlayer)
+* [syedhali/EZAudio: An iOS and macOS audio visualization framework built upon Core Audio useful for anyone doing real-time, low-latency audio processing and visualizations.](https://github.com/syedhali/EZAudio)波形图
+* [ChangbaDevs/KTVHTTPCache: A powerful media cache framework.](https://github.com/ChangbaDevs/KTVHTTPCache)//媒体 音乐缓存
+* [douban/DOUAudioStreamer: A Core Audio based streaming audio player for iOS and macOS](https://github.com/douban/DOUAudioStreamer)
+* [chicio/ID3TagEditor: :musical_note::guitar:A Swift library to read and write ID3 Tag of any mp3 file. Supported ID3 tag version: 2.2, 2.3 and 2.4. Supported platform: iOS, macOS, tvOS, watchOS, Linux Ubuntu. :musical_note::guitar:](https://github.com/chicio/ID3TagEditor)
+* [AudioKit/AudioKitSynthOne: AudioKit Synth One: Open-Source iOS Synthesizer App](https://github.com/AudioKit/AudioKitSynthOne)音频合成器
+* [ApplikeySolutions/PandoraPlayer: 🅿️ PandoraPlayer is a lightweight music player for iOS, based on AudioKit and completely written in Swift.](https://github.com/ApplikeySolutions/PandoraPlayer) 播放器UI
+* [yujinakayama/NAKPlaybackIndicatorView: A UIView that mimics the music playback indicator in the Music.app on iOS 7+](https://github.com/yujinakayama/NAKPlaybackIndicatorView) 音乐播放指示器
+
 ## python@
 
 * [macOS pyenv入门使用记录 | 国光](https://www.sqlsec.com/2019/12/pyenv.html)
@@ -731,6 +760,7 @@ mitmproxy --mode transparent --showhost
 * [Method Swizzling](http://blog.leichunfeng.com/blog/2015/06/14/objective-c-method-swizzling-best-practice/)方法交换雷纯锋
 * [Objective-C Runtime 1小时入门教程](http://ios.jobbole.com/84028/)
 * [Runtime Method Swizzling](https://www.jianshu.com/p/f6dad8e1b848)
+* [交换方法Method Swizzling[swift] - 简书](https://www.jianshu.com/p/23ea81be5cc2)
 * [EMClassIntrospection —— 一款基于Runtime的Class调试工具](http://posts.enumsblog.com/posts/16005)-打印所有子类的方法
 * [Using objc_setAssociatedObject with weak references](https://stackoverflow.com/questions/16569840/using-objc-setassociatedobject-with-weak-references)
 * [Objective-C Runtime 分析 | 张不坏的博客](https://zhangbuhuai.com/post/runtime.html)
@@ -788,7 +818,6 @@ extern "C" unsigned long OBJC_IVAR_$_BLAView$_pModel;
 * [RevealingSplashView](https://github.com/PiXeL16/RevealingSplashView)
 * [PeekPop](https://github.com/marmelroy/PeekPop)
 * [Ramotion/folding-cell: :octocat: 📃 FoldingCell is an expanding content cell with animation made by @Ramotion](https://github.com/Ramotion/folding-cell)
-* [Koloda](https://github.com/Yalantis/Koloda)KolodaView is a class designed to simplify the implementation of Tinder like cards on iOS
 * [StarWars](https://github.com/Yalantis/StarWars.iOS)This component implements transition animation to crumble view-controller into tiny pieces
 * [印象笔记动画](https://github.com/imwangxuesen/EvernoteAnimation)
 * [lkzhao/Hero](https://github.com/lkzhao/Hero)Supercharged transition engine for iOS. Build your custom view transitions with few lines of code or even no code at all. Inspired by Polymer's neon-animated-pages and Keynote's Magic Move.
@@ -819,6 +848,25 @@ extern "C" unsigned long OBJC_IVAR_$_BLAView$_pModel;
 * [CUIDemoFavorites/CUIFoldLabel.m at 6b385244b2847644832de10ed8a965bede14dbf8 · Leon0206/CUIDemoFavorites](https://github.com/Leon0206/CUIDemoFavorites/blob/6b385244b2/LocalPods/CUIDemoElements/Classes/Views/ViewAnimation/FoldNumberView/CUIFoldLabel.m)
 * [Dillion/iOS-Flip-Transform: Core Animation framework for navigating data by flipping](https://github.com/Dillion/iOS-Flip-Transform)时钟翻页
 * [adad184/MMTweenAnimation: A extension of POP(from facebook) custom animation. Inspired by tweaner(https://code.google.com/p/tweaner), MMTweanerAnimation provide 10 types of custom animation while using POP.](https://github.com/adad184/MMTweenAnimation)
+* [cubic-bezier✿ cubic-bezier.com](https://cubic-bezier.com/#.79,-0.08,.33,1.1)CAMediaTimingFunction 自定义演示
+* [Creating a custom easing function · Felarmir](https://felarmir.com/post/05_creat_easy/)
+* [缓动函数速查表](https://easings.net/zh-cn)
+
+> Search Tip: iOS number animation site:github.com
+* [stokatyan/ScrollCounter: ScrollCounter is an iOS framework for getting a nice scrolling animation when transitioning between numbers. This framework is modeled after the animations seen in the Robinhood app.](https://github.com/stokatyan/ScrollCounter)数字动画
+* [daipeihust/DPScrollNumberLabel: 🔥 A label extension for iOS📱, It display numbers and when you change the number it has a real logic animation.🌟](https://github.com/daipeihust/DPScrollNumberLabel)数字动画，看样子不太满足需求（这个会根据大小决定动画时长，如果太大感觉会动画很久）
+* [calimarkus/JDFlipNumberView: [iOS] Animated analog flip numbers like airport/train-station displays (Swift/SwiftUI ready)](https://github.com/calimarkus/JDFlipNumberView)数字翻页动画
+* [nchiu/RollingDigitsLabel: An animated label for displaying numbers](https://github.com/nchiu/RollingDigitsLabel)
+* [EFPrefix/EFCountingLabel: Adds animated counting support to UILabel.](https://github.com/EFPrefix/EFCountingLabel) 非滚动类型 star:400+
+
+### card@
+* [mac-gallagher/Shuffle: 🔥 A multi-directional card swiping library inspired by Tinder](https://github.com/mac-gallagher/Shuffle) like dislike
+* [Yalantis/Koloda: KolodaView is a class designed to simplify the implementation of Tinder like cards on iOS.](https://github.com/Yalantis/Koloda) like dislike
+* [D-32/DMSwipeCards: 🃏 Tinder like card interface](https://github.com/D-32/DMSwipeCards)like dislike
+* [filletofish/CardsLayout: :star: Custom card-designed CollectionView layout](https://github.com/filletofish/CardsLayout) 重叠card 左滑移除
+* [seedante/CardAnimation: Card flip animation by pan gesture.](https://github.com/seedante/CardAnimation)
+
+
 
 ### Animation@Appstore@
 
@@ -827,11 +875,12 @@ extern "C" unsigned long OBJC_IVAR_$_BLAView$_pModel;
 * [DragonTnT/appstore-clone: a clone of iOS appstore, to be continued](https://github.com/DragonTnT/appstore-clone)
 * [26. Creating an App Store like Animated View Transition · Mastering SwiftUI Book for iOS 16 and Xcode 14 - Sample](https://www.appcoda.com/learnswiftui/swiftui-appstoreanimation.html)
 
+
 ## empty data 
 * [Designing For The Empty States](https://tympanus.net/codrops/2013/01/09/designing-for-the-empty-states/)
 
-## 搜索 search@
-* [58 同城 iOS 客户端搜索模块组件化实践](https://mp.weixin.qq.com/s/E0Reo-VG0cCz8R13WWi_qg)
+## search@searchBar@UISearchController@
+* [UISearchController的用法 - 简书](https://www.jianshu.com/p/635e8ff0a9f9)˚
 
 ## header search@
 * [Objective-C 中的 import 和 Search Paths - 简书](https://www.jianshu.com/p/75e18591ca24)
@@ -846,8 +895,9 @@ extern "C" unsigned long OBJC_IVAR_$_BLAView$_pModel;
 
 * [latex 或者 Katex]
 
-## Authority/Permission@
+## Authority/Permission@权限@
 * [RequestPermission](https://github.com/IvanVorobei/RequestPermission)
+* [ziecho/ZYNetworkAccessibility: 针对 iOS 网络权限的监控和判断](https://github.com/ziecho/ZYNetworkAccessibility)
 
 ## 公钥私钥 csr
 * [生成csr](http://blog.51cto.com/sandshell/2131795)
@@ -963,6 +1013,12 @@ extern "C" unsigned long OBJC_IVAR_$_BLAView$_pModel;
 * [美团 rac相关文章](https://tech.meituan.com/tags/reactivecocoa.html)
 * [ReactiveCocoa 学习之路(史上最全攻略)](https://runningyoung.github.io/2015/06/30/2015-07-20-ReactiveCocoa)
 * [RAC 双向绑定实现案例](https://www.jianshu.com/p/9c8a151c1286)uiswitch双向绑定用法
+
+### Combine@published@
+* [Using Combine](https://heckj.github.io/swiftui-notes/index_zh-CN.html#introduction)中文combine文档
+* [为自定义属性包装类型添加类 @Published 的能力 | 肘子的 Swift 记事本](https://fatbobman.com/zh/posts/adding-published-ability-to-custom-property-wrapper-types/)
+* [Combine debugging using operators in Swift - SwiftLee](https://www.avanderlee.com/debugging/combine-swift/)
+
 
 ## 内存管理@
 
@@ -1112,13 +1168,28 @@ python3 build-system/Make/Make.py \
 * [assistive button ](https://github.com/liuzhiyi1992/SpreadButton)
 * [三方控件库](https://ioscookies.com/image-viewer)
 * [自定义一个带nib的view 支持frame 和 coder的初始化](https://theswiftdev.com/2018/10/16/custom-uiview-subclass-from-a-xib-file/)
-* [ivanvorobei/SPStorkController: Now playing controller from Apple Music, Mail & Podcasts Apple's apps.](https://github.com/IvanVorobei/SPStorkController)
 * [短信验证码输入框](https://github.com/CRAnimation/CRBoxInputView)
 * [记一次验证码输入框的实现 | kemchenj](https://kemchenj.github.io/2019-04-07/)//通过重写光标位置函数实现
+* [onekiloparsec/KPCTabsControl: A macOS control for tabs with enhanced capabilities, and styles: Safari, Chrome and custom ones.](https://github.com/onekiloparsec/KPCTabsControl)
+
+## 活动@抽奖@
+* [joshdhenry/SpinWheelControl: An inertial spinning wheel UI control that allows selection of an item. Cocoapod written in Swift.](https://github.com/joshdhenry/SpinWheelControl)转盘抽奖
+* [wheel · GitHub Topics](https://github.com/topics/wheel?l=swift)轮盘抽奖topic
   
-## uiswitch@
+## UISwitch@
 * [TKSwitcherCollection](https://github.com/TBXark/TKSwitcherCollection)
 * [jwd-ali/Switch-Animations: An animate switch collection, Add Beautiful Customise Switch in your application to boost UI and UX](https://github.com/jwd-ali/Switch-Animations)
+* [lilei644/LLSwitch: This is a funny switch for iOS - 一个有趣的switch](https://github.com/lilei644/LLSwitch)
+* [twotoasters/TTSwitch: Fully customizable switch for iOS using images](https://github.com/twotoasters/TTSwitch)
+* [bvogelzang/SevenSwitch: iOS7 style drop in replacement for UISwitch](https://github.com/bvogelzang/SevenSwitch)
+* [cocoatoucher/AIFlatSwitch: Nicely animated flat design switch alternative to UISwitch](https://github.com/cocoatoucher/AIFlatSwitch)ratio check
+
+## UISegmentView@Segment@
+* [HeshamMegid/HMSegmentedControl](https://github.com/HeshamMegid/HMSegmentedControl)
+* [Yalantis/Segmentio](https://github.com/Yalantis/Segmentio)
+* [dzenbot/DZNSegmentedControl: A drop-in replacement for UISegmentedControl for showing counts, to be used typically on a user profile](https://github.com/dzenbot/DZNSegmentedControl)
+* [gmarm/BetterSegmentedControl: An easy to use, customizable replacement for UISegmentedControl & UISwitch.](https://github.com/gmarm/BetterSegmentedControl)2.1k
+* [samvermette/SVSegmentedControl: A UISwitch-like segmented control for your iOS app.](https://github.com/samvermette/SVSegmentedControl)1.3k
 
 ## Chart@/图表@
 * [坐标轴Axis Fraction/Step算法](http://stackoverflow.com/questions/8506881/nice-label-algorithm-for-charts-with-minimum-ticks)
@@ -1127,10 +1198,12 @@ python3 build-system/Make/Make.py \
 * [ios - Draw gradient along a curved UIBezierPath - Stack Overflow](https://stackoverflow.com/questions/20632365/draw-gradient-along-a-curved-uibezierpath)path clip解决方案
 * [How to Create Advanced Gradients in Swift with CAGradientLayer — iOS Swift Guide | by Baptiste Montagliani | The Startup | Medium](https://medium.com/swlh/how-to-create-a-custom-gradient-in-swift-with-cagradientlayer-ios-swift-guide-190941cb3db2)几种渐变type gradientLayer
 * [AppPear/ChartView: ChartView made in SwiftUI](https://github.com/AppPear/ChartView)
+* [tradingview/LightweightChartsIOS](https://github.com/tradingview/LightweightChartsIOS)
 
-## socket@
+## socket@websocket@
 * [OmniGroup/ONInternetSocket.m at main · omnigroup/OmniGroup](https://github.com/omnigroup/OmniGroup/blob/main/Frameworks/OmniNetworking/ONInternetSocket.m)
 * [iOS之GCDAsyncSocket(TCP) - 简书](https://www.jianshu.com/p/b93338d021d0)
+* [facebookincubator/SocketRocket: A conforming Objective-C WebSocket client library.](https://github.com/facebookincubator/SocketRocket)
 
 ## pullup 类似滴滴打车 选择打车出发地
 
@@ -1149,6 +1222,7 @@ python3 build-system/Make/Make.py \
 * [Bitcode, Slicing, ODRs, App Thinning | by Vikas Kore | Medium](https://vikaskore.medium.com/bitcode-slicing-odrs-app-thinning-7c4b294ddec3)
 * [App Thinning in Xcode - WWDC15 - Videos - Apple Developer](https://developer.apple.com/videos/play/wwdc2015/404/)
 * [Reducing your app’s size | Apple Developer Documentation](https://developer.apple.com/documentation/xcode/reducing-your-app-s-size)
+* [helele90/APPAnalyze](https://github.com/helele90/APPAnalyze)
 
 ## 旋转@
 * [iOS设备旋转](http://www.jianshu.com/p/2bdd7a54ad99)
@@ -1187,6 +1261,8 @@ python3 build-system/Make/Make.py \
 * [iOS开发实战 - 完美解决UIScrollView嵌套滑动手势冲突 - 简书](https://www.jianshu.com/p/b0bf2bb0e129)
 * [嵌套UIScrollview的滑动冲突解决方案 - 简书](https://www.jianshu.com/p/040772693872)//没故事的卓同学
 * [iOS 嵌套UIScrollview的滑动冲突另一种解决方案 - 简书](https://www.jianshu.com/p/df01610b4e73)//UIDynamicAnimator 实现
+* [alibaba/LazyScrollView: An iOS ScrollView to resolve the problem of reusability in views.](https://github.com/alibaba/LazyScrollView)
+* [acoomans/ACReuseQueue: A queue to keep and reusing objects.](https://github.com/acoomans/ACReuseQueue)
 
 ## UIGestureRecognizer@
 
@@ -1201,10 +1277,11 @@ python3 build-system/Make/Make.py \
 * [mutualmobile/MMDrawerController: A lightweight, easy to use, Side Drawer Navigation Controller](https://github.com/mutualmobile/MMDrawerController)
 * [kukushi/SideMenu: An interactive iOS side menu with rich features.](https://github.com/kukushi/SideMenu)
 * [romaonthego/RESideMenu: iOS 7/8 style side menu with parallax effect.](https://github.com/romaonthego/RESideMenu)
+* [Yalantis/Side-Menu.iOS: Animated side menu with customizable UI](https://github.com/Yalantis/Side-Menu.iOS?tab=readme-ov-file)
 
 
 ## UITableView@ 
-
+* [SwipeCellKit/SwipeCellKit: Swipeable UITableViewCell/UICollectionViewCell based on the stock Mail.app, implemented in Swift.](https://github.com/SwipeCellKit/SwipeCellKit)侧滑删除，
 * [always change dataSource in main thread](https://stackoverflow.com/questions/46742039/uitableview-reloaddata-crashes-on-reappearance-in-ios-11?rq=1) tableview刷新crash
 * [UITableViewCell拖拽移动两种实现方法](https://www.jianshu.com/p/cef0f9de0c2e)
 * [长按即可移动cell的UITableView](https://www.jianshu.com/p/ce382f9bc794)
@@ -1269,7 +1346,7 @@ tableView.estimatedSectionFooterHeight = CGFLOAT_MIN;
 
 ## 图片@
 
-### 图片浏览@
+### 图片浏览@PhotoBrower@
 * [ko1o/PYPhotoBrowser: An easy way to browse photo(image) for iOS.](https://github.com/ko1o/PYPhotoBrowser)
 * [banchichen/TZImagePickerController: 一个支持多选、选原图和视频的图片选择器，同时有预览、裁剪功能，支持iOS6+。 A clone of UIImagePickerController, support picking multiple photos、original photo、video, also allow preview photo and video, support iOS6+](https://github.com/banchichen/TZImagePickerController)
 * [skx926/KSPhotoBrowser: A beautiful photo browser with interactive dismissal animation.一个小而美的图片浏览器。](https://github.com/skx926/KSPhotoBrowser)
@@ -1277,6 +1354,9 @@ tableView.estimatedSectionFooterHeight = CGFLOAT_MIN;
 * [hyperoslo/Lightbox: A convenient and easy to use image viewer for your iOS app](https://github.com/hyperoslo/Lightbox)
 * [hyperoslo/ImagePicker: Reinventing the way ImagePicker works.](https://github.com/hyperoslo/ImagePicker)有一个pullup的控件
 * [fcbox/Lantern: 基于Swift的高可用视图框架](https://github.com/fcbox/Lantern)
+* [AnyImageKit/AnyImageKit: A toolbox for pick/edit/capture photo or video. Written in Swift.](https://github.com/AnyImageKit/AnyImageKit)
+* [longitachi/ZLPhotoBrowser: Wechat-like image picker. Support select photos, videos, gif and livePhoto. Support edit image and crop video. 微信样式的图片选择器，支持预览/相册内拍照及录视频、拖拽/滑动选择，编辑图片/视频，支持多语言国际化等功能;](https://github.com/longitachi/ZLPhotoBrowser)还包含自定义图片编辑功能
+
 
 ### 图片其它@
 
@@ -1284,6 +1364,8 @@ tableView.estimatedSectionFooterHeight = CGFLOAT_MIN;
 * [我只是想截个屏 截图](http://blog.startry.com/2016/02/24/Screenshots-With-SwViewCapture/)
 * [iOS图像最佳实践总结 - 简书](https://www.jianshu.com/p/128e59cb0893) - 图片解码加载缓存渲染
 * [在 Sketch 和 PS 中导出 Display P3 广色域图片的方法 | by 李瑞东 | Medium](https://pudge1996.medium.com/%E7%94%A8-sketch-%E5%AF%BC%E5%87%BA-display-p3-%E5%B9%BF%E8%89%B2%E5%9F%9F%E5%9B%BE%E7%89%87-1b6d3ee82147)ICC profile International Color Consortium (ICC).
+* [PSD to SVG Converter - FreeConvert.com](https://www.freeconvert.com/psd-to-svg)
+* [ScreenshotPreventing-iOS/Sources/Core/ScreenshotPreventingView.swift at main · yoxisem544/ScreenshotPreventing-iOS](https://github.com/yoxisem544/ScreenshotPreventing-iOS/blob/main/Sources/Core/ScreenshotPreventingView.swift)截图隐藏视图
 
 ## UIPickerView@
 
@@ -1442,6 +1524,7 @@ tableView.estimatedSectionFooterHeight = CGFLOAT_MIN;
 * [uilabel - drawRect drawing 'transparent' text? - Stack Overflow](https://stackoverflow.com/questions/8721019/drawrect-drawing-transparent-text)镂空效果 uilabel或者图片作为遮罩
 * [ios - Drawing a path with subtracted text using Core Graphics - Stack Overflow](https://stackoverflow.com/questions/18716751/drawing-a-path-with-subtracted-text-using-core-graphics)镂空效果
 * [iOS 特种label：镂空文字、类歌词进度显示文字 - 简书](https://www.jianshu.com/p/93592bdc99c6)镂空效果
+* [heestand-xyz/MetalUI: Effects in SwiftUI](https://github.com/heestand-xyz/MetalUI/tree/main)描边文字
 * [用CAShapeLayer动画绘制CGPath | 王若风的技术博客](https://blog.wangruofeng007.com/posts/53147/)获取文本的真正CGPath
 * [ole/Animated-Paths: Demo project: Animating the drawing of a CGPath with CAShapeLayer.strokeEnd](https://github.com/ole/Animated-Paths)获取文本的真正CGPath 并动画stroke这些path
 * [swift - iOS Prevent timer UILabel 'shaking' when numbers change - Stack Overflow](https://stackoverflow.com/questions/33800488/ios-prevent-timer-uilabel-shaking-when-numbers-change)用等宽字体修复UILabel居中对齐左右摇摆问题
@@ -1492,6 +1575,10 @@ tableView.estimatedSectionFooterHeight = CGFLOAT_MIN;
 * [swift - UIView invert mask MaskView - Stack Overflow](https://stackoverflow.com/questions/46862753/uiview-invert-mask-maskview)
 * [iOS Secrets: See Behind Your Views | by Riccardo Cipolleschi | The Startup | Medium](https://medium.com/swlh/ios-secrets-see-behind-your-views-fe8afe9072a5)
 * [ios - Reverse a CALayer mask - Stack Overflow](https://stackoverflow.com/questions/42238603/reverse-a-calayer-mask) maskLayer.compositingFilter = @"xor"; 我用的这种方式比较nice
+* [ios 实现透明度渐变 逐渐消失效果 - 简书](https://www.jianshu.com/p/544743f087e3)
+* [利用 mask 設計特別形狀的圖片. 彼得潘看到【在沒有你以後】的封面和 MV 後， 覺得人物頭像融合風景的風格超… | by 彼得潘的 iOS App Neverland | 彼得潘的 Swift iOS App 開發問題解答集 | Medium](https://medium.com/%E5%BD%BC%E5%BE%97%E6%BD%98%E7%9A%84-swift-ios-app-%E9%96%8B%E7%99%BC%E5%95%8F%E9%A1%8C%E8%A7%A3%E7%AD%94%E9%9B%86/%E5%88%A9%E7%94%A8-uiview-%E7%9A%84-mask-%E8%A8%AD%E8%A8%88%E7%89%B9%E5%88%A5%E5%BD%A2%E7%8B%80%E7%9A%84%E5%9C%96%E7%89%87-4e22cd7c3fbe)
+* [ios - How to convert UIImage/CGImageRef's alpha channel to mask? - Stack Overflow](https://stackoverflow.com/questions/8126276/how-to-convert-uiimage-cgimagerefs-alpha-channel-to-mask)
+* [ios - How can I mask a UIImageView? - Stack Overflow](https://stackoverflow.com/questions/5757386/how-can-i-mask-a-uiimageview) CGImageCreateWithMask
 
 ## Http@icmp@ping@tcping@
 
@@ -1506,7 +1593,7 @@ tableView.estimatedSectionFooterHeight = CGFLOAT_MIN;
 * [bytes(for:delegate:) | Apple Developer Documentation](https://developer.apple.com/documentation/foundation/urlsession/3767350-bytes)swift 逐字输出，逐行输出
 * [launchdarkly/ios-eventsource: Server-Sent Events for iOS and Mac](https://github.com/launchdarkly/ios-eventsource)ios sse
 * [Working with Server-Sent Events in Swift - Nick Arner](https://nickarner.com/notes/working-with-server-sent-events-in-swift-november-16-2021/)
-* [Objective-C 对接 chatGPT 接口，怎么做到逐字输出 - V2EX](http://webcache.googleusercontent.com/search?q=cache:SMdcYkUho9gJ:https://s.v2ex.com/t/931610&hl=zh-CN&gl=us&strip=1&vwsrc=0)
+
 
 ## speedtest@
 
@@ -1533,6 +1620,11 @@ tableView.estimatedSectionFooterHeight = CGFLOAT_MIN;
 * [szweier/SZMentionsSwift: Library to help handle mentions](https://github.com/szweier/SZMentionsSwift)@功能keyword:ios mention uitextview
 * [JNDisrupter/JNMentionTextView: A powerful UITextView supporting special characters such as [ #, @ ] as Smart Fields](https://github.com/JNDisrupter/JNMentionTextView)@功能 keyword:ios mention uitextview
 * [monkey6468/ATDemo: 用于仿微博、微信、钉钉的艾特（@）功能](https://github.com/monkey6468/ATDemo)
+* [psharanda/Atributika: Convert text with HTML tags, links, hashtags, mentions into NSAttributedString. Make them clickable with UILabel drop-in replacement.](https://github.com/psharanda/Atributika)//自定义标签属性
+* [深入理解iOS图文混排原理并自定义图文控件 - 简书](https://www.jianshu.com/p/abe24f8bde6e) 自定义View嵌入
+* [CoreText进阶（七） 添加自定义View和对其 - 掘金](https://juejin.cn/post/6844903813208342542) 自定义View嵌入
+* [simonbs/Runestone: 📝 Performant plain text editor for iOS with syntax highlighting, line numbers, invisible characters and much more.](https://github.com/simonbs/Runestone)
+* [BestJoker/FJSBubbleImageView: 美图秀秀贴纸,可以旋转,放大,移动的文字编辑视图.](https://github.com/BestJoker/FJSBubbleImageView)
 
 ## api 参数构造 params
 * [自动去除字典空值对象,仿系统字典创建方法NSDictionaryOfVariableBindings](https://juejin.im/post/5ad4b3cc5188255c5668eada)
@@ -1552,12 +1644,13 @@ tableView.estimatedSectionFooterHeight = CGFLOAT_MIN;
 * [AMScrollingNavbar](https://github.com/andreamazz/AMScrollingNavbar)
 * [ParallaxTableViewHeader](https://github.com/Vinodh-G/ParallaxTableViewHeader)
 * [CSStickyHeaderFlowLayout](https://github.com/CSStickyHeaderFlowLayout/CSStickyHeaderFlowLayout)
+* [在UICollectionView上实现StickyHeader效果 - 简书](https://www.jianshu.com/p/a1f217e99877)
 * [iOS支付宝 9.x 版本首页效果](http://www.jianshu.com/p/7516eb852cca)
 * [TwitterCover](https://github.com/cyndibaby905/TwitterCover)
 * [MXParallaxHeader](https://github.com/maxep/MXParallaxHeader)
 * [MXSegmentedPager](https://github.com/maxep/MXSegmentedPager)结合了pagevc 和 paralaxheader 。。。。。
 * [ARSegmentPager](https://github.com/AugustRush/ARSegmentPager)结合了segment 和 paralaxheader
-* [Jiar/SegementSlide: Multi-tier UIScrollView nested scrolling solution. 😋😋😋](https://github.com/Jiar/SegementSlide)
+* [Jiar/SegementSlide: Multi-tier UIScrollView nested scrolling solution. 😋😋😋](https://github.com/Jiar/SegementSlide)//作者说v3通过一个scrollview解决嵌套滚动
 * [flipkart-incubator/scroll-coordinator-ios: ScrollCoordinator allows you to attach gestures to scrollviews and perform behaviours like Hiding the navigation bar, hiding the bottom bar and anchoring your scroll on these gestures.](https://github.com/flipkart-incubator/scroll-coordinator-ios)
 * [EmbeddedScrollView/EmbeddedScrollViewExtension.swift at main · 623637646/EmbeddedScrollView · GitHub](https://github.com/623637646/EmbeddedScrollView/blob/main/EmbeddedScrollView/EmbeddedScrollViewExtension.swift)
 * [RKSwipeBetweenViewControllers](https://github.com/cwRichardKim/RKSwipeBetweenViewControllers)
@@ -1573,11 +1666,7 @@ tableView.estimatedSectionFooterHeight = CGFLOAT_MIN;
 
 ## Date@
 * [SwiftDate](https://github.com/malcommac/SwiftDate)The best way to manage Dates and Timezones in Swift 
-
-## segment@
-* [HeshamMegid/HMSegmentedControl](https://github.com/HeshamMegid/HMSegmentedControl)
-* [Yalantis/Segmentio](https://github.com/Yalantis/Segmentio)
-* [dzenbot/DZNSegmentedControl: A drop-in replacement for UISegmentedControl for showing counts, to be used typically on a user profile](https://github.com/dzenbot/DZNSegmentedControl)
+* [MatthewYork/DateTools: Dates and times made easy in iOS](https://github.com/MatthewYork/DateTools)
 
 ## PageVC@
 * [VTMagic](https://github.com/tianzhuo112/VTMagic)
@@ -1611,7 +1700,7 @@ tableView.estimatedSectionFooterHeight = CGFLOAT_MIN;
 
 ## PlaceHolder@
 * [aschuch/StatefulViewController](https://github.com/aschuch/StatefulViewController.git)
-* [Juanpe/SkeletonView](https://github.com/Juanpe/SkeletonView)
+[Juanpe/SkeletonView: ☠️ An elegant way to show users that something is happening and also prepare them to which contents they are awaiting](https://github.com/Juanpe/SkeletonView)
 
 ## 引导页@  操作指南@ Guide@ walkThrough@
 * [FTTT/JazzHands](https://github.com/IFTTT/JazzHands)
@@ -1685,6 +1774,7 @@ tableView.estimatedSectionFooterHeight = CGFLOAT_MIN;
 
 ## 锁@ lock@
 * [深入理解 iOS 开发中的锁](https://bestswifter.com/ios-lock)为什么要用NSCondition，NSConditionLock包装了NSCondition。
+* [pthread_cond_signal](https://pubs.opengroup.org/onlinepubs/7908799/xsh/pthread_cond_signal.html)NSCondition wait 会unlock互斥锁，wait返回时会lock互斥锁，所以生产者signal之后如果没有调用unlock，wait返回的线程是不能获得锁（处于阻塞状态），以上仅个人理解
 
 ## 别人总结@
 * [iOS超全开源框架、项目和学习资料汇总（1）UI篇](http://www.jianshu.com/p/01b98f69bd66)
@@ -1711,6 +1801,7 @@ tableView.estimatedSectionFooterHeight = CGFLOAT_MIN;
 * [iOS 10 webview doesn't open the app scheme](https://stackoverflow.com/questions/39323450/ios-10-webview-doesnt-open-the-app-scheme)
 * [iOS下JS与OC互相调用（三）--MessageHandler](https://juejin.im/post/5a952cd85188257a6e405b9d)-js调用原生如果要实现返回值,需要在原生方法调用结束时再调用js方法实现返回值功能很麻烦所以最终没有采用这种方案而用三方bridge
 * [WKWebView详解&WKWebVieW和JS交互](https://juejin.im/post/5a3388775188257dcc2fadb9)-除了js native交互还介绍了delegate相关的方法作用
+* [JavaScript Manipulation on iOS Using WebKit | by Ray Kim | Capital One Tech | Medium](https://medium.com/capital-one-tech/javascript-manipulation-on-ios-using-webkit-2b1115e7e405)
 * [iOS应用安全 —— WebView安全](https://mabin004.github.io/2018/06/25/iOS%E5%BA%94%E7%94%A8%E6%B2%99%E7%AE%B1/)-wkwebview messageHandler可以把callback作为参数传到native来实现回调
 * [如何使UIWebview/WKWebView支持WebP格式图片](https://liuwentao1314.github.io/2017/04/13/webp-image-format-ios/)
 * [wendux/DSBridge-IOS: A modern cross-platform JavaScript bridge, through which you can invoke each other's functions synchronously or asynchronously between JavaScript and native.](https://github.com/wendux/DSBridge-IOS)
@@ -1718,6 +1809,13 @@ tableView.estimatedSectionFooterHeight = CGFLOAT_MIN;
 * [WKWebview使用攻略 - 知乎](https://zhuanlan.zhihu.com/p/164502340)
 * [H5在全屏Webview中双端适配刘海屏 - 简书](https://www.jianshu.com/p/0b639027a92b)获取safeareatop等
 * [iOS之深入解析WKWebView加载的生命周期与代理方法-云社区-华为云](https://bbs.huaweicloud.com/blogs/331397)生命周期中的临时态 提交态
+
+## 思维导图@xmind@
+* [AudioKit/Flow: Generic node graph editor](https://github.com/AudioKit/Flow)
+
+## 隐私清单@xcprivacy@
+* [iOS隐私清单-内部说明文档](https://www.yuque.com/steve-43awm/qlkbr9/nc5ff5tuzauxzpez?singleDoc=)
+* [bytebai920/check_privacy: check privacy manifest](https://github.com/bytebai920/check_privacy/tree/main)
 
 ## xcasset@
 
@@ -1755,6 +1853,7 @@ tableView.estimatedSectionFooterHeight = CGFLOAT_MIN;
 * [弱符号组件化](https://www.jianshu.com/p/8e9304504e28)
 * [Swinject/Swinject: Dependency injection framework for Swift with iOS/macOS/Linux](https://github.com/Swinject/Swinject)
 * [ReSwift/ReSwift-Router: Declarative Routing in Swift, Extension for ReSwift](https://github.com/ReSwift/ReSwift-Router)
+* [58 同城 iOS 客户端搜索模块组件化实践](https://mp.weixin.qq.com/s/E0Reo-VG0cCz8R13WWi_qg)
 
 ## uuid@
 * [开发中常用工具 - 获取设备的唯一标识、UDID、UUID、keychain保存UUID、判断网络类型等](https://juejin.im/post/5aa51e35518825556a7209cc)
@@ -1765,7 +1864,7 @@ tableView.estimatedSectionFooterHeight = CGFLOAT_MIN;
 * [iOS获取设备型号和App版本号等信息](https://www.jianshu.com/p/0d84e6852c5a)UTS stands for UNIX Timesharing System.
 
 
-## 开源应用@开源项目@
+## 开源应用@开源项目@开源@开源APP@
 
 * [mozilla-mobile/firefox-ios: Firefox for iOS](https://github.com/mozilla-mobile/firefox-ios)
 * [brave/brave-ios: Brave iOS Browser](https://github.com/brave/brave-ios)
@@ -1785,6 +1884,11 @@ tableView.estimatedSectionFooterHeight = CGFLOAT_MIN;
 * [relatedcode (Related Code)](https://github.com/relatedcode)
 * [douyin-ios-objectc/WebPImageView.m at e8a280db094861ea06aef491be078495b8a15fcd · sshiqiao/douyin-ios-objectc](https://github.com/sshiqiao/douyin-ios-objectc)
 * [arjunkomath/netdata-ios: Unofficial Netdata client for iOS, iPadOS & macOS](https://github.com/arjunkomath/netdata-ios)A beautiful and minimal client for Netdata that allows you to monitor cloud infrastructure in real-time.
+* [AlphaWallet/alpha-wallet-ios: An advanced Ethereum/EVM mobile wallet](https://github.com/AlphaWallet/alpha-wallet-ios)
+* [sshiqiao/douyin-ios-objectc: 抖音 iOS Object-C版](https://github.com/sshiqiao/douyin-ios-objectc)
+* [jellyfin/Swiftfin: Native Jellyfin Client for iOS and tvOS](https://github.com/jellyfin/Swiftfin)
+* [signalapp/Signal-iOS: A private messenger for iOS.](https://github.com/signalapp/Signal-iOS)
+* [Dashlane/apple-apps: 🍎 Apple applications sources](https://github.com/Dashlane/apple-apps)
 
 ## 抢购脚本@
 * [Aice.Fu抢购工具使用](https://mp.weixin.qq.com/s/FsYKRNdCYPAAMbraQqEoSw)
@@ -1825,10 +1929,12 @@ tableView.estimatedSectionFooterHeight = CGFLOAT_MIN;
 * [cruffenach/CRToast](https://github.com/cruffenach/CRToast)CRToast is a library that allows you to easily create notifications that appear on top of or by pushing out the status bar or navigation bar
 * [terryworona/TWMessageBarManager](https://github.com/terryworona/TWMessageBarManager)An iOS manager for presenting system-wide notifications via a dropdown message bar.
 * [relatedcode/ProgressHUD: ProgressHUD is a lightweight and easy-to-use HUD for iOS.](https://github.com/relatedcode/ProgressHUD)
+* [huri000/SwiftEntryKit: SwiftEntryKit is a presentation library for iOS. It can be used to easily display overlays within your iOS apps.](https://github.com/huri000/SwiftEntryKit)
 
-## stackview
+## uistackview@
 
 * [ios 7 8 stackview](https://github.com/tomvanzummeren/TZStackView/issues)(https://github.com/nsomar/OAStackView)
+* [ios - UIStackView Hide View Animation - Stack Overflow](https://stackoverflow.com/questions/46326302/uistackview-hide-view-animation)
 
 ## Pop@Presentation@
 * [nickoneill/PermissionScope](https://github.com/nickoneill/PermissionScope)包括通知等授权信息和设置的弹出框
@@ -1850,9 +1956,19 @@ tableView.estimatedSectionFooterHeight = CGFLOAT_MIN;
 * [slackhq/PanModal: An elegant and highly customizable presentation API for constructing bottom sheet modals on iOS.](https://github.com/slackhq/PanModal)类似系统下滑dismiss，推荐
 * [martinnormark/HalfModalPresentationController: Modal presentation that takes up half the screen. Swipe down to dismiss.](https://github.com/martinnormark/HalfModalPresentationController)
 * [ivanvorobei/SPStorkController: Now playing controller from Apple Music, Mail & Podcasts Apple's apps.](https://github.com/IvanVorobei/SPStorkController)类似系统下滑dismiss
+* [sparrowcode/AlertKit: Native alert from Apple Music & Feedback. Contains Done, Heart & Message and other presets.](https://github.com/sparrowcode/AlertKit)
 * [radianttap/CardPresentationController: Custom UIPresentationController which mimics the behavior of Apple Music UI](https://github.com/radianttap/CardPresentationController)类似系统下滑dismiss
 * [tattn/SwipeTransition: Allows trendy transitions using swipe gesture such as "swipe back anywhere".](https://github.com/tattn/SwipeTransition)类似系统下滑dismiss，这个通过转场交互动画，加scrollview手势在滑动到顶部时禁用，这时开启转场动画
 * [ivanvorobei/SPAlert: Native alert from Apple Music & Feedback. Contains Done, Heart & Message and other presets. Support SwiftUI.](https://github.com/ivanvorobei/SPAlert)
+* [LeoNatan/LNPopupController: A framework for presenting view controllers as popups of other view controllers, much like the Apple Music and Podcasts apps.](https://github.com/LeoNatan/LNPopupController)
+* [aheze/Popovers: A library to present popovers. Simple, modern, and highly customizable. Not boring!](https://github.com/aheze/Popovers)
+* [danielsaidi/Sheeeeeeeeet: Sheeeeeeeeet is a Swift library for creating menus, custom action sheets, context menus etc.](https://github.com/danielsaidi/Sheeeeeeeeet)
+* [huri000/SwiftEntryKit: SwiftEntryKit is a presentation library for iOS. It can be used to easily display overlays within your iOS apps.](https://github.com/huri000/SwiftEntryKit) star:6.5k
+* [ivanvorobei/SPStorkController: Now playing controller from Apple Music, Mail & Podcasts Apple's apps.](https://github.com/IvanVorobei/SPStorkController)//pop up vc
+
+## Logger@log@
+
+* [DaveWoodCom/XCGLogger: A debug log framework for use in Swift projects. Allows you to log details to the console (and optionally a file), just like you would have with NSLog() or print(), but with additional information, such as the date, function name, filename and line number.](https://github.com/DaveWoodCom/XCGLogger)
 
 ## Alert@/ActionSheet@
 
@@ -1901,12 +2017,16 @@ tableView.estimatedSectionFooterHeight = CGFLOAT_MIN;
 * [saturngod/IAPHelper: No more maintenance for this repo. Please use the https://github.com/bizz84/SwiftyStoreKit](https://github.com/saturngod/IAPHelper)
 * [根治顽疾：Keep客户端 In-App Purchase 掉单踩坑指南](https://tech.gotokeep.com/post/2018/12/in-app-purchase/)
 * [iOS内购-防越狱刷单 - 简书](https://www.jianshu.com/p/5cf686e92924)
+* [苹果iOS内购三步曲：App内退款、历史订单查询、绑定用户防掉单！--- WWDC21 - 掘金](https://juejin.cn/post/6974733392260644895)
 
-## 国际化
+## 国际化@
 * [iOS项目快速实现国际化](https://www.jianshu.com/p/6ad4f8bc198b)
 * [苹果官网国际化教程](https://developer.apple.com/library/archive/referencelibrary/GettingStarted/RoadMapiOSCh-Legacy/chapters/InternationalizeYourApp/InternationalizeYourApp/InternationalizeYourApp.html)
 * [iOS国际化方案---看我就够 - 简书](https://www.jianshu.com/p/1550f2835f4f)
 * [IOS应用国际化最全攻略 - 知乎](https://zhuanlan.zhihu.com/p/131591013)用苹果自带的genstrings扫描代码文件，生成Localizable.strings  `find ./ -name "*.m" -print0 | xargs -0 genstrings`
+* [ios - How to use NSLocalizedString function with variables in Swift? - Stack Overflow](https://stackoverflow.com/questions/26277626/how-to-use-nslocalizedstring-function-with-variables-in-swift)包含插值的swift国际化
+* [String Format Specifiers](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/Strings/Articles/formatSpecifiers.html)
+* [如何对 iOS 应用中的文本进行本地化 | 肘子的 Swift 记事本](https://fatbobman.com/zh/posts/localizationapp-1/)
 
 ## UIFont@字体@
 
@@ -1963,6 +2083,7 @@ tableView.estimatedSectionFooterHeight = CGFLOAT_MIN;
 
 ## Category/Extension@
 * [SwifterSwift](https://github.com/SwifterSwift/SwifterSwift)
+* [vhesener/Closures: Swifty closures for UIKit and Foundation](https://github.com/vhesener/Closures)
 
 ## #available/@available API可用性
 * [解决iOS项目的版本兼容问题-结合宏、Category和Runtime](http://tutuge.me/2015/07/25/compatibility-with-macro-category-and-runtime/)
@@ -1998,6 +2119,7 @@ tableView.estimatedSectionFooterHeight = CGFLOAT_MIN;
 * [swift bezierpath 相交](https://github.com/lrtitze/Swift-VectorBoolean)
 * [获取曲线上的点](https://github.com/erica/iOS-6-Advanced-Cookbook/blob/master/C04%20-%20Geometry/01%20-%20Retrieving%20Points/UIBezierPath-Points.m)(https://www.jianshu.com/p/885c08466ed2)(https://github.com/erica/iOS-Drawing/blob/master/C07%20A%20-%20Mask:Blur/Quartz%20Book%20Pack/Bezier/UIBezierPath%2BElements.m)(https://codeday.me/bug/20171020/86556.html)
 * [UIBezierPath(roundedRect: baloonFrame, cornerRadius: radius)//这个方法有bug radius不能超过高度33%]()˙https://stackoverflow.com/questions/74623415/uibezierpath-bezierpathwithroundedrect-the-cornerradius-value-is-not-consistent [UIBezierPath cornerRadii value is … | Apple Developer Forums](https://developer.apple.com/forums/thread/711293)
+* [ios - How to stroke the boundary of a uibezierpath on the inside of the path? - Stack Overflow](https://stackoverflow.com/questions/50016030/how-to-stroke-the-boundary-of-a-uibezierpath-on-the-inside-of-the-path)stroke inside of the path 默认是在path两边一边一半的width
 
 ### 宏@#define@
 * [gcc define](https://gcc.gnu.org/onlinedocs/cpp/Concatenation.html#Concatenation)
@@ -2023,13 +2145,15 @@ tableView.estimatedSectionFooterHeight = CGFLOAT_MIN;
 * [clean swift](https://clean-swift.com/)
 * [iOS组件化方案 -mrPeak 说了市面上一些组件化方案弊端](https://mp.weixin.qq.com/s/zvT7YbP-ex8TeeCYuEis5Q)
 * [译RxSwift + MVVM: 怎样搞定 ViewModels](https://www.jianshu.com/p/9ccc10195f89) [附属demo](https://gist.github.com/MartinMoizard/449be0d30920010210988f1773a2ca90)
+* [开源项目分析（SwiftHub）Rxswift + MVVM + Moya 架构分析（一）第三方框架使用 - 掘金](https://juejin.cn/post/6844904127307186189)//里面只是包含了该关键字connectionProxyDictionary
 
 ## 目录结构@
 * [ios - Best practice for an Xcode project groups structure? - Stack Overflow](https://stackoverflow.com/questions/39945727/best-practice-for-an-xcode-project-groups-structure)
-* [项目 目录结构 project/folder structure](https://medium.com/ios-os-x-development/7-things-you-must-absolutely-do-before-writing-an-ios-app-a8bacf710c57)(https://github.com/futurice/ios-good-practices)(https://www.jianshu.com/p/2fb4dd080aef)(https://limboy.me/tech/2013/09/23/build-ios-application.html)
+* [项目 目录结构 project/folder structure](https://medium.com/ios-os-x-development/7-things-you-must-absolutely-do-before-writing-an-ios-app-a8bacf710c57)(https://www.jianshu.com/p/2fb4dd080aef)(https://limboy.me/tech/2013/09/23/build-ios-application.html)
 * [Project Structure for iOS App Development | by Vladyslav Semenchenko | Medium](https://medium.com/@vsemenchenko/project-structure-for-ios-app-development-8c78994af69e)//目录结构
 * [Organizing an iOS Project | Credera](https://www.credera.com/insights/organizing-an-ios-project)//目录结构
 * [7 Things you must absolutely do before writing an iOS app | by Nikant Vohra | iOS App Development | Medium](https://medium.com/ios-os-x-development/7-things-you-must-absolutely-do-before-writing-an-ios-app-a8bacf710c57)
+* [futurice/ios-good-practices: Good ideas for iOS development, by Futurice developers.](https://github.com/futurice/ios-good-practices?tab=readme-ov-file)
 
 ## Markdown@
 * [Export your Medium posts to Markdown | by 🅼🅰🅲🆁🅾🅿🆄🆂 | Medium](https://macropus.medium.com/export-your-medium-posts-to-markdown-b5ccc8cb0050)
@@ -2038,6 +2162,7 @@ tableView.estimatedSectionFooterHeight = CGFLOAT_MIN;
 ## __attribute__
 * [iOS中常用的Attribute](http://www.jianshu.com/p/0237c34158f0)
 * [NSHipster](http://nshipster.com/__attribute__/)
+* [Function Attributes - Using the GNU Compiler Collection (GCC)](https://gcc.gnu.org/onlinedocs/gcc-4.1.2/gcc/Function-Attributes.html#Function-Attributes)
 
 ## 消息转发@isa@
 * [iOS 消息转发流程](http://www.jianshu.com/p/16fd38a5e224)
@@ -2054,6 +2179,7 @@ tableView.estimatedSectionFooterHeight = CGFLOAT_MIN;
 
 ## UML@流程图@
 * [PlantUML是一个开源项目，支持快速绘制：时序图，用例图，类图，活动图 (旧版语法在此处)，组件图，状态图，对象图，部署图， 定时图， ](http://plantuml.com/zh/)
+* [类图的语法和功能](https://plantuml.com/zh/class-diagram)
 
 
 ## 翻译@
@@ -2078,10 +2204,13 @@ tableView.estimatedSectionFooterHeight = CGFLOAT_MIN;
 
 `find . -name "GIO*" | sed -e "p;s/GIO/ZYHM/" | xargs -n2 mv`批量修改文件名 `find ./ -name 'ZYH*' -type f | sed -e "p;s/ZYH/GOC/" | xargs -n2 mv`
 `find ./ -type d -maxdepth 1 -name 'Cocoa*' -exec ls -l {} \;`批量删除Cocoa开始当前目录的文件夹
+`find ./ -type f -name "*myfile*" -exec bash -c 'mv "$1" "${1//myfile/yourfile}"' _ {} \;`
 
 ```egrep -i '([^_: <k`\)\^\"\&\/\+\(\[])af' ./AFNetworking/ -r```//查找不能替换的af
 
 * 查找文本替换文本`grep com.xxx.xxx -rl ./ | xargs -I{} sed -i '' -e 's/com.xxx.xxx/com.xxx1.xxx1/g' {}` 注意sed -i '' 必须要用 macos 会把-i后面的参数当做修改时备份文件的后缀
+
+* 查找特定字符串结尾的文件，且包含了某字符串，结果列出文件名及内容 `find ./ -type f \( -name "*spec" -o -name "*rb" \) -exec grep -nH 'NERtcCallKit' {} \;`
 
 
 ## 引用计数
@@ -2185,12 +2314,14 @@ tableView.estimatedSectionFooterHeight = CGFLOAT_MIN;
 * [京东App Swift 混编及组件化落地](https://mp.weixin.qq.com/s/TRRjyB7vwwnYNb2Yd9FDIw)
 * [从预编译的角度理解Swift与Objective-C及混编机制 - 美团技术团队](https://tech.meituan.com/2021/02/25/swift-objective-c.html)
 * error build: Cannot load underlying module for 'SwiftyStoreKit' 因为主工程 依赖 动态库 pod static library 依赖 SwiftyStoreKit，没有找到好的解决方法，直接在动态库中源码依赖SwiftyStoreKit 而不通过pod依赖
+* [How to reference Swift enum in Objective-C Header - Stack Overflow](https://stackoverflow.com/questions/33487850/how-to-reference-swift-enum-in-objective-c-header)//OC swift混编，oc文件使用swift类并在头文件中有对swift类的使用，这时候需要Forward declarations，我使用的swift种的枚举，这里typedef ENUM(NSInteger, MyEnum)前向声明
 
 
 ## umbrella Framework / Module 
 * [Modular framework, creating and using them](http://nsomar.com/modular-framework-creating-and-using-them/)
 * [iOS - Umbrella Header在framework中的应用](http://blog.startry.com/2015/08/25/Renaming-umbrella-header-for-iOS-framework/)
-* [LLVM 的 Modules](http://www.stephenw.cc/llvm-modules/)(http://clang.llvm.org/docs/Modules.html)
+* [LLVM 的 Modules](http://www.stephenw.cc/llvm-modules/)
+* [Modules — Clang 19.0.0git documentation](https://clang.llvm.org/docs/Modules.html)
 * [Objective-C，Modules](https://blog.csdn.net/zww1984774346/article/details/51210386)
 * [在 Swift Framework 中使用 C 文件的过程探索 - 开发者头条](https://toutiao.io/posts/iej5kh/preview)-推荐-详细解释了产生错误：Include of non-modular header inside framework module的原因
 * [Modules — Clang 12 documentation](https://clang.llvm.org/docs/Modules.html#module-map-language)
@@ -2284,6 +2415,9 @@ echo -e "$text" # 111[换行]222[换行]333
 * [火掌柜 iOS 团队 GitLab CI 集成实践](https://dmanager.github.io/ci/2018/06/23/ji-gitlabcide-ci-shi-jian/)
 * [IPA托管](https://www.jianshu.com/p/08172adacc97)
 
+## IPA@
+* [NyaMisty/ipatool-py: IPATool-py: download ipa easily](https://github.com/NyaMisty/ipatool-py#download-old-version)download ipa older
+
 ## git@ 学习
 
 * [5.2 代码回滚：Reset、Checkout、Revert 的选择](https://github.com/geeeeeeeeek/git-recipes/wiki/5.2-%E4%BB%A3%E7%A0%81%E5%9B%9E%E6%BB%9A%EF%BC%9AReset%E3%80%81Checkout%E3%80%81Revert-%E7%9A%84%E9%80%89%E6%8B%A9)
@@ -2301,10 +2435,15 @@ echo -e "$text" # 111[换行]222[换行]333
 * 查看函数的修改历史git log -L:viewDidLoad:filePath
 * [使用git操作svn仓库 | Tony Bai](https://tonybai.com/2019/06/25/using-git-with-svn-repo/)
 * [xcode - Can't ignore UserInterfaceState.xcuserstate - Stack Overflow](https://stackoverflow.com/questions/6564257/cant-ignore-userinterfacestate-xcuserstate)删除已跟踪的文件，这样添加该文件到gitignore就再也不会被跟踪了
-* 查看历史版本含有的文本内容只能查找添加删除 `git log -G"正则" -p or git log -S"文本" -p`  `git rev-list --all | xargs git grep -F "[self startAFNetworkMonitoring]"` `git log --pretty=format:"%h" -- xx/xx/xx.mm | xargs git grep -F "[self startAFNetworkMonitoring]"`
+* 查看历史版本含有的文本内容只能查找添加删除 `git log --all -G"正则" -p or git log  --all -S"文本" -p`  `git rev-list --all | xargs git grep -F "[self startAFNetworkMonitoring]"` `git log --pretty=format:"%h" -- xx/xx/xx.mm | xargs git grep -F "[self startAFNetworkMonitoring]"` 
 * [How to grep (search) committed code in the Git history - Stack Overflow](https://stackoverflow.com/questions/2928584/how-to-grep-search-committed-code-in-the-git-history)
 * [macos - How can I Remove .DS_Store files from a Git repository? - Stack Overflow](https://stackoverflow.com/questions/107701/how-can-i-remove-ds-store-files-from-a-git-repository)
 * [git log命令展示过滤技巧及打印格式 | 常兴 E 站](http://www.canking.win/2016/11/08/git-log/)
+* [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/)git commit 规范
+* [Karma - Git Commit Msg](https://karma-runner.github.io/6.3/dev/git-commit-msg.html)
+* [Semantic Commit Messages](https://gist.github.com/joshbuchea/6f47e86d2510bce28f8e7f42ae84c716)
+* 在所有分支中查询字符串 git grep 'xxx' --all ,如何输出/xxx/xxx/xxx样的unicode编码，尝试用printf输出一下
+* 查找文本第一次出现所在的分支：1. `git log --all -G"正则" -p or git log  --all -S"文本" -p` 2.获取上一步中的hash值去短hash在`git log --graph --oneline --all`的结果中查找短hash所在的分支(git name-rev hash 通过该命令可以获取commit提交时所在的分支)
 
 ## 加密@解密@
 
@@ -2412,6 +2551,7 @@ Each symbol name is preceded by its value (blanks if undefined).  Unless the -m
        lower case u in a dynamic shared library indicates a undefined reference to a
        private external in another module in the same library.
 ```
+* [29.0.50; MacOS ld warning from native compilation](https://issues.guix.gnu.org/issue/57849)-Wl,-undefined,dynamic_lookup(other link flag 中添加这些选项可以忽略打包动态库时没有链接静态库导致符号没找到的报错，可以在最终集成到app时链接静态库)
 
 ## 静态库@
 * [如何将多个.o合并为一个.o文件 - 胡桃夹子](http://hutaow.com/blog/2015/02/14/ld-o/)
@@ -2521,6 +2661,10 @@ doxygen Doxyfile
              nothing is written (this is not an error). 
 
 * [iOS App Signer - Instructions](https://dantheman827.github.io/ios-app-signer/)
+* [Notes/iOSReverse/iOS签名机制之重签名.md at master · zhaoName/Notes](https://github.com/zhaoName/Notes/blob/master/iOSReverse/iOS%E7%AD%BE%E5%90%8D%E6%9C%BA%E5%88%B6%E4%B9%8B%E9%87%8D%E7%AD%BE%E5%90%8D.md) 记住先对动态库进行签名 最后为xxx.app/xxx签名， 需要将bundle里面的embed描述文件替换为自己的描述文件
+* [DanTheMan827/ios-app-signer: This is an app for OS X that can (re)sign apps and bundle them into ipa files that are ready to be installed on an iOS device.](https://github.com/DanTheMan827/ios-app-signer)
+* [How to resign an .ipa](https://gist.github.com/ryantan/ef536cad1189228dc0b36aaf5e13abf2)
+
 
 ## MACHO@
 * [巧用符号表 - 探求 fishhook 原理（一） · GitBook](https://www.desgard.com/iOS-Source-Probe/C/fishhook/%E5%B7%A7%E7%94%A8%E7%AC%A6%E5%8F%B7%E8%A1%A8%20-%20%E6%8E%A2%E6%B1%82%20fishhook%20%E5%8E%9F%E7%90%86%EF%BC%88%E4%B8%80%EF%BC%89.html)
@@ -2545,6 +2689,9 @@ doxygen Doxyfile
 * objdump -s -j \__cstring  MachO文件地址，打印段信息
 * [通过FishHook了解MachO动态链接（二） - 知乎](https://zhuanlan.zhihu.com/p/368343903)
 
+## 弹幕@
+* [qyz777/DanmakuKit: 高性能弹幕框架 DanmakuKit is a high performance library that provides the basic functions of danmaku.](https://github.com/qyz777/DanmakuKit)
+
 ## chrome@
 * [macOS 解决 Chrome NET::ERR_CERT_INVALID的问题 - 知乎](https://zhuanlan.zhihu.com/p/111928692)--thisisunsafe
 
@@ -2565,6 +2712,48 @@ doxygen Doxyfile
 * [深度长文：细说iOS代码签名](http://xelz.info/blog/2019/01/11/ios-code-signature/)
 * [[iOS Tips]证书签名相关命令行](https://www.jianshu.com/p/f140f4a08c4f)
 * [Mac Security工具使用总结find-identity](https://blog.csdn.net/elesos/article/details/73882942)
+
+## NetworkExtension@VPN@代理@
+* [手把手NetworkExtension: 1. 创建L2TP/IPSec VPN连接](http://www.jianshu.com/p/2001b603cee4)
+* [WWDC2014之App Extensions学习笔记](http://foggry.com/blog/2014/06/23/wwdc2014zhi-app-extensionsxue-xi-bi-ji/)
+* [haxpor/Potatso: Potatso is an iOS client that implements Shadowsocks proxy with the leverage of NetworkExtension framework](https://github.com/haxpor/Potatso)This project is unmaintained, try taking a look at this fork https://github.com/myhighland/ShadowCoel instead.
+* [KEXT Controls and Notifications](https://developer.apple.com/library/archive/documentation/Darwin/Conceptual/NKEConceptual/control/control.html)
+* 从apple demo映射[robovm/apple-ios-samples](https://github.com/robovm/apple-ios-samples)获取苹果networkextensionDemo[apple-ios-samples/SimpleTunnelCustomizedNetworkingUsingtheNetworkExtensionFramework at master · robovm/apple-ios-samples](https://github.com/robovm/apple-ios-samples/tree/master/SimpleTunnelCustomizedNetworkingUsingtheNetworkExtensionFramework)，这篇文章分析了demo中的类的作用[Joeeyy/iMonitor](https://github.com/Joeeyy/iMonitor)
+* [Apple Demo](https://developer.apple.com/library/archive/navigation/#section=Resource%20Types&topic=Sample%20Code)
+* [yaooort/OpenVPN-IOS: Objective-C OpenVpnAdapter IOS OpenVpn](https://github.com/yaooort/OpenVPN-IOS)
+* [AnhTVc/OpenVPN-IOS: Build OpenVPN source for IOS](https://github.com/AnhTVc/OpenVPN-IOS)
+* [WuChuming/shadowsocks-iOS: fork by shadowsocks/shadowsocks-iOS](https://github.com/WuChuming/shadowsocks-iOS) 三方fork star数较多 没有做过多修改
+* [Charles破解工具](https://www.zzzmode.com/mytools/charles/)
+* [charles破解安装激活(包含windows和mac)最新简单教程【亲测有效】 - 哔哩哔哩](https://www.bilibili.com/read/cv18697749)
+* [tladesignz/ShadowSocks-libev-iOS](https://github.com/tladesignz/ShadowSocks-libev-iOS)
+* [jquepi/ShadowSocks-libev-iOS](https://github.com/jquepi/ShadowSocks-libev-iOS)
+* [ShadowsocksR-Live/iShadowsocksR: ShadowsocksR (SSRoT) client for iOS](https://github.com/ShadowsocksR-Live/iShadowsocksR)//用它
+* [vpn - iOS, NEVPNManager, NEProxySettings does not work - Stack Overflow](https://stackoverflow.com/questions/74123619/ios-nevpnmanager-neproxysettings-does-not-work)苹果支持ikev2
+* [confirmedcode/Confirmed-iOS: Confirmed VPN client for iOS](https://github.com/confirmedcode/Confirmed-iOS)
+* [VPN - Cocoa开发者](https://iliunian.cn/VPN.html)介绍PPTP IPSpec等协议
+* [App extension实战 - Personal VPN 连接并捕获packet - 掘金](https://juejin.cn/post/6844903624200421390)
+* [iOS中Network Extension安全科学Tunnel应用(Swift5) - 掘金](https://juejin.cn/post/6844903829146697742)
+* [App extension实战 - NetworkExtension 讲解连接并捕获packet_上天眷顾我的博客-CSDN博客_networkextension](https://blog.csdn.net/qq_30513483/article/details/81100414)
+* [mozilla-mobile/guardian-vpn-ios: Mozilla VPN for iOS](https://github.com/mozilla-mobile/guardian-vpn-ios) [iCepa/iCepa: iOS system-wide VPN based Tor client](https://github.com/iCepa/iCepa) //github关键词搜索：startTunnel
+* [mutualmobile/MMWormhole: Message passing between iOS apps and extensions.](https://github.com/mutualmobile/MMWormhole)
+* [yggdrasil-network/yggdrasil-ios: Reference implementation for connecting to the Yggdrasil Network from iPhones and iPads](https://github.com/yggdrasil-network/yggdrasil-ios)
+* [yggdrasil-network/yggdrasil-go: An experiment in scalable routing as an encrypted IPv6 overlay network](https://github.com/yggdrasil-network/yggdrasil-go)
+* [有赞移动助手App本地抓包方案_移动_杨彬_InfoQ精选文章](https://www.infoq.cn/article/biqsr47*zetzoctj4mvc)//tun2socks原理
+* [Linux虚拟网络基础---tap/tun（虚拟以太设备）海渊_haiyuan的博客-CSDN博客](https://blog.csdn.net/LL845876425/article/details/82215265)
+* [网络虚拟化技术（二）: TUN/TAP MACVLAN MACVTAP](https://blog.kghost.info/2013/03/27/linux-network-tun/)
+* [NetworkExtension3-Tunnel开发 - 掘金](https://juejin.cn/post/6867030091748196366)
+* [awesome-vpn/en-us.md at master · awesome-vpn/awesome-vpn · GitHub](https://github.com/awesome-vpn/awesome-vpn/blob/master/one-click-apps/en-us.md)
+* [confirmedcode/Lockdown-iOS](https://github.com/confirmedcode/Lockdown-iOS)Lockdown is an open source firewall that blocks trackers, ads, and badware in all apps
+* [confirmedcode/Confirmed-iOS: Confirmed VPN client for iOS](https://github.com/confirmedcode/Confirmed-iOS/tree/master)
+* [passepartoutvpn/tunnelkit at 6a8607b77fe6d1ff3fbb3a147162514a71ff322f](https://github.com/passepartoutvpn/tunnelkit/tree/6a8607b77fe6d1ff3fbb3a147162514a71ff322f)TunnelKit comes with a simplified Swift/Obj-C implementation of the OpenVPN® protocol, whose crypto layer is built on top of OpenSSL 1.1.1.
+* [ss-abramchuk/OpenVPNAdapter: Objective-C wrapper for OpenVPN library. Compatible with iOS and macOS.](https://github.com/ss-abramchuk/OpenVPNAdapter)
+* [arror/Mango: Xray for iOS](https://github.com/arror/Mango)xray
+* [connectionProxyDictionary 笔记 - 简书](https://www.jianshu.com/p/1afce4a6bd7e)internal proxy
+* [ios - How to connect to a HTTP server using a proxy configuration with Swift 5 (why connectionProxyDictionary is being ignored)? - Stack Overflow](https://stackoverflow.com/questions/57864130/how-to-connect-to-a-http-server-using-a-proxy-configuration-with-swift-5-why-co)
+
+### OpenVPN@
+* [解决OpenVPN客户端所有网络全走VPN的问题 - 技术分享](https://www.ilxqx.com/archives/jie-jue-openvpn-ke-hu-duan-suo-you-wang-luo-quan-zou-vpn-de-wen-ti)
+* [openvpn/sample/sample-config-files/client.conf at master · OpenVPN/openvpn](https://github.com/OpenVPN/openvpn/blob/master/sample/sample-config-files/client.conf)官方config配置注释ovpn
 
 ## shadowsocks-libev@
 * [Jigsaw-Code/outline-client: Outline clients, developed by Jigsaw. The Outline clients use the popular Shadowsocks protocol, and lean on the Cordova and Electron frameworks to support Windows, Android / ChromeOS, Linux, iOS and macOS.](https://github.com/Jigsaw-Code/outline-client)
@@ -2624,17 +2813,23 @@ cd libsodium-apple
 	1. 在项目中按下 't' 键 ,就可以在项目文件中快速跳转
 	2. 按下 'l'键, 快速定位到该文件下的某一行
 	3. 按下 'b' 键 就可以快速查看该文件的修改记录
+* [Repositories Ranking - Gitstar Ranking](https://gitstar-ranking.com/repositories)项目排名
 
 ## shell@bash@
 * [bash(1) - Linux manual page](https://man7.org/linux/man-pages/man1/bash.1.html) ${parameter%word} ${parameter%%word} ${parameter#word} ${parameter##word}
 * jobs 查看挂起进程 -l option可以看见pid  kill -9 pid 杀死进程
 * [linux - Bash 脚本中的 set -euxo pipefail - Python测试开发 - SegmentFault 思否](https://segmentfault.com/a/1190000021756627)
 
-
 ## 网易云信@
 * [netease-kit/nim-uikit-ios: 云信 IM UIKit 是基于 NIM SDK（网易云信 IM SDK）开发的一款即时通讯 UI 组件库，包括聊天、会话、圈组、搜索、群管理等组件。通过 IM UIKit，可快速集成包含 UI 界面的即时通讯应用。](https://github.com/netease-kit/nim-uikit-ios)im开源UI
+* [iOS之旅--NIM SDK 使用指南 - sundaysios - 博客园](https://www.cnblogs.com/sundaysgarden/articles/9066414.html)
+
 
 ## Swift@
+
+### Optional@
+* [Challenge: Flattening nested optionals - Using Swift - Swift Forums](https://forums.swift.org/t/challenge-flattening-nested-optionals/24083/3)deep unwrap optional
+* [模糊的 Any 和 Optional - 一片瓜田](https://www.desgard.com/ios/swift/2019/12/25/optional-and-any.html)deepUnwrap
 
 ### SwiftUI@
 
@@ -2672,13 +2867,13 @@ cd libsodium-apple
 * [octree (octree) / Repositories](https://github.com/octree?page=2&tab=repositories)top widgets 开发
 * [How to Update or Refresh a Widget? - Swift Senpai](https://swiftsenpai.com/development/refreshing-widget/)
 * [TopWidgets/SwingAnimation: 小组件平移动画](https://github.com/TopWidgets/SwingAnimation) 三个旋转动画控制旋转方向和时间实现平移动画
+* [IOS小组件（5）：小组件刷新机制 - popfisher - 博客园](https://www.cnblogs.com/popfisher/p/14752842.html)
 
 ### Swift Package Manager@
 * [Package — Swift Package Manager](https://docs.swift.org/package-manager/PackageDescription/PackageDescription.html#target)package.swift语法介绍
 * [解决swift package manager fetch慢的问题 - 简书](https://www.jianshu.com/p/953220424556)xcodebuild -resolvePackageDependencies -scmProvider system 再DriverData SourcePackages 拷贝,
 * [Building Swift Packages or Apps that Use Them in Continuous Integration Workflows | Apple Developer Documentation](https://developer.apple.com/documentation/xcode/building-swift-packages-or-apps-that-use-them-in-continuous-integration-workflows)scmProvider解释有system和xcode两个选项，system即代表用系统git配置
 * [如何让swift package manager走代理 - 掘金](https://juejin.cn/post/6946451335948697636)--Software configuration management
-
 
 ### 图床@
 * [Imgur: The magic of the Internet](https://imgur.com/a/nWAxyGf)
@@ -2692,12 +2887,15 @@ cd libsodium-apple
 * [winddpan/CodableWrapper: @Codec("encoder", "decoder") var cool: Bool = true](https://github.com/winddpan/CodableWrapper)
 * [marksands/BetterCodable: Better Codable through Property Wrappers](https://github.com/marksands/BetterCodable)
 
-### 语法@
+### Swift语法@
 * [swiftui - What is the "some" keyword in Swift(UI)? - Stack Overflow](https://stackoverflow.com/questions/56433665/what-is-the-some-keyword-in-swiftui)讲了some带来的好处
 * [Opaque Types — The Swift Programming Language (Swift 5.7)](https://docs.swift.org/swift-book/LanguageGuide/OpaqueTypes.html)
+* [swift 闭包 修改外部数据 swift 闭包本质_mob6454cc6aab12的技术博客_51CTO博客](https://blog.51cto.com/u_16099230/7351994)
+* [How does String substring work in Swift - Stack Overflow](https://stackoverflow.com/questions/39677330/how-does-string-substring-work-in-swift)
 
 ### Swift开源库@
 * [devxoul/Then: ✨ Super sweet syntactic sugar for Swift initializers](https://github.com/devxoul/Then)
+* [CGRect+Geometry.swift](https://gist.github.com/erica/72cce9a0444e7f5d5db0d328aeca1f5a)
 
 ##
 * [模式匹配第一弹: switch, enums & where 子句](http://swift.gg/2016/04/26/pattern-matching-1/)
@@ -2715,6 +2913,7 @@ cd libsodium-apple
 
 ## MacOS@
 * [移除苹果系统下载文件的附加属性 - zihengCat](https://zihengcat.github.io/2017/08/13/%E7%A7%BB%E9%99%A4%E8%8B%B9%E6%9E%9C%E7%B3%BB%E7%BB%9F%E4%B8%8B%E8%BD%BD%E6%96%87%E4%BB%B6%E7%9A%84%E9%99%84%E5%8A%A0%E5%B1%9E%E6%80%A7/)//打开已损坏文件
+* sudo xattr -r -d com.apple.quarantine apppath (ChatGPT" is damaged and can't be opened. You should move it to the Trash)
 
 ## 工具@
 * [在finder中打开terminal go2shell](https://www.jianshu.com/p/eb48b4b10f04)
@@ -2761,8 +2960,9 @@ clang -rewrite-objc -fobjc-arc -stdlib=libc++ -mmacosx-version-min=10.7 -fobjc-r
 * [一文教你申请软著](https://tnanko.github.io/posts/92e4c1ea.html)
 
 
-## 简历@
+## Markdown@
 * [写了个简洁的Markdown简历模板 - 知乎](https://zhuanlan.zhihu.com/p/369827427)
+* [Download - Obsidian](https://obsidian.md/download)
 
 
 ## vscode@
