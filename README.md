@@ -1143,6 +1143,7 @@ python3 build-system/Make/Make.py \
 * [GitHub - Danie1s/Tiercel: 简单易用、功能丰富的纯 Swift 下载框架](https://github.com/Danie1s/Tiercel)
 * [ixuea/CocoaDownloader: An powerful download library for iOS, macOS.](https://github.com/ixuea/CocoaDownloader)
 * [mzeeshanid/MZDownloadManager: This download manager uses NSURLSession api to download files. It can download multiple files at a time. It can download large files if app is in background. It can resume downloads if app was quit.](https://github.com/mzeeshanid/MZDownloadManager)
+* [jakeheis/Shout: SSH made easy in Swift](https://github.com/jakeheis/Shout) ssh sftp实现文件下载
 
 
 ## warning xcode
@@ -2444,6 +2445,9 @@ echo -e "$text" # 111[换行]222[换行]333
 * [Semantic Commit Messages](https://gist.github.com/joshbuchea/6f47e86d2510bce28f8e7f42ae84c716)
 * 在所有分支中查询字符串 git grep 'xxx' --all ,如何输出/xxx/xxx/xxx样的unicode编码，尝试用printf输出一下
 * 查找文本第一次出现所在的分支：1. `git log --all -G"正则" -p or git log  --all -S"文本" -p` 2.获取上一步中的hash值去短hash在`git log --graph --oneline --all`的结果中查找短hash所在的分支(git name-rev hash 通过该命令可以获取commit提交时所在的分支)
+`# 找到某个功能特性最初是在哪个分支开发的 git branch -a --contains <feature-commit> --sort=committerdateƒ`
+* 控制台显示不下，输出到文件查看，使用 col 命令清理退格符0x08（推荐） git log --help | col -b > clean_text.txt
+* git branch -a | xargs -t -n1  git -P log -1 -G 'xxxx' 在所有分支最新的提交中查找字符串
 
 ## 加密@解密@
 

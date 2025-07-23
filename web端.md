@@ -25,6 +25,7 @@
 * [vue单页应用如何在页面刷新时保留状态数据 - 掘金](https://juejin.im/post/5aa7d945518825558453ad8c)
 * [一张图彻底掌握scrollTop, offsetTop, scrollLeft, offsetLeft...... · Issue #10 · pramper/Blog](https://github.com/pramper/blog/issues/10)
 * [告别JS浮层，全新的CSS Anchor Positioning锚点定位API « 张鑫旭-鑫空间-鑫生活](https://www.zhangxinxu.com/wordpress/2024/06/css-anchor-positioning-api/)
+* [fisshy/react-scroll: React scroll component](https://github.com/fisshy/react-scroll)锚点定位
 
 
 ## 字体@
@@ -34,10 +35,19 @@
 ### 瀑布流@
 * [15+ CSS Masonry Layout Examples](https://freefrontend.com/css-masonry-layout-examples/#google_vignette)
 * [Waterfall.js - Pinterest Grid in Just 1KB](https://raphamorim.io/waterfall.js/)
+* [Masonry · Layout](https://masonry.desandro.com/layout)
+* [Isotope · Filter & sort magical layouts](https://isotope.metafizzy.co/)
+* [lfyfly/vue-waterfall-easy: vue瀑布流组件(vue-waterfall-easy 2.x)](https://github.com/lfyfly/vue-waterfall-easy)
+* [eiriklv/react-masonry-component: A React.js component for using @desandro's Masonry](https://github.com/eiriklv/react-masonry-component)
+* [Muuri - Infinite layouts with batteries included](https://muuri.dev/)支持拖拽
+* [Packery](https://packery.metafizzy.co/)支持自由拖拽的瀑布流布局库
+
 
 ## nextjs@
 * [NiklasMencke/nextjs-breadcrumbs: A dynamic, highly customizable breadcrumbs component for Next.js](https://github.com/NiklasMencke/nextjs-breadcrumbs)
 * [Creating a Dynamic Breadcrumb Component in a Next.js App Router | by Kristian Cabading | Medium](https://medium.com/@kcabading/creating-a-breadcrumb-component-in-a-next-js-app-router-a0ea24cdb91a)
+* [Why do Client Components get SSR'd to HTML? · reactwg/server-components · Discussion #4](https://github.com/reactwg/server-components/discussions/4)客户端组件在服务端也会被渲染
+* [next.config.js: output | Next.js](https://nextjs.org/docs/app/api-reference/config/next-config-js/output) 打包模式配置文档
 
 
 ## 环境搭建@
@@ -97,6 +107,18 @@
 * [qier222/YesPlayMusic: 高颜值的第三方网易云播放器，支持 Windows / macOS / Linux](https://github.com/qier222/YesPlayMusic)
 * [components.json - shadcn/ui](https://ui.shadcn.com/docs/components-json)
 * [简单易懂的7个聊天UI设计方案](https://mp.weixin.qq.com/s/Rdu0BqPzc2Qx1hTsxnOgvQ)
+* [vbenjs/vue-vben-admin: A modern vue admin panel built with Vue3, Shadcn UI, Vite, TypeScript, and Monorepo. It's fast!](https://github.com/vbenjs/vue-vben-admin)vue3企业框架
+* [ant-design/ant-design-pro: 👨🏻‍💻👩🏻‍💻 Use Ant Design like a Pro!](https://github.com/ant-design/ant-design-pro)react
+* [DouyinFE/semi-design: 🚀A modern, comprehensive, flexible design system and React UI library. 🎨 Provide more than 3000+ Design Tokens, easy to build your design system. Make Semi Design to Any Design. 🧑🏻‍💻 Design to Code in one click](https://github.com/DouyinFE/semi-design?tab=readme-ov-file)react
+* [21+ Best Next.js Admin Dashboard Templates - 2025](https://nextjstemplates.com/blog/admin-dashboard-templates)
+* [AykutSarac/jsoncrack.com: ✨ Innovative and open-source visualization application that transforms various data formats, such as JSON, YAML, XML, CSV and more, into interactive graphs.](https://github.com/AykutSarac/jsoncrack.com)
+* [学习 Next.js 的最佳开源项目有哪些？ : r/nextjs](https://www.reddit.com/r/nextjs/comments/19c71ld/what_are_the_best_open_source_projects_to_learn/?tl=zh-hans)这里面介绍的还算靠谱
+* [Open Source Projects tagged "Nextjs"](https://openalternative.co/topics/nextjs)也还行
+* [gitroomhq/postiz-app: 📨 The ultimate social media scheduling tool, with a bunch of AI 🤖](https://github.com/gitroomhq/postiz-app?utm_source=openalternative.co)
+* [Open Source Projects tagged "Nextjs"](https://openalternative.co/topics/nextjs)
+* [calcom/cal.com: Scheduling infrastructure for absolutely everyone.](https://github.com/calcom/cal.com)开源的日程安排和会议预约系统
+* [CRMS Projects Source Code- Explore New Coding Skills](https://opensourcecollection.com/crms-projects)
+* [themeselection/materio-mui-nextjs-admin-template-free: An enterprise-grade Next.js admin dashboard template. Made with developer experience first: Next.js v14 (App Router), Material UI (MUI), Tailwind CSS, TypeScript, ESLint, Prettier, VSCode Configs !! 🚀](https://github.com/themeselection/materio-mui-nextjs-admin-template-free)
 
 ### 组件库@
 * [shadcn-ui/ui: Beautifully designed components that you can copy and paste into your apps. Accessible. Customizable. Open Source.](https://github.com/shadcn-ui/ui)不需要npm安装，修改源码更容易
@@ -104,6 +126,12 @@
 * [2023 年前端 UI 组件库概述，百花齐放！](https://mp.weixin.qq.com/s/vnOwHA-Dhc-uhQJkQ8xM_Q)
 * [foundation/foundation-sites: The most advanced responsive front-end framework in the world. Quickly create prototypes and production code for sites that work on any kind of device.](https://github.com/foundation/foundation-sites)
 * [Premium Bootstrap Themes and Templates: Download @ Creative Tim](https://www.creative-tim.com/)
+* [Button | Semantic UI](https://semantic-ui.com/elements/button.html)
+* [Image | HeroUI (Previously NextUI) - Beautiful, fast and modern React UI Library](https://www.heroui.com/docs/components/image)
+* [React Menu component - Material UI](https://mui.com/material-ui/react-menu/)
+
+### 检索@
+* [Search - CodeSandbox](https://codesandbox.io/search?query=Blurhash&page=1&configure%5BhitsPerPage%5D=12)
 
 
 ### 事件@
@@ -123,6 +151,10 @@
 	      vue$: 'vue/dist/vue.runtime.esm.js'
 	    }
 	```
+* [Vue3源码07: 故事要从createApp讲起本文会讲到`runtime-dom`和`runtime-core`之间 - 掘金](https://juejin.cn/post/7078939204734058526)通过createApp render函数实现响应式编程
+
+### 引用传递@值传递@
+* [es6导出 哪些是值传递哪些是引用传递起因 前些日子创建了一个前端技术交流群。今天一个群友在群里分享了一个问题 我一看 - 掘金](https://juejin.cn/post/7002907466312712200)
 
 ### 组件@
 * [javascript - How to programmatically launch a Vuetify Dialog and wait for the response - Stack Overflow](https://stackoverflow.com/questions/56026220/how-to-programmatically-launch-a-vuetify-dialog-and-wait-for-the-response)函数式弹窗
@@ -133,7 +165,9 @@
 * [模式和环境变量 | Vue CLI](https://cli.vuejs.org/zh/guide/mode-and-env.html#%E6%A8%A1%E5%BC%8F)
 * [dnzng/vue-element-dialog: An imperative call to the el-dialog in element-ui@2.x](https://github.com/dnzng/vue-element-dialog)函数式弹窗
 * [封装一个函数式调用的el-dialog弹窗组件_封装el-dialog-CSDN博客](https://blog.csdn.net/shujiaxing/article/details/125037811)
+* [eBay/nice-modal-react：React 的模态状态管理器。](https://github.com/eBay/nice-modal-react#)有点像函数式弹窗，但是其实不是
 * [blog/markdown/elementUI 源码-打造自己的组件库，系列四：Dialog组件.md at main · xy-sea/blog](https://github.com/xy-sea/blog/blob/main/markdown/elementUI%20%E6%BA%90%E7%A0%81-%E6%89%93%E9%80%A0%E8%87%AA%E5%B7%B1%E7%9A%84%E7%BB%84%E4%BB%B6%E5%BA%93%EF%BC%8C%E7%B3%BB%E5%88%97%E5%9B%9B%EF%BC%9ADialog%E7%BB%84%E4%BB%B6.md)
+* [imengyu/vue3-context-menu: A very simple context menu component for Vue3 一个简洁美观简单的Vue3右键菜单组件](https://github.com/imengyu/vue3-context-menu) 右键菜单
 
 #### 旋转木马@carousel@
 * [slick - the last carousel you'll ever need](https://kenwheeler.github.io/slick/)
@@ -149,6 +183,17 @@
 
 ### axios@
 * [axios响应拦截器错误处理及思想_axios响应拦截器什么场景走error-CSDN博客](https://blog.csdn.net/s2422617864/article/details/116917559)
+* [kuitos/axios-extensions: 🍱 axios extensions lib, including throttle, cache, retry features etc...](https://github.com/kuitos/axios-extensions)
+
+### 循环检查@重试@
+* [sindresorhus/p-retry: Retry a promise-returning or async function](https://github.com/sindresorhus/p-retry)这个库会用到node-retry这个库，可以配置指数退避的factor为1来避免指数退避
+* [tim-kos/node-retry: Abstraction for exponential and custom retry strategies for failed operations.](https://github.com/tim-kos/node-retry)
+* [Kong/swrv: Stale-while-revalidate data fetching for Vue](https://github.com/Kong/swrv)
+* [入门 – SWR](https://swr.vercel.app/zh-CN/docs/getting-started)
+
+
+### Lru@
+* [isaacs/node-lru-cache: A fast cache that automatically deletes the least recently used items](https://github.com/isaacs/node-lru-cache)
 
 
 ## JavaScript@
@@ -176,8 +221,12 @@
 * [Download 3552 Free Website Templates - CSS & HTML | Free CSS](https://www.free-css.com/free-css-templates)
 * [60+ Free HTML Website Templates - Responsive & Mobile Ready](https://www.tooplate.com/)
 * [Themes | Astro](https://astro.build/themes/)
+* [One Page Love - One Page Website Inspiration and Templates](https://onepagelove.com/page/7)
 
-## 素材@
+## html避免写重复代码@
+* [.svelte files • Docs • Svelte](https://svelte.dev/docs/svelte/svelte-files)
+
+## 素材@图片资源@
 * [免费素材图片](https://www.pexels.com/zh-cn/)
 * [Beautiful Free Images & Pictures | Unsplash](https://unsplash.com/)
 * [4.5 million+ Stunning Free Images to Use Anywhere - Pixabay - Pixabay](https://pixabay.com/)
@@ -203,12 +252,25 @@
 * [一文让你彻底掌握 TS 枚举在 JavaScript 中布尔类型的变量含有有限范围的值，即 true 和 false。而 - 掘金](https://juejin.cn/post/6844904112669065224)
 
 ## 转场动画@
-* [View Transitions API 实用教程在本文中，我将解释这个 API 是什么以及它是如何工作的。我们将学习在 - 掘金](https://juejin.cn/post/7289952867053731899)
-* [页面级可视动画View Transitions API初体验 « 张鑫旭-鑫空间-鑫生活](https://www.zhangxinxu.com/wordpress/2024/08/view-transitions-api/)
+* [jamiebuilds/tailwindcss-animate: A Tailwind CSS plugin for creating beautiful animations](https://github.com/jamiebuilds/tailwindcss-animate)
+* [View Transitions API 实用教程在本文中，我将解释这个 API 是什么以及它是如何工作的。我们将学习在 - 掘金](https://juejin.cn/post/7289952867053731899) [seyedi/view-transition-demo](https://github.com/seyedi/view-transition-demo)需要设置一下css样式才生效
+```
+@view-transition {
+  navigation: auto;
+}
+```
+* [6 月新增 Web 平台  |  Blog  |  web.dev](https://web.dev/blog/web-platform-06-2024?hl=zh-cn)里面提到@view-transition
+* [页面级可视动画View Transitions API初体验 « 张鑫旭-鑫空间-鑫生活](https://www.zhangxinxu.com/wordpress/2024/08/view-transitions-api/)//主题模式切换遮罩动画原理
+* [Next.js View Transitions](https://next-view-transitions.vercel.app/)
 
-
-## wordPress@
+## cms@wordpress@
 * [如何添加WordPress的目录：2种简单的方法和最好的插件如何添加WordPress的目录。2个简单的方法和最好的插件 - 掘金](https://juejin.cn/post/7130977891885514782)
+* [Strapi - Open source Node.js Headless CMS 🚀](https://strapi.io/)
+* [The Content Operating System | Sanity](https://www.sanity.io/)
+* [Try Prismic - Homepage](https://prismic.io/try/pages/aH4JthEAACoAmspv/?s=unclassified&section=Main&id=call_to_action%241d5e99e6-b0c0-4d8f-942c-be30148ebb66)
+
+## 浏览器指纹@
+* [fingerprintjs/fingerprintjs: The most advanced browser fingerprinting library.](https://github.com/fingerprintjs/fingerprintjs?tab=readme-ov-file)//相同浏览器窗口不同显示器生成不一样，不同浏览器不一样
 
 ## CSS@
 
@@ -232,11 +294,23 @@
 * [html - Parent div not expanding over child's padding - Stack Overflow](https://stackoverflow.com/questions/29692627/parent-div-not-expanding-over-childs-padding)
 * [css - Duplicating an element (and its style) with JavaScript - Stack Overflow](https://stackoverflow.com/questions/1848445/duplicating-an-element-and-its-style-with-javascript)//拷贝element和其样式
 
+
 ## 字体@描边@渐变@阴影@
 * [CSS和SVG实现文字渐变、描边、投影在一些 web 活动页中经常能看到特殊处理的标题文字，比如这样的 暂时忽略掉特殊字 - 掘金](https://juejin.cn/post/7010944239609577508)
+* [不要图片？CSS实现圆角边框渐变色+背景透明前言 👏不要图片？CSS实现圆角边框渐变色+背景透明，最近在工作中常常实现 - 掘金](https://juejin.cn/post/7240458275269984314)完美
 
 ## 图片处理@
 * [GitHub - Jacksgong/webp-converter: Converter PNG/JPG to Webp and scan all changes](https://github.com/Jacksgong/webp-converter)
+* [ApiClient.ts — nodebox — CodeSandbox](https://codesandbox.io/p/sandbox/unsplash-image-search-bn3rn?file=%2Fsrc%2Fmodules%2Fmain%2Finfrastructure%2Fhttp%2FApiClient.ts) blurhash 封装加载图片
+* [BlurHash](https://blurha.sh/)BlurHash is a compact representation of a placeholder for an image.
+* [The "Blur Up" Technique for Loading Background Images | CSS-Tricks](https://css-tricks.com/the-blur-up-technique-for-loading-background-images/)css 背景blur up方案
+* [Usage | Plaiceholder](https://plaiceholder.co/docs/usage)通过该工具生成base64的lqip 低质量图片占位
+* [steambap/png-to-ico: convert png to ico format](https://github.com/steambap/png-to-ico)
+* [Add support for ICO format · Issue #1118 · lovell/sharp](https://github.com/lovell/sharp/issues/1118)
+
+## 图片懒加载@
+* [aFarkas/lazysizes: High performance and SEO friendly lazy loader for images (responsive and normal), iframes and more, that detects any visibility changes triggered through user interaction, CSS or JavaScript without configuration.](https://github.com/aFarkas/lazysizes) 还可以实现blurup效果
+* [verlok/vanilla-lazyload: LazyLoad is a lightweight, flexible script that speeds up your website by deferring the loading of your below-the-fold images, backgrounds, videos, iframes and scripts to when they will enter the viewport. Written in plain "vanilla" JavaScript, it leverages IntersectionObserver, supports responsive images and enables native lazy loading.](https://github.com/verlok/vanilla-lazyload) 
 
 ## PWA@
 * [1.6 你的第一个 PWA · PWA 应用实战](https://lavas-project.github.io/pwa-book/chapter01/6-your-first-pwa.html)
@@ -248,6 +322,8 @@
 * [4.4 Service Worker 调试 · PWA 应用实战](https://lavas-project.github.io/pwa-book/chapter04/4-service-worker-debug.html) Android安装pwa调试
 * [HOME · PWA 应用实战](https://lavas-project.github.io/pwa-book/)
 * [workbox-cli  |  Modules  |  Chrome for Developers](https://developer.chrome.com/docs/workbox/modules/workbox-cli?hl=zh-cn)
+* [安装  |  web.dev](https://web.dev/learn/pwa/installation?hl=zh-cn) iOS可以多次安装pwa
+* [Vue | Frameworks | Vite PWA](https://vite-pwa-org.netlify.app/frameworks/vue.html)检查网站是否更新
 
 ## 动画@animation@animate@
 * [分享八个非常有意思的 Loading 特效（附源码）](https://mp.weixin.qq.com/s?__biz=Mzg2NjY2NTcyNg==&mid=2247495420&idx=1&sn=d3ea7f0c66346dd6cc111a857cabd49f&chksm=ce45fb6df932727be936aa6a29ef1583185ce1f9a805ea986d934574fad1df0bc99fa27b4603&scene=178&cur_album_id=2003210846134419459#rd)
@@ -257,6 +333,7 @@
 * [vueuse/motion: 🤹 Vue Composables putting your components in motion](https://github.com/vueuse/motion)
 * [vue2-更改el-dialog出场动画 - 掘金](https://juejin.cn/post/7109363462463029255)
 * [html - How to use transform:translateX to move a child element horizontally 100% across the parent - Stack Overflow](https://stackoverflow.com/questions/21557476/how-to-use-transformtranslatex-to-move-a-child-element-horizontally-100-across)包一层wrap，移动wrap
+* [michalsnik/aos: Animate on scroll library](https://github.com/michalsnik/aos)超级好用的滑动呈现动画
 * 元素出现时动画
 ```
 img {
@@ -295,9 +372,16 @@ document.addEventListener("DOMContentLoaded", () => {
 * [Snap.svg - Getting Started](http://snapsvg.io/start/) 
 * [SVG+JS path等值变化实现CSS3兴叹的图形动画 « 张鑫旭-鑫空间-鑫生活](https://www.zhangxinxu.com/wordpress/2014/06/svg-path-d-polyline-points-bezier-curves/)
 * [MorphSVG | GSAP | Docs & Learning](https://gsap.com/docs/v3/Plugins/MorphSVGPlugin/)
+* [Quick start | Motion for JavaScript](https://motion.dev/docs/quick-start)
+
+## clipPath@
+* * [Clippy — CSS clip-path maker](https://bennettfeely.com/clippy/)
 
 ## 进度条@
 * [css 渐变实现进度条动画_linear-gradient 动画 animation-CSDN博客](https://blog.csdn.net/sam80000/article/details/110190727)
+
+## cookie@
+* [JSREI/js-cookie-monitor-debugger-hook: js cookie逆向利器：js cookie变动监控可视化工具 & js cookie hook打条件断点](https://github.com/JSREI/js-cookie-monitor-debugger-hook?tab=readme-ov-file)
 
 ## Banner@swiper@
 * [Swiper Vue幻灯片切换组件 | SwiperJS中文网](https://www.swiperjs.net/vue/#virtual-slides)
@@ -307,6 +391,12 @@ document.addEventListener("DOMContentLoaded", () => {
 * [H5 端 rem 适配方案与 viewport 适配 - 耶温 - 博客园](https://www.cnblogs.com/yevin/p/14668202.html)
 * [evrone/postcss-px-to-viewport: A plugin for PostCSS that generates viewport units (vw, vh, vmin, vmax) from pixel units. The best choice to create a scalable interface on different displays by one design size.](https://github.com/evrone/postcss-px-to-viewport)
 * [kaysonli/v-fit-columns: Auto fit el-table-column with cell content.](https://github.com/kaysonli/v-fit-columns)eltable 自适应宽度
+
+## 文件夹内容对比@
+* ```
+rsync -avnc /Users/xxx/Downloads/dist\ 3  /Users/xxx/Desktop/dist
+diff -r '/Users/xxx/Downloads/dist 3' /Users/xxx/Desktop/dist
+ ```
 
 ## Html元素@Html标签@
 * [span与span之间多了一点空白间隔，是什么原因引起的](https://blog.csdn.net/weixin_44730897/article/details/109474429)
@@ -319,6 +409,8 @@ document.addEventListener("DOMContentLoaded", () => {
 ## Debug@
 * [css - Browser developer tools: what is the Position of the HTML element? - Stack Overflow](https://stackoverflow.com/questions/26820942/browser-developer-tools-what-is-the-position-of-the-html-element)打印getBoundingClientRect
 * [查看和更改 CSS  |  Chrome DevTools  |  Chrome for Developers](https://developer.chrome.com/docs/devtools/css?hl=zh-cn)
+* [Chrome DevTools 为混淆的文件添加 SourceMap发布到生产环境的工程常常是经过混淆且不提供 sour - 掘金](https://juejin.cn/post/7135612780006588423)
+* [source-map-visualization](https://sokra.github.io/source-map-visualization/)
 
 ## Vite@
 * [vitejs/awesome-vite: ⚡️ A curated list of awesome things related to Vite.js](https://github.com/vitejs/awesome-vite#plugins)
@@ -344,6 +436,7 @@ document.addEventListener("DOMContentLoaded", () => {
 * [vue3引入使用svg图标 - ProsperousEnding - 博客园](https://www.cnblogs.com/ProsperousEnding/p/17934783.html)
 * [element-plus & unplugin-icons实现任意icon svg自动导入 - 掘金](https://juejin.cn/post/7272566178446180411)
 * [GitHub - JetBrains/svg-sprite-loader: Webpack loader for creating SVG sprites.](https://github.com/JetBrains/svg-sprite-loader) 没有使用过
+
 
 ## 剪切板@clipboard@
 * [JS读取用户粘贴内容，太爽了](https://mp.weixin.qq.com/s/T-KNuQmWC-sPysTMzLAUrA)
@@ -375,9 +468,16 @@ document.addEventListener("DOMContentLoaded", () => {
 ## Office@word@pdf@excel@
 
 * [GitHub - 501351981/vue-office: 支持word(.docx)、excel(.xlsx,.xls)、pdf、pptx等各类型office文件预览的vue组件集合，提供一站式office文件预览方案，支持vue2和3，也支持React等非Vue框架。Web-based pdf, excel, word, pptx preview library](https://github.com/501351981/vue-office)
+* [gitbrent/xlsx-js-style: SheetJS Community Edition + Basic Cell Styles](https://github.com/gitbrent/xlsx-js-style)xlsx导出支持单元格背景色等格式，是基于SheetJS/sheetjs 0.18.5版本修改
+
+## 包体积@
+* [Preact](https://www.preactjs.cn/)react的轻量替代方案
 
 ## 接口@api@
 * [面试官：如何防止接口重复请求？我给出了三个方案！](https://mp.weixin.qq.com/s/-XH1OapHyEOeaz653wwuzQ)
+
+## 文件浏览@
+* [filebrowser/filebrowser: 📂 Web File Browser](https://github.com/filebrowser/filebrowser?tab=readme-ov-file)
 
 ## 控件@
 
@@ -385,6 +485,9 @@ document.addEventListener("DOMContentLoaded", () => {
 * [Home | Owl Carousel | 2.3.4](https://owlcarousel2.github.io/OwlCarousel2/)
 * [slick - the last carousel you'll ever need](https://kenwheeler.github.io/slick/)
 * [Tiny slider](https://ganlanyuan.github.io/tiny-slider/demo/)
+
+### Slider@
+* [noUiSlider - JavaScript Range Slider | Refreshless.com](https://refreshless.com/nouislider/)多滑块slider
 
 ## astro@ssg@ssr@
 * [CSS Styles | Astro Breadcrumbs](https://docs.astro-breadcrumbs.kasimir.dev/styling/css-api/)
@@ -421,8 +524,51 @@ document.addEventListener("DOMContentLoaded", () => {
 * [phpwkhtmltopdf - Wkhtmltopdf does not render Chart.JS 2.5.0 graph - Stack Overflow](https://stackoverflow.com/questions/42561036/wkhtmltopdf-does-not-render-chart-js-2-5-0-graph)
 * [ES6 conversion ES5 (Babel.js online test) js escape js new syntax compatible with old browsers](https://jstool.gitlab.io/babel-es6-to-es5/)
 
+## html转pdf或图片@
+* [将 Flex/CSS 与 wkhtmltopdf 一起使用 - SegmentFault 思否](https://segmentfault.com/q/1010000043113156)
+与 wkhtmltopdf 作用相同的库（即将 HTML 转换为 PDF 的库）有很多，常见的替代方案包括：
+### 1. [WeasyPrint](https://weasyprint.org/)
+- 语言：Python
+- 特点：支持 CSS3，跨平台，易于集成，开源。
+- 适用场景：适合 Python 项目，需要较好 CSS 支持。
+
+### 2. [Puppeteer](https://pptr.dev/) / [playwright](https://playwright.dev/)
+- 语言：Node.js
+- 特点：基于 Chromium，无头浏览器，支持高度自定义渲染和抓取。
+- 适用场景：需要复杂 JS 渲染的网页，或自动化截图/PDF 导出。
+
+### 3. [PrinceXML](https://www.princexml.com/)
+- 语言：独立软件（多语言调用）
+- 特点：商业软件，专业支持，支持高级排版。
+- 适用场景：商业项目，要求高质量 PDF 输出。
+
+### 4. [PDFKit](https://pdfkit.org/)
+- 语言：Node.js
+- 特点：直接生成 PDF，不依赖浏览器，支持自定义内容。
+- 适用场景：需要用脚本生成 PDF，但对 HTML/CSS 支持有限。
+
+### 5. [DomPDF](https://github.com/dompdf/dompdf)
+- 语言：PHP
+- 特点：简单易用，适合 PHP 项目，HTML/CSS 支持有限。
+- 适用场景：PHP 项目。
+
+### 6. [mpdf](https://mpdf.github.io/)
+- 语言：PHP
+- 特点：支持大部分 HTML/CSS，开源，社区活跃。
+- 适用场景：PHP 项目，需要较好 HTML/CSS 支持。
+
+### 7. [jsPDF](https://github.com/parallax/jsPDF)
+
+### 8. [zumerlab/snapdom: snapDOM captures HTML elements to images with exceptional speed and accuracy.](https://github.com/zumerlab/snapdom)
+
+
 ## 数据可视化@
 * [What is D3? | D3 by Observable](https://d3js.org/what-is-d3)
 
 ## shell@
-* find . -maxdepth 1 -name '*pic.jpg' | while read filename; do newfilename=`echo $filename | sed -E 's|\./(..)pic(\.jpg)|\./pic\1\2|'`; echo  mv $filename $newfilename; done | bash
+* `find . -maxdepth 1 -name '*pic.jpg' | while read filename; do newfilename=`echo $filename | sed -E 's|\./(..)pic(\.jpg)|\./pic\1\2|'`; echo  mv $filename $newfilename; done | bash`
+## 技术栈检测@
+* 在线检测工具
+WhatCMS.org - 输入域名自动检测
+BuiltWith.com - 技术栈分析
+Wappalyzer - 浏览器扩展，自动识别技术
