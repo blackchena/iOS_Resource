@@ -23,7 +23,7 @@
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>8FE52B0D-1144-4AC5-A1D6-BBEBA254BAA7</string>
+				<string>0291045E-72D8-401E-9829-207CA4FCA17A</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -43,6 +43,27 @@
 	<string>img2blur</string>
 	<key>objects</key>
 	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>keyword</key>
+				<string>img2blur</string>
+				<key>subtext</key>
+				<string></string>
+				<key>text</key>
+				<string>img2blur</string>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>1033FB99-89EE-462C-8647-C58169584E8F</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
 		<dict>
 			<key>config</key>
 			<dict>
@@ -95,27 +116,6 @@ node index.js $query</string>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>argumenttype</key>
-				<integer>0</integer>
-				<key>keyword</key>
-				<string>img2blur</string>
-				<key>subtext</key>
-				<string></string>
-				<key>text</key>
-				<string>img2blur</string>
-				<key>withspace</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.keyword</string>
-			<key>uid</key>
-			<string>1033FB99-89EE-462C-8647-C58169584E8F</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>autopaste</key>
 				<false/>
 				<key>clipboardtext</key>
@@ -128,7 +128,7 @@ node index.js $query</string>
 			<key>type</key>
 			<string>alfred.workflow.output.clipboard</string>
 			<key>uid</key>
-			<string>8FE52B0D-1144-4AC5-A1D6-BBEBA254BAA7</string>
+			<string>0291045E-72D8-401E-9829-207CA4FCA17A</string>
 			<key>version</key>
 			<integer>3</integer>
 		</dict>
@@ -137,6 +137,13 @@ node index.js $query</string>
 	<string></string>
 	<key>uidata</key>
 	<dict>
+		<key>0291045E-72D8-401E-9829-207CA4FCA17A</key>
+		<dict>
+			<key>xpos</key>
+			<real>495</real>
+			<key>ypos</key>
+			<real>195</real>
+		</dict>
 		<key>1033FB99-89EE-462C-8647-C58169584E8F</key>
 		<dict>
 			<key>xpos</key>
@@ -147,14 +154,7 @@ node index.js $query</string>
 		<key>7DD3BDE5-A157-42E5-9376-F681FB50A4EE</key>
 		<dict>
 			<key>xpos</key>
-			<real>255</real>
-			<key>ypos</key>
-			<real>190</real>
-		</dict>
-		<key>8FE52B0D-1144-4AC5-A1D6-BBEBA254BAA7</key>
-		<dict>
-			<key>xpos</key>
-			<real>440</real>
+			<real>260</real>
 			<key>ypos</key>
 			<real>190</real>
 		</dict>

@@ -4,18 +4,27 @@ import path from "path";
 import alfy from "alfy";
 import { getPlaiceholder } from "plaiceholder";
 import os from "os";
+import sharp from "sharp";
 
 const inputPath = process.argv[2];
 const imageBuffer = fs.readFileSync(inputPath);
 try {
   const { base64 } = await getPlaiceholder(imageBuffer);
-  const tempFilePath = saveBase64AsImage(base64, "plaiceholder.png");
+  const tempFilePath = await saveBase64AsImage(base64, "plaiceholder.jpg");
   alfy.output([
     {
-      uid: "plaiceholder",
-      title: "Plaiceholder",
+      uid: "base64",
+      title: "base64",
       subtitle: base64,
       arg: base64,
+      icon: { type: "file", path: tempFilePath },
+      valid: true,
+    },
+    {
+      uid: "jpg",
+      title: "jpg",
+      subtitle: "jpg",
+      arg: tempFilePath,
       icon: { type: "file", path: tempFilePath },
       valid: true,
     },
@@ -33,14 +42,16 @@ try {
 }
 
 // 将 base64 转换为临时文件
-function saveBase64AsImage(base64String, filename) {
+async function saveBase64AsImage(base64String, filename) {
   // 移除 MIME 前缀 (data:image/png;base64,)
   base64String = base64String.replace(/^data:image\/[a-z]+;base64,/, "");
   const buffer = Buffer.from(base64String, "base64");
   const tempDir = os.tmpdir();
   const filePath = path.join(tempDir, filename);
-
-  fs.writeFileSync(filePath, buffer);
+  // 使用Sharp直接转换为JPG
+  await sharp(buffer)
+    .jpeg({ quality: 80 })
+    .toFile(filePath);
   return filePath;
 }
 
