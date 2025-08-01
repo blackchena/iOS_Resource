@@ -368,6 +368,8 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 ```
+* [The Spinner CSS Loaders Collection](https://css-loaders.com/spinner/)loading样式
+
 * [⭐ SVG 变形动画（Morphing） | SVG 动画开发实战](https://svg-animation-booklet.vercel.app/chapter7.html#%E5%A4%9A%E4%B8%AA%E5%8F%98%E6%8D%A2)
 * [Snap.svg - Getting Started](http://snapsvg.io/start/) 
 * [SVG+JS path等值变化实现CSS3兴叹的图形动画 « 张鑫旭-鑫空间-鑫生活](https://www.zhangxinxu.com/wordpress/2014/06/svg-path-d-polyline-points-bezier-curves/)
@@ -405,6 +407,7 @@ diff -r '/Users/xxx/Downloads/dist 3' /Users/xxx/Desktop/dist
 
 * [如果prettier开启options.editorconfig不会采用user setting中的prettier配置](https://prettier.io/docs/en/api.html)------[prettier格式化不生效 单引号无效 - shanjinghao - 博客园](https://www.cnblogs.com/shanjinghao/p/12764984.html)
 * [VSCode 利用 Snippets 设置超实用的代码块 - 掘金](https://juejin.cn/post/6844903869424599053)
+* [vscode中如何调试nextjs](https://www.52interview.com/solutions/84)
 
 ## Debug@
 * [css - Browser developer tools: what is the Position of the HTML element? - Stack Overflow](https://stackoverflow.com/questions/26820942/browser-developer-tools-what-is-the-position-of-the-html-element)打印getBoundingClientRect
