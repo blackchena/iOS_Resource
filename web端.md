@@ -48,6 +48,9 @@
 * [Creating a Dynamic Breadcrumb Component in a Next.js App Router | by Kristian Cabading | Medium](https://medium.com/@kcabading/creating-a-breadcrumb-component-in-a-next-js-app-router-a0ea24cdb91a)
 * [Why do Client Components get SSR'd to HTML? · reactwg/server-components · Discussion #4](https://github.com/reactwg/server-components/discussions/4)客户端组件在服务端也会被渲染
 * [next.config.js: output | Next.js](https://nextjs.org/docs/app/api-reference/config/next-config-js/output) 打包模式配置文档
+* [What are the best open source projects to learn Next.js : r/nextjs](https://www.reddit.com/r/nextjs/comments/19c71ld/comment/kixk24n/?utm_source=share&utm_medium=web2x&context=3)开源项目plane
+* [isomorphic-dompurify - npm](https://www.npmjs.com/package/isomorphic-dompurify)dompurify server version
+* [javascript - Next.js DOMPurify.sanitize() shows TypeError: dompurify__WEBPACK_IMPORTED_MODULE_6___default.a.sanitize is not a function - Stack Overflow](https://stackoverflow.com/questions/65646007/next-js-dompurify-sanitize-shows-typeerror-dompurify-webpack-imported-module)
 
 
 ## 环境搭建@
@@ -119,6 +122,7 @@
 * [calcom/cal.com: Scheduling infrastructure for absolutely everyone.](https://github.com/calcom/cal.com)开源的日程安排和会议预约系统
 * [CRMS Projects Source Code- Explore New Coding Skills](https://opensourcecollection.com/crms-projects)
 * [themeselection/materio-mui-nextjs-admin-template-free: An enterprise-grade Next.js admin dashboard template. Made with developer experience first: Next.js v14 (App Router), Material UI (MUI), Tailwind CSS, TypeScript, ESLint, Prettier, VSCode Configs !! 🚀](https://github.com/themeselection/materio-mui-nextjs-admin-template-free)
+* [josdejong/jsoneditor: A web-based tool to view, edit, format, and validate JSON](https://github.com/josdejong/jsoneditor)
 
 ### 组件库@
 * [shadcn-ui/ui: Beautifully designed components that you can copy and paste into your apps. Accessible. Customizable. Open Source.](https://github.com/shadcn-ui/ui)不需要npm安装，修改源码更容易
@@ -129,6 +133,9 @@
 * [Button | Semantic UI](https://semantic-ui.com/elements/button.html)
 * [Image | HeroUI (Previously NextUI) - Beautiful, fast and modern React UI Library](https://www.heroui.com/docs/components/image)
 * [React Menu component - Material UI](https://mui.com/material-ui/react-menu/)
+* [React Bits - Split Text](https://reactbits.dev/text-animations/split-text)
+* [Vue Bits - Animated UI Components For Vue](https://vue-bits.dev/)
+* [Headless UI - Unstyled, fully accessible UI components](https://headlessui.com/)
 
 ### 检索@
 * [Search - CodeSandbox](https://codesandbox.io/search?query=Blurhash&page=1&configure%5BhitsPerPage%5D=12)
@@ -168,6 +175,9 @@
 * [eBay/nice-modal-react：React 的模态状态管理器。](https://github.com/eBay/nice-modal-react#)有点像函数式弹窗，但是其实不是
 * [blog/markdown/elementUI 源码-打造自己的组件库，系列四：Dialog组件.md at main · xy-sea/blog](https://github.com/xy-sea/blog/blob/main/markdown/elementUI%20%E6%BA%90%E7%A0%81-%E6%89%93%E9%80%A0%E8%87%AA%E5%B7%B1%E7%9A%84%E7%BB%84%E4%BB%B6%E5%BA%93%EF%BC%8C%E7%B3%BB%E5%88%97%E5%9B%9B%EF%BC%9ADialog%E7%BB%84%E4%BB%B6.md)
 * [imengyu/vue3-context-menu: A very simple context menu component for Vue3 一个简洁美观简单的Vue3右键菜单组件](https://github.com/imengyu/vue3-context-menu) 右键菜单
+
+###解决方案@
+* [有意思的水平横向溢出滚动 - ChokCoco - 博客园](https://www.cnblogs.com/coco1s/p/16663752.html)鼠标水平滚动
 
 #### 旋转木马@carousel@
 * [slick - the last carousel you'll ever need](https://kenwheeler.github.io/slick/)
@@ -234,6 +244,11 @@
 * [other](https://picjumbo.com)
 * [TinyPNG – Compress WebP, PNG and JPEG images intelligently](https://tinypng.com/)图片压缩
 * [模板王 - 10000+免费网页模板,网站模板下载大全](https://www.mobanwang.com/)
+* [Combining Images, Data and Intelligence to Transform Your Business](https://www.imgix.com/)图片马赛克
+
+### svg@
+* [tanem/react-svg: :art: A React component that injects SVG into the DOM.](https://github.com/tanem/react-svg)
+* [Next.js - SVGR](https://react-svgr.com/docs/next/)
 
 ## Typescript@TS@
 
@@ -262,6 +277,9 @@
 * [6 月新增 Web 平台  |  Blog  |  web.dev](https://web.dev/blog/web-platform-06-2024?hl=zh-cn)里面提到@view-transition
 * [页面级可视动画View Transitions API初体验 « 张鑫旭-鑫空间-鑫生活](https://www.zhangxinxu.com/wordpress/2024/08/view-transitions-api/)//主题模式切换遮罩动画原理
 * [Next.js View Transitions](https://next-view-transitions.vercel.app/)
+
+## 主题@
+* [pacocoursey/next-themes: Perfect Next.js dark mode in 2 lines of code. Support System preference and any other theme with no flashing](https://github.com/pacocoursey/next-themes?tab=readme-ov-file)
 
 ## cms@wordpress@
 * [如何添加WordPress的目录：2种简单的方法和最好的插件如何添加WordPress的目录。2个简单的方法和最好的插件 - 掘金](https://juejin.cn/post/7130977891885514782)
@@ -295,9 +313,14 @@
 * [css - Duplicating an element (and its style) with JavaScript - Stack Overflow](https://stackoverflow.com/questions/1848445/duplicating-an-element-and-its-style-with-javascript)//拷贝element和其样式
 
 
-## 字体@描边@渐变@阴影@
+## 字体@描边@渐变@阴影@渐变边框@
 * [CSS和SVG实现文字渐变、描边、投影在一些 web 活动页中经常能看到特殊处理的标题文字，比如这样的 暂时忽略掉特殊字 - 掘金](https://juejin.cn/post/7010944239609577508)
 * [不要图片？CSS实现圆角边框渐变色+背景透明前言 👏不要图片？CSS实现圆角边框渐变色+背景透明，最近在工作中常常实现 - 掘金](https://juejin.cn/post/7240458275269984314)完美
+* [CSS实现渐变圆角边框利用 css 的属性 mask、mask-composite，实现带有圆角、渐变、且内容背景透明的 - 掘金](https://juejin.cn/post/7288568920051056697)
+* [巧妙实现带圆角的渐变边框 - ChokCoco - 博客园](https://www.cnblogs.com/coco1s/p/12321837.html)
+
+## 低代码@
+* [react-dnd 从入门到手写低代码编辑器拖拽是常见的需求，在 react 里我们会用 react-dnd 来做。 不 - 掘金](https://juejin.cn/post/7274140856034017332)
 
 ## 图片处理@
 * [GitHub - Jacksgong/webp-converter: Converter PNG/JPG to Webp and scan all changes](https://github.com/Jacksgong/webp-converter)
@@ -408,6 +431,7 @@ diff -r '/Users/xxx/Downloads/dist 3' /Users/xxx/Desktop/dist
 * [如果prettier开启options.editorconfig不会采用user setting中的prettier配置](https://prettier.io/docs/en/api.html)------[prettier格式化不生效 单引号无效 - shanjinghao - 博客园](https://www.cnblogs.com/shanjinghao/p/12764984.html)
 * [VSCode 利用 Snippets 设置超实用的代码块 - 掘金](https://juejin.cn/post/6844903869424599053)
 * [vscode中如何调试nextjs](https://www.52interview.com/solutions/84)
+* [我真是被几百个 page.js 文件搞得一头雾水，还很烦。我知道 vscode 有“模糊搜索”功能，所以“cat/page”应该能用，但当同一个工作区里有多个项目的时候，就还是让人很困惑，而且不准确。有什么解决办法吗？ : r/nextjs](https://www.reddit.com/r/nextjs/comments/1glmmkz/im_so_confused_and_irritated_by_having_hundreds/?tl=zh-hans)index tab显示不够直观
 
 ## Debug@
 * [css - Browser developer tools: what is the Position of the HTML element? - Stack Overflow](https://stackoverflow.com/questions/26820942/browser-developer-tools-what-is-the-position-of-the-html-element)打印getBoundingClientRect

@@ -1258,6 +1258,7 @@ python3 build-system/Make/Make.py \
 * [iOS scrollView嵌套tableView的手势冲突解决方案](https://www.jianshu.com/p/8bf6c2953da3)
 * [完美解决UIScrollView嵌套滑动手势冲突](http://www.cocoachina.com/ios/20180508/23314.html)
 * [Advanced Scrollviews and Touch Handling Techniques](https://developer.apple.com/videos/play/wwdc2014/235/)
+* [Advanced Scrollviews and Touch Handling Techniques | Documentation](https://wwdcnotes.com/documentation/wwdcnotes/wwdc14-235-advanced-scrollviews-and-touch-handling-techniques/)添加panGesture到其它视图
 * [iOS UIScrollView 动画的力学原理](https://mp.weixin.qq.com/s/5JSiTywD0r3_O7l2OxWZxw)
 * [iOS开发实战 - 完美解决UIScrollView嵌套滑动手势冲突 - 简书](https://www.jianshu.com/p/b0bf2bb0e129)
 * [嵌套UIScrollview的滑动冲突解决方案 - 简书](https://www.jianshu.com/p/040772693872)//没故事的卓同学
@@ -2448,6 +2449,7 @@ echo -e "$text" # 111[换行]222[换行]333
 `# 找到某个功能特性最初是在哪个分支开发的 git branch -a --contains <feature-commit> --sort=committerdateƒ`
 * 控制台显示不下，输出到文件查看，使用 col 命令清理退格符0x08（推荐） git log --help | col -b > clean_text.txt
 * git branch -a | xargs -t -n1  git -P log -1 -G 'xxxx' 在所有分支最新的提交中查找字符串
+* 将工作区代码恢复到某次提交：`git restore --worktree --source=[hash] -- .`
 
 ## 加密@解密@
 
