@@ -19,6 +19,19 @@
 				<false/>
 			</dict>
 		</array>
+		<key>96FB33BE-FB48-4CCE-9BC1-1BFE4E82F11A</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>D47F0A59-FBE4-4D8D-9647-81A4D2232463</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 	</dict>
 	<key>createdby</key>
 	<string>black</string>
@@ -36,11 +49,11 @@
 				<key>argumenttype</key>
 				<integer>0</integer>
 				<key>keyword</key>
-				<string>dec</string>
+				<string>endec</string>
 				<key>subtext</key>
-				<string>decode</string>
+				<string>encode decode base64 | urlencode</string>
 				<key>text</key>
-				<string>decode</string>
+				<string>encode decode base64 | urlencode</string>
 				<key>withspace</key>
 				<true/>
 			</dict>
@@ -98,6 +111,25 @@
 			<key>version</key>
 			<integer>3</integer>
 		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>autopaste</key>
+				<false/>
+				<key>clipboardtext</key>
+				<string>{query}</string>
+				<key>ignoredynamicplaceholders</key>
+				<false/>
+				<key>transient</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.clipboard</string>
+			<key>uid</key>
+			<string>D47F0A59-FBE4-4D8D-9647-81A4D2232463</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
 	</array>
 	<key>readme</key>
 	<string></string>
@@ -116,6 +148,13 @@
 			<real>380</real>
 			<key>ypos</key>
 			<real>70</real>
+		</dict>
+		<key>D47F0A59-FBE4-4D8D-9647-81A4D2232463</key>
+		<dict>
+			<key>xpos</key>
+			<real>675</real>
+			<key>ypos</key>
+			<real>75</real>
 		</dict>
 	</dict>
 	<key>userconfigurationconfig</key>

@@ -115,6 +115,7 @@ function processAlfredInput(input) {
         icon: {
           path: "/System/Library/CoreServices/CoreTypes.bundle/Contents/Resources/GenericDocumentIcon.icns",
         },
+        arg: decoded,
         text: {
           copy: decoded,
           largetype: decoded,
@@ -143,6 +144,7 @@ function processAlfredInput(input) {
         icon: {
           path: "/System/Library/CoreServices/CoreTypes.bundle/Contents/Resources/GenericDocumentIcon.icns",
         },
+        arg: decoded,
         text: {
           copy: decoded,
           largetype: decoded,
@@ -167,6 +169,7 @@ function processAlfredInput(input) {
       title: "Encode to Base64",
       subtitle: base64Encoded,
       valid: true,
+      arg: base64Encoded,
       icon: {
         path: "/System/Library/CoreServices/CoreTypes.bundle/Contents/Resources/GenericDocumentIcon.icns",
       },
@@ -195,6 +198,7 @@ function processAlfredInput(input) {
       icon: {
         path: "/System/Library/CoreServices/CoreTypes.bundle/Contents/Resources/GenericDocumentIcon.icns",
       },
+      arg: urlEncoded,
       text: {
         copy: urlEncoded,
         largetype: urlEncoded,
