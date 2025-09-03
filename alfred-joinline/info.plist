@@ -6,19 +6,6 @@
 	<string></string>
 	<key>connections</key>
 	<dict>
-		<key>15299C7A-CDEA-4359-8898-446F2892DB7C</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>96FB33BE-FB48-4CCE-9BC1-1BFE4E82F11A</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
 		<key>96FB33BE-FB48-4CCE-9BC1-1BFE4E82F11A</key>
 		<array>
 			<dict>
@@ -36,34 +23,13 @@
 	<key>createdby</key>
 	<string>black</string>
 	<key>description</key>
-	<string>编码解码</string>
+	<string>多行变一行</string>
 	<key>disabled</key>
 	<false/>
 	<key>name</key>
-	<string>EncDec</string>
+	<string>JoinLine</string>
 	<key>objects</key>
 	<array>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argumenttype</key>
-				<integer>0</integer>
-				<key>keyword</key>
-				<string>endec</string>
-				<key>subtext</key>
-				<string>encode decode base64 | urlencode</string>
-				<key>text</key>
-				<string>encode decode base64 | urlencode</string>
-				<key>withspace</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.keyword</string>
-			<key>uid</key>
-			<string>15299C7A-CDEA-4359-8898-446F2892DB7C</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
 		<dict>
 			<key>config</key>
 			<dict>
@@ -76,9 +42,11 @@
 				<key>argumenttrimmode</key>
 				<integer>0</integer>
 				<key>argumenttype</key>
-				<integer>0</integer>
+				<integer>1</integer>
 				<key>escaping</key>
 				<integer>102</integer>
+				<key>keyword</key>
+				<string>joinline</string>
 				<key>queuedelaycustom</key>
 				<integer>3</integer>
 				<key>queuedelayimmediatelyinitially</key>
@@ -88,7 +56,7 @@
 				<key>queuemode</key>
 				<integer>1</integer>
 				<key>runningsubtext</key>
-				<string></string>
+				<string>joinline</string>
 				<key>script</key>
 				<string>node index.js $1</string>
 				<key>scriptargtype</key>
@@ -96,7 +64,7 @@
 				<key>scriptfile</key>
 				<string></string>
 				<key>subtext</key>
-				<string></string>
+				<string>joinline</string>
 				<key>title</key>
 				<string></string>
 				<key>type</key>
@@ -135,13 +103,6 @@
 	<string></string>
 	<key>uidata</key>
 	<dict>
-		<key>15299C7A-CDEA-4359-8898-446F2892DB7C</key>
-		<dict>
-			<key>xpos</key>
-			<real>50</real>
-			<key>ypos</key>
-			<real>70</real>
-		</dict>
 		<key>96FB33BE-FB48-4CCE-9BC1-1BFE4E82F11A</key>
 		<dict>
 			<key>xpos</key>

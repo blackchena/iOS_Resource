@@ -1,85 +1,62 @@
 #!/usr/bin/env node
 import alfy from "alfy";
+import { execSync } from "child_process";
 
-// Function to encode text to base64
-function encodeBase64(text) {
+// Function to get clipboard content
+function getClipboardContent() {
   try {
-    return Buffer.from(text, 'utf8').toString('base64');
+    return execSync('pbpaste', { encoding: 'utf8' });
   } catch (error) {
-    throw new Error(`Base64 encoding failed: ${error.message}`);
+    throw new Error(`Failed to get clipboard content: ${error.message}`);
   }
 }
 
-// Function to decode base64 to text
-function decodeBase64(base64String) {
+// Function to join lines and trim whitespace
+function joinLines(text) {
   try {
-    return Buffer.from(base64String, 'base64').toString('utf8');
+    // Split by newlines, trim each line, filter out empty lines, then join with space
+    const lines = text
+      .split(/\r?\n/)
+      .map(line => line.trim())
+      .filter(line => line.length > 0)
+      .join(' ');
+    
+    return lines;
   } catch (error) {
-    throw new Error(`Base64 decoding failed: ${error.message}`);
+    throw new Error(`Line joining failed: ${error.message}`);
   }
-}
-
-// Function to URL encode text
-function urlEncode(text) {
-  try {
-    return encodeURIComponent(text);
-  } catch (error) {
-    throw new Error(`URL encoding failed: ${error.message}`);
-  }
-}
-
-// Function to URL decode text
-function urlDecode(encodedText) {
-  try {
-    return decodeURIComponent(encodedText);
-  } catch (error) {
-    throw new Error(`URL decoding failed: ${error.message}`);
-  }
-}
-
-// Function to detect if text is base64 encoded
-function isBase64(text) {
-  try {
-    // Check if it's valid base64
-    const decoded = Buffer.from(text, 'base64');
-    const reEncoded = decoded.toString('base64');
-    return reEncoded === text;
-  } catch {
-    return false;
-  }
-}
-
-// Function to detect if text is URL encoded
-function isUrlEncoded(text) {
-  return text.includes('%') && /%[0-9A-Fa-f]{2}/.test(text);
 }
 
 // Function to show help
 function showHelp() {
   return [
     {
-      title: "Base64 & URL Encoder/Decoder",
-      subtitle: "Encode and decode base64 and URL encoding",
+      title: "Join Lines Tool",
+      subtitle: "Merge multiple lines of text into a single line and remove leading/trailing spaces",
       valid: false,
       icon: {
         path: alfy.icon.question,
       },
       text: {
         copy: `Usage:
-  node index.js <text>
+  node index.js [text]
 
 Examples:
-  node index.js "Hello World"
-  node index.js "SGVsbG8gV29ybGQ="
-  node index.js "Hello%20World"
+  node index.js                    # Uses clipboard content
+  node index.js "Line 1
+Line 2
+Line 3"                           # Uses provided text
+  
+  Result: "Line 1 Line 2 Line 3"
 
 Features:
-  - Auto-detect and decode base64 strings
-  - Auto-detect and decode URL encoded strings
-  - Encode text to base64
-  - Encode text to URL format
+  - Default: reads from clipboard
+  - Merge multiple lines into a single line
+  - Remove leading and trailing spaces from each line
+  - Filter out empty lines
+  - Join lines with a single space
   - Copy results to clipboard`,
-        largetype: "Base64 & URL Encoder/Decoder - Encode and decode text",
+        largetype: "Join Lines Tool - Merge multiple lines into one",
       },
     },
   ];
@@ -92,8 +69,8 @@ function processAlfredInput(input) {
   if (!input || input.trim() === '') {
     return [
       {
-        title: "Please provide text to encode/decode",
-        subtitle: "Enter text, base64 string, or URL encoded string",
+        title: "Clipboard is empty or no text provided",
+        subtitle: "Copy some multiline text to clipboard or provide text as argument",
         valid: false,
         icon: {
           path: "/System/Library/CoreServices/CoreTypes.bundle/Contents/Resources/AlertNoteIcon.icns",
@@ -102,111 +79,42 @@ function processAlfredInput(input) {
     ];
   }
 
-  const trimmedInput = input.trim();
-
-  // Check if input is base64 encoded
-  if (isBase64(trimmedInput)) {
-    try {
-      const decoded = decodeBase64(trimmedInput);
+  try {
+    const joinedText = joinLines(input);
+    
+    // If the result is the same as input (single line), show a different message
+    if (joinedText === input.trim()) {
       results.push({
-        title: "Base64 Decoded",
-        subtitle: decoded,
+        title: "Text is already a single line",
+        subtitle: "No changes needed - text is already joined",
         valid: true,
         icon: {
           path: "/System/Library/CoreServices/CoreTypes.bundle/Contents/Resources/GenericDocumentIcon.icns",
         },
-        arg: decoded,
+        arg: joinedText,
         text: {
-          copy: decoded,
-          largetype: decoded,
+          copy: joinedText,
+          largetype: joinedText,
         },
       });
-    } catch (error) {
+    } else {
       results.push({
-        title: "Base64 Decode Failed",
-        subtitle: error.message,
-        valid: false,
-        icon: {
-          path: "/System/Library/CoreServices/CoreTypes.bundle/Contents/Resources/AlertStopIcon.icns",
-        },
-      });
-    }
-  }
-
-  // Check if input is URL encoded
-  if (isUrlEncoded(trimmedInput)) {
-    try {
-      const decoded = urlDecode(trimmedInput);
-      results.push({
-        title: "URL Decoded",
-        subtitle: decoded,
+        title: "Lines Joined",
+        subtitle: joinedText,
         valid: true,
         icon: {
           path: "/System/Library/CoreServices/CoreTypes.bundle/Contents/Resources/GenericDocumentIcon.icns",
         },
-        arg: decoded,
+        arg: joinedText,
         text: {
-          copy: decoded,
-          largetype: decoded,
-        },
-      });
-    } catch (error) {
-      results.push({
-        title: "URL Decode Failed",
-        subtitle: error.message,
-        valid: false,
-        icon: {
-          path: "/System/Library/CoreServices/CoreTypes.bundle/Contents/Resources/AlertStopIcon.icns",
+          copy: joinedText,
+          largetype: joinedText,
         },
       });
     }
-  }
-
-  // Always provide encoding options for the input
-  try {
-    const base64Encoded = encodeBase64(trimmedInput);
-    results.push({
-      title: "Encode to Base64",
-      subtitle: base64Encoded,
-      valid: true,
-      arg: base64Encoded,
-      icon: {
-        path: "/System/Library/CoreServices/CoreTypes.bundle/Contents/Resources/GenericDocumentIcon.icns",
-      },
-      text: {
-        copy: base64Encoded,
-        largetype: base64Encoded,
-      },
-    });
   } catch (error) {
     results.push({
-      title: "Base64 Encode Failed",
-      subtitle: error.message,
-      valid: false,
-      icon: {
-        path: "/System/Library/CoreServices/CoreTypes.bundle/Contents/Resources/AlertStopIcon.icns",
-      },
-    });
-  }
-
-  try {
-    const urlEncoded = urlEncode(trimmedInput);
-    results.push({
-      title: "Encode to URL",
-      subtitle: urlEncoded,
-      valid: true,
-      icon: {
-        path: "/System/Library/CoreServices/CoreTypes.bundle/Contents/Resources/GenericDocumentIcon.icns",
-      },
-      arg: urlEncoded,
-      text: {
-        copy: urlEncoded,
-        largetype: urlEncoded,
-      },
-    });
-  } catch (error) {
-    results.push({
-      title: "URL Encode Failed",
+      title: "Line Joining Failed",
       subtitle: error.message,
       valid: false,
       icon: {
@@ -221,6 +129,7 @@ function processAlfredInput(input) {
 // Main execution
 function main() {
   let results = [];
+  let inputText = '';
 
   if (process.argv.length > 2) {
     const arg = process.argv[2];
@@ -229,12 +138,33 @@ function main() {
     if (arg === "--help" || arg === "-h" || arg === "help") {
       results = showHelp();
     } else {
-      // Process the input text
-      results = processAlfredInput(arg);
+      // Use provided text
+      inputText = arg;
+      results = processAlfredInput(inputText);
     }
   } else {
-    // Process Alfred input
-    results = processAlfredInput(alfy.input);
+    // Try to get input from Alfred first, then fallback to clipboard
+    if (alfy.input && alfy.input.trim() !== '') {
+      inputText = alfy.input;
+    } else {
+      try {
+        inputText = getClipboardContent();
+      } catch (error) {
+        results = [
+          {
+            title: "Failed to get clipboard content",
+            subtitle: error.message,
+            valid: false,
+            icon: {
+              path: "/System/Library/CoreServices/CoreTypes.bundle/Contents/Resources/AlertStopIcon.icns",
+            },
+          },
+        ];
+        alfy.output(results);
+        return;
+      }
+    }
+    results = processAlfredInput(inputText);
   }
 
   // Output results to Alfred
