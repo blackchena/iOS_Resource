@@ -24,6 +24,7 @@
 * [snooze92/alfred-epoch-converter: Makes it easy to work with epoch timestamps!](https://github.com/snooze92/alfred-epoch-converter) 时间戳
 * [cage1016/alfred-devtoys: A Swiss Army knife for developers for Alfred](https://github.com/cage1016/alfred-devtoys)多种工具集的workflow[Devtoys - A Swiss Army knife for developers for Alfred - Share your Workflows - Alfred App Community Forum](https://www.alfredforum.com/topic/18714-devtoys-a-swiss-army-knife-for-developers-for-alfred/#comment-97444)
 * [LeEnno/alfred-terminalfinder: Alfred workflow to open current Finder window in Terminal/iTerm and vice versa.](https://github.com/LeEnno/alfred-terminalfinder)
+* [Script Filter JSON Format - Alfred Help and Support](https://www.alfredapp.com/help/workflows/inputs/script-filter/json/)
 
 
 ## 科学的查资料@
@@ -531,6 +532,7 @@ ar -rc libgocssl.a gmssl.o //压缩为静态库
 * [HookZzModules/AntiDebugBypass at master · jmpews/HookZzModules](https://github.com/jmpews/HookZzModules/tree/master/AntiDebugBypass)
 
 ## 越狱@jailbreak@
+* [Home | ios砸壳分享网](https://pan.lhd8.cn/)
 * [iOS 越狱的Tweak开发](https://yohunl.com/ios-yue-yu-de-tweakkai-fa/)
 * [手把手教你制作一款iOS越狱App](https://github.com/jackrex/FakeWeChatLoc)
 * [IOS应用砸壳之frida-ios-dump - PaperPen - 博客园](https://www.cnblogs.com/paperpen/p/14845675.html)//frida是在pyenv里面bin去直接执行的 因为没有配置PATH
@@ -595,6 +597,7 @@ scp -P 2222 ./dumpdecrypted.dylib root@127.0.0.1:/tmp
 * [MacPaw/OpenAI: Swift community driven package for OpenAI public API](https://github.com/MacPaw/OpenAI)
 * [Licoy/ChatGPT-Midjourney: 🍭 一键拥有你自己的 ChatGPT+Midjourney 网页服务 | Own your own ChatGPT+Midjourney web service with one click](https://github.com/Licoy/ChatGPT-Midjourney/tree/master)
 * [f/awesome-chatgpt-prompts: This repo includes ChatGPT prompt curation to use ChatGPT better.](https://github.com/f/awesome-chatgpt-prompts)
+* [chatanywhere/GPT_API_free: Free ChatGPT&DeepSeek API Key，免费ChatGPT&DeepSeek API。免费接入DeepSeek API和GPT4 API，支持 gpt | deepseek | claude | gemini | grok 等排名靠前的常用大模型。](https://github.com/chatanywhere/GPT_API_free?tab=readme-ov-file)
 
 ## 证书 HTTPS
 * [证书链-Digital Certificates](http://www.jianshu.com/p/46e48bc517d0)

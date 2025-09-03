@@ -123,6 +123,7 @@
 * [CRMS Projects Source Code- Explore New Coding Skills](https://opensourcecollection.com/crms-projects)
 * [themeselection/materio-mui-nextjs-admin-template-free: An enterprise-grade Next.js admin dashboard template. Made with developer experience first: Next.js v14 (App Router), Material UI (MUI), Tailwind CSS, TypeScript, ESLint, Prettier, VSCode Configs !! 🚀](https://github.com/themeselection/materio-mui-nextjs-admin-template-free)
 * [josdejong/jsoneditor: A web-based tool to view, edit, format, and validate JSON](https://github.com/josdejong/jsoneditor)
+* [beikeshop/beikeshop: 🔥🔥🔥 Free open source and easy-to-use laravel eCommerce platform, Base on the Laravel . It supports multiple languages and currencies, integrates ChatGPT OpenAI. The platform features customizable visual design and a rich plugins on marketplace.](https://github.com/beikeshop/beikeshop)开源电商vue + Laravel php
 
 ### 组件库@
 * [shadcn-ui/ui: Beautifully designed components that you can copy and paste into your apps. Accessible. Customizable. Open Source.](https://github.com/shadcn-ui/ui)不需要npm安装，修改源码更容易
@@ -245,10 +246,13 @@
 * [TinyPNG – Compress WebP, PNG and JPEG images intelligently](https://tinypng.com/)图片压缩
 * [模板王 - 10000+免费网页模板,网站模板下载大全](https://www.mobanwang.com/)
 * [Combining Images, Data and Intelligence to Transform Your Business](https://www.imgix.com/)图片马赛克
+* [littleHiuman/Copyright-free-picture-website: 无版权图片网站（收集）](https://github.com/littleHiuman/Copyright-free-picture-website?tab=readme-ov-file)
 
 ### svg@
 * [tanem/react-svg: :art: A React component that injects SVG into the DOM.](https://github.com/tanem/react-svg)
 * [Next.js - SVGR](https://react-svgr.com/docs/next/)
+* [SVG Path Visualizer](https://svg-path-visualizer.netlify.app/)
+* [SvgPathEditor](https://yqnn.github.io/svg-path-editor/) drawer
 
 ## Typescript@TS@
 
