@@ -233,6 +233,7 @@
 * [60+ Free HTML Website Templates - Responsive & Mobile Ready](https://www.tooplate.com/)
 * [Themes | Astro](https://astro.build/themes/)
 * [One Page Love - One Page Website Inspiration and Templates](https://onepagelove.com/page/7)
+* [Winning websites. Web Design Inspiration - Awwwards](https://www.awwwards.com/websites/) 比较好的设计网站
 
 ## html避免写重复代码@
 * [.svelte files • Docs • Svelte](https://svelte.dev/docs/svelte/svelte-files)
@@ -403,6 +404,9 @@ document.addEventListener("DOMContentLoaded", () => {
 * [MorphSVG | GSAP | Docs & Learning](https://gsap.com/docs/v3/Plugins/MorphSVGPlugin/)
 * [Quick start | Motion for JavaScript](https://motion.dev/docs/quick-start)
 
+## prompt@
+* [share-best-prompt/Same.dev/Same.dev Prompt_v20250325.txt at main · shareAI-lab/share-best-prompt](https://github.com/shareAI-lab/share-best-prompt/blob/main/Same.dev/Same.dev%20Prompt_v20250325.txt)mock
+
 ## clipPath@
 * * [Clippy — CSS clip-path maker](https://bennettfeely.com/clippy/)
 
@@ -411,6 +415,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
 ## cookie@
 * [JSREI/js-cookie-monitor-debugger-hook: js cookie逆向利器：js cookie变动监控可视化工具 & js cookie hook打条件断点](https://github.com/JSREI/js-cookie-monitor-debugger-hook?tab=readme-ov-file)
+
+## Hook@
+* [juliencrn/usehooks-ts: React hook library, ready to use, written in Typescript.](https://github.com/juliencrn/usehooks-ts)
+* [rehooks/awesome-react-hooks: Awesome React Hooks](https://github.com/rehooks/awesome-react-hooks?tab=readme-ov-file)
 
 ## Banner@swiper@
 * [Swiper Vue幻灯片切换组件 | SwiperJS中文网](https://www.swiperjs.net/vue/#virtual-slides)
