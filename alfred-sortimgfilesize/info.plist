@@ -4,6 +4,8 @@
 <dict>
 	<key>bundleid</key>
 	<string></string>
+	<key>category</key>
+	<string>Tools</string>
 	<key>connections</key>
 	<dict>
 		<key>96FB33BE-FB48-4CCE-9BC1-1BFE4E82F11A</key>
@@ -23,13 +25,32 @@
 	<key>createdby</key>
 	<string>black</string>
 	<key>description</key>
-	<string>多行变一行</string>
+	<string>从大小获取文件家中所有图片列表</string>
 	<key>disabled</key>
 	<false/>
 	<key>name</key>
-	<string>JoinLine</string>
+	<string>sortimgfilesize</string>
 	<key>objects</key>
 	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>autopaste</key>
+				<false/>
+				<key>clipboardtext</key>
+				<string>{query}</string>
+				<key>ignoredynamicplaceholders</key>
+				<false/>
+				<key>transient</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.clipboard</string>
+			<key>uid</key>
+			<string>D47F0A59-FBE4-4D8D-9647-81A4D2232463</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
 		<dict>
 			<key>config</key>
 			<dict>
@@ -79,25 +100,6 @@
 			<key>version</key>
 			<integer>3</integer>
 		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>autopaste</key>
-				<false/>
-				<key>clipboardtext</key>
-				<string>{query}</string>
-				<key>ignoredynamicplaceholders</key>
-				<false/>
-				<key>transient</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.output.clipboard</string>
-			<key>uid</key>
-			<string>D47F0A59-FBE4-4D8D-9647-81A4D2232463</string>
-			<key>version</key>
-			<integer>3</integer>
-		</dict>
 	</array>
 	<key>readme</key>
 	<string></string>
@@ -106,9 +108,9 @@
 		<key>96FB33BE-FB48-4CCE-9BC1-1BFE4E82F11A</key>
 		<dict>
 			<key>xpos</key>
-			<real>380</real>
+			<real>365</real>
 			<key>ypos</key>
-			<real>70</real>
+			<real>80</real>
 		</dict>
 		<key>D47F0A59-FBE4-4D8D-9647-81A4D2232463</key>
 		<dict>
