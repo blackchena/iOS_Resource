@@ -149,8 +149,8 @@ function processAlfredInput(input, pretty = false) {
     // Add original string as JSON without newlines
     const jsonWithoutNewlines = removeNewlinesFromJson(jsonString);
     results.push({
-      title: "Original String",
-      subtitle: "Click to copy original input string",
+      title: "No newlines String",
+      subtitle: "Click to copy no newlines input string",
       valid: true,
       icon: {
         path: "/System/Library/CoreServices/CoreTypes.bundle/Contents/Resources/GenericDocumentIcon.icns",
