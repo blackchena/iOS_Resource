@@ -25,11 +25,11 @@
 	<key>createdby</key>
 	<string>black</string>
 	<key>description</key>
-	<string>从大小获取文件家中所有图片列表</string>
+	<string>tojsonstring</string>
 	<key>disabled</key>
 	<false/>
 	<key>name</key>
-	<string>sortimgfilesize</string>
+	<string>tojsonstring</string>
 	<key>objects</key>
 	<array>
 		<dict>
@@ -67,7 +67,7 @@
 				<key>escaping</key>
 				<integer>102</integer>
 				<key>keyword</key>
-				<string>sortimg</string>
+				<string>tojsonstring</string>
 				<key>queuedelaycustom</key>
 				<integer>3</integer>
 				<key>queuedelayimmediatelyinitially</key>
@@ -77,7 +77,7 @@
 				<key>queuemode</key>
 				<integer>1</integer>
 				<key>runningsubtext</key>
-				<string>sortimg</string>
+				<string>tojsonstring</string>
 				<key>script</key>
 				<string>node index.js $1 </string>
 				<key>scriptargtype</key>
@@ -85,9 +85,9 @@
 				<key>scriptfile</key>
 				<string></string>
 				<key>subtext</key>
-				<string>sortimg</string>
+				<string>tojsonstring</string>
 				<key>title</key>
-				<string>sortimg</string>
+				<string>tojsonstring</string>
 				<key>type</key>
 				<integer>5</integer>
 				<key>withspace</key>

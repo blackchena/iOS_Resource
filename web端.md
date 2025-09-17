@@ -137,6 +137,7 @@
 * [React Bits - Split Text](https://reactbits.dev/text-animations/split-text)
 * [Vue Bits - Animated UI Components For Vue](https://vue-bits.dev/)
 * [Headless UI - Unstyled, fully accessible UI components](https://headlessui.com/)
+* [Shoelace: A forward-thinking library of web components.](https://shoelace.style/)
 
 ### 检索@
 * [Search - CodeSandbox](https://codesandbox.io/search?query=Blurhash&page=1&configure%5BhitsPerPage%5D=12)
@@ -291,6 +292,18 @@
 * [Strapi - Open source Node.js Headless CMS 🚀](https://strapi.io/)
 * [The Content Operating System | Sanity](https://www.sanity.io/)
 * [Try Prismic - Homepage](https://prismic.io/try/pages/aH4JthEAACoAmspv/?s=unclassified&section=Main&id=call_to_action%241d5e99e6-b0c0-4d8f-942c-be30148ebb66)
+* [ConnectThink/WP-SCSS: Wordpress Plugin that compiles sass using scssphp](https://github.com/ConnectThink/WP-SCSS)注意编辑该插件的setting中的路径，根路径可以选择当前主题，scss文件会实时编译为css文件储存
+* [WordPress更换域名后-后台无法进入，网站模版错乱，css失效，网页中图片不显示。完整解决方案（含宝塔设置）_wordpress替换域名后后台进不去-CSDN博客](https://blog.csdn.net/cplvfx/article/details/132283426)环境迁移注意事项
+* 解决wordpress迁移后升级组件报错：Update failed: Could not move the old version to the upgrade-temp-backup directory.
+```
+#递归改变当前文件夹的所有者为ubuntu,
+ 	sudo chown -R ubuntu:www-data
+	sudo chown -R ubuntu:www-data .
+	sudo find . -type d -exec chmod 775 {} \;
+	sudo find . -type f -exec chmod 664 {} \;
+```
+* [ubuntu+nginx搭建wordpress的建站教程 – RTTR的博客](https://www.yanwenkai.com/?p=59)
+
 
 ## 浏览器指纹@
 * [fingerprintjs/fingerprintjs: The most advanced browser fingerprinting library.](https://github.com/fingerprintjs/fingerprintjs?tab=readme-ov-file)//相同浏览器窗口不同显示器生成不一样，不同浏览器不一样
@@ -410,6 +423,10 @@ document.addEventListener("DOMContentLoaded", () => {
 ## clipPath@
 * * [Clippy — CSS clip-path maker](https://bennettfeely.com/clippy/)
 
+## cls@
+* [优化 Cumulative Layout Shift  |  Articles  |  web.dev](https://web.dev/articles/optimize-cls?hl=zh-cn)
+* [PageSpeed Insights](https://pagespeed.web.dev/?hl=zh-cn)测试cls
+
 ## 进度条@
 * [css 渐变实现进度条动画_linear-gradient 动画 animation-CSDN博客](https://blog.csdn.net/sam80000/article/details/110190727)
 
@@ -444,6 +461,7 @@ diff -r '/Users/xxx/Downloads/dist 3' /Users/xxx/Desktop/dist
 * [VSCode 利用 Snippets 设置超实用的代码块 - 掘金](https://juejin.cn/post/6844903869424599053)
 * [vscode中如何调试nextjs](https://www.52interview.com/solutions/84)
 * [我真是被几百个 page.js 文件搞得一头雾水，还很烦。我知道 vscode 有“模糊搜索”功能，所以“cat/page”应该能用，但当同一个工作区里有多个项目的时候，就还是让人很困惑，而且不准确。有什么解决办法吗？ : r/nextjs](https://www.reddit.com/r/nextjs/comments/1glmmkz/im_so_confused_and_irritated_by_having_hundreds/?tl=zh-hans)index tab显示不够直观
+* [完美解决解决VSCode remote-ssh连接云服务器死机的问题_vs code ssh remote 会卡住-CSDN博客](https://blog.csdn.net/qq_29619973/article/details/133945381)
 
 ## Debug@
 * [css - Browser developer tools: what is the Position of the HTML element? - Stack Overflow](https://stackoverflow.com/questions/26820942/browser-developer-tools-what-is-the-position-of-the-html-element)打印getBoundingClientRect
