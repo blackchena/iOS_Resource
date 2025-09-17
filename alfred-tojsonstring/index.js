@@ -35,6 +35,19 @@ function formatJsonString(jsonString, pretty = false) {
   }
 }
 
+// Function to remove newlines from JSON string
+function removeNewlinesFromJson(jsonString) {
+  // 删除jsonString中的换行符
+  jsonString = jsonString.replace(/\\n/g, "");
+  try {
+    const parsed = JSON.parse(jsonString);
+    return JSON.stringify(parsed);
+  } catch (error) {
+    // If it's not valid JSON, just return the stringified version without newlines
+    return JSON.stringify(jsonString);
+  }
+}
+
 // Function to show help
 function showHelp() {
   return [
@@ -96,7 +109,6 @@ function processAlfredInput(input, pretty = false) {
 
   try {
     const inputString = input.trim();
-    
     // Convert to JSON string
     const jsonString = stringToJsonString(inputString);
     const formattedJson = formatJsonString(jsonString, pretty);
@@ -134,7 +146,8 @@ function processAlfredInput(input, pretty = false) {
       });
     }
 
-    // Add original string for reference
+    // Add original string as JSON without newlines
+    const jsonWithoutNewlines = removeNewlinesFromJson(jsonString);
     results.push({
       title: "Original String",
       subtitle: "Click to copy original input string",
@@ -142,10 +155,10 @@ function processAlfredInput(input, pretty = false) {
       icon: {
         path: "/System/Library/CoreServices/CoreTypes.bundle/Contents/Resources/GenericDocumentIcon.icns",
       },
-      arg: inputString,
+      arg: jsonWithoutNewlines,
       text: {
-        copy: inputString,
-        largetype: inputString,
+        copy: jsonWithoutNewlines,
+        largetype: jsonWithoutNewlines,
       },
     });
 
