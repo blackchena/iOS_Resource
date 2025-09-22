@@ -375,40 +375,6 @@
 * [vue2-更改el-dialog出场动画 - 掘金](https://juejin.cn/post/7109363462463029255)
 * [html - How to use transform:translateX to move a child element horizontally 100% across the parent - Stack Overflow](https://stackoverflow.com/questions/21557476/how-to-use-transformtranslatex-to-move-a-child-element-horizontally-100-across)包一层wrap，移动wrap
 * [michalsnik/aos: Animate on scroll library](https://github.com/michalsnik/aos)超级好用的滑动呈现动画
-* 元素出现时动画
-```
-img {
-  opacity: 0;
-  transform: translateY(20px);
-  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
-}
-
-img.visible {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-document.addEventListener("DOMContentLoaded", () => {
-  const elements = document.querySelectorAll("img");
-
-  const observer = new IntersectionObserver(
-    (entries, observer) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add("visible");
-          observer.unobserve(entry.target);
-        }
-      });
-    },
-    { threshold: 0.1 }
-  );
-
-  elements.forEach((element) => {
-    observer.observe(element);
-  });
-});
-
-```
 * [The Spinner CSS Loaders Collection](https://css-loaders.com/spinner/)loading样式
 
 * [⭐ SVG 变形动画（Morphing） | SVG 动画开发实战](https://svg-animation-booklet.vercel.app/chapter7.html#%E5%A4%9A%E4%B8%AA%E5%8F%98%E6%8D%A2)
@@ -416,6 +382,7 @@ document.addEventListener("DOMContentLoaded", () => {
 * [SVG+JS path等值变化实现CSS3兴叹的图形动画 « 张鑫旭-鑫空间-鑫生活](https://www.zhangxinxu.com/wordpress/2014/06/svg-path-d-polyline-points-bezier-curves/)
 * [MorphSVG | GSAP | Docs & Learning](https://gsap.com/docs/v3/Plugins/MorphSVGPlugin/)
 * [Quick start | Motion for JavaScript](https://motion.dev/docs/quick-start)
+* [chokcoco/iCSS: 不止于 CSS](https://github.com/chokcoco/iCSS?tab=readme-ov-file)
 
 ## prompt@
 * [share-best-prompt/Same.dev/Same.dev Prompt_v20250325.txt at main · shareAI-lab/share-best-prompt](https://github.com/shareAI-lab/share-best-prompt/blob/main/Same.dev/Same.dev%20Prompt_v20250325.txt)mock
