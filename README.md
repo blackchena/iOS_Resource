@@ -2453,6 +2453,7 @@ echo -e "$text" # 111[换行]222[换行]333
 * 控制台显示不下，输出到文件查看，使用 col 命令清理退格符0x08（推荐） git log --help | col -b > clean_text.txt
 * git branch -a | xargs -t -n1  git -P log -1 -G 'xxxx' 在所有分支最新的提交中查找字符串
 * 将工作区代码恢复到某次提交：`git restore --worktree --source=[hash] -- .`
+* [git bisect 命令教程 - 阮一峰的网络日志](https://www.ruanyifeng.com/blog/2018/12/git-bisect.html)git 二分法找出问题出现的分支
 
 ## 加密@解密@
 

@@ -36,6 +36,9 @@ fi
 
 echo "Creating website directory: ${TARGET_DIR} (if not exists)..."
 mkdir -p -- "${TARGET_DIR}"
+if [ -d "${TARGET_DIR}" ]; then
+  chown -R ubuntu "${TARGET_DIR}"
+fi
 # 如需设置目录所属用户，可取消下面注释并调整为你需要的用户（例如 www-data）
 # chown -R www-data:www-data "${TARGET_DIR}"
 
@@ -119,12 +122,12 @@ server {
         #}
 
 }
-
-server {
-    listen 80;
-    server_name ${DOMAIN} www.${DOMAIN};
-    return 301 https://\$host\$request_uri;
-}
+#由于certbot会在上一个server自动插入listen 80; 和 listen 443; 所以这里注释掉
+# server {
+#    listen 80;
+#    server_name ${DOMAIN} www.${DOMAIN};
+#    return 301 https://\$host\$request_uri;
+# }
 EOF
 
 chmod 644 "${TARGET_FILE}"
