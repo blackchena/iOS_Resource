@@ -2,5 +2,8 @@
   "type": "module",
   "dependencies": {
     "alfy": "^2.1.0"
+  },
+  "overrides": {
+    "plist": ">=3.0.5"
   }
 }
