@@ -396,18 +396,12 @@
 - [ConnectThink/WP-SCSS: Wordpress Plugin that compiles sass using scssphp](https://github.com/ConnectThink/WP-SCSS)注意编辑该插件的 setting 中的路径，根路径可以选择当前主题，scss 文件会实时编译为 css 文件储存
 - [WordPress 更换域名后-后台无法进入，网站模版错乱，css 失效，网页中图片不显示。完整解决方案（含宝塔设置）\_wordpress 替换域名后后台进不去-CSDN 博客](https://blog.csdn.net/cplvfx/article/details/132283426)环境迁移注意事项
 - 解决 wordpress 迁移后升级组件报错：Update failed: Could not move the old version to the upgrade-temp-backup directory.
-
-```
-#递归改变当前文件夹的所有者为ubuntu,
- 	sudo chown -R ubuntu:www-data
-	sudo chown -R ubuntu:www-data .
-	sudo find . -type d -exec chmod 775 {} \;
-	sudo find . -type f -exec chmod 664 {} \;
-```
-
+- [WordPress/gutenberg: The Block Editor project for WordPress and beyond. Plugin is available from the official repository.](https://github.com/WordPress/gutenberg)
 - [ubuntu+nginx 搭建 wordpress 的建站教程 – RTTR 的博客](https://www.yanwenkai.com/?p=59)
 - [如何在 WordPress 中使用本地自定义字段（以及 5 个有用的例子）WordPress 的自定义字段是任意的数据位，你可以应 - 掘金](https://juejin.cn/post/7111553901136085005)
 - [WordPress 函数:add_shortcode - 闪电博](https://www.wbolt.com/tools/function-add_shortcode)在内容中插入相当于自定义 html 组件
+- [9d8dev/next-wp: Headless WordPress built with the Next.js App Router and React Server Components](https://github.com/9d8dev/next-wp)
+* [Key Concepts – REST API Handbook | Developer.WordPress.org](https://developer.wordpress.org/rest-api/key-concepts/)
 
 ### 浏览器指纹@
 
