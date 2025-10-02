@@ -74,16 +74,34 @@ Features:
   - Decodes hex-encoded HTML content
   - Displays decoded HTML content
   - Works with regular HTML content as well
+  - Clean HTML by removing style attributes (keeps tags and content)
 
 The tool will:
   1. Check clipboard for HTML content
   2. Detect if content is hex-encoded
   3. Decode hex data if necessary
-  4. Display the HTML content for copying`,
+  4. Display the HTML content for copying
+  5. Provide option to clean HTML by removing style attributes`,
         largetype: "HTML Clipboard Decoder - Decode HTML content from clipboard",
       },
     },
   ];
+}
+
+// Function to extract HTML tags and content without style attributes
+function extractHTMLTags(htmlContent) {
+  try {
+    // Remove style attributes from HTML tags but keep the content
+    // This regex removes attributes like class, id, style, etc. but keeps the tag name and content
+    let cleanedHTML = htmlContent;
+    
+    // Remove all attributes from opening tags, keeping only the tag name
+    cleanedHTML = cleanedHTML.replace(/<(\w+)(?:\s+[^>]*)?>/g, '<$1>');
+    
+    return cleanedHTML;
+  } catch (error) {
+    throw new Error(`Failed to extract HTML tags: ${error.message}`);
+  }
 }
 
 // Function to process HTML clipboard content
@@ -108,6 +126,24 @@ function processHTMLClipboardContent() {
         },
       });
       
+      // Add HTML tags only option
+      const tagsOnly = extractHTMLTags(htmlResult.content);
+      if (tagsOnly) {
+        results.push({
+          title: "清理 HTML 样式",
+          subtitle: "保留标签和内容，去除样式属性",
+          valid: true,
+          icon: {
+            path: "/System/Library/CoreServices/CoreTypes.bundle/Contents/Resources/GenericDocumentIcon.icns",
+          },
+          arg: tagsOnly,
+          text: {
+            copy: tagsOnly,
+            largetype: tagsOnly,
+          },
+        });
+      }
+      
     } else if (htmlResult.type === 'regular-html') {
       results.push({
         title: "检测到普通 HTML 内容",
@@ -122,6 +158,24 @@ function processHTMLClipboardContent() {
           largetype: htmlResult.content,
         },
       });
+      
+      // Add HTML tags only option
+      const tagsOnly = extractHTMLTags(htmlResult.content);
+      if (tagsOnly) {
+        results.push({
+          title: "清理 HTML 样式",
+          subtitle: "保留标签和内容，去除样式属性",
+          valid: true,
+          icon: {
+            path: "/System/Library/CoreServices/CoreTypes.bundle/Contents/Resources/GenericDocumentIcon.icns",
+          },
+          arg: tagsOnly,
+          text: {
+            copy: tagsOnly,
+            largetype: tagsOnly,
+          },
+        });
+      }
       
     } else {
       results.push({
