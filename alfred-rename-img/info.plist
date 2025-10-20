@@ -23,7 +23,7 @@
 	<key>createdby</key>
 	<string>black</string>
 	<key>description</key>
-	<string>Rename image</string>
+	<string>Convert file names to kebabCase format</string>
 	<key>disabled</key>
 	<false/>
 	<key>name</key>
@@ -87,7 +87,7 @@ node index.js "$query"</string>
 				<key>keyword</key>
 				<string>renameimage</string>
 				<key>subtext</key>
-				<string>renameimage</string>
+				<string>Convert file names to kebabCase format</string>
 				<key>text</key>
 				<string>renameimage</string>
 				<key>withspace</key>

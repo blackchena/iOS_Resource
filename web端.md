@@ -338,6 +338,9 @@
 - [如何让 vscode 显示 typescript 的完整类型？-慕课网](https://coding.imooc.com/learn/questiondetail/vQW1lPEpQJz6yE9A.html)
 - [一文让你彻底掌握 TS 枚举在 JavaScript 中布尔类型的变量含有有限范围的值，即 true 和 false。而 - 掘金](https://juejin.cn/post/6844904112669065224)
 
+### 实用工具@utilities@
+- [yt-dlp/yt-dlp: A feature-rich command-line audio/video downloader](https://github.com/yt-dlp/yt-dlp?tab=readme-ov-file#installation)youtube视频下载
+
 ## 动画与交互
 
 ### 转场动画@
@@ -401,7 +404,11 @@
 - [如何在 WordPress 中使用本地自定义字段（以及 5 个有用的例子）WordPress 的自定义字段是任意的数据位，你可以应 - 掘金](https://juejin.cn/post/7111553901136085005)
 - [WordPress 函数:add_shortcode - 闪电博](https://www.wbolt.com/tools/function-add_shortcode)在内容中插入相当于自定义 html 组件
 - [9d8dev/next-wp: Headless WordPress built with the Next.js App Router and React Server Components](https://github.com/9d8dev/next-wp)
-* [Key Concepts – REST API Handbook | Developer.WordPress.org](https://developer.wordpress.org/rest-api/key-concepts/)
+- [Key Concepts – REST API Handbook | Developer.WordPress.org](https://developer.wordpress.org/rest-api/key-concepts/)
+- [Next.js Starter for WordPress Headless CMS](https://vercel.com/templates/next.js/nextjs-wordpress-headless-cms)
+
+### XML@/HTML@
+- [cheeriojs/cheerio: The fast, flexible, and elegant library for parsing and manipulating HTML and XML.](https://github.com/cheeriojs/cheerio)
 
 ### 浏览器指纹@
 
