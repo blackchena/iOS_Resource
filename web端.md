@@ -22,6 +22,7 @@
 - [性能优化](#性能优化)
   - [图片处理](#图片处理)
   - [懒加载](#图片懒加载)
+  - [媒体预加载](#媒体预加载)
   - [PWA](#pwa)
 - [动画与交互](#动画与交互)
   - [动画](#动画)
@@ -29,11 +30,14 @@
 - [移动端开发](#移动端开发)
   - [适配](#适配)
   - [Uniapp](#uniapp)
+- [安全](#安全)
+  - [XSS](#XSS)
 - [其他技术](#其他技术)
   - [JavaScript](#javascript)
   - [TypeScript](#typescript)
   - [Node.js](#nodejs)
   - [CMS](#cms)
+	- [营销](#营销emailnewsletter)
 
 ---
 
@@ -239,6 +243,12 @@
 
 - [有意思的水平横向溢出滚动 - ChokCoco - 博客园](https://www.cnblogs.com/coco1s/p/16663752.html)鼠标水平滚动
 
+#### markdown@toc@
+* [tscanlin/tocbot: Build a table of contents from headings in an HTML document.](https://github.com/tscanlin/tocbot)
+* [ipikuka/next-mdx-remote-client: A wrapper of `@mdx-js/mdx` for `Next.js` applications in order to load MDX content. It is a fork of `next-mdx-remote`.](https://github.com/ipikuka/next-mdx-remote-client?tab=readme-ov-file)里面有提供一些案例的源码链接
+
+
+
 #### 旋转木马@carousel@
 
 - [slick - the last carousel you'll ever need](https://kenwheeler.github.io/slick/)
@@ -268,6 +278,12 @@
 ### Lru@
 
 - [isaacs/node-lru-cache: A fast cache that automatically deletes the least recently used items](https://github.com/isaacs/node-lru-cache)
+
+## 安全
+
+### XSS
+
+- [leizongmin/js-xss: Sanitize untrusted HTML (to prevent XSS) with a configuration specified by a Whitelist](https://github.com/leizongmin/js-xss)
 
 ## 其他技术
 
@@ -376,6 +392,7 @@
 - [MorphSVG | GSAP | Docs & Learning](https://gsap.com/docs/v3/Plugins/MorphSVGPlugin/)
 - [Quick start | Motion for JavaScript](https://motion.dev/docs/quick-start)
 - [chokcoco/iCSS: 不止于 CSS](https://github.com/chokcoco/iCSS?tab=readme-ov-file)
+- [cyntler/hamburger-react: Animated hamburger menu icons for React.js weighs only 1.5 KB.](https://github.com/cyntler/hamburger-react)菜单图标动画 
 
 ### Banner@swiper@
 
@@ -406,6 +423,16 @@
 - [9d8dev/next-wp: Headless WordPress built with the Next.js App Router and React Server Components](https://github.com/9d8dev/next-wp)
 - [Key Concepts – REST API Handbook | Developer.WordPress.org](https://developer.wordpress.org/rest-api/key-concepts/)
 - [Next.js Starter for WordPress Headless CMS](https://vercel.com/templates/next.js/nextjs-wordpress-headless-cms)
+
+### 营销@Email@Newsletter@
+
+- [Home | Mailchimp](https://us10.admin.mailchimp.com/) Mailchimp 管理后台
+- [Create email - Beefree | No-code email & page design suite](https://beefree.io/app/1472981/1459908/2510367/newmessage)
+- [Nodemailer 使用Gmail发送邮件_nodemailer gmail-CSDN博客](https://blog.csdn.net/wsj_weixiao/article/details/126158396)
+- [OAuth 2.0 Playground](https://developers.google.com/oauthplayground/)
+* [使用 OAuth 2.0 访问 Google API  |  Authorization  |  Google for Developers](https://developers.google.com/identity/protocols/oauth2?hl=zh-cn)
+* [Can I email… "position" search results](https://www.caniemail.com/search/?s=position)
+* [leemunroe/responsive-html-email-template: A free simple responsive HTML email template](https://github.com/leemunroe/responsive-html-email-template?tab=readme-ov-file)
 
 ### XML@/HTML@
 - [cheeriojs/cheerio: The fast, flexible, and elegant library for parsing and manipulating HTML and XML.](https://github.com/cheeriojs/cheerio)
@@ -464,6 +491,10 @@
 - [aFarkas/lazysizes: High performance and SEO friendly lazy loader for images (responsive and normal), iframes and more, that detects any visibility changes triggered through user interaction, CSS or JavaScript without configuration.](https://github.com/aFarkas/lazysizes) 还可以实现 blurup 效果
 - [verlok/vanilla-lazyload: LazyLoad is a lightweight, flexible script that speeds up your website by deferring the loading of your below-the-fold images, backgrounds, videos, iframes and scripts to when they will enter the viewport. Written in plain "vanilla" JavaScript, it leverages IntersectionObserver, supports responsive images and enables native lazy loading.](https://github.com/verlok/vanilla-lazyload)
 
+### 媒体预加载@
+
+- [预加载音频和视频，从而快速播放 | Articles | web.dev](https://web.dev/articles/fast-playback-with-preload?hl=zh-cn)自本文发布以来，Chrome 和 Safari 都不支持 `<link rel="preload" as="video">`
+
 ### PWA@
 
 - [1.6 你的第一个 PWA · PWA 应用实战](https://lavas-project.github.io/pwa-book/chapter01/6-your-first-pwa.html)
@@ -514,6 +545,7 @@
 rsync -avnc /Users/xxx/Downloads/dist\ 3  /Users/xxx/Desktop/dist
 diff -r '/Users/xxx/Downloads/dist 3' /Users/xxx/Desktop/dist
 ```
+* [kpdecker/jsdiff: A javascript text differencing implementation.](https://github.com/kpdecker/jsdiff)
 
 ### Html 元素@Html 标签@
 
@@ -535,6 +567,9 @@ diff -r '/Users/xxx/Downloads/dist 3' /Users/xxx/Desktop/dist
 - [查看和更改 CSS  |  Chrome DevTools  |  Chrome for Developers](https://developer.chrome.com/docs/devtools/css?hl=zh-cn)
 - [Chrome DevTools 为混淆的文件添加 SourceMap 发布到生产环境的工程常常是经过混淆且不提供 sour - 掘金](https://juejin.cn/post/7135612780006588423)
 - [source-map-visualization](https://sokra.github.io/source-map-visualization/)
+- [public-apis/public-apis: A collective list of free APIs](https://github.com/public-apis/public-apis)公共api合集
+- [mozilla/source-map: Consume and generate source maps.](https://github.com/mozilla/source-map)sourcemap 解析为源文件
+
 
 ### Vite@
 
@@ -624,6 +659,7 @@ diff -r '/Users/xxx/Downloads/dist 3' /Users/xxx/Desktop/dist
 ### Slider@
 
 - [noUiSlider - JavaScript Range Slider | Refreshless.com](https://refreshless.com/nouislider/)多滑块 slider
+- [Examples | TypeGPU](https://docs.swmansion.com/TypeGPU/examples/#example=rendering--jelly-slider)胶条果冻duangduang进度条
 
 ### astro@ssg@ssr@
 

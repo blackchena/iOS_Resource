@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "source-map": "^0.7.6",
+    "commander": "^11.1.0"
+  }
+}

@@ -2454,6 +2454,7 @@ echo -e "$text" # 111[换行]222[换行]333
 * git branch -a | xargs -t -n1  git -P log -1 -G 'xxxx' 在所有分支最新的提交中查找字符串
 * 将工作区代码恢复到某次提交：`git restore --worktree --source=[hash] -- .`
 * [git bisect 命令教程 - 阮一峰的网络日志](https://www.ruanyifeng.com/blog/2018/12/git-bisect.html)git 二分法找出问题出现的分支
+* [git 删除历史提交中的某个文件，包含所有记录，过滤所有记录_git format-patch 过滤某个提交-CSDN博客](https://blog.csdn.net/Dreamhai/article/details/126814969)git filter-branch 
 
 ## 加密@解密@
 
@@ -2760,6 +2761,7 @@ doxygen Doxyfile
 * [arror/Mango: Xray for iOS](https://github.com/arror/Mango)xray
 * [connectionProxyDictionary 笔记 - 简书](https://www.jianshu.com/p/1afce4a6bd7e)internal proxy
 * [ios - How to connect to a HTTP server using a proxy configuration with Swift 5 (why connectionProxyDictionary is being ignored)? - Stack Overflow](https://stackoverflow.com/questions/57864130/how-to-connect-to-a-http-server-using-a-proxy-configuration-with-swift-5-why-co)
+* [检测iOS设备是否连接VPN | 一剑霜寒十四州](https://skx926.github.io/posts/check-vpn-connectivity/)
 
 ### OpenVPN@
 * [解决OpenVPN客户端所有网络全走VPN的问题 - 技术分享](https://www.ilxqx.com/archives/jie-jue-openvpn-ke-hu-duan-suo-you-wang-luo-quan-zou-vpn-de-wen-ti)

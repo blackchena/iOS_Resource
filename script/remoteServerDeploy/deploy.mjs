@@ -1,0 +1,261 @@
+#!/usr/bin/env node
+
+import { execSync } from "child_process";
+import fs from "fs";
+import path from "path";
+import { program } from "commander";
+import chalk from "chalk";
+import dayjs from "dayjs";
+
+const defaultLocalOut = "./out";
+
+// Configure commander
+program
+  .name("deploy")
+  .description("Deploy script for Next.js project")
+  .version("1.0.0")
+  .option("-c, --config <path>", "Path to config file (JSON format)", "deploy.config.json")
+  .option("-u, --user <user>", "SSH username")
+  .option("-h, --host <host>", "SSH hostname or IP address")
+  .option("-r, --remote-path <path>", "Remote server target path")
+  .option("-l, --local-out <path>", "Local out directory path", defaultLocalOut)
+  .option("--skip-build", "Skip build step", false)
+  .option("--skip-upload", "Skip upload step", false)
+  .option("--skip-backup", "Skip backup step", false)
+  .addHelpText(
+    "after",
+    `
+Examples:
+  # Full deployment (build + backup + upload)
+  $ deploy --host xxx.xxx.com --user ubuntu --remote-path /var/www/xxx.xxx.com
+
+  # Use config file
+  $ deploy --config deploy.config.json
+
+  # Use config file and override with command line options
+  $ deploy --config deploy.config.json --host another-host.com
+
+  # Build only
+  $ deploy --skip-upload --skip-backup
+
+  # Upload only (skip build)
+  $ deploy --skip-build --host xxx.xxx.com --remote-path /var/www/xxx.xxx.com
+
+  # Build and upload (skip backup)
+  $ deploy --skip-backup --host xxx.xxx.com --remote-path /var/www/xxx.xxx.com
+
+Config file format (JSON):
+  {
+    "user": "username",
+    "host": "ssh.example.com",
+    "remotePath": "/var/www/example.com",
+    "localOut": "./out",
+    "skipBuild": false,
+    "skipUpload": false,
+    "skipBackup": false
+  }
+    `
+  );
+
+program.parse();
+
+const options = program.opts();
+
+// Load config from file if provided
+let fileConfig = {};
+if (options.config) {
+  const configPath = path.resolve(options.config);
+  if (!fs.existsSync(configPath)) {
+    console.error(chalk.red(`Error: Config file not found: ${configPath}`));
+    process.exit(1);
+  }
+  try {
+    const configContent = fs.readFileSync(configPath, "utf8");
+    fileConfig = JSON.parse(configContent);
+  } catch (error) {
+    console.error(chalk.red(`Error: Failed to parse config file: ${error.message}`));
+    process.exit(1);
+  }
+}
+
+// Merge configuration: defaults < file config < command line options
+// Command line options have highest priority
+const config = {
+  remoteHost: options.host || fileConfig.host,
+  remotePath: options.remotePath || fileConfig.remotePath,
+  localOutPath: options.localOut || fileConfig.localOut,
+  user: options.user || fileConfig.user,
+  skipBuild: options.skipBuild ?? fileConfig.skipBuild,
+  skipUpload: options.skipUpload ?? fileConfig.skipUpload,
+  skipBackup: options.skipBackup ?? fileConfig.skipBackup,
+};
+
+// Validate required arguments for upload/backup
+if (!config.skipUpload || !config.skipBackup) {
+  if (!config.user || !config.remoteHost || !config.remotePath) {
+    logger.error("Error: --user, --host and --remote-path are required when upload or backup is enabled");
+    process.exit(1);
+  }
+}
+
+// Logger functions using chalk
+const logger = {
+  info: (message) => console.log(chalk.blue(message)),
+  success: (message) => console.log(chalk.green(message)),
+  warning: (message) => console.log(chalk.yellow(message)),
+  error: (message) => console.log(chalk.red(message)),
+  cyan: (message) => console.log(chalk.cyan(message)),
+  bright: (message) => console.log(chalk.bold(message)),
+  dim: (message) => console.log(chalk.dim(message)),
+};
+
+function execCommand(command, description) {
+  try {
+    logger.cyan(`🔄 ${description}...`);
+    logger.dim(`Command: ${command}`);
+
+    const output = execSync(command, {
+      encoding: "utf8",
+      stdio: "pipe",
+    });
+
+    if (output) {
+      logger.dim(output);
+    }
+
+    logger.success(`✅ ${description} completed successfully`);
+    return true;
+  } catch (error) {
+    logger.error(`❌ ${description} failed:`);
+    logger.error(error.message);
+    if (error.stdout) logger.warning(error.stdout);
+    if (error.stderr) logger.error(error.stderr);
+    return false;
+  }
+}
+
+function backupRemoteFile() {
+  const timestamp = dayjs().format("YYYYMMDDHHmmss");
+  // Extract directory and name from path
+  const parentDir = path.dirname(config.remotePath);
+  const targetName = path.basename(config.remotePath);
+
+  // Create backup name with timestamp
+  const backupName = `${targetName}_${timestamp}`;
+  const remoteBackupPath = path.join(parentDir, backupName);
+
+  logger.warning(`💾 Creating backup on remote server...`);
+
+  // Check if target is a file or directory and use appropriate cp command
+  let cpCommand;
+  try {
+    // First check if it's a directory
+    execSync(
+      `ssh ${config.user}@${config.remoteHost} "test -d ${config.remotePath}"`,
+      { stdio: "pipe" }
+    );
+    // It's a directory, use cp -r
+    cpCommand = `ssh ${config.user}@${config.remoteHost} "sudo cp -r ${config.remotePath} ${remoteBackupPath}"`;
+    logger.cyan(`📁 Backing up directory with cp -r`);
+  } catch (error) {
+    // It's a file, use regular cp
+    cpCommand = `ssh ${config.user}@${config.remoteHost} "sudo cp ${config.remotePath} ${remoteBackupPath}"`;
+    logger.cyan(`📄 Backing up file with cp`);
+  }
+
+  if (!execCommand(cpCommand, "Creating backup copy on remote server")) {
+    logger.error(`❌ Backup failed. Could not create backup on remote server.`);
+    process.exit(1);
+  } else {
+    logger.success(`✅ Backup created successfully at: ${remoteBackupPath}`);
+  }
+}
+
+function buildProject() {
+  logger.info("🚀 Building project...");
+  if (!execCommand("npm run build", "Building project")) {
+    logger.error(`❌ Build failed. Deployment aborted.`);
+    process.exit(1);
+  }
+}
+
+function deployProject() {
+  logger.info("🚀 Deploying project...");
+
+  // Check if local out directory exists
+  if (!fs.existsSync(config.localOutPath)) {
+    logger.error(
+      `❌ Local out directory does not exist: ${config.localOutPath}`
+    );
+    process.exit(1);
+  }
+
+  const rsyncCommand = `rsync -avz  ${config.localOutPath}/ ${config.user}@${config.remoteHost}:${config.remotePath}`;
+
+  if (!execCommand(rsyncCommand, "Deploying project")) {
+    logger.error(`❌ Deploy failed. Deployment aborted.`);
+    process.exit(1);
+  }
+}
+
+function main() {
+  try {
+    logger.info("🚀 Starting deployment process...");
+
+    const steps = [];
+
+    // Step 1: Backup (if not skipped)
+    if (!config.skipBackup) {
+      steps.push({ name: "Backup", func: backupRemoteFile });
+    }
+
+    // Step 2: Build (if not skipped)
+    if (!config.skipBuild) {
+      steps.push({ name: "Build", func: buildProject });
+    }
+
+    // Step 3: Upload (if not skipped)
+    if (!config.skipUpload) {
+      steps.push({ name: "Upload", func: deployProject });
+    }
+
+    if (steps.length === 0) {
+      logger.warning("⚠️  All steps are skipped. Nothing to do.");
+      process.exit(0);
+    }
+
+    logger.cyan(
+      `\n📋 Deployment plan: ${steps.map((s) => s.name).join(" → ")}`
+    );
+
+    // Execute steps in order
+    for (const step of steps) {
+      logger.cyan(`\n${"=".repeat(50)}`);
+      logger.bright(`Step: ${step.name}`);
+      logger.cyan(`${"=".repeat(50)}`);
+      step.func();
+    }
+
+    logger.success(`\n${"=".repeat(50)}`);
+    logger.success("🎉 Deployment completed successfully!");
+    logger.success(`${"=".repeat(50)}`);
+
+    if (!config.skipBackup) {
+      logger.cyan(
+        `Backup location: ${config.remoteHost}:${path.dirname(
+          config.remotePath
+        )}`
+      );
+    }
+    if (!config.skipUpload) {
+      logger.cyan(`Deployed to: ${config.remoteHost}:${config.remotePath}`);
+    }
+  } catch (error) {
+    logger.error(`\n❌ Deployment failed with error:`);
+    logger.error(error.message);
+    process.exit(1);
+  }
+}
+
+// Run the deployment
+main();
