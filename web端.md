@@ -393,6 +393,7 @@
 - [Quick start | Motion for JavaScript](https://motion.dev/docs/quick-start)
 - [chokcoco/iCSS: 不止于 CSS](https://github.com/chokcoco/iCSS?tab=readme-ov-file)
 - [cyntler/hamburger-react: Animated hamburger menu icons for React.js weighs only 1.5 KB.](https://github.com/cyntler/hamburger-react)菜单图标动画 
+- [VincentGarreau/particles.js: A lightweight JavaScript library for creating particles](https://github.com/VincentGarreau/particles.js/)背景粒子动画
 
 ### Banner@swiper@
 
