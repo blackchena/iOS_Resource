@@ -121,6 +121,10 @@
 - [Top 21 Amazing VueJs Projects.](https://www.bacancytechnology.com/blog/top-21-amazing-vuejs-projects)
 - [OpenLayers 图层(Layers) 详解\_qingyafan 的博客-CSDN 博客\_openlayers](https://blog.csdn.net/qingyafan/article/details/45398131)
 
+### 游戏@
+
+- [tccpc/planeWars: 原生js写的飞机大战游戏/JavaScript wrote the aircraft war game](https://github.com/tccpc/planeWars)
+
 ## 组件与 UI
 
 ### Element UI/Plus
@@ -129,6 +133,10 @@
 - [element-ui 中 Select 选择器异步加载数据就是这样简单 - 掘金](https://juejin.cn/post/7241875961130696759)分页加载实现
 - [【vue+Element】el-select 远程搜索&动态加载\_element 远程搜索下拉加载-CSDN 博客](https://blog.csdn.net/Sylviaswefa/article/details/137678906)
 - [[Component] [form] 表单控件内嵌套表单，外部表单 label-position：top 时，内部 label-position 会失效 · Issue #10919 · element-plus/element-plus](https://github.com/element-plus/element-plus/issues/10919)
+
+### 表单验证@
+- [React Hook Form - performant, flexible and extensible form library](https://react-hook-form.com/)
+- [colinhacks/zod: TypeScript-first schema validation with static type inference](https://github.com/colinhacks/zod)
 
 ### 国际化@i18n@
 
@@ -262,6 +270,9 @@
 - [SweetAlert2 - a beautiful, responsive, customizable and accessible (WAI-ARIA) replacement for JavaScript's popup boxes](https://sweetalert2.github.io/#examples)
 - [Getting Started | Floating UI](https://floating-ui.com/docs/getting-started)
 - [jquery.dropotron/jquery.dropotron.js at master · ajlkn/jquery.dropotron](https://github.com/ajlkn/jquery.dropotron/blob/master/jquery.dropotron.js)
+- [timolins/react-hot-toast: Smoking Hot React Notifications 🔥](https://github.com/timolins/react-hot-toast?tab=readme-ov-file)
+- [Replace the default transition | React-Toastify](https://fkhadra.github.io/react-toastify/replace-default-transition)
+- [emilkowalski/sonner: An opinionated toast component for React.](https://github.com/emilkowalski/sonner)
 
 ### axios@
 
@@ -286,6 +297,13 @@
 - [leizongmin/js-xss: Sanitize untrusted HTML (to prevent XSS) with a configuration specified by a Whitelist](https://github.com/leizongmin/js-xss)
 
 ## 其他技术
+
+### webpush@
+
+- [web-push-libs/web-push: Web Push library for Node.js](https://github.com/web-push-libs/web-push)
+- [Meet Web Push for Safari - WWDC22 - Videos - Apple Developer](https://developer.apple.com/videos/play/wwdc2022/10098/)
+- [Web Push for Web Apps on iOS and iPadOS | WebKit](https://webkit.org/blog/13878/web-push-for-web-apps-on-ios-and-ipados/)
+- [PushSubscription - Web APIs | MDN](https://developer.mozilla.org/en-US/docs/Web/API/PushSubscription)
 
 ### JavaScript
 
@@ -331,12 +349,14 @@
 - [Combining Images, Data and Intelligence to Transform Your Business](https://www.imgix.com/)图片马赛克
 - [littleHiuman/Copyright-free-picture-website: 无版权图片网站（收集）](https://github.com/littleHiuman/Copyright-free-picture-website?tab=readme-ov-file)
 
+
 ### svg@
 
 - [tanem/react-svg: :art: A React component that injects SVG into the DOM.](https://github.com/tanem/react-svg)
 - [Next.js - SVGR](https://react-svgr.com/docs/next/)
 - [SVG Path Visualizer](https://svg-path-visualizer.netlify.app/)
 - [SvgPathEditor](https://yqnn.github.io/svg-path-editor/) drawer
+- [Free SVG Backgrounds and Patterns | SVG Backgrounds](https://www.svgbackgrounds.com/set/free-svg-backgrounds-and-patterns/)纹理，star
 
 ### TypeScript
 
@@ -399,6 +419,12 @@
 
 - [Swiper Vue 幻灯片切换组件 | SwiperJS 中文网](https://www.swiperjs.net/vue/#virtual-slides)
 - [10 款精美的 HTML5 图片轮播动画 + 打包源码下载](https://mp.weixin.qq.com/s/R8WmEM31NjW1CbhrGKmSjA)paging
+
+### aws@s3@
+- [将临时凭证用于 AWS 资源 - AWS Identity and Access Management](https://docs.aws.amazon.com/zh_cn/IAM/latest/UserGuide/id_credentials_temp_use-resources.html#using-temp-creds-sdk)
+- [Amazon S3 的操作、资源和条件键 - 服务授权参考](https://docs.aws.amazon.com/zh_cn/service-authorization/latest/reference/list_amazons3.html)
+- [Amazon S3 如何与 IAM 配合使用 - Amazon Simple Storage Service](https://docs.aws.amazon.com/zh_cn/AmazonS3/latest/userguide/security_iam_service-with-iam.html#security_iam_service-with-iam-roles-tempcreds)
+- [Amazon S3 API 操作所需的权限 - Amazon Simple Storage Service](https://docs.aws.amazon.com/zh_cn/AmazonS3/latest/userguide/using-with-s3-policy-actions.html#using-with-s3-policy-actions-related-to-buckets)ListObjects（必需）s3:ListBucket
 
 ### 进度条@
 
@@ -470,6 +496,8 @@
 - [不要图片？CSS 实现圆角边框渐变色+背景透明前言 👏 不要图片？CSS 实现圆角边框渐变色+背景透明，最近在工作中常常实现 - 掘金](https://juejin.cn/post/7240458275269984314)完美
 - [CSS 实现渐变圆角边框利用 css 的属性 mask、mask-composite，实现带有圆角、渐变、且内容背景透明的 - 掘金](https://juejin.cn/post/7288568920051056697)
 - [巧妙实现带圆角的渐变边框 - ChokCoco - 博客园](https://www.cnblogs.com/coco1s/p/12321837.html)
+* [渐变边框文字效果？CSS 轻松拿捏！ - ChokCoco - 博客园](https://www.cnblogs.com/coco1s/p/18312942)
+* [CSS实现字体渐变、文字描边（空心文字）、文字倒影、文字渐变色描边一、字体渐变 -webkit-background-c - 掘金](https://juejin.cn/post/7321410824676818981)我使用的渐变字体描边参考
 
 ### 低代码@
 
@@ -514,6 +542,10 @@
 
 - [share-best-prompt/Same.dev/Same.dev Prompt_v20250325.txt at main · shareAI-lab/share-best-prompt](https://github.com/shareAI-lab/share-best-prompt/blob/main/Same.dev/Same.dev%20Prompt_v20250325.txt)mock
 
+### mcp@skill@
+
+- [Cursor如何使用Agent Skills？技能功能完整教程 - Cursor](https://cursor.zone/faq/cursor-agent-skills-guide.html)
+
 ### clipPath@
 
 - - [Clippy — CSS clip-path maker](https://bennettfeely.com/clippy/)
@@ -551,6 +583,7 @@ diff -r '/Users/xxx/Downloads/dist 3' /Users/xxx/Desktop/dist
 ### Html 元素@Html 标签@
 
 - [span 与 span 之间多了一点空白间隔，是什么原因引起的](https://blog.csdn.net/weixin_44730897/article/details/109474429)
+
 
 ## 开发工具
 
@@ -632,6 +665,10 @@ diff -r '/Users/xxx/Downloads/dist 3' /Users/xxx/Desktop/dist
 
 - [基于 Vue3+ElementPlus 的数字范围输入框组件\_前端区间输入框-CSDN 博客](https://blog.csdn.net/gsssshuai/article/details/134037216)
 
+### code input@OTP@验证码@
+- [guilhermerodz/input-otp: One time passcode Input. Accessible & unstyled.](https://github.com/guilhermerodz/input-otp)
+- [devfolioco/react-otp-input: :heavy_check_mark: OTP Input Component for React](https://github.com/devfolioco/react-otp-input)
+
 ### Office@word@pdf@excel@
 
 - [GitHub - 501351981/vue-office: 支持 word(.docx)、excel(.xlsx,.xls)、pdf、pptx 等各类型 office 文件预览的 vue 组件集合，提供一站式 office 文件预览方案，支持 vue2 和 3，也支持 React 等非 Vue 框架。Web-based pdf, excel, word, pptx preview library](https://github.com/501351981/vue-office)
@@ -644,12 +681,17 @@ diff -r '/Users/xxx/Downloads/dist 3' /Users/xxx/Desktop/dist
 ### 接口@api@
 
 - [面试官：如何防止接口重复请求？我给出了三个方案！](https://mp.weixin.qq.com/s/-XH1OapHyEOeaz653wwuzQ)
+- [public-apis/public-apis: A collective list of free APIs](https://github.com/public-apis/public-apis?tab=readme-ov-file)免费测试api
 
 ### 文件浏览@
 
 - [filebrowser/filebrowser: 📂 Web File Browser](https://github.com/filebrowser/filebrowser?tab=readme-ov-file)
 
 ### 控件@
+
+### 列表@list@
+- [ankeetmaini/react-infinite-scroll-component: An awesome Infinite Scroll component in react.](https://github.com/ankeetmaini/react-infinite-scroll-component#readme)列表复用
+- [TanStack Virtual](https://tanstack.com/virtual/latest)复用
 
 ### banner@
 

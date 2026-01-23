@@ -2455,6 +2455,7 @@ echo -e "$text" # 111[换行]222[换行]333
 * 将工作区代码恢复到某次提交：`git restore --worktree --source=[hash] -- .`
 * [git bisect 命令教程 - 阮一峰的网络日志](https://www.ruanyifeng.com/blog/2018/12/git-bisect.html)git 二分法找出问题出现的分支
 * [git 删除历史提交中的某个文件，包含所有记录，过滤所有记录_git format-patch 过滤某个提交-CSDN博客](https://blog.csdn.net/Dreamhai/article/details/126814969)git filter-branch 
+* git filter-branch -f  --index-filter 'git rm -rf --cached --ignore-unmatch public/xxx.apk' HEAD
 
 ## 加密@解密@
 
