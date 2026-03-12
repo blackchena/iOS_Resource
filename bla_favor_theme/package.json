@@ -1,0 +1,17 @@
+{
+  "name": "bla-favor-theme",
+  "version": "1.0.0",
+  "publisher": "bla",
+  "engines": {
+    "vscode": "*"
+  },
+  "contributes": {
+    "themes": [
+      {
+        "label": "DarkModern",
+        "uiTheme": "vs-dark",
+        "path": "./themes/DarkModern.json"
+      }
+    ]
+  }
+}

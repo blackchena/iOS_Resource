@@ -189,6 +189,23 @@
 - [josdejong/jsoneditor: A web-based tool to view, edit, format, and validate JSON](https://github.com/josdejong/jsoneditor)
 - [beikeshop/beikeshop: 🔥🔥🔥 Free open source and easy-to-use laravel eCommerce platform, Base on the Laravel . It supports multiple languages and currencies, integrates ChatGPT OpenAI. The platform features customizable visual design and a rich plugins on marketplace.](https://github.com/beikeshop/beikeshop)开源电商 vue + Laravel php
 
+### react开源项目@
+
+- [marmelab/react-admin: A frontend Framework for single-page applications on top of REST/GraphQL APIs, using TypeScript, React and Material Design](https://github.com/marmelab/react-admin?tab=readme-ov-file)
+- [mckaywrigley/chatbot-ui: AI chat for any model.](https://github.com/mckaywrigley/chatbot-ui)
+- [excalidraw/excalidraw: Virtual whiteboard for sketching hand-drawn like diagrams](https://github.com/excalidraw/excalidraw)
+- [realworld-apps/realworld: "The mother of all demo apps" — Exemplary fullstack Medium.com clone powered by React, Angular, Node, Django, and many more](https://github.com/realworld-apps/realworld)
+- [refinedev/refine: A React Framework for building internal tools, admin panels, dashboards & B2B apps with unmatched flexibility.](https://github.com/refinedev/refine)
+- [appsmithorg/appsmith: Platform to build admin panels, internal tools, and dashboards. Integrates with 25+ databases and any API.](https://github.com/appsmithorg/appsmith)
+- [ToolJet/ToolJet: ToolJet is the open-source foundation of ToolJet AI - the AI-native platform for building internal tools, dashboard, business applications, workflows and AI agents 🚀](https://github.com/ToolJet/ToolJet)
+- [Budibase/budibase: Build AI Agents the easy way. Supports PostgreSQL, MySQL, MariaDB, MSSQL, MongoDB, Rest API, Docker, K8s, and more 🚀 AI Workflow toolkit](https://github.com/Budibase/budibase)
+- [authts/react-oidc-context: Lightweight auth library based on oidc-client-ts for React single page applications (SPA). Support for hooks and higher-order components (HOC).](https://github.com/authts/react-oidc-context)途是为 React 应用提供简洁的 OIDC/OAuth2 用户认证和状态管理方案
+- [nextauthjs/next-auth: Authentication for the Web.](https://github.com/nextauthjs/next-auth)
+- [calcom/cal.com: Scheduling infrastructure for absolutely everyone.](https://github.com/calcom/cal.com)
+- [documenso/documenso: The Open Source DocuSign Alternative.](https://github.com/documenso/documenso)
+- [RocketChat/Rocket.Chat: The Secure CommsOS™ for mission-critical operations](https://github.com/RocketChat/Rocket.Chat)
+- [mattermost/mattermost: Mattermost is an open source platform for secure collaboration across the entire software development lifecycle..](https://github.com/mattermost/mattermost)
+
 ### 组件库@
 
 - [shadcn-ui/ui: Beautifully designed components that you can copy and paste into your apps. Accessible. Customizable. Open Source.](https://github.com/shadcn-ui/ui)不需要 npm 安装，修改源码更容易
@@ -251,9 +268,12 @@
 
 - [有意思的水平横向溢出滚动 - ChokCoco - 博客园](https://www.cnblogs.com/coco1s/p/16663752.html)鼠标水平滚动
 
-#### markdown@toc@
-* [tscanlin/tocbot: Build a table of contents from headings in an HTML document.](https://github.com/tscanlin/tocbot)
-* [ipikuka/next-mdx-remote-client: A wrapper of `@mdx-js/mdx` for `Next.js` applications in order to load MDX content. It is a fork of `next-mdx-remote`.](https://github.com/ipikuka/next-mdx-remote-client?tab=readme-ov-file)里面有提供一些案例的源码链接
+#### markdown@toc@mdx@
+
+- [tscanlin/tocbot: Build a table of contents from headings in an HTML document.](https://github.com/tscanlin/tocbot)
+- [ipikuka/next-mdx-remote-client: A wrapper of `@mdx-js/mdx` for `Next.js` applications in order to load MDX content. It is a fork of `next-mdx-remote`.](https://github.com/ipikuka/next-mdx-remote-client?tab=readme-ov-file)里面有提供一些案例的源码链接
+- [ipikuka/remark-flexible-containers: Remark plugin to add custom containers with customizable properties in markdown](https://github.com/ipikuka/remark-flexible-containers)
+- [talatkuyuk/testing-app-for-next-mdx-remote-client: A nextjs demo application for usage of "next-mdx-remote-client" in both pages router and app router](https://github.com/talatkuyuk/testing-app-for-next-mdx-remote-client)demo
 
 
 
@@ -273,6 +293,7 @@
 - [timolins/react-hot-toast: Smoking Hot React Notifications 🔥](https://github.com/timolins/react-hot-toast?tab=readme-ov-file)
 - [Replace the default transition | React-Toastify](https://fkhadra.github.io/react-toastify/replace-default-transition)
 - [emilkowalski/sonner: An opinionated toast component for React.](https://github.com/emilkowalski/sonner)
+- [timolins/react-hot-toast: Smoking Hot React Notifications 🔥](https://github.com/timolins/react-hot-toast)10k
 
 ### axios@
 
@@ -450,6 +471,15 @@
 - [9d8dev/next-wp: Headless WordPress built with the Next.js App Router and React Server Components](https://github.com/9d8dev/next-wp)
 - [Key Concepts – REST API Handbook | Developer.WordPress.org](https://developer.wordpress.org/rest-api/key-concepts/)
 - [Next.js Starter for WordPress Headless CMS](https://vercel.com/templates/next.js/nextjs-wordpress-headless-cms)
+- [strapi/nextjs-corporate-starter: Strapi Demo application for Corporate Websites using Next.js](https://github.com/strapi/nextjs-corporate-starter?tab=readme-ov-file)demo
+
+### strapi@
+- [Interactive Query Builder | Strapi 5 Documentation](https://docs.strapi.io/cms/api/rest/interactive-query-builder)交互式构建请求工具
+- [Build a Developer Blog with Strapi and Next.js](https://strapi.io/blog/build-a-developer-blog-with-strapi5-and-nextjs)strapi 5 nextjs blog demo
+- [How to Build a Modern Blog with React 19 and Strapi 5](https://strapi.io/blog/how-to-build-a-modern-blog-with-react-19-and-strapi-5) demo
+- [PaulBratslavsky/strapi-react-router-7-starter](https://github.com/PaulBratslavsky/strapi-react-router-7-starter) demo
+- [PaulBratslavsky/strapi-5-next-blog-post](https://github.com/PaulBratslavsky/strapi-5-next-blog-post) demo
+- [strapi/LaunchPad: Official Strapi Demo application](https://github.com/strapi/LaunchPad)官方demo
 
 ### 营销@Email@Newsletter@
 
@@ -520,6 +550,32 @@
 - [aFarkas/lazysizes: High performance and SEO friendly lazy loader for images (responsive and normal), iframes and more, that detects any visibility changes triggered through user interaction, CSS or JavaScript without configuration.](https://github.com/aFarkas/lazysizes) 还可以实现 blurup 效果
 - [verlok/vanilla-lazyload: LazyLoad is a lightweight, flexible script that speeds up your website by deferring the loading of your below-the-fold images, backgrounds, videos, iframes and scripts to when they will enter the viewport. Written in plain "vanilla" JavaScript, it leverages IntersectionObserver, supports responsive images and enables native lazy loading.](https://github.com/verlok/vanilla-lazyload)
 
+### 视频@m3u8@
+
+```
+var video = document.getElementById('videox');
+var video_source = "/vid/desktop_video1.m3u8";
+if (Hls.isSupported()) {
+  var hls = new Hls({
+    debug: true,
+  });
+  console.log(hls)
+  hls.loadSource(video_source);
+  hls.attachMedia(video);
+  hls.on(Hls.Events.MEDIA_ATTACHED, function () {
+    video.muted = true;
+    video.play();
+  });
+}
+else if (video.canPlayType('application/vnd.apple.mpegurl')) {
+  video.src = video_source;
+  video.addEventListener('canplay', function () {
+    video.play();
+  });
+}
+```
+
+
 ### 媒体预加载@
 
 - [预加载音频和视频，从而快速播放 | Articles | web.dev](https://web.dev/articles/fast-playback-with-preload?hl=zh-cn)自本文发布以来，Chrome 和 Safari 都不支持 `<link rel="preload" as="video">`
@@ -537,14 +593,16 @@
 - [workbox-cli  |  Modules  |  Chrome for Developers](https://developer.chrome.com/docs/workbox/modules/workbox-cli?hl=zh-cn)
 - [安装  |  web.dev](https://web.dev/learn/pwa/installation?hl=zh-cn) iOS 可以多次安装 pwa
 - [Vue | Frameworks | Vite PWA](https://vite-pwa-org.netlify.app/frameworks/vue.html)检查网站是否更新
+- [开始 | 指南 | Vite PWA](https://vite-pwa-org-zh.netlify.app/guide/)
 
 ### prompt@
 
 - [share-best-prompt/Same.dev/Same.dev Prompt_v20250325.txt at main · shareAI-lab/share-best-prompt](https://github.com/shareAI-lab/share-best-prompt/blob/main/Same.dev/Same.dev%20Prompt_v20250325.txt)mock
 
-### mcp@skill@
+### mcp@skill@rules@
 
 - [Cursor如何使用Agent Skills？技能功能完整教程 - Cursor](https://cursor.zone/faq/cursor-agent-skills-guide.html)
+- [LessUp/awesome-cursorrules-zh: 💻✨专为中文开发者优化的 Cursor AI 编程规则集合](https://github.com/LessUp/awesome-cursorrules-zh)
 
 ### clipPath@
 
@@ -633,6 +691,10 @@ diff -r '/Users/xxx/Downloads/dist 3' /Users/xxx/Desktop/dist
 - [vue3 引入使用 svg 图标 - ProsperousEnding - 博客园](https://www.cnblogs.com/ProsperousEnding/p/17934783.html)
 - [element-plus & unplugin-icons 实现任意 icon svg 自动导入 - 掘金](https://juejin.cn/post/7272566178446180411)
 - [GitHub - JetBrains/svg-sprite-loader: Webpack loader for creating SVG sprites.](https://github.com/JetBrains/svg-sprite-loader) 没有使用过
+
+### icon@
+
+- [lucide-icons/lucide: Beautiful & consistent icon toolkit made by the community. Open-source project and a fork of Feather Icons.](https://github.com/lucide-icons/lucide)
 
 ### 剪切板@clipboard@
 
@@ -804,3 +866,7 @@ diff -r '/Users/xxx/Downloads/dist 3' /Users/xxx/Desktop/dist
   WhatCMS.org - 输入域名自动检测
   BuiltWith.com - 技术栈分析
   Wappalyzer - 浏览器扩展，自动识别技术
+
+### 测试@
+
+- [KeygraphHQ/shannon: Fully autonomous AI hacker to find actual exploits in your web apps. Shannon has achieved a 96.15% success rate on the hint-free, source-aware XBOW Benchmark.](https://github.com/KeygraphHQ/shannon)
