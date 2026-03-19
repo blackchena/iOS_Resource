@@ -317,7 +317,16 @@
 
 - [leizongmin/js-xss: Sanitize untrusted HTML (to prevent XSS) with a configuration specified by a Whitelist](https://github.com/leizongmin/js-xss)
 
+
+### 其它
+
+- [KeygraphHQ/shannon: Fully autonomous AI hacker to find actual exploits in your web apps. Shannon has achieved a 96.15% success rate on the hint-free, source-aware XBOW Benchmark.](https://github.com/KeygraphHQ/shannon)在 Web 应用层面发现真实可利用的漏洞与安全风险。
+
 ## 其他技术
+
+### 字符串处理@
+
+- [sindresorhus/slugify: Slugify a string](https://github.com/sindresorhus/slugify)slug快速生成
 
 ### webpush@
 

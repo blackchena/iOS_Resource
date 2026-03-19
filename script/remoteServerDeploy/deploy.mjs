@@ -63,19 +63,22 @@ const options = program.opts();
 
 // Load config from file if provided
 let fileConfig = {};
-if (options.config) {
-  const configPath = path.resolve(options.config);
-  if (!fs.existsSync(configPath)) {
-    console.error(chalk.red(`Error: Config file not found: ${configPath}`));
-    process.exit(1);
-  }
+const configPath = path.resolve(options.config);
+if (fs.existsSync(configPath)) {
   try {
     const configContent = fs.readFileSync(configPath, "utf8");
     fileConfig = JSON.parse(configContent);
+    console.log(chalk.green(`✅ Loaded config from: ${configPath}`));
   } catch (error) {
     console.error(chalk.red(`Error: Failed to parse config file: ${error.message}`));
     process.exit(1);
   }
+} else if (options.config !== "deploy.config.json") {
+  // Only error if user explicitly specified a config file that doesn't exist
+  console.error(chalk.red(`Error: Config file not found: ${configPath}`));
+  process.exit(1);
+} else {
+  console.log(chalk.yellow(`ℹ️  No config file found, using command line arguments.`));
 }
 
 // Merge configuration: defaults < file config < command line options
