@@ -12,6 +12,7 @@ const CONVERT_TYPES = {
   ICO: "ico",
   COMPRESS: "compress",
   PNG: "png",
+  JPG: "jpg",
   RESIZE: "resize",
   BLUR: "blur",
   PIXELATE: "pixel",
@@ -151,6 +152,50 @@ function validateImageFormat(imagePath) {
   return { valid: true, ext };
 }
 
+// 通用格式转换函数 - 支持将图片转换为 png/jpg/webp
+async function convertToFormat(imagePath, targetFormat, options = {}) {
+  const ext = path.extname(imagePath).toLowerCase();
+  const dir = path.dirname(imagePath);
+  const displayName = options.displayName || path.basename(imagePath);
+
+  // 目标格式与源格式相同，跳过
+  const formatExtMap = { png: ".png", jpg: ".jpg", jpeg: ".jpg", webp: ".webp" };
+  const targetExt = formatExtMap[targetFormat];
+  if (ext === targetExt || (targetFormat === "jpg" && ext === ".jpeg")) {
+    return { success: false, result: null, skip: true };
+  }
+
+  const baseName = path.basename(imagePath, ext);
+  const outputFile = baseName + targetExt;
+  const outputPath = path.join(dir, outputFile);
+  const uniqueOutputPath = getUniqueFilePath(outputPath);
+  const finalFileName = path.basename(uniqueOutputPath);
+
+  // 各格式默认参数
+  const formatOptions = {
+    png: { quality: 90, compressionLevel: 6, progressive: true, ...options.png },
+    jpg: { quality: 90, progressive: true, mozjpeg: true, ...options.jpg },
+    webp: { quality: 80, effort: 4, nearLossless: false, ...options.webp },
+  };
+
+  const sharpFormat = targetFormat === "jpg" ? "jpeg" : targetFormat;
+  const opts = formatOptions[targetFormat] || formatOptions[sharpFormat] || {};
+
+  await sharp(imagePath)[sharpFormat](opts).toFile(uniqueOutputPath);
+
+  return {
+    success: true,
+    result: {
+      uid: `converted-${finalFileName}`,
+      title: `✅ ${finalFileName}`,
+      subtitle: `Successfully converted from ${displayName}`,
+      arg: uniqueOutputPath,
+      icon: { path: uniqueOutputPath },
+      valid: true,
+    },
+  };
+}
+
 // 核心图片处理函数 - 处理单个图片的转换逻辑
 async function processImage(imagePath, fileName = null) {
   const validation = validateImageFormat(imagePath);
@@ -164,30 +209,7 @@ async function processImage(imagePath, fileName = null) {
 
   try {
     if (convertType === CONVERT_TYPES.WEBP) {
-      if (ext === ".webp") {
-        return { success: false, result: null, skip: true };
-      }
-      const baseName = path.basename(imagePath, ext);
-      const webpFile = baseName + ".webp";
-      const webpPath = path.join(dir, webpFile);
-      const uniqueWebpPath = getUniqueFilePath(webpPath);
-      const finalWebpFile = path.basename(uniqueWebpPath);
-
-      await sharp(imagePath)
-        .webp({ quality: 80, effort: 4, nearLossless: false })
-        .toFile(uniqueWebpPath);
-
-      return {
-        success: true,
-        result: {
-          uid: `converted-${finalWebpFile}`,
-          title: `✅ ${finalWebpFile}`,
-          subtitle: `Successfully converted from ${displayName}`,
-          arg: uniqueWebpPath,
-          icon: { path: uniqueWebpPath },
-          valid: true,
-        },
-      };
+      return await convertToFormat(imagePath, "webp", { displayName });
     } else if (convertType === CONVERT_TYPES.ICO) {
       const icoFile = path.basename(imagePath, ext) + ".ico";
       const icoPath = path.join(dir, icoFile);
@@ -271,34 +293,9 @@ async function processImage(imagePath, fileName = null) {
         },
       };
     } else if (convertType === CONVERT_TYPES.PNG) {
-      if (ext === ".png") {
-        return { success: false, result: null, skip: true };
-      }
-      const baseName = path.basename(imagePath, ext);
-      const pngFile = baseName + ".png";
-      const pngPath = path.join(dir, pngFile);
-      const uniquePngPath = getUniqueFilePath(pngPath);
-      const finalPngFile = path.basename(uniquePngPath);
-
-      await sharp(imagePath)
-        .png({
-          quality: 90,
-          compressionLevel: 6,
-          progressive: true,
-        })
-        .toFile(uniquePngPath);
-
-      return {
-        success: true,
-        result: {
-          uid: `converted-${finalPngFile}`,
-          title: `✅ ${finalPngFile}`,
-          subtitle: `Successfully converted from ${displayName}`,
-          arg: uniquePngPath,
-          icon: { path: uniquePngPath },
-          valid: true,
-        },
-      };
+      return await convertToFormat(imagePath, "png", { displayName });
+    } else if (convertType === CONVERT_TYPES.JPG) {
+      return await convertToFormat(imagePath, "jpg", { displayName });
     } else if (convertType === CONVERT_TYPES.RESIZE) {
       const baseName = path.basename(imagePath, ext);
       const resizedFile = baseName + "_resized" + ext;

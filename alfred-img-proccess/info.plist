@@ -93,6 +93,19 @@
 				<false/>
 			</dict>
 		</array>
+		<key>296032BF-1BD6-49C1-882A-B980685836FE</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>C921C969-3FE5-4688-878A-6A495055C10E</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>3F36DC5B-07AF-47E4-9AE3-7ED1443299D7</key>
 		<array>
 			<dict>
@@ -273,6 +286,76 @@
 	<string>Img processing</string>
 	<key>objects</key>
 	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>keyword</key>
+				<string>2jpg</string>
+				<key>subtext</key>
+				<string>2jpg</string>
+				<key>text</key>
+				<string>2jpg</string>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>296032BF-1BD6-49C1-882A-B980685836FE</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<false/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<true/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string>Coverting</string>
+				<key>script</key>
+				<string>query=$1
+
+node index.js jpg "$query"</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>subtext</key>
+				<string>2jpg</string>
+				<key>title</key>
+				<string>2jpg</string>
+				<key>type</key>
+				<integer>5</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>C921C969-3FE5-4688-878A-6A495055C10E</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
 		<dict>
 			<key>config</key>
 			<dict>
@@ -978,6 +1061,13 @@ node index.js $convertType "$url" "$proccessValue"</string>
 			<key>ypos</key>
 			<real>625</real>
 		</dict>
+		<key>296032BF-1BD6-49C1-882A-B980685836FE</key>
+		<dict>
+			<key>xpos</key>
+			<real>30</real>
+			<key>ypos</key>
+			<real>15</real>
+		</dict>
 		<key>3F36DC5B-07AF-47E4-9AE3-7ED1443299D7</key>
 		<dict>
 			<key>xpos</key>
@@ -1044,9 +1134,9 @@ node index.js $convertType "$url" "$proccessValue"</string>
 		<key>A1DF10B0-0AD2-4AA7-BB41-55A355C26700</key>
 		<dict>
 			<key>xpos</key>
-			<real>50</real>
+			<real>45</real>
 			<key>ypos</key>
-			<real>95</real>
+			<real>120</real>
 		</dict>
 		<key>A729D65B-2A02-48BE-B447-BE105B9AC04B</key>
 		<dict>
@@ -1083,6 +1173,13 @@ node index.js $convertType "$url" "$proccessValue"</string>
 			<key>ypos</key>
 			<real>690</real>
 		</dict>
+		<key>C921C969-3FE5-4688-878A-6A495055C10E</key>
+		<dict>
+			<key>xpos</key>
+			<real>315</real>
+			<key>ypos</key>
+			<real>15</real>
+		</dict>
 		<key>CE9209EA-1E65-4B43-9B5A-EF9C13BB30AC</key>
 		<dict>
 			<key>xpos</key>
@@ -1107,9 +1204,9 @@ node index.js $convertType "$url" "$proccessValue"</string>
 		<key>D0DA3363-0D50-4630-BE01-7FFBF1CB1A1B</key>
 		<dict>
 			<key>xpos</key>
-			<real>315</real>
+			<real>320</real>
 			<key>ypos</key>
-			<real>100</real>
+			<real>125</real>
 		</dict>
 	</dict>
 	<key>userconfigurationconfig</key>
