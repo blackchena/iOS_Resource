@@ -443,7 +443,17 @@
 - [Quick start | Motion for JavaScript](https://motion.dev/docs/quick-start)
 - [chokcoco/iCSS: 不止于 CSS](https://github.com/chokcoco/iCSS?tab=readme-ov-file)
 - [cyntler/hamburger-react: Animated hamburger menu icons for React.js weighs only 1.5 KB.](https://github.com/cyntler/hamburger-react)菜单图标动画 
+
+#### 背景粒子动画@交互动画@
+
 - [VincentGarreau/particles.js: A lightweight JavaScript library for creating particles](https://github.com/VincentGarreau/particles.js/)背景粒子动画
+- [Interactive WebGL Fluid Motion with Smokey Fluid Cursor | CSS Script](https://www.cssscript.com/smokey-fluid-cursor/)
+- [PavelDoGreat/WebGL-Fluid-Simulation: Play with fluids in your browser (works even on mobile)](https://github.com/PavelDoGreat/WebGL-Fluid-Simulation?tab=readme-ov-file)
+
+
+### parallax@视差@
+
+- [geosigno/simpleParallax.js: Easy Parallax Effect for React & JavaScript](https://github.com/geosigno/simpleParallax.js/)
 
 ### Banner@swiper@
 

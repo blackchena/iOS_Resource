@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-# setup_nginx_site.sh
+# webserver_init.sh
 # 用法:
-#   sudo ./setup_nginx_site.sh example.com
+#   sudo ./webserver_init.sh example.com
 #
 # 说明:
 # - 在 /var/www/<domain> 创建网站目录（已存在则跳过）
