@@ -9,6 +9,17 @@ import dayjs from "dayjs";
 
 const defaultLocalOut = "./out";
 
+// Logger functions using chalk
+const logger = {
+  info: (message) => console.log(chalk.blue(message)),
+  success: (message) => console.log(chalk.green(message)),
+  warning: (message) => console.log(chalk.yellow(message)),
+  error: (message) => console.log(chalk.red(message)),
+  cyan: (message) => console.log(chalk.cyan(message)),
+  bright: (message) => console.log(chalk.bold(message)),
+  dim: (message) => console.log(chalk.dim(message)),
+};
+
 // Configure commander
 program
   .name("deploy")
@@ -19,6 +30,7 @@ program
   .option("-h, --host <host>", "SSH hostname or IP address")
   .option("-r, --remote-path <path>", "Remote server target path")
   .option("-l, --local-out <path>", "Local out directory path", defaultLocalOut)
+  .option("-p, --protocol-dir <path>", "Local protocol path to upload (file or directory)")
   .option("--skip-build", "Skip build step", false)
   .option("--skip-upload", "Skip upload step", false)
   .option("--skip-backup", "Skip backup step", false)
@@ -44,12 +56,16 @@ Examples:
   # Build and upload (skip backup)
   $ deploy --skip-backup --host xxx.xxx.com --remote-path /var/www/xxx.xxx.com
 
+  # Deploy all protocol files from a local directory to remote-path
+  $ deploy --protocol-dir ./protocols --skip-build --skip-backup --host xxx.xxx.com --remote-path /var/www/xxx.xxx.com/protocols
+
 Config file format (JSON):
   {
     "user": "username",
     "host": "ssh.example.com",
     "remotePath": "/var/www/example.com",
     "localOut": "./out",
+    "protocolDir": "./protocols",
     "skipBuild": false,
     "skipUpload": false,
     "skipBackup": false
@@ -87,6 +103,7 @@ const config = {
   remoteHost: options.host || fileConfig.host,
   remotePath: options.remotePath || fileConfig.remotePath,
   localOutPath: options.localOut || fileConfig.localOut,
+  protocolDir: options.protocolDir || fileConfig.protocolDir,
   user: options.user || fileConfig.user,
   skipBuild: options.skipBuild ?? fileConfig.skipBuild,
   skipUpload: options.skipUpload ?? fileConfig.skipUpload,
@@ -101,16 +118,27 @@ if (!config.skipUpload || !config.skipBackup) {
   }
 }
 
-// Logger functions using chalk
-const logger = {
-  info: (message) => console.log(chalk.blue(message)),
-  success: (message) => console.log(chalk.green(message)),
-  warning: (message) => console.log(chalk.yellow(message)),
-  error: (message) => console.log(chalk.red(message)),
-  cyan: (message) => console.log(chalk.cyan(message)),
-  bright: (message) => console.log(chalk.bold(message)),
-  dim: (message) => console.log(chalk.dim(message)),
-};
+function shellEscape(value) {
+  return `'${String(value).replace(/'/g, `'\\''`)}'`;
+}
+
+function normalizeLocalPath(localPath) {
+  const inputPath = String(localPath || "").trim();
+
+  if (!inputPath) {
+    logger.error("❌ Local path is required");
+    process.exit(1);
+  }
+
+  const resolvedPath = path.resolve(inputPath);
+  const rootPath = path.parse(resolvedPath).root;
+
+  if (resolvedPath === rootPath) {
+    return resolvedPath;
+  }
+
+  return resolvedPath.replace(/[\\/]+$/, "");
+}
 
 function execCommand(command, description) {
   try {
@@ -182,20 +210,41 @@ function buildProject() {
   }
 }
 
-function deployProject() {
-  logger.info("🚀 Deploying project...");
+function deployLocalPath(localPath) {
+  const sourcePath = normalizeLocalPath(localPath);
 
-  // Check if local out directory exists
-  if (!fs.existsSync(config.localOutPath)) {
-    logger.error(
-      `❌ Local out directory does not exist: ${config.localOutPath}`
-    );
+  logger.info(`🚀 Deploying from local path: ${sourcePath}`);
+
+  if (!fs.existsSync(sourcePath)) {
+    logger.error(`❌ Source path does not exist: ${sourcePath}`);
     process.exit(1);
   }
 
-  const rsyncCommand = `rsync -avz  ${config.localOutPath}/ ${config.user}@${config.remoteHost}:${config.remotePath}`;
+  const sourceStat = fs.statSync(sourcePath);
+  const isDirectory = sourceStat.isDirectory();
 
-  if (!execCommand(rsyncCommand, "Deploying project")) {
+  if (isDirectory) {
+    const sourceEntries = fs.readdirSync(sourcePath);
+    if (sourceEntries.length === 0) {
+      logger.error(`❌ Source directory is empty: ${sourcePath}`);
+      process.exit(1);
+    }
+
+    logger.cyan(`📦 Uploading ${sourceEntries.length} item(s) from: ${sourcePath}`);
+  } else {
+    logger.cyan(`📄 Uploading file: ${path.basename(sourcePath)}`);
+  }
+
+  const ensureRemoteDirCommand = `ssh ${config.user}@${config.remoteHost} "mkdir -p ${shellEscape(config.remotePath)}"`;
+  if (!execCommand(ensureRemoteDirCommand, "Ensuring remote directory exists")) {
+    logger.error(`❌ Deploy failed. Could not create remote directory.`);
+    process.exit(1);
+  }
+
+  const localSource = isDirectory ? `${sourcePath}/` : sourcePath;
+  const rsyncCommand = `rsync -avz ${shellEscape(localSource)} ${config.user}@${config.remoteHost}:${shellEscape(`${config.remotePath}/`)}`;
+
+  if (!execCommand(rsyncCommand, `Deploying from ${sourcePath}`)) {
     logger.error(`❌ Deploy failed. Deployment aborted.`);
     process.exit(1);
   }
@@ -212,14 +261,18 @@ function main() {
       steps.push({ name: "Backup", func: backupRemoteFile });
     }
 
-    // Step 2: Build (if not skipped)
-    if (!config.skipBuild) {
+    // Step 2: Build (if not skipped and not in protocol-only mode)
+    if (!config.skipBuild && !config.protocolDir) {
       steps.push({ name: "Build", func: buildProject });
     }
 
     // Step 3: Upload (if not skipped)
     if (!config.skipUpload) {
-      steps.push({ name: "Upload", func: deployProject });
+      const deploySourcePath = config.protocolDir || config.localOutPath;
+      steps.push({
+        name: config.protocolDir ? "Protocol Upload" : "Upload",
+        func: () => deployLocalPath(deploySourcePath),
+      });
     }
 
     if (steps.length === 0) {
