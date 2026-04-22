@@ -641,6 +641,10 @@ else if (video.canPlayType('application/vnd.apple.mpegurl')) {
 - [juliencrn/usehooks-ts: React hook library, ready to use, written in Typescript.](https://github.com/juliencrn/usehooks-ts)
 - [rehooks/awesome-react-hooks: Awesome React Hooks](https://github.com/rehooks/awesome-react-hooks?tab=readme-ov-file)
 
+## 广告@
+
+- [Pixel 管理 | TikTok API for Business 开发者文档](https://business-api.tiktok.com/portal/docs/pixel/v1.3)
+
 ## 移动端开发
 
 ### 适配@屏幕大小适配@
