@@ -1,0 +1,30 @@
+{
+  "name": "alfred-toolkit",
+  "version": "1.0.0",
+  "description": "Alfred workflow toolkit - a unified workflow with multiple developer tools, triggered by keyword 'bla'",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "vitest --run"
+  },
+  "keywords": [
+    "alfred",
+    "workflow",
+    "toolkit",
+    "unicode",
+    "decode",
+    "encode"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "alfy": "^2.1.0"
+  },
+  "devDependencies": {
+    "fast-check": "^3.22.0",
+    "vitest": "^2.1.8"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  }
+}
