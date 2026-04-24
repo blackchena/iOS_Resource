@@ -28,6 +28,7 @@ program
   .option("-c, --config <path>", "Path to config file (JSON format)", "deploy.config.json")
   .option("-u, --user <user>", "SSH username")
   .option("-h, --host <host>", "SSH hostname or IP address")
+  .option("-i, --identity-file <path>", "SSH private key path (IdentityFile)")
   .option("-r, --remote-path <path>", "Remote server target path")
   .option("-l, --local-out <path>", "Local out directory path", defaultLocalOut)
   .option("--overwrite", "Overwrite remote files (adds --delete --checksum to rsync)", false)
@@ -39,6 +40,9 @@ program
 Examples:
   # Full deployment (backup + upload)
   $ deploy --host xxx.xxx.com --user ubuntu --remote-path /var/www/xxx.xxx.com
+
+  # Use SSH config host alias (no --user needed if configured in ~/.ssh/config)
+  $ deploy --host prod-server --remote-path /var/www/xxx.xxx.com
 
   # Use config file
   $ deploy --config deploy.config.json
@@ -59,6 +63,7 @@ Config file format (JSON):
   {
     "user": "username",
     "host": "ssh.example.com",
+    "identityFile": "~/.ssh/id_ed25519",
     "remotePath": "/var/www/example.com",
     "localOut": "./out",
     "overwrite": false,
@@ -98,21 +103,43 @@ const config = {
   remotePath: options.remotePath || fileConfig.remotePath,
   localOutPath: options.localOut || fileConfig.localOut,
   user: options.user || fileConfig.user,
+  identityFile: options.identityFile || fileConfig.identityFile,
   overwrite: options.overwrite ?? fileConfig.overwrite,
   skipUpload: options.skipUpload ?? fileConfig.skipUpload,
   skipBackup: options.skipBackup ?? fileConfig.skipBackup,
 };
 
+if (config.identityFile) {
+  config.identityFile = path.resolve(config.identityFile);
+  if (!fs.existsSync(config.identityFile)) {
+    logger.error(`Error: identity file not found: ${config.identityFile}`);
+    process.exit(1);
+  }
+}
+
 // Validate required arguments for upload/backup
 if (!config.skipUpload || !config.skipBackup) {
-  if (!config.user || !config.remoteHost || !config.remotePath) {
-    logger.error("Error: --user, --host and --remote-path are required when upload or backup is enabled");
+  if (!config.remoteHost || !config.remotePath) {
+    logger.error("Error: --host and --remote-path are required when upload or backup is enabled");
     process.exit(1);
   }
 }
 
 function shellEscape(value) {
   return `'${String(value).replace(/'/g, `'\\''`)}'`;
+}
+
+function getRemoteTarget() {
+  return config.user ? `${config.user}@${config.remoteHost}` : config.remoteHost;
+}
+
+function getSshPrefix() {
+  const parts = ["ssh"];
+  if (config.identityFile) {
+    parts.push("-i", shellEscape(config.identityFile));
+  }
+  parts.push(getRemoteTarget());
+  return parts.join(" ");
 }
 
 function normalizeLocalPath(localPath) {
@@ -174,16 +201,13 @@ function backupRemoteFile() {
   let cpCommand;
   try {
     // First check if it's a directory
-    execSync(
-      `ssh ${config.user}@${config.remoteHost} "test -d ${config.remotePath}"`,
-      { stdio: "pipe" }
-    );
+    execSync(`${getSshPrefix()} "test -d ${shellEscape(config.remotePath)}"`, { stdio: "pipe" });
     // It's a directory, use cp -r
-    cpCommand = `ssh ${config.user}@${config.remoteHost} "sudo cp -r ${config.remotePath} ${remoteBackupPath}"`;
+    cpCommand = `${getSshPrefix()} "sudo cp -r ${shellEscape(config.remotePath)} ${shellEscape(remoteBackupPath)}"`;
     logger.cyan(`📁 Backing up directory with cp -r`);
   } catch (error) {
     // It's a file, use regular cp
-    cpCommand = `ssh ${config.user}@${config.remoteHost} "sudo cp ${config.remotePath} ${remoteBackupPath}"`;
+    cpCommand = `${getSshPrefix()} "sudo cp ${shellEscape(config.remotePath)} ${shellEscape(remoteBackupPath)}"`;
     logger.cyan(`📄 Backing up file with cp`);
   }
 
@@ -220,15 +244,23 @@ function deployLocalPath(localPath) {
     logger.cyan(`📄 Uploading file: ${path.basename(sourcePath)}`);
   }
 
-  const ensureRemoteDirCommand = `ssh ${config.user}@${config.remoteHost} "mkdir -p ${shellEscape(config.remotePath)}"`;
+  const ensureRemoteDirCommand = `${getSshPrefix()} "mkdir -p ${shellEscape(config.remotePath)}"`;
   if (!execCommand(ensureRemoteDirCommand, "Ensuring remote directory exists")) {
     logger.error(`❌ Deploy failed. Could not create remote directory.`);
     process.exit(1);
   }
 
   const localSource = isDirectory ? `${sourcePath}/` : sourcePath;
-  const rsyncFlags = config.overwrite ? "--delete --checksum" : "";
-  const rsyncCommand = `rsync -avz ${rsyncFlags} ${shellEscape(localSource)} ${config.user}@${config.remoteHost}:${shellEscape(`${config.remotePath}/`)}`.replace(/  +/, " ");
+  const rsyncParts = ["rsync", "-avz"];
+  if (config.overwrite) {
+    rsyncParts.push("--delete", "--checksum");
+  }
+  if (config.identityFile) {
+    rsyncParts.push("-e", shellEscape(`ssh -i ${config.identityFile}`));
+  }
+  rsyncParts.push(shellEscape(localSource));
+  rsyncParts.push(`${getRemoteTarget()}:${shellEscape(`${config.remotePath}/`)}`);
+  const rsyncCommand = rsyncParts.join(" ");
 
   if (!execCommand(rsyncCommand, `Deploying from ${sourcePath}`)) {
     logger.error(`❌ Deploy failed. Deployment aborted.`);
