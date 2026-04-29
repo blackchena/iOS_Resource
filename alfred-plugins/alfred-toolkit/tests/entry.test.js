@@ -15,19 +15,20 @@ describe('buildToolList (index.js)', () => {
   describe('no input - show all tools', () => {
     it('should return all registered tools when input is empty', () => {
       const items = buildToolList('');
-      expect(items).toHaveLength(2);
+      expect(items).toHaveLength(3);
       expect(items[0].uid).toBe('unicode-decode');
       expect(items[1].uid).toBe('unicode-encode');
+      expect(items[2].uid).toBe('img-convert');
     });
 
     it('should return all registered tools when input is undefined', () => {
       const items = buildToolList(undefined);
-      expect(items).toHaveLength(2);
+      expect(items).toHaveLength(3);
     });
 
     it('should return all registered tools when input is whitespace', () => {
       const items = buildToolList('   ');
-      expect(items).toHaveLength(2);
+      expect(items).toHaveLength(3);
     });
 
     it('each tool item should have correct fields', () => {

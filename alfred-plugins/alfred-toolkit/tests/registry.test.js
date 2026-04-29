@@ -3,11 +3,12 @@ import { tools, findTool, filterTools } from '../registry.js';
 
 describe('registry', () => {
   describe('tools array', () => {
-    it('should contain unicode-decode and unicode-encode tools', () => {
-      expect(tools).toHaveLength(2);
+    it('should contain unicode-decode, unicode-encode, and img-convert tools', () => {
+      expect(tools).toHaveLength(3);
       const ids = tools.map(t => t.id);
       expect(ids).toContain('unicode-decode');
       expect(ids).toContain('unicode-encode');
+      expect(ids).toContain('img-convert');
     });
 
     it('each tool should have required fields', () => {

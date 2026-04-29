@@ -554,6 +554,9 @@
 
 ## 性能优化
 
+### chrome@
+- [Chrome DevTools Performance 功能详解本文整理介绍 Chrome DevTools Perfo - 掘金](https://juejin.cn/post/7112544960934576136)
+
 ### 图片处理@
 
 - [GitHub - Jacksgong/webp-converter: Converter PNG/JPG to Webp and scan all changes](https://github.com/Jacksgong/webp-converter)

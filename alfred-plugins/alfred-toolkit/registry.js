@@ -14,6 +14,13 @@ export const tools = [
     description: '将普通文本编码为 Unicode 转义序列',
     icon: { path: 'icons/encode.png' },
     module: './tools/unicode-encode.js'
+  },
+  {
+    id: 'img-convert',
+    name: 'Image Convert',
+    description: '图片格式转换（支持 SVG/PNG/JPEG/WebP/ICO 互转）',
+    icon: { path: 'icons/image.png' },
+    module: './tools/img-convert.js'
   }
 ];
 

@@ -18,7 +18,9 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
-    "alfy": "^2.1.0"
+    "alfy": "^2.1.0",
+    "png-to-ico": "^3.0.1",
+    "sharp": "^0.34.5"
   },
   "devDependencies": {
     "fast-check": "^3.22.0",
