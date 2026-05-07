@@ -30,7 +30,7 @@ program
   .option("-h, --host <host>", "SSH hostname or IP address")
   .option("-i, --identity-file <path>", "SSH private key path (IdentityFile)")
   .option("-r, --remote-path <path>", "Remote server target path")
-  .option("-l, --local-out <path>", "Local out directory path", defaultLocalOut)
+  .option("-l, --local-out <path>", "Local out directory path")
   .option("--overwrite", "Overwrite remote files (adds --delete --checksum to rsync)", false)
   .option("--skip-upload", "Skip upload step", false)
   .option("--skip-backup", "Skip backup step", false)
@@ -101,7 +101,7 @@ if (fs.existsSync(configPath)) {
 const config = {
   remoteHost: options.host || fileConfig.host,
   remotePath: options.remotePath || fileConfig.remotePath,
-  localOutPath: options.localOut || fileConfig.localOut,
+  localOutPath: options.localOut || fileConfig.localOut || defaultLocalOut,
   user: options.user || fileConfig.user,
   identityFile: options.identityFile || fileConfig.identityFile,
   overwrite: options.overwrite ?? fileConfig.overwrite,
