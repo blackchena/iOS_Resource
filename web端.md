@@ -407,6 +407,11 @@
 ### 实用工具@utilities@
 - [yt-dlp/yt-dlp: A feature-rich command-line audio/video downloader](https://github.com/yt-dlp/yt-dlp?tab=readme-ov-file#installation)youtube视频下载
 
+### 视频播放@
+- [cookpete/react-player: A React component for playing a variety of URLs, including file paths, YouTube, Facebook, Twitch, SoundCloud, Streamable, Vimeo, Wistia and DailyMotion](https://github.com/cookpete/react-player)
+- [YouTube Player API Reference for iframe Embeds  |  YouTube IFrame Player API  |  Google for Developers](https://developers.google.com/youtube/iframe_api_reference?hl=zh-cn)
+
+
 ## 动画与交互
 
 ### 转场动画@
@@ -625,6 +630,8 @@ else if (video.canPlayType('application/vnd.apple.mpegurl')) {
 
 - [Cursor如何使用Agent Skills？技能功能完整教程 - Cursor](https://cursor.zone/faq/cursor-agent-skills-guide.html)
 - [LessUp/awesome-cursorrules-zh: 💻✨专为中文开发者优化的 Cursor AI 编程规则集合](https://github.com/LessUp/awesome-cursorrules-zh)
+- [SkillHub - Claude Skills & Agent Skills Marketplace | Claude Code Skills](https://www.skillhub.club/skills)
+- [Agent Skills Marketplace - Claude, Codex & ChatGPT Skills | SkillsMP](https://skillsmp.com/)
 
 ### clipPath@
 
