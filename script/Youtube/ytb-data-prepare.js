@@ -183,8 +183,8 @@ async function downloadAllThumbnails(videos, outputDir) {
       }
 
       outputData.push({
-        coverImg: `/assets/video/thumbnails/video_${id}.webp`,
-        appCoverImg: `/assets/video/thumbnails/video_${id}.png`,
+        coverImg: `/assets/app-video/thumbnails/video_${id}.webp`,
+        appCoverImg: `/assets/app-video/thumbnails/video_${id}.png`,
         bannerImg: "",
         bannerMobileImg: "",
         title,
@@ -228,7 +228,7 @@ async function downloadAllThumbnails(videos, outputDir) {
 
   console.log(`\nThumbnails saved to: ${thumbnailsDir}`);
 
-  const outputPath = path.join(thumbnailsDir, "thumbnails-data.json");
+  const outputPath = path.join(thumbnailsDir, "video-list.json");
   fs.writeFileSync(outputPath, JSON.stringify(outputData, null, 2), "utf-8");
   console.log(`Metadata JSON saved to: ${outputPath}`);
 }
