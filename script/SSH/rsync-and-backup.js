@@ -4,6 +4,13 @@ const fs = require('node:fs');
 const path = require('node:path');
 const { spawnSync } = require('node:child_process');
 const { Command } = require('commander');
+const dayjs = require('dayjs');
+
+function normalizeRemoteDir(dir) {
+  const trimmed = String(dir).trim();
+  if (!trimmed) return trimmed;
+  return trimmed === '/' ? trimmed : trimmed.replace(/\/+$/, '');
+}
 
 function fail(message) {
   console.error(`\n[ERROR] ${message}`);
@@ -33,12 +40,12 @@ function shellEscape(value) {
 const program = new Command();
 program
   .name('sync-and-backup')
-  .description('通用文件/目录同步脚本：上传前备份远程同名目标，再覆盖到指定目录')
+  .description('通用文件/目录同步脚本：上传前备份（整目录或同名目标）后再覆盖到指定目录')
   .argument('<sources...>', '本地要上传的文件或目录（支持多个）')
   .requiredOption('-u, --user <user>', '远程用户名')
   .requiredOption('-H, --host <host>', '远程主机地址')
   .requiredOption('-d, --dest <dir>', '远程目标目录')
-  .option('-b, --backup-dir <dir>', '远程备份根目录，默认 <dest>/.backups')
+  .option('-B, --backup-all', '上传覆盖前备份整个目标目录（默认备份名: <dest_basename>_yyyyMMddHHmm）', false)
   .option('--sudo', '远程操作使用 sudo -n（目标目录需要提权时使用）', false)
   .showHelpAfterError();
 
@@ -52,14 +59,18 @@ if (!Array.isArray(sourceArgs) || sourceArgs.length === 0) {
 
 const user = String(options.user).trim();
 const host = String(options.host).trim();
-const remoteDestDir = String(options.dest).trim();
+const remoteDestDir = normalizeRemoteDir(options.dest);
 
-const remoteBackupRoot = String(options.backupDir || `${remoteDestDir}/.backups`).trim();
 const sshTarget = `${user}@${host}`;
-const timestamp = new Date().toISOString().replace(/[:.]/g, '-');
+const timestamp = dayjs().format('YYYYMMDDHHmm');
 const stagingDir = `/tmp/sync-files-${timestamp}-${process.pid}`;
 const useSudo = Boolean(options.sudo);
 const sudoPrefix = useSudo ? 'sudo -n ' : '';
+const backupWholeDest = Boolean(options.backupAll);
+const wholeDestBackupDir = path.posix.join(
+  path.posix.dirname(remoteDestDir),
+  `${path.posix.basename(remoteDestDir)}_${timestamp}`,
+);
 
 const normalizedSources = sourceArgs.map((item) => {
   const absolutePath = path.isAbsolute(item) ? item : path.resolve(process.cwd(), item);
@@ -99,9 +110,10 @@ const remoteScript = `
 set -euo pipefail
 
 DEST_DIR=${shellEscape(remoteDestDir)}
-BACKUP_ROOT=${shellEscape(remoteBackupRoot)}
 STAGING_DIR=${shellEscape(stagingDir)}
 TIMESTAMP=${shellEscape(timestamp)}
+BACKUP_WHOLE_DEST=${backupWholeDest ? '1' : '0'}
+WHOLE_DEST_BACKUP_DIR=${shellEscape(wholeDestBackupDir)}
 
 SUDO=${shellEscape(sudoPrefix)}
 
@@ -119,10 +131,15 @@ cleanup() {
 trap cleanup EXIT
 
 run_remote mkdir -p "$DEST_DIR"
-run_remote mkdir -p "$BACKUP_ROOT"
 
-BACKUP_DIR="$BACKUP_ROOT/$TIMESTAMP"
-NEED_BACKUP_DIR=0
+if [ "$BACKUP_WHOLE_DEST" = "1" ]; then
+  if run_remote test -e "$DEST_DIR"; then
+    run_remote cp -a "$DEST_DIR" "$WHOLE_DEST_BACKUP_DIR"
+    echo "已备份整个目标目录: $DEST_DIR -> $WHOLE_DEST_BACKUP_DIR"
+  else
+    echo "目标目录不存在，跳过整目录备份: $DEST_DIR"
+  fi
+fi
 
 FILES=( ${sourceNamesLiteral} )
 for file_name in "\${FILES[@]}"; do
@@ -135,13 +152,11 @@ for file_name in "\${FILES[@]}"; do
   fi
 
   if run_remote test -e "$dst"; then
-    if [ "$NEED_BACKUP_DIR" -eq 0 ]; then
-      run_remote mkdir -p "$BACKUP_DIR"
-      NEED_BACKUP_DIR=1
+    if [ "$BACKUP_WHOLE_DEST" != "1" ]; then
+      backup_dst="$DEST_DIR/\${file_name}_\${TIMESTAMP}"
+      run_remote cp -a "$dst" "$backup_dst"
+      echo "已备份: $dst -> $backup_dst"
     fi
-
-    run_remote cp -a "$dst" "$BACKUP_DIR/$file_name"
-    echo "已备份: $dst -> $BACKUP_DIR/$file_name"
   else
     echo "目标不存在，跳过备份: $dst"
   fi
@@ -155,5 +170,10 @@ done
 run('ssh', ['-T', sshTarget, 'bash -se'], { input: remoteScript });
 
 console.log(`[3/3] 同步完成，目标目录: ${remoteDestDir}`);
-console.log(`备份根目录: ${remoteBackupRoot}`);
-console.log(`备份批次时间戳: ${timestamp}`);
+if (backupWholeDest) {
+  console.log(`备份模式: 整目录备份`);
+  console.log(`默认备份目录: ${wholeDestBackupDir}`);
+} else {
+  console.log('备份模式: 覆盖项同级备份');
+  console.log(`默认备份命名: <原名称>_${timestamp}`);
+}

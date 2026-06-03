@@ -19,7 +19,8 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
-    "commander": "^11.0.0"
+    "commander": "^11.0.0",
+    "dayjs": "^1.11.21"
   },
   "engines": {
     "node": ">=16.0.0"
