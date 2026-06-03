@@ -1,0 +1,27 @@
+{
+  "name": "rsync-and-backup",
+  "version": "1.0.0",
+  "description": "通用文件/目录同步脚本：上传前备份远程同名目标，再覆盖到指定目录",
+  "main": "rsync-and-backup.js",
+  "bin": {
+    "rsync-and-backup": "./rsync-and-backup.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "rsync",
+    "backup",
+    "sync",
+    "ssh",
+    "deploy"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "commander": "^11.0.0"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  }
+}
