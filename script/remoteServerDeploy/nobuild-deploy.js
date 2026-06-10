@@ -34,6 +34,7 @@ program
   .option("--overwrite", "Overwrite remote files (adds --delete --checksum to rsync)")
   .option("--skip-upload", "Skip upload step")
   .option("--skip-backup", "Skip backup step")
+  .option("--delete-backup <name>", "Delete a specific remote backup folder by name")
   .addHelpText(
     "after",
     `
@@ -55,6 +56,9 @@ Examples:
 
   # Backup only (skip upload)
   $ deploy --skip-upload --host xxx.xxx.com --remote-path /var/www/xxx.xxx.com
+
+  # Delete a specific backup folder
+  $ deploy --delete-backup xxx.xxx.com_20260101123000 --host xxx.xxx.com --remote-path /var/www/xxx.xxx.com
 
   # Upload with overwrite (delete remote files not in local)
   $ deploy --overwrite --host xxx.xxx.com --remote-path /var/www/xxx.xxx.com
@@ -107,6 +111,7 @@ const config = {
   overwrite: options.overwrite ?? fileConfig.overwrite ?? false,
   skipUpload: options.skipUpload ?? fileConfig.skipUpload ?? false,
   skipBackup: options.skipBackup ?? fileConfig.skipBackup ?? false,
+  deleteBackup: options.deleteBackup || fileConfig.deleteBackup,
 };
 
 if (config.identityFile) {
@@ -185,6 +190,40 @@ function execCommand(command, description) {
   }
 }
 
+function printRemoteBackupFolders(parentDir, targetName) {
+  const backupPattern = `${targetName}_*`;
+  const listCommand =
+    `${getSshPrefix()} "find ${shellEscape(parentDir)} -maxdepth 1 -mindepth 1 ` +
+    `-type d -name ${shellEscape(backupPattern)} | sort"`;
+
+  try {
+    const rawOutput = execSync(listCommand, {
+      encoding: "utf8",
+      stdio: "pipe",
+    });
+    const backupFolders = rawOutput
+      .split("\n")
+      .map((line) => line.trim())
+      .filter(Boolean)
+      .map((remotePath) => path.basename(remotePath));
+
+    logger.cyan(`📚 Existing backup folders (${backupFolders.length}):`);
+    if (backupFolders.length === 0) {
+      logger.dim("(none)");
+      return;
+    }
+
+    backupFolders.forEach((folder, index) => {
+      logger.dim(`${index + 1}. ${folder}`);
+    });
+  } catch (error) {
+    logger.warning("⚠️  Could not list existing backup folders.");
+    if (error.stderr) {
+      logger.dim(error.stderr);
+    }
+  }
+}
+
 function backupRemoteFile() {
   const timestamp = dayjs().format("YYYYMMDDHHmmss");
   // Extract directory and name from path
@@ -216,6 +255,52 @@ function backupRemoteFile() {
     process.exit(1);
   } else {
     logger.success(`✅ Backup created successfully at: ${remoteBackupPath}`);
+    printRemoteBackupFolders(parentDir, targetName);
+  }
+}
+
+function deleteRemoteBackupByName(backupName) {
+  const requestedName = String(backupName || "").trim();
+  const parentDir = path.dirname(config.remotePath);
+  const targetName = path.basename(config.remotePath);
+
+  if (!requestedName) {
+    logger.error("❌ Backup name is required for deletion.");
+    process.exit(1);
+  }
+
+  if (!requestedName.startsWith(`${targetName}_`)) {
+    logger.error(
+      `❌ Invalid backup name: ${requestedName}. Expected prefix: ${targetName}_`
+    );
+    process.exit(1);
+  }
+
+  const remoteBackupPath = path.join(parentDir, requestedName);
+  const deleteCommand =
+    `${getSshPrefix()} "if [ -d ${shellEscape(remoteBackupPath)} ]; then ` +
+    `sudo rm -rf ${shellEscape(remoteBackupPath)}; ` +
+    `echo DELETED; else echo NOT_FOUND; fi"`;
+
+  try {
+    logger.warning(`🗑️  Deleting remote backup folder: ${requestedName}`);
+    const result = execSync(deleteCommand, {
+      encoding: "utf8",
+      stdio: "pipe",
+    }).trim();
+
+    if (result.includes("NOT_FOUND")) {
+      logger.error(`❌ Backup folder not found: ${remoteBackupPath}`);
+      process.exit(1);
+    }
+
+    logger.success(`✅ Backup folder deleted: ${remoteBackupPath}`);
+    printRemoteBackupFolders(parentDir, targetName);
+  } catch (error) {
+    logger.error(`❌ Failed to delete backup folder: ${requestedName}`);
+    logger.error(error.message);
+    if (error.stderr) logger.error(error.stderr);
+    process.exit(1);
   }
 }
 
@@ -270,6 +355,11 @@ function deployLocalPath(localPath) {
 
 function main() {
   try {
+    if (config.deleteBackup) {
+      deleteRemoteBackupByName(config.deleteBackup);
+      return;
+    }
+
     logger.info("🚀 Starting deployment process...");
 
     const steps = [];
