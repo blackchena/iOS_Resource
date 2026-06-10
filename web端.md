@@ -626,12 +626,14 @@ else if (video.canPlayType('application/vnd.apple.mpegurl')) {
 
 - [share-best-prompt/Same.dev/Same.dev Prompt_v20250325.txt at main · shareAI-lab/share-best-prompt](https://github.com/shareAI-lab/share-best-prompt/blob/main/Same.dev/Same.dev%20Prompt_v20250325.txt)mock
 
-### mcp@skill@rules@
+### mcp@skill@rules@ai@
 
 - [Cursor如何使用Agent Skills？技能功能完整教程 - Cursor](https://cursor.zone/faq/cursor-agent-skills-guide.html)
 - [LessUp/awesome-cursorrules-zh: 💻✨专为中文开发者优化的 Cursor AI 编程规则集合](https://github.com/LessUp/awesome-cursorrules-zh)
 - [SkillHub - Claude Skills & Agent Skills Marketplace | Claude Code Skills](https://www.skillhub.club/skills)
 - [Agent Skills Marketplace - Claude, Codex & ChatGPT Skills | SkillsMP](https://skillsmp.com/)
+- [garrytan/gstack: Use Garry Tan's exact Claude Code setup: 23 opinionated tools that serve as CEO, Designer, Eng Manager, Release Manager, Doc Engineer, and QA](https://github.com/garrytan/gstack)
+- [libukai/awesome-agent-skills: Agent Skills 终极指南：快速入门、资源推荐、精选技能与实用工具 ｜The Ultimate Guide to Agent Skills: QuickStart, Resources, Features&Toolkit](https://github.com/libukai/awesome-agent-skills)
 
 ### clipPath@
 
