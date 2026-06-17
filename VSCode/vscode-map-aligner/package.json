@@ -1,0 +1,28 @@
+{
+  "name": "nginx-map-aligner",
+  "displayName": "Nginx Map Aligner",
+  "description": "Align selected text like awk '{$1=$1}1' | column -t for Nginx map rules.",
+  "version": "0.0.1",
+  "publisher": "local",
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "categories": [
+    "Formatters"
+  ],
+  "activationEvents": [
+    "onCommand:nginxMapAligner.alignSelection"
+  ],
+  "main": "./extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "nginxMapAligner.alignSelection",
+        "title": "Nginx Map Aligner: Align Selected Text"
+      }
+    ]
+  },
+  "scripts": {
+    "lint": "echo 'No lint configured'"
+  }
+}

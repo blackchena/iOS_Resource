@@ -282,6 +282,10 @@
 - [slick - the last carousel you'll ever need](https://kenwheeler.github.io/slick/)
 - [swiperjs.com/demos](https://swiperjs.com/demos)
 
+#### 跑马灯@marquee@
+
+- [justin-chu/react-fast-marquee: A lightweight React component that harnesses the power of CSS animations to create silky smooth marquees.](https://github.com/justin-chu/react-fast-marquee)
+
 #### toast@alert@popup@
 
 - [SweetAlert2 - a beautiful, responsive, customizable and accessible (WAI-ARIA) replacement for JavaScript's popup boxes](https://sweetalert2.github.io/#examples)
@@ -362,6 +366,8 @@
 - [Themes | Astro](https://astro.build/themes/)
 - [One Page Love - One Page Website Inspiration and Templates](https://onepagelove.com/page/7)
 - [Winning websites. Web Design Inspiration - Awwwards](https://www.awwwards.com/websites/) 比较好的设计网站
+- [Trending Color Palettes - Coolors](https://coolors.co/palettes/trending)
+- [Dribbble - Discover the World’s Top Designers & Creative Professionals](https://dribbble.com/)
 
 ### HTML 避免写重复代码@
 
@@ -894,6 +900,7 @@ diff -r '/Users/xxx/Downloads/dist 3' /Users/xxx/Desktop/dist
 ### shell@
 
 - `find . -maxdepth 1 -name '*pic.jpg' | while read filename; do newfilename=`echo $filename | sed -E 's|\./(..)pic(\.jpg)|\./pic\1\2|'`; echo  mv $filename $newfilename; done | bash`
+- [junegunn/fzf: :cherry_blossom: A command-line fuzzy finder](https://github.com/junegunn/fzf#setting-up-shell-integration) 历史命令模糊搜索
 
 ### 技术栈检测@
 
