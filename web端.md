@@ -73,6 +73,9 @@
 - [告别 JS 浮层，全新的 CSS Anchor Positioning 锚点定位 API « 张鑫旭-鑫空间-鑫生活](https://www.zhangxinxu.com/wordpress/2024/06/css-anchor-positioning-api/)
 - [fisshy/react-scroll: React scroll component](https://github.com/fisshy/react-scroll)锚点定位
 
+#### sticky@
+- sticky失效原因一父级元素设置了overflow-x或则overflow-y为hidden
+
 ### 字体@
 
 - [什么！一个项目给了 8 个字体包？？？根据语言和字宽的不同，自动选择对应的字体。 一段文本如何使用多个字体？ 一段文本如何根 - 掘金](https://juejin.cn/post/7251884086536781880)
@@ -583,6 +586,15 @@
 - [aFarkas/lazysizes: High performance and SEO friendly lazy loader for images (responsive and normal), iframes and more, that detects any visibility changes triggered through user interaction, CSS or JavaScript without configuration.](https://github.com/aFarkas/lazysizes) 还可以实现 blurup 效果
 - [verlok/vanilla-lazyload: LazyLoad is a lightweight, flexible script that speeds up your website by deferring the loading of your below-the-fold images, backgrounds, videos, iframes and scripts to when they will enter the viewport. Written in plain "vanilla" JavaScript, it leverages IntersectionObserver, supports responsive images and enables native lazy loading.](https://github.com/verlok/vanilla-lazyload)
 
+### SEO@
+- [SEO AI bot - Scrib.li](https://scrib.li/)
+- [分享调试工具 - Meta 开发者](https://developers.facebook.com/tools/debug/)
+
+### 队列@并发@
+
+- [sindresorhus/p-queue: Promise queue with concurrency control](https://github.com/sindresorhus/p-queue)
+
+
 ### 视频@m3u8@
 
 ```
@@ -640,6 +652,10 @@ else if (video.canPlayType('application/vnd.apple.mpegurl')) {
 - [Agent Skills Marketplace - Claude, Codex & ChatGPT Skills | SkillsMP](https://skillsmp.com/)
 - [garrytan/gstack: Use Garry Tan's exact Claude Code setup: 23 opinionated tools that serve as CEO, Designer, Eng Manager, Release Manager, Doc Engineer, and QA](https://github.com/garrytan/gstack)
 - [libukai/awesome-agent-skills: Agent Skills 终极指南：快速入门、资源推荐、精选技能与实用工具 ｜The Ultimate Guide to Agent Skills: QuickStart, Resources, Features&Toolkit](https://github.com/libukai/awesome-agent-skills)
+
+- [awesome-agent-skills/docs/Agent-Skill-五种设计模式.md at main · libukai/awesome-agent-skills](https://github.com/libukai/awesome-agent-skills/blob/main/docs/Agent-Skill-%E4%BA%94%E7%A7%8D%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F.md)
+- [getdesign.md — DESIGN.md collection for AI coding agents](https://getdesign.md/)
+- [multica-ai/andrej-karpathy-skills: A single CLAUDE.md file to improve Claude Code behavior, derived from Andrej Karpathy's observations on LLM coding pitfalls.](https://github.com/multica-ai/andrej-karpathy-skills)
 
 ### clipPath@
 

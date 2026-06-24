@@ -129,7 +129,10 @@ export async function run(input) {
           uid: `convert-dir-${fmt}`,
           title: `🔄 批量转换为 ${fmt.toUpperCase()}`,
           subtitle: `${path.basename(filePath)}/* → .${fmt === 'jpeg' ? 'jpg' : fmt}`,
-          arg: `${filePath} ${fmt}`,
+          arg: `img-convert ${filePath} ${fmt}`,
+          variables: {
+            ATK_ACTION: 'convert-now'
+          },
           valid: true
         }));
       }
@@ -212,7 +215,10 @@ export async function run(input) {
         uid: `convert-${fmt}`,
         title: `🔄 转换为 ${fmt.toUpperCase()}`,
         subtitle: `${path.basename(filePath)} → .${fmt === 'jpeg' ? 'jpg' : fmt}`,
-        arg: `${filePath} ${fmt}`,
+        arg: `img-convert ${filePath} ${fmt}`,
+        variables: {
+          ATK_ACTION: 'convert-now'
+        },
         valid: true
       }));
     }
