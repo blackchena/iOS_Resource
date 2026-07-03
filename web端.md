@@ -372,6 +372,28 @@
 - [Trending Color Palettes - Coolors](https://coolors.co/palettes/trending)
 - [Dribbble - Discover the World’s Top Designers & Creative Professionals](https://dribbble.com/)
 
+
+### Shader@着色器@
+
+- [Browse (1) - Shadertoy BETA](https://www.shadertoy.com/browse)
+- [SuperSplat - The Home for 3D Gaussian Splatting](https://superspl.at/)
+- [PlayCanvas Examples](https://playcanvas.com/examples/#/misc/hello-world)
+- [Shader Editor](https://playcanvas.com/shader-editor)
+- [Godot Shaders - Make your games beautiful!](https://godotshaders.com/)
+
+
+### 3D@渲染引擎@2D@
+
+- [Babylon.js: Powerful, Beautiful, Simple, Open - Web-Based 3D At Its Best](https://babylonjs.com/)基于 Web 的 3D 渲染引擎
+- [PlayCanvas | Open Source WebGL & WebGPU Game Engine](https://playcanvas.com/)
+- [Godot Engine - Free and open source 2D and 3D game engine](https://godotengine.org/)
+
+### 调参面板@
+
+- [pmndrs/leva: 🌋 React-first components GUI](https://github.com/pmndrs/leva) 6k star
+- [cocopon/tweakpane: :control_knobs: Compact GUI for fine-tuning parameters and monitoring value changes](https://github.com/cocopon/tweakpane)
+
+
 ### 代码分析@
 - [Egonex-AI/Understand-Anything: Graphs that teach > graphs that impress. Turn any code into an interactive knowledge graph you can explore, search, and ask questions about. Works with Claude Code, Codex, Cursor, Copilot, Gemini CLI, and more.](https://github.com/Egonex-AI/Understand-Anything/tree/main)
 
