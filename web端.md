@@ -104,6 +104,10 @@
 - [javascript - Next.js DOMPurify.sanitize() shows TypeError: dompurify**WEBPACK*IMPORTED_MODULE_6***default.a.sanitize is not a function - Stack Overflow](https://stackoverflow.com/questions/65646007/next-js-dompurify-sanitize-shows-typeerror-dompurify-webpack-imported-module)
 - [NGINX 反向代理 Next.js 项目配置 - 付小晨](https://fuxiaochen.com/snippet/proxy-nextjs-project-with-nginx)
 
+### NGINX@
+
+- [NGINX If Is Evil | Avoid If Directive Pitfalls in Location Blocks](https://gixy.org/guides/if-is-evil)解释 why if 在 location 里容易出时序和继承坑，并建议用 map
+
 ### 环境搭建@
 
 - [Setup Tailwind CSS in a React project configured from scratch with Webpack | a step-by-step guide - DEV Community](https://dev.to/ivadyhabimana/setup-tailwind-css-in-a-react-project-configured-from-scratch-a-step-by-step-guide-2jc8)

@@ -1,60 +1,168 @@
 const { exec } = require("child_process");
 const fs = require("fs");
+const fsp = require("fs/promises");
 const path = require("path");
 const { Command } = require("commander");
 
 const YOUTUBE_ID_REGEX = /^[a-zA-Z0-9_-]{11}$/;
 
-// Download thumbnail and fetch metadata (including title) in a single yt-dlp call
-function downloadThumbnailAndMetadata(video, index, thumbnailsDir) {
+function shellEscape(value) {
+  return `'${String(value).replace(/'/g, `'\\''`)}'`;
+}
+
+function runCommand(command) {
   return new Promise((resolve, reject) => {
-    const outputPath = path.join(
-      thumbnailsDir,
-      `video_${extractVideoId(video)}.%(ext)s`,
-    );
-    const command = `python3 -m yt_dlp --write-thumbnail --skip-download --print-json --output "${outputPath}" "${video}"`;
+    exec(command, (error, stdout, stderr) => {
+      if (error) {
+        error.stdout = stdout;
+        error.stderr = stderr;
+        reject(error);
+        return;
+      }
+      resolve({ stdout, stderr });
+    });
+  });
+}
+
+function parseMetadataFromStdout(stdout) {
+  const jsonLine = stdout
+    .split("\n")
+    .map((line) => line.trim())
+    .filter(Boolean)
+    .pop();
+
+  if (!jsonLine) {
+    throw new Error("No metadata JSON returned by yt-dlp");
+  }
+
+  try {
+    return JSON.parse(jsonLine);
+  } catch (parseError) {
+    throw new Error(`Failed to parse metadata JSON: ${parseError.message}`);
+  }
+}
+
+function fetchJson(url) {
+  return fetch(url).then(async (response) => {
+    if (!response.ok) {
+      throw new Error(`Request failed with status ${response.status}`);
+    }
+    return response.json();
+  });
+}
+
+function downloadFile(url, filePath) {
+  return fetch(url)
+    .then(async (response) => {
+      if (!response.ok) {
+        throw new Error(`Download failed with status ${response.status}`);
+      }
+      const buffer = Buffer.from(await response.arrayBuffer());
+      await fsp.writeFile(filePath, buffer);
+      return filePath;
+    })
+    .catch(async (error) => {
+      try {
+        await fsp.unlink(filePath);
+      } catch (_unlinkError) {
+        // ignore cleanup errors
+      }
+      throw error;
+    });
+}
+
+async function fetchMetadataByOEmbed(video) {
+  const oembedUrl =
+    "https://www.youtube.com/oembed?url=" +
+    encodeURIComponent(video) +
+    "&format=json";
+  const oembed = await fetchJson(oembedUrl);
+  return {
+    title: oembed.title || "",
+  };
+}
+
+// Download thumbnail and fetch metadata (including title) in a single yt-dlp call
+function downloadThumbnailAndMetadata(video, index, thumbnailsDir, ytDlpOptions) {
+  return new Promise((resolve, reject) => {
+    const videoId = extractVideoId(video);
+    const thumbnailUrl = `https://i.ytimg.com/vi/${videoId}/maxresdefault.jpg`;
+    const thumbnailPath = path.join(thumbnailsDir, `video_${videoId}.jpg`);
+    const args = [
+      "--ignore-config",
+      "--skip-download",
+      "--print-json",
+      "--no-update",
+    ];
+
+    if (ytDlpOptions.cookiesFromBrowser) {
+      args.push("--cookies-from-browser", ytDlpOptions.cookiesFromBrowser);
+    }
+    if (ytDlpOptions.cookies) {
+      args.push("--cookies", ytDlpOptions.cookies);
+    }
+    if (ytDlpOptions.jsRuntimes) {
+      args.push("--js-runtimes", ytDlpOptions.jsRuntimes);
+    }
+
+    args.push(video);
+
+    const command = `python3 -m yt_dlp ${args.map(shellEscape).join(" ")}`;
 
     console.log(`Downloading thumbnail for video ${index + 1}: ${video}`);
     console.log(`Command: ${command}`);
 
-    exec(command, (error, stdout, stderr) => {
-      if (error) {
+    downloadFile(thumbnailUrl, thumbnailPath)
+      .then(() => runCommand(command))
+      .then(({ stdout, stderr }) => {
+        if (stderr) {
+          console.log(`Info for video ${index + 1}:`, stderr);
+        }
+        const metadata = parseMetadataFromStdout(stdout);
+        console.log(`✅ Successfully downloaded thumbnail for video ${index + 1}`);
+        resolve(metadata);
+      })
+      .catch(async (error) => {
+        const errorText = `${error.message}\n${error.stderr || ""}`;
+        if (
+          errorText.includes("Sign in to confirm your age") ||
+          errorText.includes("This video may be inappropriate for some users")
+        ) {
+          reject(
+            new Error(
+              "Age-restricted video. Please provide authentication with --cookies-from-browser <browser> or --cookies <cookies.txt>.",
+            ),
+          );
+          return;
+        }
+
+        if (errorText.includes("Requested format is not available")) {
+          try {
+            console.log(
+              `Retrying video ${index + 1} metadata with oEmbed fallback...`,
+            );
+            const metadata = await fetchMetadataByOEmbed(video);
+            console.log(
+              `✅ Successfully downloaded thumbnail for video ${index + 1} (retry)`,
+            );
+            resolve(metadata);
+            return;
+          } catch (retryError) {
+            reject(
+              new Error(
+                `Requested format is not available even after retry. ${retryError.message}`,
+              ),
+            );
+            return;
+          }
+        }
+
         console.error(
           `Error downloading thumbnail for video ${index + 1}:`,
           error.message,
         );
         reject(error);
-        return;
-      }
-
-      if (stderr) {
-        console.log(`Info for video ${index + 1}:`, stderr);
-      }
-
-      const jsonLine = stdout
-        .split("\n")
-        .map((line) => line.trim())
-        .filter(Boolean)
-        .pop();
-
-      if (!jsonLine) {
-        reject(new Error("No metadata JSON returned by yt-dlp"));
-        return;
-      }
-
-      let metadata;
-      try {
-        metadata = JSON.parse(jsonLine);
-      } catch (parseError) {
-        reject(new Error(`Failed to parse metadata JSON: ${parseError.message}`));
-        return;
-      }
-
-      console.log(
-        `✅ Successfully downloaded thumbnail for video ${index + 1}`,
-      );
-      resolve(metadata);
-    });
+      });
   });
 }
 
@@ -136,6 +244,19 @@ function parseArgs() {
       "Output directory (default: current working directory)",
       process.cwd(),
     )
+    .option(
+      "--cookies-from-browser <browser>",
+      "Pass browser cookies to yt-dlp (e.g. chrome, safari, edge, firefox)",
+    )
+    .option(
+      "--cookies <path>",
+      "Path to cookies.txt file for yt-dlp authentication",
+    )
+    .option(
+      "--js-runtimes <value>",
+      "JS runtimes passed to yt-dlp, e.g. node or deno:/path/to/deno",
+      "node",
+    )
     .showHelpAfterError();
 
   program.parse(process.argv);
@@ -157,11 +278,16 @@ function parseArgs() {
   return {
     videos: normalizedVideos,
     outputDir: path.resolve(options.output),
+    ytDlpOptions: {
+      cookiesFromBrowser: options.cookiesFromBrowser || "",
+      cookies: options.cookies ? path.resolve(options.cookies) : "",
+      jsRuntimes: options.jsRuntimes || "node",
+    },
   };
 }
 
 // Main function to download all thumbnails
-async function downloadAllThumbnails(videos, outputDir) {
+async function downloadAllThumbnails(videos, outputDir, ytDlpOptions) {
   const thumbnailsDir = path.join(outputDir, "thumbnails");
   fs.mkdirSync(thumbnailsDir, { recursive: true });
 
@@ -176,15 +302,20 @@ async function downloadAllThumbnails(videos, outputDir) {
     const { url, id } = videos[i];
 
     try {
-      const metadata = await downloadThumbnailAndMetadata(url, i, thumbnailsDir);
+      const metadata = await downloadThumbnailAndMetadata(
+        url,
+        i,
+        thumbnailsDir,
+        ytDlpOptions,
+      );
       const title = metadata?.title?.trim();
       if (!title) {
         throw new Error("Title is empty");
       }
 
       outputData.push({
-        coverImg: `/assets/app-video/thumbnails/video_${id}.webp`,
-        appCoverImg: `/assets/app-video/thumbnails/video_${id}.png`,
+        coverImg: `/assets/app-video/thumbnails/video_${id}.jpg`,
+        appCoverImg: `/assets/app-video/thumbnails/video_${id}.jpg`,
         bannerImg: "",
         bannerMobileImg: "",
         title,
@@ -251,7 +382,7 @@ function checkYtDlp() {
 
 // Run the script
 async function main() {
-  const { videos, outputDir } = parseArgs();
+  const { videos, outputDir, ytDlpOptions } = parseArgs();
 
   console.log("YouTube Thumbnail Downloader");
   console.log("============================");
@@ -262,7 +393,7 @@ async function main() {
   }
 
   try {
-    await downloadAllThumbnails(videos, outputDir);
+    await downloadAllThumbnails(videos, outputDir, ytDlpOptions);
   } catch (error) {
     console.error("Script failed:", error);
     process.exit(1);
