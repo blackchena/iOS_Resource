@@ -20,7 +20,8 @@ function buildConfirmItem(rawInput, toolName, summary) {
     uid: 'confirm-run',
     title: `✅ 确认执行: ${toolName}`,
     subtitle: summary,
-    arg: `${EXEC_PREFIX}${rawInput}`,
+    // arg: `${EXEC_PREFIX}${rawInput}`,
+    arg: `${rawInput}`,
     variables: {
       ATK_ACTION: 'convert-now'
     },

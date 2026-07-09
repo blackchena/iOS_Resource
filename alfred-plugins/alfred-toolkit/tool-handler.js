@@ -58,7 +58,12 @@ function isDirectRun() {
   return import.meta.url === pathToFileURL(process.argv[1]).href;
 }
 
-if (isDirectRun()) {
+function shouldExecuteNow() {
+  const executeFlag = '--execute';
+  return isDirectRun() && process.argv.includes(executeFlag);
+}
+
+if (shouldExecuteNow()) {
   const items = await handleToolInput(alfy.input);
   alfy.output(items);
 }
