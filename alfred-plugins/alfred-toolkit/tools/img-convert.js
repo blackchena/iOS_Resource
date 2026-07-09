@@ -9,6 +9,15 @@ import toIco from 'png-to-ico';
 const SUPPORTED_FORMATS = ['png', 'jpeg', 'jpg', 'webp', 'svg', 'ico'];
 const OUTPUT_FORMATS = ['png', 'jpeg', 'webp', 'ico'];
 
+function buildGuideItem(title, subtitle) {
+  return {
+    uid: 'validation-guide',
+    title,
+    subtitle,
+    valid: false
+  };
+}
+
 /**
  * 解析输入：文件路径 + 可选的目标格式
  * 格式: "/path/to/file.svg png" 或 "/path/to/file.svg"
@@ -31,6 +40,44 @@ function parseInput(input) {
   }
 
   return { filePath: trimmed, targetFormat: null };
+}
+
+/**
+ * 参数校验：图片转换需要执行前确认
+ */
+export function validate(input) {
+  if (!input || input.trim() === '') {
+    return {
+      strategy: 'reject',
+      items: [buildGuideItem('⚠️ 缺少参数', '示例: img-convert /path/to/img.png webp')]
+    };
+  }
+
+  const { filePath, targetFormat } = parseInput(input);
+  if (!filePath) {
+    return {
+      strategy: 'reject',
+      items: [buildGuideItem('⚠️ 路径不能为空', '示例: img-convert /path/to/img.png webp')]
+    };
+  }
+  if (!existsSync(filePath)) {
+    return {
+      strategy: 'reject',
+      items: [buildGuideItem('⚠️ 文件不存在', filePath)]
+    };
+  }
+
+  const stat = statSync(filePath);
+  const scope = stat.isDirectory() ? '目录批量' : '单文件';
+  const summary = targetFormat
+    ? `${scope} 转换，目标格式: ${targetFormat.toUpperCase()}`
+    : `${scope} 转换，未指定目标格式（将展示可选格式）`;
+
+  return {
+    strategy: 'confirm',
+    summary,
+    tips: ['回车确认后执行图片格式转换']
+  };
 }
 
 /**
@@ -94,7 +141,7 @@ async function convertSingleFile(filePath, targetFormat) {
  * @param {string} input - 文件路径/文件夹路径 [目标格式]
  * @returns {Array<AlfredItem>} Alfred 列表项数组
  */
-export async function run(input) {
+export async function handle(input) {
   // console.error("bla input", input)
   try {
     // 空/空白输入返回引导提示项
@@ -252,3 +299,6 @@ export async function run(input) {
     }];
   }
 }
+
+// 兼容旧接口
+export const run = handle;

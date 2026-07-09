@@ -1,6 +1,7 @@
 // 第二级入口：工具路由与执行
 import alfy from 'alfy';
 import { findTool } from './registry.js';
+import { pathToFileURL } from 'url';
 
 /**
  * 解析工具 ID 和用户参数，路由到对应工具并返回结果
@@ -35,7 +36,11 @@ export async function handleToolInput(input) {
 
   try {
     const toolModule = await import(tool.module);
-    return await toolModule.run(userInput);
+    const handler = toolModule.handle || toolModule.run;
+    if (typeof handler !== 'function') {
+      throw new Error(`Tool module missing handle/run: ${tool.module}`);
+    }
+    return await handler(userInput);
   } catch (error) {
     return [{
       uid: 'error-import',
@@ -46,5 +51,14 @@ export async function handleToolInput(input) {
   }
 }
 
-const items = await handleToolInput(alfy.input);
-alfy.output(items);
+function isDirectRun() {
+  if (!process.argv[1]) {
+    return false;
+  }
+  return import.meta.url === pathToFileURL(process.argv[1]).href;
+}
+
+if (isDirectRun()) {
+  const items = await handleToolInput(alfy.input);
+  alfy.output(items);
+}

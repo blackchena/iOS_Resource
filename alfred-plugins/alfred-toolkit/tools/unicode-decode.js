@@ -1,21 +1,44 @@
 // Unicode 解码工具模块
 import { decodeUnicode, toDisplayText } from '../lib/unicode-decoder.js';
 
+function buildGuideItem(title, subtitle) {
+  return {
+    uid: 'guide',
+    title,
+    subtitle,
+    valid: false
+  };
+}
+
+/**
+ * 工具参数校验
+ * strategy:
+ * - reject: 参数不合法，直接返回提示项
+ * - handle: 跳过确认，直接进入 handle
+ */
+export function validate(input) {
+  if (!input || input.trim() === '') {
+    return {
+      strategy: 'reject',
+      items: [
+        buildGuideItem('⚠️ 请输入 Unicode 编码字符串', '请输入包含 \\uXXXX 格式的 Unicode 编码字符串')
+      ]
+    };
+  }
+
+  return { strategy: 'handle' };
+}
+
 /**
  * Unicode 解码工具的 run 函数
  * @param {string} input - 用户输入的参数
  * @returns {Array<AlfredItem>} Alfred 列表项数组
  */
-export async function run(input) {
+export async function handle(input) {
   try {
     // 空/空白输入返回引导提示项
     if (!input || input.trim() === '') {
-      return [{
-        uid: 'guide',
-        title: '⚠️ 请输入 Unicode 编码字符串',
-        subtitle: '请输入包含 \\uXXXX 格式的 Unicode 编码字符串',
-        valid: false
-      }];
+      return [buildGuideItem('⚠️ 请输入 Unicode 编码字符串', '请输入包含 \\uXXXX 格式的 Unicode 编码字符串')];
     }
 
     const result = decodeUnicode(input);
@@ -53,3 +76,6 @@ export async function run(input) {
     }];
   }
 }
+
+// 兼容旧接口
+export const run = handle;

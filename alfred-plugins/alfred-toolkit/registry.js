@@ -21,6 +21,13 @@ export const tools = [
     description: '图片格式转换（支持 SVG/PNG/JPEG/WebP/ICO 互转）',
     icon: { path: 'icons/image.png' },
     module: './tools/img-convert.js'
+  },
+  {
+    id: 'img-resize',
+    name: 'Image Resize',
+    description: '图片缩放（支持 PNG/JPEG/WebP/SVG，输出命名为 原名-[size]）',
+    icon: { path: 'icons/image.png' },
+    module: './tools/img-resize.js'
   }
 ];
 
