@@ -1,0 +1,1 @@
+../../../../alfred-plugins/alfred-toolkit/tools/img-index-generate.js

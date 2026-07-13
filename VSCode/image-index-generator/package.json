@@ -1,0 +1,36 @@
+{
+  "name": "image-index-generator",
+  "displayName": "Image Index Generator",
+  "description": "从资源管理器文件夹生成图片索引 index.js。",
+  "version": "0.0.1",
+  "publisher": "local",
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onCommand:imageIndexGenerator.generate"
+  ],
+  "main": "./extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "imageIndexGenerator.generate",
+        "title": "生成图片索引"
+      }
+    ],
+    "menus": {
+      "explorer/context": [
+        {
+          "command": "imageIndexGenerator.generate",
+          "when": "resourceScheme == file && explorerResourceIsFolder"
+        }
+      ]
+    }
+  },
+  "scripts": {
+    "test": "node --test test/*.test.js"
+  }
+}
