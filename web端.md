@@ -802,6 +802,10 @@ diff -r '/Users/xxx/Downloads/dist 3' /Users/xxx/Desktop/dist
 - [正确使用 HTML5 标签：img, picture, figure 的响应式设计 | Harttle Land](https://harttle.land/2018/05/30/responsive-img-picture.html)
 - [JavaScript 侦测手机浏览器的五种方法 - 阮一峰的网络日志](https://www.ruanyifeng.com/blog/2021/09/detecting-mobile-browser.html)判断是否是手机端里面有提到 react-device-detect
 
+### text@textborder@
+
+- paint-order 绘制顺序
+
 ### 富文本@
 
 - [Images example | Tiptap Editor Docs](https://tiptap.dev/docs/examples/basics/images)

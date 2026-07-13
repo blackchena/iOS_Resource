@@ -1,0 +1,18 @@
+{
+  "name": "image-index-generator",
+  "version": "1.0.0",
+  "description": "根据图片目录生成导入索引并复制到剪贴板。",
+  "author": {
+    "name": "Local developer"
+  },
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Image Index Generator",
+    "shortDescription": "生成图片导入索引并复制到剪贴板。",
+    "longDescription": "递归扫描图片文件夹，生成 JavaScript import 语句和嵌套 images 对象，再复制到 macOS 剪贴板。",
+    "developerName": "Local developer",
+    "category": "Productivity",
+    "capabilities": ["Write"],
+    "defaultPrompt": "根据这个图片目录生成索引并复制到剪贴板。"
+  }
+}
