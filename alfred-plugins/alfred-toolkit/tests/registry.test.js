@@ -3,13 +3,14 @@ import { tools, findTool, filterTools } from '../registry.js';
 
 describe('registry', () => {
   describe('tools array', () => {
-    it('should contain unicode-decode, unicode-encode, img-convert and img-resize tools', () => {
-      expect(tools).toHaveLength(4);
+    it('should contain unicode-decode, unicode-encode and image tools', () => {
+      expect(tools).toHaveLength(5);
       const ids = tools.map(t => t.id);
       expect(ids).toContain('unicode-decode');
       expect(ids).toContain('unicode-encode');
       expect(ids).toContain('img-convert');
       expect(ids).toContain('img-resize');
+      expect(ids).toContain('img-index-generate');
     });
 
     it('each tool should have required fields', () => {
@@ -44,6 +45,12 @@ describe('registry', () => {
       expect(tool).toBeDefined();
       expect(tool.id).toBe('img-resize');
       expect(tool.name).toBe('Image Resize');
+    });
+
+    it('should find img-index-generate tool by id', () => {
+      expect(findTool('img-index-generate')).toMatchObject({
+        module: './tools/img-index-generate.js'
+      });
     });
 
     it('should return undefined for unregistered tool id', () => {

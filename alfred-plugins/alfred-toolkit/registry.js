@@ -28,6 +28,13 @@ export const tools = [
     description: '图片缩放（支持 PNG/JPEG/WebP/SVG，输出命名为 原名-[size]）',
     icon: { path: 'icons/image.png' },
     module: './tools/img-resize.js'
+  },
+  {
+    id: 'img-index-generate',
+    name: 'Image Index Generate',
+    description: '递归生成图片 ES Module 索引，写入 index.js 并复制到剪贴板',
+    icon: { path: 'icons/image.png' },
+    module: './tools/img-index-generate.js'
   }
 ];
 

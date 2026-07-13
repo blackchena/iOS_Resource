@@ -58,4 +58,17 @@ describe('tool-validate', () => {
     await rm(tempDir, { recursive: true, force: true });
     expect(existsSync(tempDir)).toBe(false);
   });
+
+  it('should return write and copy options for img-index-generate', async () => {
+    const tempDir = await mkdtemp(path.join(os.tmpdir(), 'atk-tool-validate-'));
+
+    const items = await handleValidationInput(`img-index-generate ${tempDir}`);
+
+    expect(items).toHaveLength(2);
+    expect(items[0]).toMatchObject({ valid: true });
+    expect(items[0].arg).toBe(`img-index-generate ${tempDir} --write`);
+    expect(items[1].arg).toBe(`img-index-generate ${tempDir} --copy`);
+
+    await rm(tempDir, { recursive: true, force: true });
+  });
 });

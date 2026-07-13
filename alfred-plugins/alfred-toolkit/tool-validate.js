@@ -72,6 +72,16 @@ async function validateInput(rawInput) {
       : [buildGuideItem('⚠️ 参数校验失败', `工具: ${toolId}`)];
   }
 
+  if (validation.strategy === 'options') {
+    if (!Array.isArray(validation.items) || validation.items.length === 0) {
+      return [buildGuideItem('⚠️ 没有可用操作', `工具: ${toolId}`)];
+    }
+    return validation.items.map(item => ({
+      ...item,
+      arg: `${toolId} ${item.arg || ''}`.trim()
+    }));
+  }
+
   if (validation.strategy === 'confirm') {
     const execInput = validation.execInput ? `${toolId} ${validation.execInput}`.trim() : rawInput;
     const items = [buildConfirmItem(execInput, tool.name, validation.summary || `参数: ${userInput}`)];
