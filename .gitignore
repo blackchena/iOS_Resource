@@ -38,4 +38,28 @@ node_modules
 # vscode
 .vscode
 
+# Local configuration and credentials
+.env
+.env.*
+!.env.example
+!.env.sample
+deploy.config.json
+credentials.json
+
+# Private keys and signing assets
+*.pem
+*.key
+*.p12
+*.p8
+*.mobileprovision
+*.cer
+id_rsa
+id_ed25519
+
+# Xcode user data and build output
+xcuserdata/
+*.xcuserstate
+DerivedData/
+build/
+
 # git
