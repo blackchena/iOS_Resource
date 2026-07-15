@@ -1,0 +1,20 @@
+{
+  "name": "image-resolution",
+  "displayName": "Image Resolution",
+  "description": "在图片预览时于状态栏显示图片分辨率。",
+  "version": "0.0.1",
+  "publisher": "local",
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onStartupFinished"
+  ],
+  "main": "./extension.js",
+  "scripts": {
+    "test": "node --test test/*.test.js"
+  }
+}
