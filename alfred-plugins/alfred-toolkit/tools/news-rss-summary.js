@@ -2,19 +2,23 @@ import Parser from 'rss-parser';
 import dotenv from 'dotenv';
 import { existsSync, readFileSync } from 'node:fs';
 import { mkdir, readFile, writeFile } from 'node:fs/promises';
+import { createRequire } from 'node:module';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 
-export const defaultFeedsPath = path.join(process.cwd(), 'config', 'news-feeds.json');
+export const defaultFeedsPath = path.join(process.cwd(), 'config', 'news-feeds.cjs');
 const defaultOutputDir = path.join(process.cwd(), 'reports');
 const parser = new Parser();
+const require = createRequire(import.meta.url);
 const projectEnvPath = path.join(path.dirname(fileURLToPath(import.meta.url)), '..', '.env');
 
 const CATEGORIES = [
-  '🎯 重磅技术与开源前沿',
-  '🤖 大模型与 AI 智能体',
-  '🌐 基础设施与行业大厂',
-  '📦 极客开源好物',
+  '重磅技术与开源前沿',
+  '大模型与 AI 智能体',
+  '基础设施与行业大厂',
+  '网络安全与隐私',
+  '极客开源好物',
+  '最火开源仓库',
 ];
 
 function guideItem(title, subtitle) {
@@ -61,7 +65,7 @@ export function parseInput(input = '') {
 function readFeedsConfig(feedsPath) {
   let config;
   try {
-    config = JSON.parse(requireReadFile(feedsPath));
+    config = require(feedsPath);
   } catch (error) {
     throw new Error(`RSS 配置读取失败：${error.message}`);
   }
@@ -79,12 +83,6 @@ function readFeedsConfig(feedsPath) {
     }
   }
   return config.feeds.map(feed => ({ name: feed.name.trim(), url: feed.url.trim() }));
-}
-
-function requireReadFile(filePath) {
-  // This synchronous helper keeps validate() compatible with Alfred's synchronous
-  // validation phase while handle() uses the async workflow below.
-  return readFileSync(filePath, 'utf8');
 }
 
 export function validateInput(input = '', { env = process.env, exists = existsSync } = {}) {
@@ -189,8 +187,7 @@ export function renderReport({ date, hours, articles, summary, succeededFeeds, f
 }
 
 async function readFeedsConfigAsync(feedsPath) {
-  const content = await readFile(feedsPath, 'utf8');
-  const config = JSON.parse(content);
+  const config = require(feedsPath);
   if (!config || !Array.isArray(config.feeds) || config.feeds.length === 0) {
     throw new Error('RSS 配置必须包含非空 feeds 数组');
   }

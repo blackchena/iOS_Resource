@@ -82,6 +82,7 @@ describe('news-rss-summary pure logic', () => {
     expect(request.body.model).toBe('test-model');
     expect(request.body.messages[1].content).toContain('https://example.com/a');
     expect(request.body.messages[0].content).toContain('大模型与 AI 智能体');
+    expect(request.body.messages[0].content).toContain('网络安全与隐私');
   });
 
   it('renders report metadata and model summary as markdown', () => {
