@@ -196,6 +196,14 @@
 - [josdejong/jsoneditor: A web-based tool to view, edit, format, and validate JSON](https://github.com/josdejong/jsoneditor)
 - [beikeshop/beikeshop: 🔥🔥🔥 Free open source and easy-to-use laravel eCommerce platform, Base on the Laravel . It supports multiple languages and currencies, integrates ChatGPT OpenAI. The platform features customizable visual design and a rich plugins on marketplace.](https://github.com/beikeshop/beikeshop)开源电商 vue + Laravel php
 
+### 后台管理系统开源项目@
+
+- [PanJiaChen/vue-element-admin: :tada: A magical vue admin https://panjiachen.github.io/vue-element-admin](https://github.com/PanJiaChen/vue-element-admin)
+- [vbenjs/vue-vben-admin: A modern vue admin panel built with Vue3, Shadcn UI, Vite, TypeScript, and Monorepo. It's fast!](https://github.com/vbenjs/vue-vben-admin)
+- [vueComponent/ant-design-vue-pro: 👨🏻‍💻👩🏻‍💻 Use Ant Design Vue like a Pro! (vue2)](https://github.com/vueComponent/ant-design-vue-pro)
+- [pure-admin/vue-pure-admin: 全面ESM+Vue3+Vite+Element-Plus+TypeScript编写的一款后台管理系统（兼容移动端）](https://github.com/pure-admin/vue-pure-admin)
+- [zxwk1998/vue-admin-better: 🎉 vue admin,vue3 admin,vue3.0 admin,vue后台管理,vue-admin,vue3.0-admin,admin,vue-admin,vue-element-admin,ant-design,vab admin pro,vab admin plus,vue admin plus,vue admin pro](https://github.com/zxwk1998/vue-admin-better)
+
 ### react开源项目@
 
 - [marmelab/react-admin: A frontend Framework for single-page applications on top of REST/GraphQL APIs, using TypeScript, React and Material Design](https://github.com/marmelab/react-admin?tab=readme-ov-file)
@@ -227,6 +235,7 @@
 - [Vue Bits - Animated UI Components For Vue](https://vue-bits.dev/)
 - [Headless UI - Unstyled, fully accessible UI components](https://headlessui.com/)
 - [Shoelace: A forward-thinking library of web components.](https://shoelace.style/)
+- [heroui-inc/heroui: 🚀 Beautiful, fast and modern React UI library. (Previously NextUI)](https://github.com/heroui-inc/heroui)
 
 ### 检索@
 
@@ -686,10 +695,11 @@ else if (video.canPlayType('application/vnd.apple.mpegurl')) {
 - [Agent Skills Marketplace - Claude, Codex & ChatGPT Skills | SkillsMP](https://skillsmp.com/)
 - [garrytan/gstack: Use Garry Tan's exact Claude Code setup: 23 opinionated tools that serve as CEO, Designer, Eng Manager, Release Manager, Doc Engineer, and QA](https://github.com/garrytan/gstack)
 - [libukai/awesome-agent-skills: Agent Skills 终极指南：快速入门、资源推荐、精选技能与实用工具 ｜The Ultimate Guide to Agent Skills: QuickStart, Resources, Features&Toolkit](https://github.com/libukai/awesome-agent-skills)
-
 - [awesome-agent-skills/docs/Agent-Skill-五种设计模式.md at main · libukai/awesome-agent-skills](https://github.com/libukai/awesome-agent-skills/blob/main/docs/Agent-Skill-%E4%BA%94%E7%A7%8D%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F.md)
 - [getdesign.md — DESIGN.md collection for AI coding agents](https://getdesign.md/)
 - [multica-ai/andrej-karpathy-skills: A single CLAUDE.md file to improve Claude Code behavior, derived from Andrej Karpathy's observations on LLM coding pitfalls.](https://github.com/multica-ai/andrej-karpathy-skills)
+- figma mcp 调试npx @modelcontextprotocol/inspector npx figma-developer-mcp --stdio --figma-api-key="figd_key"
+- [modelcontextprotocol/inspector: Visual testing tool for MCP servers](https://github.com/modelcontextprotocol/inspector)
 
 ### clipPath@
 
