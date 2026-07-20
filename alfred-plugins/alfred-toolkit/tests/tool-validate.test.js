@@ -71,4 +71,11 @@ describe('tool-validate', () => {
 
     await rm(tempDir, { recursive: true, force: true });
   });
+
+  it('should reject RSS summary when the feed configuration is missing', async () => {
+    const items = await handleValidationInput('news-rss-summary feeds=/tmp/missing-news-feeds.json');
+    expect(items).toHaveLength(1);
+    expect(items[0].valid).toBe(false);
+    expect(items[0].title).toContain('RSS 新闻摘要');
+  });
 });

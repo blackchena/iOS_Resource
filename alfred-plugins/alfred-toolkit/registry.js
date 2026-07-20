@@ -35,6 +35,13 @@ export const tools = [
     description: '递归生成图片 ES Module 索引，写入 index.js 并复制到剪贴板',
     icon: { path: 'icons/image.png' },
     module: './tools/img-index-generate.js'
+  },
+  {
+    id: 'news-rss-summary',
+    name: 'RSS News Summary',
+    description: '抓取 RSS 技术资讯并使用 New API 生成 Markdown 摘要报告',
+    icon: { path: 'icons/image.png' },
+    module: './tools/news-rss-summary.js'
   }
 ];
 

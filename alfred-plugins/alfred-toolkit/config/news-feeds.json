@@ -1,0 +1,6 @@
+{
+  "feeds": [
+    { "name": "Hacker News", "url": "https://news.ycombinator.com/rss" },
+    { "name": "TechCrunch", "url": "https://techcrunch.com/feed/" }
+  ]
+}

@@ -63,3 +63,5 @@ DerivedData/
 build/
 
 # git
+docs/
+reports/
