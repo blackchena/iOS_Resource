@@ -67,6 +67,20 @@ export function validate(input) {
     };
   }
 
+  if (!targetFormat) {
+    return {
+      strategy: 'options',
+      items: OUTPUT_FORMATS.map(fmt => ({
+        uid: `convert-option-${fmt}`,
+        title: `🔄 转换为 ${fmt.toUpperCase()}`,
+        subtitle: `${path.basename(filePath)} → .${fmt === 'jpeg' ? 'jpg' : fmt}`,
+        arg: `${filePath} ${fmt}`,
+        variables: { ATK_ACTION: 'convert-now' },
+        valid: true
+      }))
+    };
+  }
+
   const stat = statSync(filePath);
   const scope = stat.isDirectory() ? '目录批量' : '单文件';
   const summary = targetFormat
